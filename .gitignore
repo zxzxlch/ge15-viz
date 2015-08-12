@@ -4,3 +4,4 @@ dist
 bower_components
 *.sublime-*
 /TODO.md
+/dist
