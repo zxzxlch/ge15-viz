@@ -26,20 +26,65 @@
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
     
     <div class="container-fluid">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <!-- <li class="active"><a href="#">Home</a></li> -->
-        </ul>
-        <h2 class="text-muted">Parliament Sittings</h3>
+
+      <div class="introduction">
+
+        <h1 class="text-muted">Parliament Sittings</h1>
+        <h3>How Often Do Our Members of Parliament Attend Parliament Sittings?</h3>
+
+        <p>This chart shows the number of parliament sittings attended by members of parliament (MP) in Singapore from 2011 to 2015. The data is sourced from <em>The Middle Ground</em>, a post titled <a href="http://themiddleground.sg/2015/08/12/tmg-exclusive-speaking-truth-parliament/">“Speaking truth to Parliament”</a>:</p>
+
+        <blockquote>
+          <p>To find out how many times each MP showed up in Parliament, we looked at every single Voters and Proceedings document filed by the 12th Parliament. As there have been 115 sittings, there were 115 reports. We combed through all of them, counted who showed up how many times […] which backbenchers in the 12th Parliament were the most vocal in questioning the G and raising issues to be discussed and debated. As a baseline for comparison, we counted the number of sittings when individual backbencher MPs spoke up, rather than how many instances of speaking altogether.</p>
+          <p>By default, the chart is sorted by MP’s who had the highest attendence to the lowest. For a different perspective, sort by the number of Parliament sittings in which the MP spoke up or group by their party affliation or constituency.</p>
+        </blockquote>
+
+        <div class="chart-guide row">
+          <div class="chart-guide-instructions col-xs-2">How to read this chart</div>
+          <div class="chart-area col-xs-10">
+              <div class="chart-plotarea">
+                <div class="chart-tip tip-attendence">
+                  <div class="chart-tip-text">Attended parliament sittings out of a maximum of 115</div>
+                  <div class="chart-tip-brackets">
+                    <div class="chart-tip-brackets-tip"></div>
+                    <div class="chart-tip-brackets-base"></div>
+                  </div>
+                </div>
+                <div class="bar">
+                  <div class="bar-filled"></div>
+                  <div class="bar-icon-filled"></div>
+                  <div class="chart-tip tip-mean-attendence">
+                    <div class="chart-tip-text">
+                      On average, a MP has an attendence rate of <span class="js-stat-mean-attendence-rate">0</span>%, around <span class="js-stat-mean-attendence-count">0</span> parliament sittings.
+                    </div>
+                  </div>
+                  <div class="chart-tip tip-mean-spoken">
+                    <div class="chart-tip-text">
+                      MP’s speak up for an average of <span class="js-stat-mean-spoken-count">0</span> attended parliament sittings.
+                    </div>
+                  </div>
+                  <div class="marker-line marker-line-1"></div>
+                  <div class="marker-line marker-line-2"></div>
+                  <div class="bar-marker marker-1"></div>
+                  <div class="bar-marker marker-2"></div>
+                </div>
+                <div class="chart-tip tip-spoken">
+                  <div class="chart-tip-brackets">
+                    <div class="chart-tip-brackets-base"></div>
+                    <div class="chart-tip-brackets-tip"></div>
+                  </div>
+                  <div class="chart-tip-text">Parliament sittings in which the MP spoke up</div>
+                </div>
+              </div>
+            </div>
+        </div>
+
       </div>
 
       <div class="row chart">
-        <div class="col-sm-12 chart-content">
-
-        </div>
+        <div class="col-sm-12 chart-content"></div>
       </div>
       
 
