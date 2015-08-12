@@ -1,0 +1,15 @@
+<div class="chart-row row">
+  <div class="chart-col-1 col-xs-3">
+    <%= data.name %>
+    <span class="label label-default"><%= data.grc %></span>
+  </div>
+  <div class="chart-plotarea col-xs-9">
+    <div class="bar">
+      <div class="bar-filled"></div>
+      <div class="bar-icon-filled"></div>
+    </div>
+    <div class="caption text-muted">
+      Attended <%= data.attendence %> out of <%= totalSittings %> sittings in Parliament. Spoken in <%= data.spoken %> sittings.
+    </div>
+  </div>
+</div>
