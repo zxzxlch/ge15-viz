@@ -36,9 +36,9 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['wiredep']
       },
-      babel: {
-        files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['babel:dist']
+      browserify: {
+        files: ['<%= config.app %>/scripts/{,*/}*'],
+        tasks: ['browserify']
       },
       babelTest: {
         files: ['test/spec/{,*/}*.js'],
@@ -139,7 +139,7 @@ module.exports = function (grunt) {
     // Compiles ES6 with Babel
     babel: {
       options: {
-          sourceMap: true
+          sourceMap: false
       },
       dist: {
         files: [{
@@ -161,6 +161,23 @@ module.exports = function (grunt) {
       }
     },
 
+    // Browserify scripts after Babel
+    browserify: {
+      main: {
+        src: [ '<%= config.app %>/scripts/main.js' ],
+        dest: '.tmp/scripts/bundle.js',
+        options: {
+          transform: [
+            'babelify',
+            ['partialify', { 'alsoAllow': ['json'] }]
+          ],
+          browserifyOptions: {
+            debug: true
+          }
+        }
+      }
+    },
+    
     // Compiles Sass to CSS and generates necessary files if requested
     sass: {
       options: {
@@ -374,20 +391,22 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
-        'babel:dist',
+        'browserify',
         'sass:server'
       ],
       test: [
         'babel'
       ],
       dist: [
-        'babel',
+        'browserify',
         'sass',
         'imagemin',
         'svgmin'
       ]
     }
   });
+
+  grunt.loadNpmTasks('grunt-browserify');
 
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
@@ -416,6 +435,7 @@ module.exports = function (grunt) {
       grunt.task.run([
         'clean:server',
         'concurrent:test',
+        'browserify',
         'postcss'
       ]);
     }

@@ -1,0 +1,359 @@
+[
+  {
+    "party": "PAP",
+    "name": "Lee Bee Wah",
+    "grc": "Nee Soon",
+    "attendence": 111,
+    "spoken": 87
+  },
+  {
+    "party": "PAP",
+    "name": "Zainal Bin Sapari",
+    "grc": "Pasir-Ris Punggol",
+    "attendence": 110,
+    "spoken": 79
+  },
+  {
+    "party": "PAP",
+    "name": "Gan Thiam Poh",
+    "grc": "Pasir-Ris Punggol",
+    "attendence": 108,
+    "spoken": 77
+  },
+  {
+    "party": "PAP",
+    "name": "Christopher De Souza",
+    "grc": "Holland-Bukit Timah",
+    "attendence": 110,
+    "spoken": 71
+  },
+  {
+    "party": "PAP",
+    "name": "David Ong Kim Huat",
+    "grc": "Jurong",
+    "attendence": 107,
+    "spoken": 71
+  },
+  {
+    "party": "PAP",
+    "name": "Zaqy Mohamad",
+    "grc": "Chua Chu Kang",
+    "attendence": 100,
+    "spoken": 71
+  },
+  {
+    "party": "PAP",
+    "name": "Ang Wei Neng",
+    "grc": "Jurong",
+    "attendence": 114,
+    "spoken": 70
+  },
+  {
+    "party": "PAP",
+    "name": "Baey Yam Keng",
+    "grc": "Tampines",
+    "attendence": 112,
+    "spoken": 68
+  },
+  {
+    "party": "PAP",
+    "name": "Tin Pei Ling",
+    "grc": "Marine Parade",
+    "attendence": 106,
+    "spoken": 66
+  },
+  {
+    "party": "PAP",
+    "name": "Alex Yam Ziming",
+    "grc": "Chua Chu Kang",
+    "attendence": 110,
+    "spoken": 65
+  },
+  {
+    "party": "PAP",
+    "name": "Tay Teck Guan Patrick",
+    "grc": "Nee Soon",
+    "attendence": 108,
+    "spoken": 63
+  },
+  {
+    "party": "PAP",
+    "name": "Intan Azura Minte Mokhtar",
+    "grc": "Ang Mo Kio",
+    "attendence": 108,
+    "spoken": 62
+  },
+  {
+    "party": "PAP",
+    "name": "Fatimah Lateef",
+    "grc": "Marine Parade",
+    "attendence": 94,
+    "spoken": 61
+  },
+  {
+    "party": "PAP",
+    "name": "Foo Mee Har",
+    "grc": "West Coast",
+    "attendence": 108,
+    "spoken": 60
+  },
+  {
+    "party": "PAP",
+    "name": "Lim Biow Chuan",
+    "grc": "Mountbatten",
+    "attendence": 112,
+    "spoken": 60
+  },
+  {
+    "party": "PAP",
+    "name": "Hri Kumar Nair",
+    "grc": "Bishan-Toa Payoh",
+    "attendence": 105,
+    "spoken": 58
+  },
+  {
+    "party": "PAP",
+    "name": "Irene Ng Phek Hoong",
+    "grc": "Tampines",
+    "attendence": 93,
+    "spoken": 58
+  },
+  {
+    "party": "PAP",
+    "name": "Yeo Guat Kwang",
+    "grc": "Ang Mo Kio",
+    "attendence": 104,
+    "spoken": 57
+  },
+  {
+    "party": "PAP",
+    "name": "Ang Hin Kee",
+    "grc": "Ang Mo Kio",
+    "attendence": 104,
+    "spoken": 55
+  },
+  {
+    "party": "PAP",
+    "name": "Liang Eng Hwa",
+    "grc": "Holland-Bukit Timah",
+    "attendence": 112,
+    "spoken": 53
+  },
+  {
+    "party": "PAP",
+    "name": "Janil Puthucheary",
+    "grc": "Pasir-Ris Punggol",
+    "attendence": 113,
+    "spoken": 49
+  },
+  {
+    "party": "PAP",
+    "name": "Lim Wee Kiak",
+    "grc": "Nee Soon",
+    "attendence": 112,
+    "spoken": 49
+  },
+  {
+    "party": "PAP",
+    "name": "Ellen Lee Geck Hoon",
+    "grc": "Sembawang",
+    "attendence": 110,
+    "spoken": 48
+  },
+  {
+    "party": "PAP",
+    "name": "Vikram Nair",
+    "grc": "Sembawang",
+    "attendence": 107,
+    "spoken": 45
+  },
+  {
+    "party": "PAP",
+    "name": "Sitoh Yih Pin",
+    "grc": "Potong Pasir",
+    "attendence": 111,
+    "spoken": 39
+  },
+  {
+    "party": "PAP",
+    "name": "Zainudin Nordin",
+    "grc": "Bishan-Toa Payoh",
+    "attendence": 108,
+    "spoken": 39
+  },
+  {
+    "party": "PAP",
+    "name": "Chia Shi-Lu",
+    "grc": "Tanjong Pagar",
+    "attendence": 100,
+    "spoken": 38
+  },
+  {
+    "party": "PAP",
+    "name": "Penny Low",
+    "grc": "Pasir-Ris Punggol",
+    "attendence": 105,
+    "spoken": 36
+  },
+  {
+    "party": "PAP",
+    "name": "Lily Neo",
+    "grc": "Tanjong Pagar",
+    "attendence": 104,
+    "spoken": 36
+  },
+  {
+    "party": "PAP",
+    "name": "Seng Han Thong",
+    "grc": "Ang Mo Kio",
+    "attendence": 110,
+    "spoken": 33
+  },
+  {
+    "party": "PAP",
+    "name": "Arthur Fong",
+    "grc": "West Coast",
+    "attendence": 102,
+    "spoken": 32
+  },
+  {
+    "party": "PAP",
+    "name": "Jessica Tan Soon Neo",
+    "grc": "East Coast",
+    "attendence": 97,
+    "spoken": 30
+  },
+  {
+    "party": "PAP",
+    "name": "Ong Teng Koon",
+    "grc": "Sembawang",
+    "attendence": 100,
+    "spoken": 25
+  },
+  {
+    "party": "PAP",
+    "name": "Edwin Tong Chui Fai",
+    "grc": "Moulmein-Kallang",
+    "attendence": 106,
+    "spoken": 24
+  },
+  {
+    "party": "PAP",
+    "name": "Cedric Foo Chee Keng",
+    "grc": "Pioneer",
+    "attendence": 95,
+    "spoken": 22
+  },
+  {
+    "party": "PAP",
+    "name": "Inderjit Singh",
+    "grc": "Ang Mo Kio",
+    "attendence": 99,
+    "spoken": 20
+  },
+  {
+    "party": "PAP",
+    "name": "Alvin Yeo",
+    "grc": "Chua Chu Kang",
+    "attendence": 95,
+    "spoken": 16
+  },
+  {
+    "party": "PAP",
+    "name": "Wong Kan Seng",
+    "grc": "Bishan-Toa Payoh",
+    "attendence": 106,
+    "spoken": 2
+  },
+  {
+    "party": "PAP",
+    "name": "Mah Bow Tan",
+    "grc": "Tampines",
+    "attendence": 82,
+    "spoken": 1
+  },
+  {
+    "party": "PAP",
+    "name": "Raymond Lim",
+    "grc": "East Coast",
+    "attendence": 82,
+    "spoken": 0
+  },
+  {
+    "party": "WP",
+    "name": "Low Thia Khiang",
+    "grc": "Aljunied",
+    "attendence": 115,
+    "spoken": 54
+  },
+  {
+    "party": "WP",
+    "name": "Sylvia Lim",
+    "grc": "Aljunied",
+    "attendence": 113,
+    "spoken": 70
+  },
+  {
+    "party": "WP",
+    "name": "Chen Show Mao",
+    "grc": "Aljunied",
+    "attendence": 108,
+    "spoken": 45
+  },
+  {
+    "party": "WP",
+    "name": "Muhamad Faisal Bin Abdul Manap",
+    "grc": "Aljunied",
+    "attendence": 114,
+    "spoken": 70
+  },
+  {
+    "party": "WP",
+    "name": "Pritam Singh",
+    "grc": "Aljunied",
+    "attendence": 114,
+    "spoken": 77
+  },
+  {
+    "party": "WP",
+    "name": "Png Eng Huat",
+    "grc": "Hougang",
+    "attendence": 89,
+    "spoken": 59
+  },
+  {
+    "party": "WP",
+    "name": "Lee Li Lian",
+    "grc": "Punggol East",
+    "attendence": 73,
+    "spoken": 46
+  },
+  {
+    "party": "WP",
+    "name": "Yaw Shin Leong",
+    "grc": "Hougang",
+    "attendence": 13,
+    "spoken": 7
+  },
+  {
+    "party": "NCMP (SPP)",
+    "name": "Lina Chiam",
+    "grc": "NCMP (Potong Pasir)",
+    "attendence": 113,
+    "spoken": 83
+  },
+  {
+    "party": "NCMP (WP)",
+    "name": "Gerald Giam Yean Song",
+    "grc": "NCMP (East Coast)",
+    "attendence": 115,
+    "spoken": 80
+  },
+  {
+    "party": "NCMP (WP)",
+    "name": "Yee Jenn Jong",
+    "grc": "NCMP (Joo Chiat)",
+    "attendence": 110,
+    "spoken": 87
+  }
+]
