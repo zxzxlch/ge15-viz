@@ -164,8 +164,9 @@ module.exports = function (grunt) {
     // Browserify scripts after Babel
     browserify: {
       main: {
-        src: [ '<%= config.app %>/scripts/main.js' ],
-        dest: '.tmp/scripts/bundle.js',
+        files: {
+          '.tmp/scripts/parliament-sittings-bundled.js': [ '<%= config.app %>/scripts/parliament-sittings.js' ]
+        },
         options: {
           transform: [
             'babelify',
@@ -229,7 +230,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
-        src: ['<%= config.app %>/index.html'],
+        src: ['<%= config.app %>/index.html', '<%= config.app %>/parliament-sittings.html'],
         exclude: ['bootstrap.js'],
         ignorePath: /^(\.\.\/)*\.\./
       },
@@ -259,7 +260,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      html: '<%= config.app %>/index.html'
+      src: ['<%= config.app %>/index.html', '<%= config.app %>/parliament-sittings.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration

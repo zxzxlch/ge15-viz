@@ -1,4 +1,4 @@
-// views/app_view.js
+// views/parliament-sittings-chart.js
 
 let $        = require('jquery');
 let _        = require('underscore');
