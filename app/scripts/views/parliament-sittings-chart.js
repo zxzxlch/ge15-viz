@@ -5,7 +5,8 @@ let _        = require('underscore');
 let d3       = require('d3');
 let Backbone = require('backbone');
 let data     = JSON.parse(require('../data/mp.json'));
-let rowTemplate = _.template(require('../templates/chart_mp_row.html'));
+let SettingsBar = require('../views/ps-chart-settings-bar');
+let rowTemplate = _.template(require('../templates/ps-chart-row.html'));
 
 let totalSittings = 115;
 
@@ -18,8 +19,12 @@ module.exports = Backbone.View.extend({
     this.meanAttendencePercent = this.meanAttendence / totalSittings * 100;
     this.meanSpokenPercent = this.meanSpoken / totalSittings * 100;
 
+    // Add settings bar
+    this.settingsBar = new SettingsBar({ el: $('.chart-settings') });
+    this.listenTo(this.settingsBar, 'settingsDidChange', this.renderRows);
+
     this.initChartGuide();
-    this.initRows();
+    this.renderRows();
   },
 
 
@@ -44,9 +49,24 @@ module.exports = Backbone.View.extend({
   },
 
 
-  initRows: function() {
-    data = _.sortBy(data, 'attendence').reverse();
-    let $rows = _.map(data, (d) => {
+  getFormattedData: function() {
+    let formattedData = data;
+
+    switch (this.settingsBar.getSortSetting()) {
+      case 'attendence':
+        formattedData = _.sortBy(formattedData, 'attendence').reverse();
+        break;
+      case 'spoken':
+        formattedData = _.sortBy(formattedData, 'spoken').reverse();
+        break;
+    }
+    
+    return formattedData;
+  },
+
+
+  renderRows: function() {
+    let $rows = _.map(this.getFormattedData(), (d) => {
       let attendencePercent = d.attendence / totalSittings * 100;
       let spokenPercent = d.spoken / totalSittings * 100;
 
