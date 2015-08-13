@@ -14,8 +14,8 @@ module.exports = Backbone.View.extend({
 
   initialize: function(options) {
     // Calculate aggregate stats
-    this.meanAttendence = d3.mean(data, (d) => d.attendence);
-    this.meanSpoken = d3.mean(data, (d) => d.spoken);
+    this.meanAttendence = d3.mean(data, d => d.attendence);
+    this.meanSpoken = d3.mean(data, d => d.spoken);
     this.meanAttendencePercent = this.meanAttendence / totalSittings * 100;
     this.meanSpokenPercent = this.meanSpoken / totalSittings * 100;
 
@@ -50,15 +50,29 @@ module.exports = Backbone.View.extend({
 
 
   getFormattedData: function() {
-    let formattedData = data;
+    let sortAttribute = this.settingsBar.getSortAttribute();
+    let groupAttribute = this.settingsBar.getGroupAttribute();
 
-    switch (this.settingsBar.getSortSetting()) {
-      case 'attendence':
-        formattedData = _.sortBy(formattedData, 'attendence').reverse();
-        break;
-      case 'spoken':
-        formattedData = _.sortBy(formattedData, 'spoken').reverse();
-        break;
+    let formattedData = _.sortBy(data, sortAttribute).reverse();;
+
+    // Group by attribute
+    if (groupAttribute != 'none') {
+      formattedData = d3.nest().key(d => d[groupAttribute]).entries(formattedData)
+      // Aggregate members of each group
+      formattedData = _.chain(formattedData)
+        .each(group => {
+          // Set attributes for convenience
+          group.party = group.values[0].party;
+
+          // Calculate mean of sort attribute for each group
+          group.stats = {};
+          group.stats.attendence = d3.mean(group.values, d => d.attendence);
+          group.stats.spoken = d3.mean(group.values, d => d.spoken);
+          group.sortValue = group.stats[sortAttribute];
+        })
+        .sortBy(group => group.sortValue)
+        .value()
+        .reverse();
     }
     
     return formattedData;
@@ -66,7 +80,7 @@ module.exports = Backbone.View.extend({
 
 
   renderRows: function() {
-    let $rows = _.map(this.getFormattedData(), (d) => {
+    let $rows = _.map(this.getFormattedData(), d => {
       let attendencePercent = d.attendence / totalSittings * 100;
       let spokenPercent = d.spoken / totalSittings * 100;
 

@@ -37,12 +37,12 @@ module.exports = Backbone.View.extend({
   },
 
 
-  getSortSetting: function() {
+  getSortAttribute: function() {
     return this.$('.sort-dropdown .dropdown-menu li.disabled a').data('value');
   },
 
 
-  getGroupSetting: function() {
+  getGroupAttribute: function() {
     return this.$('.group-dropdown .dropdown-menu li.disabled a').data('value');
   }
 
