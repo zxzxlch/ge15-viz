@@ -1,8 +1,44 @@
 /* _chart.scss */
 
+$chart-bar-height: 32px;
+
+.chart.row {
+  margin: 0 -40px;
+  padding: 30px 40px 40px;
+  background-color: white;
+}
+
 .chart-row {
-  margin-bottom: 20px;
   font-size: $chart-font-size;
+  padding: 20px 0 15px;
+
+  > div {
+    padding: 0;
+  }
+  & + & {
+    border-top: 1px solid $gray-lighter;
+  }
+  .caption {
+    color: $gray-light;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 5px 0;
+  }
+  .chart-label-name {
+    display: block;
+    font-size: 17px;
+    line-height: 1;
+  }
+  .chart-label-party {
+    
+  }
+  .chart-label-grc {
+  }
+}
+
+.chart-col-1 {
+  margin-bottom: 4px;
+  padding-right: $grid-gutter-width / 2;
 }
 
 .chart-plotarea {
@@ -11,7 +47,7 @@
   .bar {
     position: relative;
     width: 100%;
-    height: 32px;
+    height: $chart-bar-height;
     background: $gray-lighter;
     border-radius: 2px;
   }
@@ -39,12 +75,11 @@
 }
 
 .chart-guide {
-  margin: 0 -30px;
   margin-top: 50px;
-  padding: 40px 30px;
+  padding: 23px 10px;
   background-color: white;
   font-size: $chart-font-size;
-  
+
   .chart-guide-instructions {
     margin-bottom: 30px;
     color: $brand-primary;
@@ -96,7 +131,7 @@
     opacity: 0.7;
   }
   .tip-spoken {
-    margin-top: 32px;
+    margin-top: $chart-bar-height;
     float: left;
     margin-left: -100%;
   }
@@ -104,7 +139,7 @@
     position: relative;
     float: right;
     width: 100%;
-    margin-top: 16px;
+    margin-top: $chart-bar-height / 2;
     margin-left: -100%;
 
     .marker-line {
@@ -121,7 +156,7 @@
     position: relative;
     float: left;
     width: 100%;
-    margin-top: 16px;
+    margin-top: $chart-bar-height / 2;
     margin-left: -100%;
 
     .marker-line {
