@@ -54,7 +54,12 @@ module.exports = Backbone.View.extend({
     let sortAttribute = this.settingsBar.getSortAttribute();
     let groupAttribute = this.settingsBar.getGroupAttribute();
 
-    let formattedData = _.sortBy(data, sortAttribute).reverse();;
+    let formattedData;
+    if (sortAttribute == "spoken/attended") {
+      formattedData = _.sortBy(data, d => (d.spoken / d.attendence)).reverse();
+    } else {
+      formattedData = _.sortBy(data, sortAttribute).reverse();
+    }
 
     // Group by attribute
     if (groupAttribute != 'none') {
@@ -72,7 +77,11 @@ module.exports = Backbone.View.extend({
           group.stats = {};
           group.stats.attendence = d3.mean(group.values, d => d.attendence);
           group.stats.spoken = d3.mean(group.values, d => d.spoken);
-          group.sortValue = group.stats[sortAttribute];
+          if (sortAttribute == "spoken/attended") {
+            group.sortValue = d3.mean(group.values, d => (d.spoken / d.attendence));
+          } else {
+            group.sortValue = group.stats[sortAttribute];
+          }
         })
         .sortBy(group => group.sortValue)
         .value()
