@@ -5,10 +5,10 @@ let _        = require('underscore');
 let d3       = require('d3');
 let Backbone = require('backbone');
 let data     = JSON.parse(require('../data/mp.json'));
-let SettingsBar = require('../views/ps-chart-settings-bar');
-let rowTemplate = _.template(require('../templates/ps-chart-row.html'));
+let ChartRowView  = require('../views/ps-chart-row-view');
+let SettingsBar   = require('../views/ps-chart-settings-bar');
 
-let totalSittings = 115;
+let maxAttendence = 115;
 
 module.exports = Backbone.View.extend({
 
@@ -16,8 +16,8 @@ module.exports = Backbone.View.extend({
     // Calculate aggregate stats
     this.meanAttendence = d3.mean(data, d => d.attendence);
     this.meanSpoken = d3.mean(data, d => d.spoken);
-    this.meanAttendencePercent = this.meanAttendence / totalSittings * 100;
-    this.meanSpokenPercent = this.meanSpoken / totalSittings * 100;
+    this.meanAttendencePercent = this.meanAttendence / maxAttendence * 100;
+    this.meanSpokenPercent = this.meanSpoken / maxAttendence * 100;
 
     // Add settings bar
     this.settingsBar = new SettingsBar({ el: $('.chart-settings') });
@@ -81,16 +81,12 @@ module.exports = Backbone.View.extend({
 
   renderRows: function() {
     let $rows = _.map(this.getFormattedData(), d => {
-      let attendencePercent = d.attendence / totalSittings * 100;
-      let spokenPercent = d.spoken / totalSittings * 100;
-
-      let $row = $(rowTemplate({ data: d, attendenceRate: Math.round(attendencePercent * 10) / 10 }));
-      $row.find('.bar-filled').css('width', `${ attendencePercent }%`);
-      $row.find('.bar-icon-filled').css('width', `${ spokenPercent }%`);
-      $row.find('.marker-1').css('left', `${ this.meanAttendencePercent }%`);
-      $row.find('.marker-2').css('left', `${ this.meanSpokenPercent }%`);
-
-      return $row;
+      let row = new ChartRowView({
+        data: d,
+        maxAttendence,
+        meanAttendencePercent: this.meanAttendencePercent,
+        meanSpokenPercent:     this.meanSpokenPercent });
+      return row.el
     });
     $('.chart-content').html($rows);
   }
