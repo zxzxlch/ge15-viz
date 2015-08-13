@@ -1,0 +1,31 @@
+/* Variables */
+
+$gray-base:                 #000 !default;
+$gray-darker:               lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:                 lighten($gray-base, 20%) !default;   // #333
+$gray:                      lighten($gray-base, 33.5%) !default; // #555
+$gray-light:                lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:              lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:             #5C83AF;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+
+$brand-primary:             darken(#428bca, 6.5%) !default; // #337ab7
+$brand-primary-dark:        darken($brand-primary, 7%);
+
+$body-bg:                   $gray-lighter;
+$text-color:                #505050;
+$heading-text-color:        #7E94AD;
+
+$link-color:                $brand-primary;
+$link-hover-color:          darken($link-color, 15%);
+$link-hover-decoration:     underline;
+
+$font-size-base:            17px;
+$chart-font-size:           14px;
+
+$blockquote-font-size:      $font-size-base;
+$blockquote-border-color:   #E2E2E2;

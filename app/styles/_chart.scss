@@ -1,9 +1,8 @@
-/* Chart */
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
-// @import "bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+/* _chart.scss */
 
 .chart-row {
   margin-bottom: 20px;
+  font-size: $chart-font-size;
 }
 
 .chart-plotarea {
@@ -24,13 +23,13 @@
   .bar-icon-filled {
     position: absolute;
     height: 100%;
-    background-color: darken($brand-primary, 10%);
+    background-color: rgba(0, 0, 0, 0.25);
   }
   .bar-marker {
-    @include transform(translate(-3px, -3px) rotate(-45deg));
+    @include transform(translate(-2px, -2px) rotate(-45deg));
     position: absolute;
-    width: 6px;
-    height: 6px;
+    width: 4px;
+    height: 4px;
     top: 50%;
     background-color: white;
     border: 1px solid rgba($brand-primary, 0.5);
@@ -40,9 +39,15 @@
 }
 
 .chart-guide {
+  margin: 0 -30px;
+  margin-top: 50px;
+  padding: 40px 30px;
+  background-color: white;
+  font-size: $chart-font-size;
+  
   .chart-guide-instructions {
     margin-bottom: 30px;
-    color: $gray-light;
+    color: $brand-primary;
     font-weight: bold;
     font-size: 13px;
     text-transform: uppercase;
