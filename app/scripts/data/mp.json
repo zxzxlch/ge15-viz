@@ -319,14 +319,16 @@
     "name": "Png Eng Huat",
     "grc": "Hougang",
     "attendence": 89,
-    "spoken": 59
+    "spoken": 59,
+    "note": "In Parliament for only part of the four year term (2011—2015)."
   },
   {
     "party": "WP",
     "name": "Lee Li Lian",
     "grc": "Punggol East",
     "attendence": 73,
-    "spoken": 46
+    "spoken": 46,
+    "note": "In Parliament for only part of the four year term (2011—2015)."
   },
   {
     "party": "WP",
@@ -337,23 +339,23 @@
     "note": "In Parliament for only two years from 2011 to 2012."
   },
   {
-    "party": "NCMP (SPP)",
+    "party": "SPP (NCMP)",
     "name": "Lina Chiam",
-    "grc": "NCMP (Potong Pasir)",
+    "grc": "Potong Pasir (NCMP)",
     "attendence": 113,
     "spoken": 83
   },
   {
-    "party": "NCMP (WP)",
+    "party": "WP (NCMP)",
     "name": "Gerald Giam Yean Song",
-    "grc": "NCMP (East Coast)",
+    "grc": "East Coast (NCMP)",
     "attendence": 115,
     "spoken": 80
   },
   {
-    "party": "NCMP (WP)",
+    "party": "WP (NCMP)",
     "name": "Yee Jenn Jong",
-    "grc": "NCMP (Joo Chiat)",
+    "grc": "Joo Chiat (NCMP)",
     "attendence": 110,
     "spoken": 87
   }
