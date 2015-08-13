@@ -35,17 +35,20 @@
     background-color: white;
     border: 1px solid rgba($brand-primary, 0.5);
     box-sizing: content-box;
+    z-index: 100;
   }
 }
 
 .chart-guide {
-  .marker-line {
-    position: absolute;
-    width: 2px;
-    height: 80px;
-    top: 50%;
-    border-left: 1px dotted lighten($gray-light, 20%);
-    opacity: 0.7;
+  .chart-guide-instructions {
+    margin-bottom: 30px;
+    color: $gray-light;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+  .bar {
+    float: left;
   }
   .chart-tip {
     color: $gray-light;
@@ -80,22 +83,49 @@
       margin-bottom: 3px;
     }
   }
-  .tip-mean-attendence, .tip-mean-spoken {
-    position: absolute;
-    top: 50%;
-    max-width: 30%;
-
-    .chart-tip-text {
-      position: relative;
-      left: -50%;
-      margin-right: -20%;
-      padding: 0;
-    }
+  .marker-line {
+    margin-top: 2px;
+    margin-bottom: 4px;
+    width: 0;
+    border-right: 1px dotted lighten($gray-light, 20%);
+    opacity: 0.7;
+  }
+  .tip-spoken {
+    margin-top: 32px;
+    float: left;
+    margin-left: -100%;
   }
   .tip-mean-attendence {
-    margin-top: 80px;
+    position: relative;
+    float: right;
+    width: 100%;
+    margin-top: 16px;
+    margin-left: -100%;
+
+    .marker-line {
+      height: 43px;
+    }
+    .chart-tip-text {
+      float: right;
+      margin-top: 4px;
+      padding: 0;
+      width: 40%;
+    }
   }
   .tip-mean-spoken {
-    margin-top: 80px;
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-top: 16px;
+    margin-left: -100%;
+
+    .marker-line {
+      height: 130px;
+    }
+    .chart-tip-text {
+      margin: 0 auto;
+      padding: 0;
+      width: 40%;
+    }
   }
 }
