@@ -12,9 +12,9 @@ $chart-bar-height: 32px;
   font-size: $chart-font-size;
   padding: 20px 0 15px;
 
-  > div {
-    padding: 0;
-  }
+  // > div {
+  //   padding: 0;
+  // }
   & + & {
     border-top: 1px solid $gray-lighter;
   }
@@ -26,7 +26,8 @@ $chart-bar-height: 32px;
   }
   .chart-label-name {
     display: block;
-    font-size: 17px;
+    color: $brand-primary-dark;
+    font-size: 18px;
     line-height: 1;
   }
   .chart-label-party {
@@ -71,6 +72,39 @@ $chart-bar-height: 32px;
     border: 1px solid rgba($brand-primary, 0.5);
     box-sizing: content-box;
     z-index: 100;
+  }
+}
+
+.chart-group {
+  margin-top: 20px;
+
+  & + & {
+    margin-top: 80px;
+  }
+  .chart-group-details {
+    padding-bottom: 17px;
+    border-bottom: 1px solid $gray-lighter;
+  }
+  .detail-title {
+    margin-right: 0.3em;
+    font-size: 1.9em;
+    font-weight: 500;
+    color: $brand-primary;
+  }
+  .detail-subtitle {
+    font-size: 1.1em;
+    color: #9C9C9C;
+  }
+  .detail-stats {
+    color: $gray-light;
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+}
+
+.chart-settings {
+  .nav-pills > li {
+    float: right;
   }
 }
 

@@ -5,8 +5,9 @@ let _        = require('underscore');
 let d3       = require('d3');
 let Backbone = require('backbone');
 let data     = JSON.parse(require('../data/mp.json'));
-let ChartRowView  = require('../views/ps-chart-row-view');
-let SettingsBar   = require('../views/ps-chart-settings-bar');
+let ChartGroupView  = require('../views/ps-chart-group-view');
+let ChartRowView    = require('../views/ps-chart-row-view');
+let SettingsBar     = require('../views/ps-chart-settings-bar');
 
 let maxAttendence = 115;
 
@@ -63,6 +64,9 @@ module.exports = Backbone.View.extend({
         .each(group => {
           // Set attributes for convenience
           group.party = group.values[0].party;
+          if (groupAttribute == 'grc') {
+            group.grc = group.values[0].grc;
+          }
 
           // Calculate mean of sort attribute for each group
           group.stats = {};
@@ -80,15 +84,32 @@ module.exports = Backbone.View.extend({
 
 
   renderRows: function() {
-    let $rows = _.map(this.getFormattedData(), d => {
-      let row = new ChartRowView({
-        data: d,
-        maxAttendence,
-        meanAttendencePercent: this.meanAttendencePercent,
-        meanSpokenPercent:     this.meanSpokenPercent });
-      return row.el
-    });
-    $('.chart-content').html($rows);
+    let formattedData = this.getFormattedData();
+
+    if (formattedData[0].stats) {
+
+      let $groups = _.map(formattedData, group => {
+        let groupView = new ChartGroupView(_.extend(group, {
+          maxAttendence,
+          meanAttendencePercent: this.meanAttendencePercent,
+          meanSpokenPercent:     this.meanSpokenPercent
+        }));
+        return groupView.el
+      });
+      $('.chart-content').html($groups);
+
+    } else {
+
+      let $rows = _.map(formattedData, d => {
+        let row = new ChartRowView({
+          data: d,
+          maxAttendence,
+          meanAttendencePercent: this.meanAttendencePercent,
+          meanSpokenPercent:     this.meanSpokenPercent });
+        return row.el
+      });
+      $('.chart-content').html($rows);
+    }
   }
 
 });
