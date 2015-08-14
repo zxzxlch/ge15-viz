@@ -9,16 +9,16 @@ let ChartGroupView  = require('../views/ps-chart-group-view');
 let ChartRowView    = require('../views/ps-chart-row-view');
 let SettingsBar     = require('../views/ps-chart-settings-bar');
 
-let maxAttendence = 115;
+let maxAttendance = 115;
 
 module.exports = Backbone.View.extend({
 
   initialize: function(options) {
     // Calculate aggregate stats
-    this.meanAttendence = d3.mean(data, d => d.attendence);
+    this.meanAttendance = d3.mean(data, d => d.attendance);
     this.meanSpoken = d3.mean(data, d => d.spoken);
-    this.meanAttendencePercent = this.meanAttendence / maxAttendence * 100;
-    this.meanSpokenPercent = this.meanSpoken / maxAttendence * 100;
+    this.meanAttendancePercent = this.meanAttendance / maxAttendance * 100;
+    this.meanSpokenPercent = this.meanSpoken / maxAttendance * 100;
 
     // Add settings bar
     this.settingsBar = new SettingsBar({ el: $('.chart-settings') });
@@ -34,18 +34,18 @@ module.exports = Backbone.View.extend({
     // Chart guide
     let $chartGuide = $('.chart-guide');
 
-    let attendencePercent = 80;
+    let attendancePercent = 80;
     let spokenPercent = 40;
 
-    $chartGuide.find('.bar-filled, .tip-attendence').css('width', `${ attendencePercent }%`);
+    $chartGuide.find('.bar-filled, .tip-attendance').css('width', `${ attendancePercent }%`);
     $chartGuide.find('.bar-icon-filled, .tip-spoken').css('width', `${ spokenPercent }%`);
 
-    $chartGuide.find('.marker-1').css('left', `${ this.meanAttendencePercent }%`);
+    $chartGuide.find('.marker-1').css('left', `${ this.meanAttendancePercent }%`);
     $chartGuide.find('.marker-2').css('left', `${ this.meanSpokenPercent }%`);
-    $chartGuide.find('.marker-line-1').css('margin-left', `${ this.meanAttendencePercent }%`);
+    $chartGuide.find('.marker-line-1').css('margin-left', `${ this.meanAttendancePercent }%`);
     $chartGuide.find('.marker-line-2').css('margin-left', `${ this.meanSpokenPercent }%`);
-    $chartGuide.find('.js-stat-mean-attendence-rate').html(this.meanAttendencePercent.toFixed(1));
-    $chartGuide.find('.js-stat-mean-attendence-count').html(Math.round(this.meanAttendence));
+    $chartGuide.find('.js-stat-mean-attendance-rate').html(this.meanAttendancePercent.toFixed(1));
+    $chartGuide.find('.js-stat-mean-attendance-count').html(Math.round(this.meanAttendance));
     $chartGuide.find('.js-stat-mean-spoken-count').html(Math.round(this.meanSpoken));
   },
 
@@ -56,7 +56,7 @@ module.exports = Backbone.View.extend({
 
     let formattedData;
     if (sortAttribute == "spoken/attended") {
-      formattedData = _.sortBy(data, d => (d.spoken / d.attendence)).reverse();
+      formattedData = _.sortBy(data, d => (d.spoken / d.attendance)).reverse();
     } else {
       formattedData = _.sortBy(data, sortAttribute).reverse();
     }
@@ -75,10 +75,10 @@ module.exports = Backbone.View.extend({
 
           // Calculate mean of sort attribute for each group
           group.stats = {};
-          group.stats.attendence = d3.mean(group.values, d => d.attendence);
+          group.stats.attendance = d3.mean(group.values, d => d.attendance);
           group.stats.spoken = d3.mean(group.values, d => d.spoken);
           if (sortAttribute == "spoken/attended") {
-            group.sortValue = d3.mean(group.values, d => (d.spoken / d.attendence));
+            group.sortValue = d3.mean(group.values, d => (d.spoken / d.attendance));
           } else {
             group.sortValue = group.stats[sortAttribute];
           }
@@ -99,8 +99,8 @@ module.exports = Backbone.View.extend({
 
       let $groups = _.map(formattedData, group => {
         let groupView = new ChartGroupView(_.extend(group, {
-          maxAttendence,
-          meanAttendencePercent: this.meanAttendencePercent,
+          maxAttendance,
+          meanAttendancePercent: this.meanAttendancePercent,
           meanSpokenPercent:     this.meanSpokenPercent
         }));
         return groupView.el
@@ -112,8 +112,8 @@ module.exports = Backbone.View.extend({
       let $rows = _.map(formattedData, d => {
         let row = new ChartRowView({
           data: d,
-          maxAttendence,
-          meanAttendencePercent: this.meanAttendencePercent,
+          maxAttendance,
+          meanAttendancePercent: this.meanAttendancePercent,
           meanSpokenPercent:     this.meanSpokenPercent });
         return row.el
       });

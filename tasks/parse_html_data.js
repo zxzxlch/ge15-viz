@@ -13,8 +13,8 @@ function loadHTML(path) {
   $ = jquery(window);
 }
 
-// Load MP attendence data
-loadHTML('./tasks/mp_attendence.html');
+// Load MP attendance data
+loadHTML('./tasks/mp_attendance.html');
 
 // Parse html
 var data = $('tbody tr').map(function(index, elem) {
@@ -23,7 +23,7 @@ var data = $('tbody tr').map(function(index, elem) {
     party: $(cols[0]).html().trim(),
     name: $(cols[1]).html().trim(),
     grc: $(cols[2]).html().trim(),
-    attendence: parseInt($(cols[3]).html())
+    attendance: parseInt($(cols[3]).html())
   };
 }).get();
 

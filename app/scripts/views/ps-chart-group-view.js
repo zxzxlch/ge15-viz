@@ -9,12 +9,12 @@ let template = _.template(require('../templates/ps-chart-group.html'));
 module.exports = Backbone.View.extend({
 
   initialize: function(options) {
-    let { party, grc, stats, values, maxAttendence, meanAttendencePercent, meanSpokenPercent } = options;
+    let { party, grc, stats, values, maxAttendance, meanAttendancePercent, meanSpokenPercent } = options;
 
     let $elem = $(template({
       title:    grc ? grc : party,
       subtitle: grc ? party : '',
-      stats:    `Attended an average of ${Math.round(stats.attendence)} parliament sitting with a ${(stats.attendence / maxAttendence * 100).toFixed(1)}% attendence rate. Spoke up for ${Math.round(stats.spoken)} sittings on average.`
+      stats:    `Attended an average of ${Math.round(stats.attendance)} parliament sitting with a ${(stats.attendance / maxAttendance * 100).toFixed(1)}% attendance rate. Spoke up for ${Math.round(stats.spoken)} sittings on average.`
     }));
     this.setElement($elem);
 
@@ -22,8 +22,8 @@ module.exports = Backbone.View.extend({
     let $rows = _.map(values, d => {
       let row = new ChartRowView({
         data: d,
-        maxAttendence,
-        meanAttendencePercent,
+        maxAttendance,
+        meanAttendancePercent,
         meanSpokenPercent
       });
       return row.el

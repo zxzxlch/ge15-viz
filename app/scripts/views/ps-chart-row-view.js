@@ -8,14 +8,14 @@ let template = _.template(require('../templates/ps-chart-row.html'));
 module.exports = Backbone.View.extend({
 
   initialize: function(options) {
-    let { data, maxAttendence, meanAttendencePercent, meanSpokenPercent } = options;
-    let attendencePercent = data.attendence / maxAttendence * 100;
-    let spokenPercent = data.spoken / maxAttendence * 100;
+    let { data, maxAttendance, meanAttendancePercent, meanSpokenPercent } = options;
+    let attendancePercent = data.attendance / maxAttendance * 100;
+    let spokenPercent = data.spoken / maxAttendance * 100;
 
-    let $elem = $(template({ data: data, attendenceRate: Math.round(attendencePercent * 10) / 10 }));
-    $elem.find('.bar-filled').css('width', `${ attendencePercent }%`);
+    let $elem = $(template({ data: data, attendanceRate: Math.round(attendancePercent * 10) / 10 }));
+    $elem.find('.bar-filled').css('width', `${ attendancePercent }%`);
     $elem.find('.bar-icon-filled').css('width', `${ spokenPercent }%`);
-    $elem.find('.marker-1').css('left', `${ meanAttendencePercent }%`);
+    $elem.find('.marker-1').css('left', `${ meanAttendancePercent }%`);
     $elem.find('.marker-2').css('left', `${ meanSpokenPercent }%`);
 
     this.setElement($elem);
