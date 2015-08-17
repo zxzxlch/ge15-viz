@@ -10,15 +10,15 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css(.) styles/vendor.css -->
+    <!-- build:css(.) /styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- build:css(.tmp) /styles/main.css -->
+    <link rel="stylesheet" href="/styles/main.css">
     <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- build:js /scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
     <!-- Facebook open graph tags -->
@@ -43,7 +43,7 @@
       </div>
     </div>
 
-    <!-- build:js(.) scripts/vendor.js -->
+    <!-- build:js(.) /scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
@@ -51,7 +51,7 @@
     <!-- endbuild -->
 
     
-    <!-- build:js(.) scripts/plugins.js -->
+    <!-- build:js(.) /scripts/plugins.js -->
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
@@ -67,9 +67,9 @@
     <!-- endbuild -->
     
     {{#with buildScripts~}}
-      <!-- build:js(.tmp) scripts/{{ main }}.js -->
+      <!-- build:js(.tmp) /scripts/{{ main }}.js -->
       {{#each scripts~}}
-        <script src="scripts/{{ this }}.js"></script>
+        <script src="/scripts/{{ this }}.js"></script>
       {{/each~}}
       <!-- endbuild -->
     {{~/with}}
