@@ -40,6 +40,10 @@ module.exports = function (grunt) {
         files: ['<%= config.app %>/scripts/{,*/}*'],
         tasks: ['browserify']
       },
+      assemble: {
+       files: ['<%= config.app %>/**/*.hbs'],
+       tasks: ['assemble:dist']
+      },
       babelTest: {
         files: ['test/spec/{,*/}*.js'],
         tasks: ['babel:test', 'test:watch']
@@ -164,9 +168,12 @@ module.exports = function (grunt) {
     // Browserify scripts after Babel
     browserify: {
       main: {
-        files: {
-          '.tmp/scripts/parliament-sittings-bundled.js': [ '<%= config.app %>/scripts/parliament-sittings.js' ]
-        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/scripts',
+          src: ['parliament-sittings.js'],
+          dest: '.tmp/scripts'
+        }],
         options: {
           transform: [
             'babelify',
@@ -176,6 +183,24 @@ module.exports = function (grunt) {
             debug: true
           }
         }
+      }
+    },
+
+    // Generate html files from templates
+    assemble: {
+      options: {
+        layout:       'layout.hbs',
+        layoutdir:    '<%= config.app %>/templates/layouts',
+        assets:       'dist/images',
+        partials:     ['<%= config.app %>/templates/partials/*.hbs'],
+        data:         '<%= config.app %>/scripts/data/*.json',
+        siteName:     'GE2015 by the Numbers',
+      },
+      dist: {
+        expand: true,
+        cwd:    '<%= config.app %>',
+        src:    ['**/*.hbs', '!templates/**'],
+        dest:   '<%= config.app %>'
       }
     },
     
@@ -230,7 +255,7 @@ module.exports = function (grunt) {
     // Automatically inject Bower components into the HTML file
     wiredep: {
       app: {
-        src: ['<%= config.app %>/index.html', '<%= config.app %>/parliament-sittings.html'],
+        src: ['<%= config.app %>/templates/layout.hbs'],
         exclude: ['bootstrap.js'],
         ignorePath: /^(\.\.\/)*\.\./
       },
@@ -260,7 +285,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= config.dist %>'
       },
-      src: ['<%= config.app %>/index.html', '<%= config.app %>/parliament-sittings.html']
+      src: ['<%= config.app %>/usemin-prepare.html']
     },
 
     // Performs rewrites based on rev and the useminPrepare configuration
@@ -359,7 +384,8 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
-            '{,*/}*.html',
+            '**/*.html',
+            '!usemin-prepare.html',
             'styles/fonts/{,*/}*.*'
           ]
         }, {
@@ -408,6 +434,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-browserify');
+  grunt.loadNpmTasks('assemble');
 
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
@@ -421,6 +448,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'postcss',
+      'assemble:dist',
       'browserSync:livereload',
       'watch'
     ]);
@@ -450,6 +478,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
+    'assemble:dist',
     'useminPrepare',
     'concurrent:dist',
     'postcss',
