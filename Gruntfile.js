@@ -433,9 +433,6 @@ module.exports = function (grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-browserify');
-  grunt.loadNpmTasks('assemble');
-
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 
