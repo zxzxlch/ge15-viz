@@ -1,0 +1,34 @@
+---
+title: Who’s in Parliament?
+mps:  <%= profiles.data %>
+---
+<!-- Introduction -->
+<div class="introduction">
+
+  <h1 class="heading">{{ title }}</h1>
+  <h2 class="heading-subtitle">Current members of parliament and upcoming candidates</h2>
+
+  <p>Here's a list of current members of parliament and upcoming candidates.</p>
+
+</div>
+
+<!-- Chart -->
+<div class="row">
+  {{#each mps}}
+    <div class="col-sm-6">
+      <div class="profile-card panel panel-default">
+        <div class="panel-body">
+          <div class="profile-col-left">
+            <div class="profile-image-thumbnail" style="background-image: url(/images/mp/{{ hyphenate (lowercase name) }}.png)"></div>
+            <div class="profile-party-logo {{ party }}"></div>
+          </div>
+          <div class="profile-details">
+            <div class="profile-name">{{ name }}</div>
+            <div class="profile-position">{{ position }}</div>
+            <div class="profile-division">{{ constituency.division }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>

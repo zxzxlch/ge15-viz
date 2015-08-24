@@ -1,0 +1,75 @@
+// _profiles.scss
+
+$profile-image-thumbnail-size: 70px;
+$party-logo-size: 28px;
+
+.profile-card {
+  max-width: 400px;
+  height: 120px;
+  
+  .panel-body {
+    @include display-flex;
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.profile-col-left {
+  @include display-flex;
+  @include flex-direction(column);
+  @include flex(0 0 $profile-image-thumbnail-size);
+  margin-right: 15px;
+}
+
+.profile-image-thumbnail {
+  width: $profile-image-thumbnail-size;
+  height: $profile-image-thumbnail-size;
+  margin-right: $profile-image-thumbnail-size * 0.6;
+  overflow: hidden;
+  border-radius: 50%;
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.profile-party-logo {
+  @include align-self(flex-end);
+  width: $party-logo-size;
+  height: $party-logo-size;
+  margin-top: -$party-logo-size * 0.6;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  border: 1px solid $gray-lighter;
+
+  &.pap {
+    background-color: white;
+    background-image: url(/images/party-logos/pap-logo.png);
+  }
+}
+
+.profile-details {
+  @include flex(1 1);
+}
+
+.profile-name {
+  margin-bottom: 0.1em;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.profile-position, .profile-division {
+  margin: 0.3em 0;
+  font-size: 15px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profile-position {
+}
+
+.profile-division {
+}
