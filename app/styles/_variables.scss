@@ -18,13 +18,14 @@ $brand-primary-dark:        darken($brand-primary, 7%);
 
 $body-bg:                   $gray-lighter;
 $text-color:                #505050;
-$heading-text-color:        #7E94AD;
+$heading-text-color:        $gray-dark;
 
 $link-color:                $brand-primary;
 $link-hover-color:          darken($link-color, 15%);
 $link-hover-decoration:     underline;
 
 $font-size-base:            17px;
+$font-family-alt:           'Montserrat';
 $chart-font-size:           14px;
 
 $blockquote-font-size:      $font-size-base;

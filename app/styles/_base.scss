@@ -2,9 +2,12 @@
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
   padding-bottom: 20px;
-  background-color: $gray-lighter;
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-alt; 
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -15,15 +18,15 @@ body {
 }
 
 /* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
-
-  /* Make the masthead heading the same height as the navigation */
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
+header {
+  margin-bottom: 45px;
+  
+  h1 {
+    margin: 30px 0 13px;
+    color: #FF5050;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2.7px;
   }
 }
 
@@ -39,23 +42,23 @@ body {
   margin: 30px 0;
 }
 
-.heading {
-  color: $heading-text-color;
-  font-size: 46px;
-  line-height: 1;
-}
-
-.heading-subtitle {
-  margin-top: 0;
-  line-height: 34px;
-  margin-bottom: 17px;
-  font-size: 27px;
-  color: $heading-text-color;
-  font-weight: normal;
-}
-
 .introduction {
   margin-bottom: 80px;
+
+  .heading {
+    color: $heading-text-color;
+    font-size: 46px;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .heading-subtitle {
+    margin-top: 0 0 17px;
+    line-height: 34px;
+    font-size: 25px;
+    color: $heading-text-color;
+    font-weight: normal;
+  }
 }
 
 /* Responsive: Portrait tablets and up */
