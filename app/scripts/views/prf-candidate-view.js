@@ -9,6 +9,14 @@ module.exports = Backbone.View.extend({
 
   initialize: function(options) {
     this.$el.attr('class', 'candidate candidate-face');
+
+    // Tooltip
+    this.$el.
+      attr('data-toggle', 'tooltip').
+      attr('title', this.model.get('name'));
+
+    // Use jQuery loaded from page with Bootstrap
+    jQuery(this.el).tooltip({ placement:  'bottom' });
   },
 
   render: function () {
