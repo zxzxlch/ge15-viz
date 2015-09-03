@@ -52,6 +52,7 @@ module.exports = Backbone.View.extend({
 
       // Create candidate
       let candidate = new Candidate(d);
+      candidate.party = party;
       party.candidates.add(candidate);
 
       return candidate;
@@ -59,7 +60,9 @@ module.exports = Backbone.View.extend({
 
     // Create candidate views
     this.candidateViews = this.candidates.map((model) => {
-      return new CandidateView({ model: model });
+      let view = new CandidateView({ model: model });
+      model.view = view;
+      return view;
     });
 
     // Router
@@ -69,6 +72,9 @@ module.exports = Backbone.View.extend({
     });
     this.listenTo(router, 'route:faces', (query) => this.showFaces(query));
     this.listenTo(router, 'route:wards', (query) => this.showWards(query));
+
+    // Events
+    this.listenTo(this.settingsView, 'search', this.search);
   },
 
   showFaces: function (query) {
@@ -84,7 +90,7 @@ module.exports = Backbone.View.extend({
     if (query.sort == 'party') {
       // Get candidates from parties collection
       sortedCandidateViews = _.chain(this.parties.models).
-        map(party => party.candidates.models).
+        pluck('candidates.models').
         flatten();
     } else {
       // A-Z name sort
@@ -92,11 +98,7 @@ module.exports = Backbone.View.extend({
     }
 
     sortedCandidateViews = sortedCandidateViews.
-      map(candidate => {
-        return _.find(this.candidateViews, view => {
-          return view.model.id == candidate.id;
-        });
-      }).
+      pluck('view').
       map(view => view.render().el);
 
     this.$vizContent.html(sortedCandidateViews.value());
@@ -105,6 +107,10 @@ module.exports = Backbone.View.extend({
   showWards: function (query) {
     if (query) query = Common.parseQueryString(query);
 
+  },
+
+  search: function (query) {
+    this.candidates.invoke('setFilter', query);
   }
 
 });

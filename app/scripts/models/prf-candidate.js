@@ -6,6 +6,8 @@ let _        = require('lodash'),
 /**
  * @namespace
  * @property {string}   id
+ * @property {Backbone.Model} party
+ * @property {Backbone.View}  view
  * @property {string}   attributes.name
  * @property {string}   attributes.nameNative
  * @property {string}   attributes.division
@@ -24,7 +26,7 @@ let _        = require('lodash'),
  * @property {string}   attributes.links.wikipedia
  * @property {string}   attributes.links.facebook
  * @property {string}   attributes.links.cv
- * @property {Backbone.Model} attributes.party
+ * @method setFilter
  */
 module.exports = Backbone.Model.extend({
 
@@ -46,6 +48,24 @@ module.exports = Backbone.Model.extend({
       'email',
       'links'
     );
+  },
+
+  setFilter: function (query) {
+    let re = new RegExp(query, 'i');
+
+    // Filter name, nameNative, party, division
+    let matched = _.chain(this.attributes).
+      pick('name', 'nameNative', 'division').
+      values().
+      thru(values => {
+        return values.concat(this.party.get('name'));
+      }, this).
+      any((value, key) => {
+        return re.test(value);
+      }).
+      value();
+
+    this.trigger('filter', !matched);
   }
 
 });

@@ -71,7 +71,7 @@ $candidate-card-party-logo-size: 28px;
 }
 
 
-// Face wall
+// Faces
 
 .viz-profiles-face .viz-content {
   @include display-flex;
@@ -85,6 +85,10 @@ $candidate-card-party-logo-size: 28px;
   width: $candidate-face-portrait-thumbnail-size;
   height: $candidate-face-portrait-thumbnail-size;
   margin: 0 $candidate-face-gutter-h $candidate-face-gutter-v 0;
+
+  &.dim {
+    opacity: 0.2;
+  }
 }
 
 .candidate-face .candidate-image-thumbnail {
