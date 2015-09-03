@@ -3,12 +3,14 @@
 let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
+    Common   = require('../lib/common'),
     CandidateView  = require('../views/prf-candidate-view'),
     SettingsView   = require('../views/prf-settings-view'),
     Candidate      = require('../models/prf-candidate'),
     Candidates     = require('../collections/prf-candidates'),
     Party          = require('../models/prf-party'),
     Parties        = require('../collections/prf-parties'),
+    router         = require('../routers/prf-router'),
     candidatesData = JSON.parse(require('../data/candidates.json')).data;
 
 /**
@@ -60,29 +62,46 @@ module.exports = Backbone.View.extend({
       return new CandidateView({ model: model });
     });
 
-    this.render();
+    // Router
+    this.listenTo(router, 'route:root', () => this.showFacewall() );
+    this.listenTo(router, 'route:facewall', (query) => this.showFacewall(query));
+    this.listenTo(router, 'route:wards', (query) => this.showWards(query));
   },
 
-  render: function () {
-    this.$viz.addClass('viz-profiles-face');
+  showFacewall: function (query) {
+    if (query) query = Common.parseQueryString(query);
+    else query = {};
+    
+    this.$viz.removeClass('viz-profiles-wards').
+      addClass('viz-profiles-face');
 
     // Get candidate views from parties
-    // let sortedCandidateViews = _.chain(this.parties.models).
-    //   map(party => party.candidates.models).
-    //   flatten().
-    let sortedCandidateViews = _.chain(this.candidates.models).
+    let sortedCandidateViews;
+
+    if (query.sort == 'party') {
+      // Get candidates from parties collection
+      sortedCandidateViews = _.chain(this.parties.models).
+        map(party => party.candidates.models).
+        flatten();
+    } else {
+      // A-Z name sort
+      sortedCandidateViews = _.chain(this.candidates.models);
+    }
+
+    sortedCandidateViews = sortedCandidateViews.
       map(candidate => {
         return _.find(this.candidateViews, view => {
           return view.model.id == candidate.id;
         });
       }).
-      map(view => {
-        return view.render().el;
-      }).
-      value();
+      map(view => view.render().el);
 
-    this.$vizContent.html(sortedCandidateViews);
-    return this;
+    this.$vizContent.html(sortedCandidateViews.value());
+  },
+
+  showWards: function (query) {
+    if (query) query = Common.parseQueryString(query);
+
   }
 
 });
