@@ -4,6 +4,7 @@ let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
     CandidateView  = require('../views/prf-candidate-view'),
+    SettingsView   = require('../views/prf-settings-view'),
     Candidate      = require('../models/prf-candidate'),
     Candidates     = require('../collections/prf-candidates'),
     Party          = require('../models/prf-party'),
@@ -18,7 +19,11 @@ let $        = require('jquery'),
 module.exports = Backbone.View.extend({
 
   initialize: function(options) {
-    this.$vizContent = $('.viz-content');
+    this.$viz = $('.viz');
+    this.$vizContent = $('<div>').
+      attr('class', 'viz-content');
+    this.settingsView = new SettingsView();
+    this.$viz.html([this.settingsView.el, this.$vizContent]);
 
     // Create candidate and party models
     this.parties = new Parties();
@@ -59,10 +64,13 @@ module.exports = Backbone.View.extend({
   },
 
   render: function () {
+    this.$viz.addClass('viz-profiles-face');
+
     // Get candidate views from parties
-    let sortedCandidateViews = this.parties.map(party => party.candidates.models);
-    sortedCandidateViews = _.chain(sortedCandidateViews).
-      flatten().
+    // let sortedCandidateViews = _.chain(this.parties.models).
+    //   map(party => party.candidates.models).
+    //   flatten().
+    let sortedCandidateViews = _.chain(this.candidates.models).
       map(candidate => {
         return _.find(this.candidateViews, view => {
           return view.model.id == candidate.id;

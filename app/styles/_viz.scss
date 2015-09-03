@@ -1,0 +1,27 @@
+/* _viz.scss */
+
+.viz-settings {
+  margin-bottom: 40px;
+
+  label {
+    font-weight: normal;
+  }
+}
+
+.viz-settings-perspectives {
+  .heading {
+    margin: 10px 0;
+    font-family: $font-family-alt;
+    font-size: 20px;
+  }
+}
+
+.viz-settings-filters {
+  @include display-flex;
+  @include justify-content(space-between);
+}
+
+.viz-settings-search input {
+  display: inline-block;
+  width: 200px;
+}

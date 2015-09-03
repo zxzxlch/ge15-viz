@@ -2,6 +2,8 @@
 
 $candidate-face-portrait-thumbnail-size: 90px;
 $candidate-face-party-logo-size: 32px;
+$candidate-face-gutter-h: 12px;
+$candidate-face-gutter-v: 30px;
 $candidate-card-portrait-thumbnail-size: 70px;
 $candidate-card-party-logo-size: 28px;
 
@@ -71,11 +73,18 @@ $candidate-card-party-logo-size: 28px;
 
 // Face wall
 
+.viz-profiles-face .viz-content {
+  @include display-flex;
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  margin-right: -$candidate-face-gutter-h;
+}
+
 .candidate-face {
-  display: inline-block;
+  // display: inline-block;
   width: $candidate-face-portrait-thumbnail-size;
   height: $candidate-face-portrait-thumbnail-size;
-  margin: 0 10px 10px 0;
+  margin: 0 $candidate-face-gutter-h $candidate-face-gutter-v 0;
 }
 
 .candidate-face .candidate-image-thumbnail {

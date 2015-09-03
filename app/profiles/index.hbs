@@ -20,9 +20,11 @@ buildScripts:
 </div>
 
 <!-- Chart -->
-<div class="row">
-  <div class="viz-content col-xs-12">
-    <noscript>
+<div class="viz viz-profiles">
+  <noscript>
+    <div class="viz-settings">
+    </div>
+    <div class="viz-content">
       {{#each data~}}
         <div class="candidate candidate-card" data-id="{{ id }}">
           <div class="col-sm-6">
@@ -99,8 +101,8 @@ buildScripts:
               {{~/with}}
             </div>
           </div>
-        </div>
-      {{~/each}}
-    </noscript>
+        {{~/each}}
+      </div>
+  </noscript>
   </div>
 </div>
