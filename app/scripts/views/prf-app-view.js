@@ -63,12 +63,15 @@ module.exports = Backbone.View.extend({
     });
 
     // Router
-    this.listenTo(router, 'route:root', () => this.showFacewall() );
-    this.listenTo(router, 'route:facewall', (query) => this.showFacewall(query));
+    this.listenTo(router, 'route:root', () => {
+      router.navigate('faces', { replace: true });
+      this.showFaces();
+    });
+    this.listenTo(router, 'route:faces', (query) => this.showFaces(query));
     this.listenTo(router, 'route:wards', (query) => this.showWards(query));
   },
 
-  showFacewall: function (query) {
+  showFaces: function (query) {
     if (query) query = Common.parseQueryString(query);
     else query = {};
     

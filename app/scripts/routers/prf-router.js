@@ -9,9 +9,10 @@ let $        = require('jquery'),
 let Router = Backbone.Router.extend({
 
   routes: {
-    '':                   'root',
-    'facewall(?*query)':  'faces',
-    'wards(?*query)':     'wards'
+    '':               'root',
+    'faces(?*query)': 'faces',
+    'wards(?*query)': 'wards',
+    '*unknown'      : 'root'
   },
 
   setQuery: function (query) {
