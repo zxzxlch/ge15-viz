@@ -1,92 +1,106 @@
 ---
+
 title: GE2015 Candidates
+
+description: >
+  List of candidates for Singapore's General Election 2015.
+
 data: <%= candidates.data %>
+
+buildScripts:
+  main:     'profiles-bundled'
+  scripts:  ['profiles']
+
 ---
 <!-- Introduction -->
 <div class="introduction">
   <h1 class="heading">{{ title }}</h1>
   <h2 class="heading-subtitle">Who's contesting in this year’s general election?</h2>
-  <p>Here's a list of current members of parliament and upcoming candidates.</p>
+  <p>List of candidates for Singapore's General Election 2015.</p>
 </div>
 
 <!-- Chart -->
 <div class="row">
-  {{#each data~}}
-    <div class="col-sm-6">
-      <div class="candidate-card">
-        <div class="candidate-col-left">
-          <div class="candidate-image-thumbnail" style="background-image: url(/images/candidates/{{ id }}.png)"></div>
-          <div class="candidate-party-logo {{ partyId }}"></div>
-        </div>
-        <div class="candidate-details">
-          <div class="candidate-name">
-            {{~  name ~}}
-            {{#if nameNative}}<span class="candidate-name-native">{{ nameNative }}</span>{{/if}}
-          </div>
-          <div class="candidate-card-row candidate-division">{{  division }}</div>
-          <div class="candidate-card-row">
-            {{#if age}}<span class="candidate-age">Age {{ age }}</span>{{/if}}
-            {{#if religion}}<span class="candidate-religion">{{ religion }}</span>{{/if}}
-          </div>
-          <div class="candidate-card-row">
-            {{#if partyRoles~}}
-              <span class="candidate-party-roles candidate-row-list">
-                <span class="candidate-row-list-heading">Party Roles</span>
-                <ul>
-                  {{#each partyRoles ~}}
-                    <li>{{this}}</li>
-                  {{~/each}}
-                </ul>
-              </span>
-            {{~/if}}
-          </div>
-          <div class="candidate-card-row">
-            {{#if occupation~}}
-              <span class="candidate-occupation candidate-row-list">
-                <span class="candidate-row-list-heading">Occupation</span>
-                <ul>
-                  {{#each occupation ~}}
-                    <li>{{this}}</li>
-                  {{~/each}}
-                </ul>
-              </span>
-            {{~/if}}
-          </div>
-          <div class="candidate-card-row">
-            {{#if almaMater~}}
-              <span class="candidate-alma-mater candidate-row-list">
-                <span class="candidate-row-list-heading">Alma Mater</span>
-                <ul>
-                  {{#each almaMater ~}}
-                    <li>{{this}}</li>
-                  {{~/each}}
-                </ul>
-              </span>
-            {{~/if}}
-          </div>
-          <div class="candidate-card-row">
-            {{#if education~}}
-              <span class="candidate-education candidate-row-list">
-                <span class="candidate-row-list-heading">Education</span>
-                <ul>
-                  {{#each education ~}}
-                    <li>{{this}}</li>
-                  {{~/each}}
-                </ul>
-              </span>
-            {{~/if}}
-          </div>
-          {{#with links~}}
-            <div class="candidate-card-row candidate-links">
-              {{#if partyProfile}}<a class="candidate-party-profile" href="{{ partyProfile }}">Party Webpage</a>{{/if}}
-              {{#if wikipedia}}<a class="candidate-wikipedia" href="{{ wikipedia }}">Wikipedia</a>{{/if}}
-              {{#if facebook}}<a class="candidate-facebook" href="{{ facebook }}">Facebook</a>{{/if}}
-              {{#if ../email}}<a class="candidate-email" href="mailto:{{ ../email }}">Email</a>{{/if}}
-              {{#if cv}}<a class="candidate-cv" href="{{ cv }}">CV</a>{{/if}}
+  <div class="viz-content col-xs-12">
+    <noscript>
+      {{#each data~}}
+        <div class="candidate candidate-card" data-id="{{ id }}">
+          <div class="col-sm-6">
+            <div class="candidate-avatar">
+              <div class="candidate-image-thumbnail"{{#if imageUrl}} style="background-image: url(/images/candidates/{{ id }}.png)"{{/if}}></div>
+              <div class="candidate-party-logo {{ partyId }}"></div>
             </div>
-          {{~/with}}
+            <div class="candidate-details">
+              <div class="candidate-name">
+                {{~  name ~}}
+                {{#if nameNative}}<span class="candidate-name-native">{{ nameNative }}</span>{{/if}}
+              </div>
+              <div class="candidate-card-row candidate-division">{{  division }}</div>
+              <div class="candidate-card-row">
+                {{#if age}}<span class="candidate-age">Age {{ age }}</span>{{/if}}
+                {{#if religion}}<span class="candidate-religion">{{ religion }}</span>{{/if}}
+              </div>
+              <div class="candidate-card-row">
+                {{#if partyRoles~}}
+                  <span class="candidate-party-roles candidate-row-list">
+                    <span class="candidate-row-list-heading">Party Roles</span>
+                    <ul>
+                      {{#each partyRoles ~}}
+                        <li>{{this}}</li>
+                      {{~/each}}
+                    </ul>
+                  </span>
+                {{~/if}}
+              </div>
+              <div class="candidate-card-row">
+                {{#if occupation~}}
+                  <span class="candidate-occupation candidate-row-list">
+                    <span class="candidate-row-list-heading">Occupation</span>
+                    <ul>
+                      {{#each occupation ~}}
+                        <li>{{this}}</li>
+                      {{~/each}}
+                    </ul>
+                  </span>
+                {{~/if}}
+              </div>
+              <div class="candidate-card-row">
+                {{#if almaMater~}}
+                  <span class="candidate-alma-mater candidate-row-list">
+                    <span class="candidate-row-list-heading">Alma Mater</span>
+                    <ul>
+                      {{#each almaMater ~}}
+                        <li>{{this}}</li>
+                      {{~/each}}
+                    </ul>
+                  </span>
+                {{~/if}}
+              </div>
+              <div class="candidate-card-row">
+                {{#if education~}}
+                  <span class="candidate-education candidate-row-list">
+                    <span class="candidate-row-list-heading">Education</span>
+                    <ul>
+                      {{#each education ~}}
+                        <li>{{this}}</li>
+                      {{~/each}}
+                    </ul>
+                  </span>
+                {{~/if}}
+              </div>
+              {{#with links~}}
+                <div class="candidate-card-row candidate-links">
+                  {{#if partyProfile}}<a class="candidate-party-profile" href="{{ partyProfile }}">Party Webpage</a>{{/if}}
+                  {{#if wikipedia}}<a class="candidate-wikipedia" href="{{ wikipedia }}">Wikipedia</a>{{/if}}
+                  {{#if facebook}}<a class="candidate-facebook" href="{{ facebook }}">Facebook</a>{{/if}}
+                  {{#if ../email}}<a class="candidate-email" href="mailto:{{ ../email }}">Email</a>{{/if}}
+                  {{#if cv}}<a class="candidate-cv" href="{{ cv }}">CV</a>{{/if}}
+                </div>
+              {{~/with}}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  {{~/each}}
+      {{~/each}}
+    </noscript>
+  </div>
 </div>

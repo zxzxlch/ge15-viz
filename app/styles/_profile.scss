@@ -1,29 +1,19 @@
 // _profile.scss
 
-$candidate-image-thumbnail-size: 70px;
-$party-logo-size: 28px;
+$candidate-face-portrait-thumbnail-size: 90px;
+$candidate-face-party-logo-size: 32px;
+$candidate-card-portrait-thumbnail-size: 70px;
+$candidate-card-party-logo-size: 28px;
 
-.candidate-card {
-  @include display-flex;
-  max-width: 400px;
-  height: 120px;
-  margin-bottom: 22px;
-  padding: 16px 13px;
-  border: 2px solid #EFEFEF;
-  border-radius: 13px;
-}
 
-.candidate-col-left {
+// Global
+
+.candidate-avatar {
   @include display-flex;
   @include flex-direction(column);
-  @include flex(0 0 $candidate-image-thumbnail-size);
-  margin-right: 15px;
 }
 
 .candidate-image-thumbnail {
-  width: $candidate-image-thumbnail-size;
-  height: $candidate-image-thumbnail-size;
-  margin-right: $candidate-image-thumbnail-size * 0.6;
   overflow: hidden;
   border-radius: 50%;
   background-color: $gray-lighter;
@@ -34,9 +24,6 @@ $party-logo-size: 28px;
 
 .candidate-party-logo {
   @include align-self(flex-end);
-  width: $party-logo-size;
-  height: $party-logo-size;
-  margin-top: -$party-logo-size * 0.6;
   border-radius: 50%;
   background-color: white;
   background-position: center;
@@ -79,6 +66,58 @@ $party-logo-size: 28px;
   &.ind {
     border-width: 6px;
   }
+}
+
+
+// Face wall
+
+.candidate-face {
+  display: inline-block;
+  width: $candidate-face-portrait-thumbnail-size;
+  height: $candidate-face-portrait-thumbnail-size;
+  margin: 0 10px 10px 0;
+}
+
+.candidate-face .candidate-image-thumbnail {
+  width: $candidate-face-portrait-thumbnail-size;
+  height: $candidate-face-portrait-thumbnail-size;
+  margin-right: $candidate-face-portrait-thumbnail-size * 0.6;
+}
+
+.candidate-face .candidate-party-logo {
+  width: $candidate-face-party-logo-size;
+  height: $candidate-face-party-logo-size;
+  margin-top: -$candidate-face-party-logo-size * 0.875;
+}
+
+
+// Cards
+
+.candidate-card {
+  @include display-flex;
+  max-width: 400px;
+  height: 120px;
+  margin-bottom: 22px;
+  padding: 16px 13px;
+  border: 2px solid #EFEFEF;
+  border-radius: 13px;
+}
+
+.candidate-card .candidate-avatar {
+  @include flex(0 0 $candidate-card-portrait-thumbnail-size);
+  margin-right: 15px;
+}
+
+.candidate-card .candidate-image-thumbnail {
+  width: $candidate-card-portrait-thumbnail-size;
+  height: $candidate-card-portrait-thumbnail-size;
+  margin-right: $candidate-card-portrait-thumbnail-size * 0.6;
+}
+
+.candidate-card .candidate-party-logo {
+  width: $candidate-card-party-logo-size;
+  height: $candidate-card-party-logo-size;
+  margin-top: -$candidate-card-party-logo-size * 0.6;
 }
 
 .candidate-details {
