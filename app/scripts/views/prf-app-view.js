@@ -6,6 +6,7 @@ let $        = require('jquery'),
     Common   = require('../lib/common'),
     CandidateView  = require('../views/prf-candidate-view'),
     SettingsView   = require('../views/prf-settings-view'),
+    FacesPartySectionView = require('../views/prf-faces-party-section-view'),
     Candidate      = require('../models/prf-candidate'),
     Candidates     = require('../collections/prf-candidates'),
     Party          = require('../models/prf-party'),
@@ -84,29 +85,52 @@ module.exports = Backbone.View.extend({
     this.$viz.removeClass('viz-profiles-wards').
       addClass('viz-profiles-face');
 
-    // Get candidate views from parties
-    let sortedCandidateViews;
+    if (query.view == 'teams') {
+      // Hide sort filters
+      this.settingsView.toggleSortButtons(false);
 
-    if (query.sort == 'party') {
-      // Get candidates from parties collection
-      sortedCandidateViews = _.chain(this.parties.models).
-        pluck('candidates.models').
-        flatten();
-    } else {
-      // A-Z name sort
-      sortedCandidateViews = _.chain(this.candidates.models);
+      // Teams view
+      let partySectionViews = this.parties.map(party => {
+        let view = new FacesPartySectionView({ model: party });
+        return view.render().el;
+      });
+
+      this.$vizContent.html(partySectionViews);
+    } 
+    else {
+      // Hide sort filters
+      this.settingsView.toggleSortButtons(true);
+
+      // Default view
+      // Get candidate views from parties
+      let sortedCandidateViews;
+
+      if (query.sort == 'party') {
+        // Get candidates from parties collection
+        sortedCandidateViews = _.chain(this.parties.models).
+          pluck('candidates.models').
+          flatten();
+      } else {
+        // A-Z name sort
+        sortedCandidateViews = _.chain(this.candidates.models);
+      }
+
+      sortedCandidateViews = sortedCandidateViews.
+        pluck('view').
+        map(view => view.render().el);
+
+      let $faceGroup = $('<div>').attr('class', 'candidate-face-group');
+      $faceGroup.html(sortedCandidateViews.value());
+
+      this.$vizContent.html($faceGroup);
     }
-
-    sortedCandidateViews = sortedCandidateViews.
-      pluck('view').
-      map(view => view.render().el);
-
-    this.$vizContent.html(sortedCandidateViews.value());
   },
 
   showWards: function (query) {
     if (query) query = Common.parseQueryString(query);
-
+    
+    this.$viz.removeClass('viz-profiles-face').
+      addClass('viz-profiles-wards');
   },
 
   search: function (query) {
