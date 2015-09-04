@@ -1,0 +1,10 @@
+<div class="party-section-heading">
+  <div class="party-logo <%= party.get('id') %>"></div>
+  <div>
+    <div class="party-title"><%= party.get('name') %></div>
+    <div class="party-section-description">
+      Fielding <span class="no-break"><%= party.candidates.length %> candidates</span>, contesting <span class="no-break"><%= numWards %> wards</span> <span class="no-break">(<%= numGRC %> group,</span> <span class="no-break"><%= numSMC %> single)</span>
+    </div>
+  </div>
+</div>
+<div class="party-section-candidates candidate-face-group"></div>
