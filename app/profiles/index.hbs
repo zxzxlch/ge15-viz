@@ -106,3 +106,9 @@ buildScripts:
     </div>
   </noscript>
 </div>
+
+<div class="hide js-image-ref">
+  {{#each data~}}
+    <img data-candidate-id="{{ id }}" src="/images/candidates/thumbs/{{ id }}.png">
+  {{/each}}
+</div>

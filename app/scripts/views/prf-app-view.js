@@ -22,6 +22,14 @@ let $        = require('jquery'),
 module.exports = Backbone.View.extend({
 
   initialize: function(options) {
+    // Get image references
+    var imageReferences = _.chain($('.js-image-ref img')).
+      reduce((result, elem) => {
+        result[$(elem).data('candidate-id')] = $(elem).attr('src');
+        return result;
+      }, {}).
+      value();
+
     this.$viz = $('.viz');
     this.$vizContent = $('<div>').
       attr('class', 'viz-content');
@@ -53,6 +61,7 @@ module.exports = Backbone.View.extend({
 
       // Create candidate
       let candidate = new Candidate(d);
+      candidate.set('imagePath', imageReferences[candidate.id]);
       candidate.party = party;
       party.candidates.add(candidate);
 

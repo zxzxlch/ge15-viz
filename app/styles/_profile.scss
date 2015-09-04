@@ -119,28 +119,47 @@ $faces-party-section-logo-size: 60px;
     padding-top: 40px;
     margin-top: 60px;
   }
-  .party-logo {
-    width: $faces-party-section-logo-size;
-    height: $faces-party-section-logo-size;
-    margin-right: 12px;
-  }
   .party-section-heading {
     @include display-flex;
     @include align-items(center);
     margin-bottom: 40px;
   }
+  .party-logo {
+    @include flex(0 0 $faces-party-section-logo-size);
+    width: $faces-party-section-logo-size;
+    height: $faces-party-section-logo-size;
+    margin-right: 12px;
+  }
   .party-title {
     font-family: $font-family-alt;
-    font-size: 27px;
+    font-size: 25px;
+    line-height: 1.1;
+    margin-bottom: 0.1em;
   }
   .party-section-description {
     font-size: 16px;
   }
   .candidate-face-group {
-    margin-bottom: -$faces-candidate-gutter-h;
+    margin-bottom: -$faces-candidate-gutter-v;
   }
   .candidate-face .party-logo {
     display: none;
+  }
+}
+
+.viz-profiles-face .faces-division {
+  .heading {
+    margin-bottom: 20px;
+    margin-left: 5px;
+    font-family: $font-family-alt;
+    text-transform: uppercase;
+    color: #757575;
+  }
+  .candidates-group {
+    margin-bottom: 15px;
+  }
+  .candidate-face {
+    margin-bottom: $faces-candidate-gutter-h;
   }
 }
 

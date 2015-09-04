@@ -3,7 +3,7 @@
   <div>
     <div class="party-title"><%= party.get('name') %></div>
     <div class="party-section-description">
-      Fielding <%= party.candidates.length %> candidates, contesting ? wards (? SMCs, ? GRCs)
+      Fielding <span class="no-break"><%= party.candidates.length %> candidates</span>, contesting <span class="no-break"><%= numWards %> wards</span> <span class="no-break">(<%= numGRC %> group,</span> <span class="no-break"><%= numSMC %> single)</span>
     </div>
   </div>
 </div>

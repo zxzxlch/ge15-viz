@@ -1,5 +1,9 @@
 /* _base.scss */
 
+.no-break {
+  white-space: nowrap;
+}
+
 /* Space out content a bit */
 body {
   padding-bottom: 20px;

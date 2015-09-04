@@ -21,6 +21,7 @@ let _        = require('lodash'),
  * @property {string[]} attributes.almaMater
  * @property {string[]} attributes.education
  * @property {string}   attributes.email
+ * @property {string}   attributes.imagePath
  * @property {object}   attributes.links
  * @property {string}   attributes.links.partyProfile
  * @property {string}   attributes.links.wikipedia

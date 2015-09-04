@@ -1,7 +1,7 @@
 {
   "meta": {
     "count": 181,
-    "lastUpdated": "2015-09-03T03:30:29.963Z"
+    "lastUpdated": "2015-09-04T12:16:03.530Z"
   },
   "data": [{
     "name": "Abdul Rasheed S/O Y Abdul Kuthus",
@@ -10,10 +10,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Abdul Rasheed S/O Y Abdul Kuthus"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/285.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Abdul Rasheed S/O Y Abdul Kuthus"],
+      "lock": {}
     },
+    "age": 74,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/285.jpg",
     "id": "abdul-rasheed-so-y-abdul-kuthus"
   }, {
     "name": "Abu Mohamed",
@@ -22,10 +25,13 @@
     "party": "Singapore Democratic Alliance",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Abu Mohamed"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/344.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Abu Mohamed"],
+      "lock": {}
     },
+    "age": 64,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/344.jpg",
     "id": "abu-mohamed"
   }, {
     "name": "Adrian Sim Tian Hock",
@@ -36,16 +42,17 @@
       "partyProfile": "http://www.wp.sg/adrian-sim-tian-hock/"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190711/wpmp_profile2_adrian.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Adrian Sim Tian Hock"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190711/wpmp_profile2_adrian.jpg", "http://www.channelnewsasia.com/gestatic/images/505.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Adrian Sim Tian Hock"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190711/wpmp_profile2_adrian.jpg",
     "age": 43,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190711/wpmp_profile2_adrian.jpg",
     "education": ["Bachelor’s Degree in Business Administration (Major in Marketing, La Trobe University Australia)"],
-    "occupation": ["Managing Director"],
     "maritalStatus": "Married, 2 children (twin boys, age 8)",
     "nameNative": "沈天福",
+    "occupation": ["Managing Director"],
     "id": "adrian-sim-tian-hock"
   }, {
     "name": "Alex Yam Ziming",
@@ -58,15 +65,16 @@
       "facebook": "http://www.facebook.com/zayam"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AlexYam20150826123203.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Alex Yam Ziming"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AlexYam20150826123203.jpg", "http://www.channelnewsasia.com/gestatic/images/381.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Alex Yam Ziming"],
+      "lock": {}
     },
     "nameNative": "任梓銘",
     "birthdate": "1981-06-19T16:00:00.000Z",
     "age": 34,
-    "email": "ytmps@yewtee.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AlexYam20150826123203.jpg",
+    "email": "ytmps@yewtee.org.sg",
     "id": "alex-yam-ziming"
   }, {
     "name": "Amrin Amin",
@@ -76,19 +84,21 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Amrin_Amin",
       "partyProfile": "https://www.pap.org.sg/Amrin_Amin/Article",
-      "facebook": "http://www.facebook.com/amrin.page",
+      "facebook": "https://www.facebook.com/amrin.page?fref=ts",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Amrin%20Amin_CV_Statement.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AmrinAmin.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Profile80.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap", "papNew"],
-      "names": ["Amrin Amin"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AmrinAmin.jpg", "http://www.channelnewsasia.com/gestatic/images/478.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Profile80.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap", "papNew"],
+      "names": ["Amrin Amin"],
+      "lock": {}
     },
     "occupation": ["Lawyer", "Politician"],
     "birthplace": "Singapore",
     "almaMater": ["Dunman Secondary School", "Tampines Junior College", "National University of Singapore", "Columbia University"],
-    "email": "Amrin.Amin@pap.org.sg",
+    "age": 37,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AmrinAmin.jpg",
+    "email": "Amrin.Amin@pap.org.sg",
     "nameNative": "安宁阿敏",
     "id": "amrin-amin"
   }, {
@@ -102,15 +112,16 @@
       "facebook": "http://www.facebook.com/AmyKhorPage"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AmyKhor.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Amy Khor Lean Suan"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AmyKhor.jpg", "http://www.channelnewsasia.com/gestatic/images/50.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Amy Khor Lean Suan"],
+      "lock": {}
     },
     "nameNative": "许连碹",
     "birthdate": "1958-02-22T16:00:00.000Z",
     "age": 57,
-    "email": "amy_khor@moh.gov.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AmyKhor.jpg",
+    "email": "amy_khor@moh.gov.sg",
     "id": "amy-khor-lean-suan"
   }, {
     "name": "Andy Zhu Laicheng",
@@ -119,10 +130,13 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Andy Zhu Laicheng"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/332.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Andy Zhu Laicheng"],
+      "lock": {}
     },
+    "age": 33,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/332.jpg",
     "id": "andy-zhu-laicheng"
   }, {
     "name": "Ang Hin Kee",
@@ -135,15 +149,16 @@
       "facebook": "http://www.facebook.com/pages/Ang-Hin-Kee/149772861740371"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AngHinKee20150821062059.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Ang Hin Kee"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AngHinKee20150821062059.jpg", "http://www.channelnewsasia.com/gestatic/images/354.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Ang Hin Kee"],
+      "lock": {}
     },
     "birthdate": "1965-10-21T16:00:00.000Z",
-    "age": 49,
+    "age": 50,
     "occupation": ["Politician"],
-    "email": "hinkee@ntuc.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AngHinKee20150821062059.jpg",
+    "email": "hinkee@ntuc.org.sg",
     "id": "ang-hin-kee"
   }, {
     "name": "Ang Wei Neng",
@@ -156,15 +171,16 @@
       "facebook": "http://www.facebook.com/angweineng.mp"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AngWeiNeng.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Ang Wei Neng"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AngWeiNeng.jpg", "http://www.channelnewsasia.com/gestatic/images/415.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Ang Wei Neng"],
+      "lock": {}
     },
     "nameNative": "洪维能",
     "birthdate": "1967-03-30T16:00:00.000Z",
     "age": 48,
-    "email": "weineng.ang@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/AngWeiNeng.jpg",
+    "email": "weineng.ang@gmail.com",
     "id": "ang-wei-neng"
   }, {
     "name": "Ang Yong Guan",
@@ -173,14 +189,33 @@
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": ["https://singfirst99.files.wordpress.com/2014/11/angyongguan.jpg"],
-      "merges": ["wikiElection", "singfirst"],
-      "names": ["Ang Yong Guan"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/453.jpg"],
+      "merges": ["wikiElection", "cna", "singfirst"],
+      "names": ["Ang Yong Guan"],
+      "lock": {}
     },
+    "age": 60,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/453.jpg",
     "occupation": ["Psychiatrist", "Community leader", "Retired army colonel"],
     "partyRoles": ["Chairman"],
-    "imageUrl": "https://singfirst99.files.wordpress.com/2014/11/angyongguan.jpg",
     "id": "ang-yong-guan"
+  }, {
+    "name": "Arthero Lim Tung Hee",
+    "division": "Pasir Ris-Punggol GRC",
+    "partyId": "sda",
+    "party": "Singapore Democratic Alliance",
+    "links": {},
+    "meta": {
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/57.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Lim Tung Hee Arthero", "Arthero Lim Tung Hee"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 60,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/57.jpg",
+    "id": "arthero-lim-tung-hee"
   }, {
     "name": "Baey Yam Keng",
     "division": "Tampines GRC",
@@ -193,8 +228,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/BaeyYamKeng.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Baey_Yam_Keng_at_a_cycling_event_in_Singapore_-_20120923.jpg/220px-Baey_Yam_Keng_at_a_cycling_event_in_Singapore_-_20120923.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Baey Yam Keng"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Baey Yam Keng"],
+      "lock": {}
     },
     "birthdate": "1970-08-30T16:00:00.000Z",
     "age": 45,
@@ -212,18 +248,43 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Benjamin_Pwee"
     },
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Benjamin Pwee"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/426.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Benjamin Pwee"],
+      "lock": {}
     },
     "birthdate": "1968",
     "age": 47,
     "occupation": ["Business Consultant", "Politician"],
     "birthplace": "Singapore",
     "almaMater": ["University of Cambridge", "National University of Singapore"],
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/426.jpg",
     "id": "benjamin-pwee-yek-kwan"
   }, {
-    "name": "Bryan Lim",
+    "name": "Bernard Chen Jiaxi",
+    "division": "MacPherson SMC",
+    "partyId": "wp",
+    "party": "Workers' Party",
+    "links": {
+      "partyProfile": "http://www.wp.sg/chen-jiaxi-bernard"
+    },
+    "meta": {
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203703/wpmp_profile2_bernard.jpg", "http://www.channelnewsasia.com/gestatic/images/483.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Chen Jiaxi", "Bernard Chen Jiaxi"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 29,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203703/wpmp_profile2_bernard.jpg",
+    "education": ["Master of Studies in Global and Imperial History, University of Oxford", "Bachelor of Arts (Hons), National University of Singapore, Major in History", "Diploma in Leisure & Resort Management with Merit, Temasek Polytechnic"],
+    "maritalStatus": "Single",
+    "nameNative": "陈家喜",
+    "partyRoles": ["Legislative Assistant to MP Muhamad Faisal bin Abdul Manap"],
+    "id": "bernard-chen-jiaxi"
+  }, {
+    "name": "Bryan Lim Boon Heng",
     "division": "Marsiling-Yew Tee GRC",
     "partyId": "sdp",
     "party": "Singapore Democratic Party",
@@ -232,17 +293,34 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/bryan_lim_boon_heng/56"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Bryan-816_x_122-.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "sdp"],
-      "names": ["Lim Boon Heng", "Bryan Lim Boon Heng"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Bryan-816_x_122-.jpg", "http://www.channelnewsasia.com/gestatic/images/96.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "sdp"],
+      "names": ["Lim Boon Heng", "Bryan Lim Boon Heng"],
+      "lock": {
+        "name": true
+      }
     },
-    "birthdate": "1947-11-17T16:00:00.000Z",
-    "age": 67,
-    "birthplace": "Singapore",
-    "almaMater": ["University of Newcastle-upon-Tyne"],
+    "age": 39,
     "imageUrl": "http://yoursdp.org/Candidates/Bryan-816_x_122-.jpg",
     "nameNative": "林文兴",
-    "id": "bryan-lim"
+    "id": "bryan-lim-boon-heng"
+  }, {
+    "name": "Bryan Long Yao Guang",
+    "division": "Bishan-Toa Payoh GRC",
+    "partyId": "spp",
+    "party": "Singapore People's Party",
+    "links": {},
+    "meta": {
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/539.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Long Yaoguang, Don Bryan", "Bryan Long Yao Guang"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 38,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/539.jpg",
+    "id": "bryan-long-yao-guang"
   }, {
     "name": "Cedric Foo Chee Keng",
     "division": "Pioneer SMC",
@@ -254,15 +332,18 @@
       "facebook": "http://www.facebook.com/Foo.Cedric"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CedricFoo.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Cedric Foo Chee Keng"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CedricFoo.jpg", "http://www.channelnewsasia.com/gestatic/images/90.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Cedric Foo Chee Keng"],
+      "lock": {
+        "name": true
+      }
     },
     "birthdate": "1960-07-15T16:00:00.000Z",
     "age": 55,
     "occupation": ["Politician", "Corporate Executive"],
-    "email": "pioneer@pap.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CedricFoo.jpg",
+    "email": "pioneer@pap.org.sg",
     "id": "cedric-foo-chee-keng"
   }, {
     "name": "Chan Chun Sing",
@@ -276,36 +357,17 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChanChunSing20150826091834.jpg", "https://upload.wikimedia.org/wikipedia/commons/c/ca/Chan_Chun_Sing_at_the_We_Welcome_Families_Awards_Ceremony_-_20130425_%28cropped%29.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Chan Chun Sing"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Chan Chun Sing"],
+      "lock": {}
     },
     "birthdate": "1969-10-08T16:00:00.000Z",
-    "age": 45,
+    "age": 46,
     "birthplace": "Singapore",
     "almaMater": ["Cambridge University", "MIT Sloan School of Management"],
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChanChunSing20150826091834.jpg",
     "email": "Chan_Chun_Sing@pmo.gov.sg",
     "id": "chan-chun-sing"
-  }, {
-    "name": "Charles Chong You Fook",
-    "division": "Punggol East SMC",
-    "partyId": "pap",
-    "party": "People's Action Party",
-    "links": {
-      "wikipedia": "https://en.wikipedia.org/wiki/Charles_Chong",
-      "partyProfile": "https://www.pap.org.sg/Your-Candidates",
-      "facebook": "http://www.facebook.com/charleschongyoufook"
-    },
-    "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CharlesChong_3.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Charles Chong You Fook"]
-    },
-    "birthdate": "1953-06-23T16:00:00.000Z",
-    "age": 62,
-    "email": "Charles.Chong@pap.org.sg",
-    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CharlesChong_3.jpg",
-    "id": "charles-chong-you-fook"
   }, {
     "name": "Chee Hong Tat",
     "division": "Bishan-Toa Payoh GRC",
@@ -314,20 +376,21 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Chee_Hong_Tat",
       "partyProfile": "https://www.pap.org.sg/Chee_Hong_Tat/article",
-      "facebook": "http://www.facebook.com/hongtat.chee",
+      "facebook": "https://www.facebook.com/pages/Chee-Hong-Tat-%E5%BE%90%E8%8A%B3%E8%BE%BE/651419328327825",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Chee%20Hong%20Tat_CV_Statement.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CheeHongTat.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Chee%20Hong%20Tat_half_right.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap", "papNew"],
-      "names": ["Chee Hong Tat"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CheeHongTat.jpg", "http://www.channelnewsasia.com/gestatic/images/472.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Chee%20Hong%20Tat_half_right.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap", "papNew"],
+      "names": ["Chee Hong Tat"],
+      "lock": {}
     },
     "birthdate": "1974",
-    "age": 41,
+    "age": 42,
     "birthplace": "Singapore",
     "almaMater": ["Chinese High", "Raffles Junior College", "University of California at Berkeley", "Adelaide University"],
-    "email": "Chee.Hong.Tat@pap.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CheeHongTat.jpg",
+    "email": "Chee.Hong.Tat@pap.org.sg",
     "nameNative": "徐芳达",
     "id": "chee-hong-tat"
   }, {
@@ -341,8 +404,9 @@
     },
     "meta": {
       "imageUrls": ["http://yoursdp.org/Candidates/CSJ-816_x_122-.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Dr_Chee_Soon_Juan.jpg/220px-Dr_Chee_Soon_Juan.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "sdp"],
-      "names": ["Chee Soon Juan"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "sdp"],
+      "names": ["Chee Soon Juan"],
+      "lock": {}
     },
     "birthdate": "1962-07-19T16:00:00.000Z",
     "age": 53,
@@ -352,26 +416,6 @@
     "imageUrl": "http://yoursdp.org/Candidates/CSJ-816_x_122-.jpg",
     "nameNative": "徐顺全",
     "id": "chee-soon-juan"
-  }, {
-    "name": "Chen Jiaxi",
-    "division": "MacPherson SMC",
-    "partyId": "wp",
-    "party": "Workers' Party",
-    "links": {
-      "partyProfile": "http://www.wp.sg/chen-jiaxi-bernard"
-    },
-    "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203703/wpmp_profile2_bernard.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Chen Jiaxi"]
-    },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203703/wpmp_profile2_bernard.jpg",
-    "age": 29,
-    "education": ["Master of Studies in Global and Imperial History, University of Oxford", "Bachelor of Arts (Hons), National University of Singapore, Major in History", "Diploma in Leisure & Resort Management with Merit, Temasek Polytechnic"],
-    "maritalStatus": "Single",
-    "nameNative": "陈家喜",
-    "partyRoles": ["Legislative Assistant to MP Muhamad Faisal bin Abdul Manap"],
-    "id": "chen-jiaxi"
   }, {
     "name": "Chen Show Mao",
     "division": "Aljunied GRC",
@@ -383,12 +427,13 @@
     },
     "meta": {
       "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_csm.jpg", "https://upload.wikimedia.org/wikipedia/commons/9/9d/Chen_Show_Mao_at_a_Workers%27_Party_general_election_rally%2C_Serangoon_Stadium%2C_Singapore_-_20110429_%28cropped%29.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Chen Show Mao"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Chen Show Mao"],
+      "lock": {}
     },
     "birthdate": "1961-02-05T16:00:00.000Z",
     "age": 54,
-    "occupation": ["Member of Parliament", "Politician"],
+    "occupation": ["Lawyer", "Politician", "Member of Parliament"],
     "birthplace": "Taiwan",
     "almaMater": ["Harvard University", "Oxford University", "Stanford University"],
     "religion": "Chinese folk religion",
@@ -406,19 +451,21 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Cheng_Li_Hui",
       "partyProfile": "https://www.pap.org.sg/cheng_li_hui/article",
-      "facebook": "http://www.facebook.com/chenglihui.pap",
+      "facebook": "https://www.facebook.com/chenglihui.pap",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Cheng%20Li%20Hui_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/chengLiHui.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Cheng%20Li%20Hui_20150822101645.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap", "papNew"],
-      "names": ["Cheng Li Hui"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/chengLiHui.jpg", "http://www.channelnewsasia.com/gestatic/images/517.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Cheng%20Li%20Hui_20150822101645.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap", "papNew"],
+      "names": ["Cheng Li Hui"],
+      "lock": {}
     },
     "nameNative": "鍾丽慧",
     "occupation": ["Deputy CEO", "Hai Leck Holdings Limited", "Politician"],
     "birthplace": "Singapore",
-    "email": "pap261@singnet.com.sg",
+    "age": 39,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/chengLiHui.jpg",
+    "email": "pap261@singnet.com.sg",
     "id": "cheng-li-hui"
   }, {
     "name": "Cheo Chai Chen",
@@ -429,11 +476,14 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Cheo_Chai_Chen"
     },
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Cheo Chai Chen"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/21.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Cheo Chai Chen"],
+      "lock": {}
     },
     "nameNative": "蒋才正",
+    "age": 64,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/21.jpg",
     "id": "cheo-chai-chen"
   }, {
     "name": "Cheryl Chan",
@@ -446,12 +496,14 @@
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Cheryl%20Chan_CV_Statement.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CherylChan.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150827104834.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Cheryl Chan Wei Ling"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CherylChan.jpg", "http://www.channelnewsasia.com/gestatic/images/518.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150827104834.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Cheryl Chan Wei Ling"],
+      "lock": {}
     },
-    "email": "Chan.Cheryl@pap.org.sg",
+    "age": 39,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CherylChan.jpg",
+    "email": "Chan.Cheryl@pap.org.sg",
     "nameNative": "陈慧玲",
     "id": "cheryl-chan"
   }, {
@@ -463,16 +515,17 @@
       "partyProfile": "http://www.wp.sg/cheryl-loh-xiu-wen/"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174415/wpmp_profile2_cheryl.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Cheryl Denise Loh Xiu Wen"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174415/wpmp_profile2_cheryl.jpg", "http://www.channelnewsasia.com/gestatic/images/484.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Cheryl Denise Loh Xiu Wen"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174415/wpmp_profile2_cheryl.jpg",
     "age": 31,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174415/wpmp_profile2_cheryl.jpg",
     "education": ["Griffiths Primary School", "St. Anthony’s Canossian Secondary", "Diploma in Law & Management, Temasek Polytechnic", "Bachelor of Business (Economics & Finance), SIM-RMIT"],
-    "occupation": ["Sales Consultant of a Global Services Company"],
     "maritalStatus": "Single",
     "nameNative": "羅秀雯",
+    "occupation": ["Sales Consultant of a Global Services Company"],
     "id": "cheryl-denise-loh-xiu-wen"
   }, {
     "name": "Chia Shi-Lu",
@@ -484,12 +537,14 @@
       "facebook": "http://www.facebook.com/drchiashilu"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChiaShiLu20150826092108.jpg"],
-      "merges": ["wikiElection", "pap"],
-      "names": ["Chia Shi-Lu"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChiaShiLu20150826092108.jpg", "http://www.channelnewsasia.com/gestatic/images/391.jpg"],
+      "merges": ["wikiElection", "cna", "pap"],
+      "names": ["Chia Shi-Lu"],
+      "lock": {}
     },
-    "email": "drchiashilu@gmail.com",
+    "age": 44,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChiaShiLu20150826092108.jpg",
+    "email": "drchiashilu@gmail.com",
     "id": "chia-shilu"
   }, {
     "name": "Chirag Praful Desai",
@@ -498,10 +553,13 @@
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Chirag Praful Desai"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/523.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Chirag Praful Desai"],
+      "lock": {}
     },
+    "age": 38,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/523.jpg",
     "id": "chirag-praful-desai"
   }, {
     "name": "Chiu Weng Hoe Melvyn",
@@ -510,10 +568,13 @@
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Chiu Weng Hoe Melvyn"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/527.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Chiu Weng Hoe Melvyn"],
+      "lock": {}
     },
+    "age": 36,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/527.jpg",
     "id": "chiu-weng-hoe-melvyn"
   }, {
     "name": "Chong Kee Hiong",
@@ -522,16 +583,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Chong_Kee_Hiong/article",
-      "facebook": "http://www.facebook.com/Chong.Kee.Hiong",
+      "facebook": "https://www.facebook.com/Chong.Kee.Hiong",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Chong%20Kee%20Hiong_CV_Statement.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChongKeeHiong.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Chong%20Kee%20Hiong_half_front.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Chong Kee Hiong"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChongKeeHiong.jpg", "http://www.channelnewsasia.com/gestatic/images/481.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Chong%20Kee%20Hiong_half_front.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Chong Kee Hiong"],
+      "lock": {}
     },
-    "email": "ChongKeeHiong@outlook.com",
+    "age": 49,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChongKeeHiong.jpg",
+    "email": "ChongKeeHiong@outlook.com",
     "nameNative": "鍾奇雄",
     "id": "chong-kee-hiong"
   }, {
@@ -543,13 +606,36 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/chong_wai_fung/51"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Wai_Fung-816_x_124-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Chong Wai Fung"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Wai_Fung-816_x_124-.jpg", "http://www.channelnewsasia.com/gestatic/images/511.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Chong Wai Fung"],
+      "lock": {}
     },
+    "age": 45,
     "imageUrl": "http://yoursdp.org/Candidates/Wai_Fung-816_x_124-.jpg",
     "nameNative": "张慧芬",
     "id": "chong-wai-fung"
+  }, {
+    "name": "Chong You Fook, Charles",
+    "division": "Punggol East SMC",
+    "partyId": "pap",
+    "party": "People's Action Party",
+    "links": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Charles_Chong",
+      "partyProfile": "https://www.pap.org.sg/Your-Candidates",
+      "facebook": "http://www.facebook.com/charleschongyoufook"
+    },
+    "meta": {
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CharlesChong_3.jpg", "http://www.channelnewsasia.com/gestatic/images/13.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Charles Chong You Fook"],
+      "lock": {}
+    },
+    "birthdate": "1953-06-23T16:00:00.000Z",
+    "age": 62,
+    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/CharlesChong_3.jpg",
+    "email": "Charles.Chong@pap.org.sg",
+    "id": "chong-you-fook-charles"
   }, {
     "name": "Choong Hon Heng",
     "division": "Tampines GRC",
@@ -557,10 +643,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Choong Hon Heng"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/551.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Choong Hon Heng"],
+      "lock": {}
     },
+    "age": 45,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/551.jpg",
     "id": "choong-hon-heng"
   }, {
     "name": "Christopher de Souza",
@@ -574,8 +663,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChristoperDeSouza.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Chris_de_Souza.JPG/200px-Chris_de_Souza.JPG"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Christopher de Souza"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Christopher de Souza"],
+      "lock": {}
     },
     "birthdate": "1976-01-20T16:00:00.000Z",
     "age": 39,
@@ -591,16 +681,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Chua_Eng_Leong/article",
-      "facebook": "http://www.facebook.com/ChuaEngLeongPAP",
+      "facebook": "https://www.facebook.com/ChuaEngLeongPAP",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Chua_Eng_Leong_CV_Statement.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChuaEngLeong.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150828121409.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Chua Eng Leong"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChuaEngLeong.jpg", "http://www.channelnewsasia.com/gestatic/images/519.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150828121409.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Chua Eng Leong"],
+      "lock": {}
     },
-    "email": "chua.eng.leong@pap.org.sg",
+    "age": 44,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ChuaEngLeong.jpg",
+    "email": "chua.eng.leong@pap.org.sg",
     "nameNative": "蔡荣良",
     "id": "chua-eng-leong"
   }, {
@@ -612,10 +704,12 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/mr_damanhuri_bin_abas/58"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Daman-816x122-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Damanhuri bin Abas"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Daman-816x122-.jpg", "http://www.channelnewsasia.com/gestatic/images/545.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Damanhuri bin Abas"],
+      "lock": {}
     },
+    "age": 45,
     "imageUrl": "http://yoursdp.org/Candidates/Daman-816x122-.jpg",
     "nameNative": "达曼胡理",
     "id": "damanhuri-bin-abas"
@@ -628,16 +722,17 @@
       "partyProfile": "http://www.wp.sg/daniel-goh-pei-siong"
     },
     "meta": {
-      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_daniel.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Daniel Goh Pei Siong"]
+      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_daniel.jpg", "http://www.channelnewsasia.com/gestatic/images/500.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Daniel Goh Pei Siong"],
+      "lock": {}
     },
-    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_daniel.jpg",
     "age": 42,
+    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_daniel.jpg",
     "education": ["Doctor of Philosophy (Sociology), University of Michigan, Ann Arbor", "Master of Social Science (Sociology), National University of Singapore", "Bachelor of Social Science (Sociology), National University of Singapore"],
-    "occupation": ["Associate Professor, National University of Singapore"],
     "maritalStatus": "Married with one son.",
     "nameNative": "吴佩松",
+    "occupation": ["Associate Professor, National University of Singapore"],
     "partyRoles": ["President, WP Youth Wing"],
     "id": "daniel-goh-pei-siong"
   }, {
@@ -647,10 +742,13 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Darren Soh Guan Soon"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/513.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Darren Soh Guan Soon"],
+      "lock": {}
     },
+    "age": 45,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/513.jpg",
     "id": "darren-soh-guan-soon"
   }, {
     "name": "Darryl David",
@@ -659,16 +757,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Darryl_David/Article",
-      "facebook": "http://www.facebook.com/darryl1910",
+      "facebook": "https://www.facebook.com/darryl1910",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Darryl%20David_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DarrylDavid.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150815111857.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Darryl David Wilson"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DarrylDavid.jpg", "http://www.channelnewsasia.com/gestatic/images/470.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150815111857.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Darryl David Wilson"],
+      "lock": {}
     },
-    "email": "Darryl.David@pap.org.sg",
+    "age": 45,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DarrylDavid.jpg",
+    "email": "Darryl.David@pap.org.sg",
     "nameNative": "杰乐",
     "id": "darryl-david"
   }, {
@@ -678,13 +778,15 @@
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": ["https://singfirst99.files.wordpress.com/2014/11/davidfoominjin.jpg"],
-      "merges": ["wikiElection", "singfirst"],
-      "names": ["Foo Ming Jin David"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/536.jpg"],
+      "merges": ["wikiElection", "cna", "singfirst"],
+      "names": ["Foo Ming Jin David"],
+      "lock": {}
     },
+    "age": 51,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/536.jpg",
     "occupation": ["Chemist", "Logistician"],
     "partyRoles": ["Treasurer"],
-    "imageUrl": "https://singfirst99.files.wordpress.com/2014/11/davidfoominjin.jpg",
     "id": "david-foo-ming-jin"
   }, {
     "name": "David Ong Kim Huat",
@@ -698,8 +800,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DavidOng20150825072946.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/DO-CasualHalf-LoRes_2.jpg/220px-DO-CasualHalf-LoRes_2.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["David Ong Kim Huat"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["David Ong Kim Huat"],
+      "lock": {}
     },
     "nameNative": "王金发",
     "birthdate": "1961-05-18T16:00:00.000Z",
@@ -720,9 +823,10 @@
       "facebook": "http://www.facebook.com/denisephuapage"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DenisePhua20150821081659.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Denise Phua Lay Peng"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DenisePhua20150821081659.jpg", "http://www.channelnewsasia.com/gestatic/images/237.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Denise Phua Lay Peng"],
+      "lock": {}
     },
     "birthdate": "1959-12-08T16:00:00.000Z",
     "age": 55,
@@ -730,8 +834,8 @@
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore", "Golden Gate University"],
     "religion": "Christianity",
-    "email": "dphua@pathlight.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DenisePhua20150821081659.jpg",
+    "email": "dphua@pathlight.org.sg",
     "id": "denise-phua-lay-peng"
   }, {
     "name": "Dennis Tan Lip Fong",
@@ -742,16 +846,17 @@
       "partyProfile": "http://www.wp.sg/dennis-tan-lip-fong"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203710/wpmp_profile2_dennis.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Dennis Tan Lip Fong"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203710/wpmp_profile2_dennis.jpg", "http://www.channelnewsasia.com/gestatic/images/498.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Dennis Tan Lip Fong"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203710/wpmp_profile2_dennis.jpg",
     "age": 45,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203710/wpmp_profile2_dennis.jpg",
     "education": ["Bachelor of Laws (Honours), University of Nottingham", "Master of Maritime Law, University of Southampton"],
-    "occupation": ["Shipping lawyer"],
     "maritalStatus": "Married",
     "nameNative": "陈立峰",
+    "occupation": ["Shipping lawyer"],
     "partyRoles": ["Executive Council Member and Vice Chair, Media Team"],
     "id": "dennis-tan-lip-fong"
   }, {
@@ -762,13 +867,16 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Desmond_Choo",
       "partyProfile": "https://www.pap.org.sg/desmond_choo/article",
-      "facebook": "http://www.facebook.com/DesmondChooPeyChing",
+      "facebook": "https://www.facebook.com/DesmondChooPeyChing",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Desmond%20Choo_CV%20_Statement.pdf"
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DesmondChoo.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/23px-Flag_of_Singapore.svg.png", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Desmond%20Choo.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap", "papNew"],
-      "names": ["Desmond Choo Pey Ching"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap", "papNew"],
+      "names": ["Desmond Choo Pey Ching"],
+      "lock": {
+        "name": true
+      }
     },
     "birthdate": "1978",
     "age": 37,
@@ -790,19 +898,19 @@
       "facebook": "http://www.facebook.com/desmond.lee.35"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DesmondLee.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wikiProfiles", "pap"],
-      "names": ["Desmond Lee"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DesmondLee.jpg", "http://www.channelnewsasia.com/gestatic/images/383.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Desmond Lee"],
+      "lock": {}
     },
-    "nameNative": "Desmond Lim Bak Chuan",
-    "birthdate": "1967-12-31T16:00:00.000Z",
-    "age": 47,
-    "occupation": ["Politician", "Engineer"],
+    "nameNative": "李智陞",
+    "birthdate": "1976-07-14T16:00:00.000Z",
+    "age": 39,
+    "occupation": ["Lawyer"],
     "almaMater": ["National University of Singapore", "Oxford University"],
     "education": ["Anglo-Chinese Junior School", "Raffles Institution", "Raffles Junior College"],
-    "birthplace": "1968 (age 46–47)",
-    "email": "jurongspring@yahoo.com.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/DesmondLee.jpg",
+    "email": "jurongspring@yahoo.com.sg",
     "id": "desmond-lee"
   }, {
     "name": "Desmond Lim Bak Chuan",
@@ -814,31 +922,61 @@
       "facebook": "https://www.facebook.com/limbakchuandesmond"
     },
     "meta": {
-      "imageUrls": ["http://singaporedemocraticalliance.sg/wp-content/uploads/2015/05/DESMOND.jpg"],
-      "merges": ["wikiElection", "sda"],
-      "names": ["Desmond Lim Bak Chuan"]
+      "imageUrls": ["http://singaporedemocraticalliance.sg/wp-content/uploads/2015/05/DESMOND.jpg", "http://www.channelnewsasia.com/gestatic/images/6.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "sda"],
+      "names": ["Desmond Lim Bak Chuan"],
+      "lock": {
+        "name": true
+      }
     },
-    "imageUrl": "http://singaporedemocraticalliance.sg/wp-content/uploads/2015/05/DESMOND.jpg",
+    "nameNative": "Desmond Lim Bak Chuan",
+    "birthdate": "1967-12-31T16:00:00.000Z",
+    "age": 48,
+    "occupation": ["Politician", "Engineer"],
+    "birthplace": "1968 (age 46–47)",
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/6.jpg",
     "partyRoles": ["Chairman"],
     "id": "desmond-lim-bak-chuan"
   }, {
-    "name": "Edwin Tong Chun Fai",
+    "name": "Dylan Ng Foo Eng",
     "division": "Marine Parade GRC",
-    "partyId": "pap",
-    "party": "People's Action Party",
+    "partyId": "wp",
+    "party": "Workers' Party",
     "links": {
-      "wikipedia": "https://en.wikipedia.org/wiki/Edwin_Tong",
-      "partyProfile": "https://www.pap.org.sg/Your-Candidates",
-      "facebook": "http://www.facebook.com/pages/Edwin-Tong/101815586571229"
+      "partyProfile": "http://www.wp.sg/dylan-ng-foo-eng-2"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/EdwinTong20150827010053.jpg"],
-      "merges": ["wikiElection", "pap"],
-      "names": ["Tong Chun Fai Edwin Charles"]
+      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_dylan.jpg", "http://www.channelnewsasia.com/gestatic/images/506.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Ng Foo Eng", "Dylan Ng Foo Eng"],
+      "lock": {
+        "name": true
+      }
     },
-    "email": "edwintongchunfai@gmail.com",
-    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/EdwinTong20150827010053.jpg",
-    "id": "edwin-tong-chun-fai"
+    "age": 40,
+    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_dylan.jpg",
+    "education": ["Bachelor of Economics, University of Western Australia (UWA)", "Advanced Diploma in Private Banking, Singapore Management University (SMU)"],
+    "maritalStatus": "Married with 2 children (10 years old daughter and 6 years old son)",
+    "nameNative": "黄富荣",
+    "occupation": ["Banker"],
+    "id": "dylan-ng-foo-eng"
+  }, {
+    "name": "Elvin Ong Beng Soon",
+    "division": "Pioneer SMC",
+    "partyId": "nsp",
+    "party": "National Solidarity Party",
+    "links": {},
+    "meta": {
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/222.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Ong Beng Soon Elvin", "Elvin Ong Beng Soon"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 37,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/222.jpg",
+    "id": "elvin-ong-beng-soon"
   }, {
     "name": "Eugene Yeo Ren Yuan",
     "division": "Sembawang GRC",
@@ -846,10 +984,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Eugene Yeo Ren Yuan"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/554.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Eugene Yeo Ren Yuan"],
+      "lock": {}
     },
+    "age": 40,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/554.jpg",
     "id": "eugene-yeo-ren-yuan"
   }, {
     "name": "Fatimah Lateef",
@@ -861,12 +1002,14 @@
       "facebook": "http://www.facebook.com/pages/Fatimah-Lateef/355240599823"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/FatimahLateef.jpg"],
-      "merges": ["wikiElection", "pap"],
-      "names": ["Fatimah Binte Abdul Lateef"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/FatimahLateef.jpg", "http://www.channelnewsasia.com/gestatic/images/252.jpg"],
+      "merges": ["wikiElection", "cna", "pap"],
+      "names": ["Fatimah Binte Abdul Lateef"],
+      "lock": {}
     },
-    "email": "fatimah.abd.lateef@sgh.com.sg",
+    "age": 49,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/FatimahLateef.jpg",
+    "email": "fatimah.abd.lateef@sgh.com.sg",
     "id": "fatimah-lateef"
   }, {
     "name": "Firuz Khan",
@@ -877,15 +1020,16 @@
       "partyProfile": "http://www.wp.sg/firuz-khan/"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174420/wpmp_profile2_firuz.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Firuz Khan"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174420/wpmp_profile2_firuz.jpg", "http://www.channelnewsasia.com/gestatic/images/503.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Firuz Khan"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174420/wpmp_profile2_firuz.jpg",
     "age": 48,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174420/wpmp_profile2_firuz.jpg",
     "education": ["Master of Business Administration in International Business, University of Birmingham"],
-    "occupation": ["Chocolatier/Chocolate manufacturer"],
     "maritalStatus": "He is married and has a son",
+    "occupation": ["Chocolatier/Chocolate manufacturer"],
     "id": "firuz-khan"
   }, {
     "name": "Fong Chin Leong",
@@ -894,10 +1038,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Fong Chin Leong"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/37.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Fong Chin Leong"],
+      "lock": {}
     },
+    "age": 46,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/37.jpg",
     "id": "fong-chin-leong"
   }, {
     "name": "Foo Mee Har",
@@ -906,44 +1053,23 @@
     "party": "People's Action Party",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Foo_Mee_Har",
-      "website": "http://facebook.com/MPFooMeeHar",
       "partyProfile": "https://www.pap.org.sg/Your-Candidates",
       "facebook": "http://www.facebook.com/MPFooMeeHar"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/FooMeeHar.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Foo Mee Har"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/FooMeeHar.jpg", "http://www.channelnewsasia.com/gestatic/images/364.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Foo Mee Har"],
+      "lock": {}
     },
     "birthdate": "1966-01-09T16:00:00.000Z",
     "age": 49,
     "occupation": ["Chief Executive Officer", "Wealth Management Institute", "Politician"],
     "birthplace": "Malaysia",
     "almaMater": ["University of New South Wales"],
-    "email": "meehar.foo811@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/FooMeeHar.jpg",
+    "email": "meehar.foo811@gmail.com",
     "id": "foo-mee-har"
-  }, {
-    "name": "Foo Seck Guan",
-    "division": "Nee Soon GRC",
-    "partyId": "wp",
-    "party": "Workers' Party",
-    "links": {
-      "partyProfile": "http://www.wp.sg/foo-seck-guan"
-    },
-    "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203851/wpmp_profile2_kenneth.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Foo Seck Guan"]
-    },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203851/wpmp_profile2_kenneth.jpg",
-    "age": 38,
-    "education": ["Honours Degree in Bachelor of Health Sciences (Psychology), University of Adelaide, 2005", "Bachelor of Science in Psychology, University of Southern Queensland, 2004 (Distance study with Informatics)", "Diploma in Business Studies (Human Resource and Finance), Temasek Polytechnic, 1998"],
-    "occupation": ["Manager, Public Education, Singapore Cancer Society"],
-    "maritalStatus": "Single",
-    "nameNative": "符策涫",
-    "partyRoles": ["Secretary, Hougang Constituency Committee. 2006 to 2011", "Treasurer, Aljunied Constituency Committee 2011 to current"],
-    "id": "foo-seck-guan"
   }, {
     "name": "Frieda Chan Sio Phing",
     "division": "Jalan Besar GRC",
@@ -953,16 +1079,19 @@
       "partyProfile": "http://www.wp.sg/frieda-chan-sio-phing"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203825/wpmp_profile2_2.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Chan Sio Phing Frieda", "Zeng Xiaoping", "Frieda Chan Sio Phing"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203825/wpmp_profile2_2.jpg", "http://www.channelnewsasia.com/gestatic/images/315.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Chan Sio Phing Frieda", "Frieda Chan Sio Phing"],
+      "lock": {
+        "name": true
+      }
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203825/wpmp_profile2_2.jpg",
     "age": 39,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203825/wpmp_profile2_2.jpg",
     "education": ["Bachelor of Arts (Social Work & Sociology), National University of Singapore", "Diploma in Islamic Studies, International Islamic University of Malaysia, Kuala Lumpur", "(currently reading)"],
-    "occupation": ["Social Worker"],
     "maritalStatus": "Married with a son",
     "nameNative": "曾小玶",
+    "occupation": ["Social Worker"],
     "id": "frieda-chan-sio-phing"
   }, {
     "name": "Gan Kim Yong",
@@ -976,8 +1105,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/GanKimYong20150821073656.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Gan_Kim_Yong_at_a_PCF_graduation_ceremony_-_20081113_%28cropped%29.jpg/220px-Gan_Kim_Yong_at_a_PCF_graduation_ceremony_-_20081113_%28cropped%29.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Gan Kim Yong"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Gan Kim Yong"],
+      "lock": {}
     },
     "nameNative": "顏金勇",
     "birthdate": "1959-02-08T16:00:00.000Z",
@@ -997,14 +1127,15 @@
       "facebook": "http://www.facebook.com/ganthiampoh"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/GanThiamPoh20150821062717.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Gan Thiam Poh"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/GanThiamPoh20150821062717.jpg", "http://www.channelnewsasia.com/gestatic/images/369.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Gan Thiam Poh"],
+      "lock": {}
     },
     "birthdate": "1963-10-22T16:00:00.000Z",
-    "age": 51,
-    "email": "gan_thiam_poh@prpg-grc.sg",
+    "age": 52,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/GanThiamPoh20150821062717.jpg",
+    "email": "gan_thiam_poh@prpg-grc.sg",
     "id": "gan-thiam-poh"
   }, {
     "name": "Gerald Giam Yean Song",
@@ -1016,17 +1147,18 @@
       "partyProfile": "http://www.wp.sg/gerald-giam/"
     },
     "meta": {
-      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/gerald1.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Gerald Giam Yean Song"]
+      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/gerald1.jpg", "http://www.channelnewsasia.com/gestatic/images/317.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Gerald Giam Yean Song"],
+      "lock": {}
     },
     "nameNative": "严燕松",
     "birthdate": "1977-11-21T16:00:00.000Z",
     "age": 37,
     "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/gerald1.jpg",
     "education": ["Master of Science (International Political Economy), Nanyang Technological University", "Bachelor of Science (Electrical Engineering), University of Southern California, USA", "GCE ‘O’ Levels, Anglo-Chinese School (Independent)"],
-    "occupation": ["Non-constituency Member of Parliament", "IT Solutions Architect"],
     "maritalStatus": "Married to a chartered accountant. They have two children together.",
+    "occupation": ["Non-constituency Member of Parliament", "IT Solutions Architect"],
     "partyRoles": ["Member, Central Executive Council", "Chair, Media Team"],
     "id": "gerald-giam-yean-song"
   }, {
@@ -1036,10 +1168,13 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Gilbert Goh"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/357.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Gilbert Goh"],
+      "lock": {}
     },
+    "age": 54,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/357.jpg",
     "id": "gilbert-goh"
   }, {
     "name": "Goh Chok Tong",
@@ -1053,8 +1188,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/GohChokTong.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/GohChokTong-WashingtonDC-20010614.jpg/180px-GohChokTong-WashingtonDC-20010614.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Goh Chok Tong"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Goh Chok Tong"],
+      "lock": {}
     },
     "nameNative": "吴作栋",
     "birthdate": "1941-05-19T16:00:00.000Z",
@@ -1073,9 +1209,10 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Goh_Meng_Seng"
     },
     "meta": {
-      "imageUrls": ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Goh_Meng_Seng_2011.JPG/220px-Goh_Meng_Seng_2011.JPG"],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Goh Meng Seng"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/168.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Goh_Meng_Seng_2011.JPG/220px-Goh_Meng_Seng_2011.JPG"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Goh Meng Seng"],
+      "lock": {}
     },
     "nameNative": "吴明盛",
     "birthdate": "1970",
@@ -1083,7 +1220,7 @@
     "occupation": ["Director of Social Welfare Organisations", "Politician"],
     "birthplace": "Singapore",
     "education": ["National University of Singapore"],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Goh_Meng_Seng_2011.JPG/220px-Goh_Meng_Seng_2011.JPG",
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/168.jpg",
     "id": "goh-meng-seng"
   }, {
     "name": "Grace Fu Hai Yen",
@@ -1097,8 +1234,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/GraceFu.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GraceFu-2010SummerYouthOlympics-20090426-02.jpg/180px-GraceFu-2010SummerYouthOlympics-20090426-02.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Grace Fu Hai Yien"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Grace Fu Hai Yien"],
+      "lock": {}
     },
     "birthdate": "1964-03-28T16:00:00.000Z",
     "age": 51,
@@ -1106,6 +1244,23 @@
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/GraceFu.jpg",
     "email": "grace_fu@pmo.gov.sg",
     "id": "grace-fu-hai-yen"
+  }, {
+    "name": "Gregory Wong Chee Wai",
+    "division": "Jurong GRC",
+    "partyId": "singfirst",
+    "party": "Singaporeans First",
+    "links": {},
+    "meta": {
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/525.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Wong Chee Wai", "Gregory Wong Chee Wai"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 44,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/525.jpg",
+    "id": "gregory-wong-chee-wai"
   }, {
     "name": "Gurmit Singh S/O Sadhu Singh",
     "division": "Nee Soon GRC",
@@ -1115,15 +1270,16 @@
       "partyProfile": "http://www.wp.sg/gurmit-singh-so-sadhu-singh"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203720/wpmp_profile2_gurmit.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Gurmit Singh S/O Sadhu Singh"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203720/wpmp_profile2_gurmit.jpg", "http://www.channelnewsasia.com/gestatic/images/540.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Gurmit Singh S/O Sadhu Singh"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203720/wpmp_profile2_gurmit.jpg",
     "age": 55,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203720/wpmp_profile2_gurmit.jpg",
     "education": ["Graduate Diploma in Legal Practice (College of Law (NSW)), Graduate Diploma in Legal Studies (Uni. of New England), Graduate Diploma in Legal Practice (Uni. of Western Australia)", "Bachelor of Laws (Hons) (London)"],
-    "occupation": ["Legal Counsel"],
     "maritalStatus": "Married with 2 children, a daughter age 24 and a son age 21.",
+    "occupation": ["Legal Counsel"],
     "partyRoles": ["Member, Workers’ Party Grassroots Committee"],
     "id": "gurmit-singh-so-sadhu-singh"
   }, {
@@ -1138,8 +1294,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HalimahYacob.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Halimah_Yacob_APEC_Women_and_the_Economy_Forum_2012.jpg/220px-Halimah_Yacob_APEC_Women_and_the_Economy_Forum_2012.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Halimah Yacob"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Halimah Yacob"],
+      "lock": {}
     },
     "birthdate": "1954-08-22T16:00:00.000Z",
     "age": 61,
@@ -1156,10 +1313,13 @@
     "party": "Independent",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Han Hui Hui"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/522.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Han Hui Hui"],
+      "lock": {}
     },
+    "age": 24,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/522.jpg",
     "id": "han-hui-hui"
   }, {
     "name": "Harminder Pal Singh S/O Gurcharan Singh",
@@ -1168,10 +1328,13 @@
     "party": "Singapore Democratic Alliance",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Harminder Pal Singh S/O Gurcharan Singh"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/422.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Harminder Pal Singh S/O Gurcharan Singh"],
+      "lock": {}
     },
+    "age": 43,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/422.jpg",
     "id": "harminder-pal-singh-so-gurcharan-singh"
   }, {
     "name": "He Ting Ru",
@@ -1182,16 +1345,17 @@
       "partyProfile": "http://www.wp.sg/he-ting-ru/"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190657/wpmp_profile2_ru.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["He Ting Ru"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190657/wpmp_profile2_ru.jpg", "http://www.channelnewsasia.com/gestatic/images/501.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["He Ting Ru"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190657/wpmp_profile2_ru.jpg",
     "age": 32,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190657/wpmp_profile2_ru.jpg",
     "education": ["MA (University of Cambridge)"],
-    "occupation": ["Lawyer"],
     "maritalStatus": "Single",
     "nameNative": "何廷儒",
+    "occupation": ["Lawyer"],
     "partyRoles": ["Secretary, Workers’ Party Youth Wing Executive Committee"],
     "id": "he-ting-ru"
   }, {
@@ -1205,9 +1369,10 @@
       "facebook": "http://www.facebook.com/MPHengCheeHow"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HengCheeHow20150821081534.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Heng Chee How"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HengCheeHow20150821081534.jpg", "http://www.channelnewsasia.com/gestatic/images/68.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Heng Chee How"],
+      "lock": {}
     },
     "nameNative": "王志豪",
     "birthdate": "1961",
@@ -1216,8 +1381,8 @@
     "birthplace": "Singapore",
     "religion": "Christianity",
     "education": ["Cambridge University with BA (Honours) and MA", "Harvard University with Master in Public Administration"],
-    "email": "heng_chee_how@pmo.gov.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HengCheeHow20150821081534.jpg",
+    "email": "heng_chee_how@pmo.gov.sg",
     "id": "heng-chee-how"
   }, {
     "name": "Heng Swee Keat",
@@ -1231,8 +1396,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HengSweeKeat20150826094308.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Heng_Swee_Keat_at_Nan_Hua_High_School%2C_Singapore_-_20120707.jpg/220px-Heng_Swee_Keat_at_Nan_Hua_High_School%2C_Singapore_-_20120707.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Heng Swee Keat"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Heng Swee Keat"],
+      "lock": {}
     },
     "birthdate": "1961",
     "age": 54,
@@ -1242,24 +1408,28 @@
     "email": "heng_swee_keat@moe.gov.sg",
     "id": "heng-swee-keat"
   }, {
-    "name": "Henry Kwek",
+    "name": "Henry Kwek Hian Chuan",
     "division": "Nee Soon GRC",
     "partyId": "pap",
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Henry_Kwek/Article",
-      "facebook": "http://www.facebook.com/henry.kwek",
+      "facebook": "https://www.facebook.com/henry.kwek",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Henry%20Kwek_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HenryKwek.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/HenryKwek.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Kwek Hian Chuan", "Henry Kwek", "Henry Kwek Hian Chuan"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HenryKwek.jpg", "http://www.channelnewsasia.com/gestatic/images/471.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/HenryKwek.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Kwek Hian Chuan", "Henry Kwek Hian Chuan"],
+      "lock": {
+        "name": true
+      }
     },
-    "email": "Kwek.Henry@pap.org.sg",
+    "age": 39,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/HenryKwek.jpg",
+    "email": "Kwek.Henry@pap.org.sg",
     "nameNative": "郭献川",
-    "id": "henry-kwek"
+    "id": "henry-kwek-hian-chuan"
   }, {
     "name": "Indranee Thurai Rajah",
     "division": "Tanjong Pagar GRC",
@@ -1271,15 +1441,18 @@
       "facebook": "http://www.facebook.com/IndraneeRajah"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/IndraneeRajah20150826094852.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Indranee Thurai Rajah"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/IndraneeRajah20150826094852.jpg", "http://www.channelnewsasia.com/gestatic/images/102.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Indranee Thurai Rajah"],
+      "lock": {
+        "name": true
+      }
     },
     "birthdate": "1963-04-11T16:00:00.000Z",
     "age": 52,
     "religion": "Christian (Anglican)",
-    "email": "indranee_rajah@mlaw.gov.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/IndraneeRajah20150826094852.jpg",
+    "email": "indranee_rajah@mlaw.gov.sg",
     "id": "indranee-thurai-rajah"
   }, {
     "name": "Intan Azura Mokhtar",
@@ -1293,11 +1466,12 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/IntanAzuraMokhtar20150821062405.jpg", "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/IntanAzura.png/220px-IntanAzura.png"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Intan Azura Mokhtar"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Intan Azura Mokhtar"],
+      "lock": {}
     },
     "birthdate": "1980-08-22T16:00:00.000Z",
-    "age": 35,
+    "age": 39,
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore"],
     "religion": "Islam",
@@ -1315,15 +1489,16 @@
       "facebook": "http://www.facebook.com/janil.puthucheary"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JanilP.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Janil Puthucheary"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JanilP.jpg", "http://www.channelnewsasia.com/gestatic/images/370.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Janil Puthucheary"],
+      "lock": {}
     },
     "birthdate": "1972-11-05T16:00:00.000Z",
-    "age": 42,
+    "age": 43,
     "birthplace": "Kuala Lumpur, Malaysia",
-    "email": "janil.puthucheary@pap.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JanilP.jpg",
+    "email": "janil.puthucheary@pap.org.sg",
     "id": "janil-puthucheary"
   }, {
     "name": "Jaslyn Go Hui Leng",
@@ -1334,10 +1509,12 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/jaslyn_go/53"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Jaslyn2-816_x_24-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Jaslyn Go Hui Leng"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Jaslyn2-816_x_24-.jpg", "http://www.channelnewsasia.com/gestatic/images/294.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Jaslyn Go Hui Leng"],
+      "lock": {}
     },
+    "age": 42,
     "imageUrl": "http://yoursdp.org/Candidates/Jaslyn2-816_x_24-.jpg",
     "nameNative": "吴慧玲",
     "id": "jaslyn-go-hui-leng"
@@ -1350,12 +1527,14 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Jeannette_Chong-Aruldoss"
     },
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Jeannette Chong-Aruldoss"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/336.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Jeannette Chong-Aruldoss"],
+      "lock": {}
     },
     "birthdate": "1962-12-31T16:00:00.000Z",
     "age": 52,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/336.jpg",
     "id": "jeannette-chongaruldoss"
   }, {
     "name": "Jesse Loo Hoe Bock",
@@ -1364,10 +1543,13 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Jesse Loo Hoe Bock"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/541.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Jesse Loo Hoe Bock"],
+      "lock": {}
     },
+    "age": 52,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/541.jpg",
     "id": "jesse-loo-hoe-bock"
   }, {
     "name": "Jessica Tan Soon Neo",
@@ -1380,15 +1562,16 @@
       "facebook": "http://www.facebook.com/JessicaTanSoonNeo"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JessicaTan.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Tan Soon Neo Jessica"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JessicaTan.jpg", "http://www.channelnewsasia.com/gestatic/images/242.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Tan Soon Neo Jessica"],
+      "lock": {}
     },
     "nameNative": "陈舜娘",
     "birthdate": "1966-05-27T16:00:00.000Z",
     "age": 49,
-    "email": "my.mp@changisimei.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JessicaTan.jpg",
+    "email": "my.mp@changisimei.sg",
     "id": "jessica-tan-soon-neo"
   }, {
     "name": "Joan Cheng Sim Pereira",
@@ -1397,16 +1580,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Joan_Cheng_Sim_Pereira/Article",
-      "facebook": "http://www.facebook.com/joanpereira67",
+      "facebook": "https://www.facebook.com/joanpereira67",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Joan%20Pereira_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JoanPereira.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150819100915.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Joan Pereira"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JoanPereira.jpg", "http://www.channelnewsasia.com/gestatic/images/476.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150819100915.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Joan Pereira"],
+      "lock": {}
     },
-    "email": "Joan.Pereira@pap.org.sg",
+    "age": 47,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JoanPereira.jpg",
+    "email": "Joan.Pereira@pap.org.sg",
     "nameNative": "祖安清心",
     "id": "joan-cheng-sim-pereira"
   }, {
@@ -1418,10 +1603,14 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/mr_john_tan_liang_joo/55"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/John-816_x_122-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["John Tan Liang Joo"]
+      "imageUrls": ["http://yoursdp.org/Candidates/John-816_x_122-.jpg", "http://www.channelnewsasia.com/gestatic/images/339.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Tan Liang Joo, John", "John Tan Liang Joo"],
+      "lock": {
+        "name": true
+      }
     },
+    "age": 53,
     "imageUrl": "http://yoursdp.org/Candidates/John-816_x_122-.jpg",
     "nameNative": "陈两裕",
     "id": "john-tan-liang-joo"
@@ -1432,14 +1621,14 @@
     "party": "People's Action Party",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Josephine_Teo",
-      "website": "http://www.joteo.sg",
       "partyProfile": "https://www.pap.org.sg/Your-Candidates",
       "facebook": "http://www.facebook.com/Josephine.LM.Teo"
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/JosephineTeo.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Young_NTUC_youth_chapter_members.jpg/220px-Young_NTUC_youth_chapter_members.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Josephine Teo"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Josephine Teo"],
+      "lock": {}
     },
     "nameNative": "Yeo Li Min",
     "birthdate": "1968-07-07T16:00:00.000Z",
@@ -1453,26 +1642,7 @@
     "email": "pap.bishannorth@gmail.com",
     "id": "josephine-teo"
   }, {
-    "name": "K. Muralidharan Pillai",
-    "division": "Aljunied GRC",
-    "partyId": "pap",
-    "party": "People's Action Party",
-    "links": {
-      "partyProfile": "https://www.pap.org.sg/Murali_Pillai/article",
-      "facebook": "http://www.facebook.com/PAPCaRES",
-      "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/K%20Muralidaran%20Pillai_CV_Statement.pdf"
-    },
-    "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KMuralidharanPillai.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Profile80_20150828121106.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["K Muralidharan Pillai"]
-    },
-    "email": "Murali.Pillai@pap.org.sg",
-    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KMuralidharanPillai.jpg",
-    "nameNative": "穆仁理",
-    "id": "k-muralidharan-pillai"
-  }, {
-    "name": "K. Shanmugam",
+    "name": "K Shanmugam",
     "division": "Nee Soon GRC",
     "partyId": "pap",
     "party": "People's Action Party",
@@ -1483,8 +1653,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/kShanmugam.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/K_Shanmugam.jpg/220px-K_Shanmugam.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["K. Shanmugam"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["K. Shanmugam"],
+      "lock": {}
     },
     "nameNative": "காசிவிஸ்வநாதன் சண்முகம்",
     "birthdate": "1959",
@@ -1495,7 +1666,28 @@
     "email": "k_shanmugam@mfa.gov.sg",
     "id": "k-shanmugam"
   }, {
-    "name": "Kenneth Jeyaretnam",
+    "name": "K. Muralidharan Pillai",
+    "division": "Aljunied GRC",
+    "partyId": "pap",
+    "party": "People's Action Party",
+    "links": {
+      "partyProfile": "https://www.pap.org.sg/Murali_Pillai/article",
+      "facebook": "https://www.facebook.com/PAPCaRES",
+      "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/K%20Muralidaran%20Pillai_CV_Statement.pdf"
+    },
+    "meta": {
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KMuralidharanPillai.jpg", "http://www.channelnewsasia.com/gestatic/images/520.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Profile80_20150828121106.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["K Muralidharan Pillai"],
+      "lock": {}
+    },
+    "age": 48,
+    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KMuralidharanPillai.jpg",
+    "email": "Murali.Pillai@pap.org.sg",
+    "nameNative": "穆仁理",
+    "id": "k-muralidharan-pillai"
+  }, {
+    "name": "Kenneth Andrew Jeyaretnam",
     "division": "West Coast GRC",
     "partyId": "rp",
     "party": "Reform Party",
@@ -1503,9 +1695,12 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Kenneth_Jeyaretnam"
     },
     "meta": {
-      "imageUrls": ["https://upload.wikimedia.org/wikipedia/commons/5/51/Kenneth_Jeyaretnam_at_a_Reform_Party_rally%2C_Speakers%27_Corner%2C_Singapore_-_20110115.jpg"],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Kenneth Andrew Jeyaretnam"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/288.jpg", "https://upload.wikimedia.org/wikipedia/commons/5/51/Kenneth_Jeyaretnam_at_a_Reform_Party_rally%2C_Speakers%27_Corner%2C_Singapore_-_20110115.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Kenneth Andrew Jeyaretnam"],
+      "lock": {
+        "name": true
+      }
     },
     "birthdate": "1959",
     "age": 56,
@@ -1513,8 +1708,32 @@
     "birthplace": "Singapore",
     "religion": "Anglican",
     "education": ["Queens' College, Cambridge", "Amsterdam Institute of Finance", "Charterhouse School", "United World College of South East Asia", "St Andrew's School"],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/5/51/Kenneth_Jeyaretnam_at_a_Reform_Party_rally%2C_Speakers%27_Corner%2C_Singapore_-_20110115.jpg",
-    "id": "kenneth-jeyaretnam"
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/288.jpg",
+    "id": "kenneth-andrew-jeyaretnam"
+  }, {
+    "name": "Kenneth Foo Seck Guan",
+    "division": "Nee Soon GRC",
+    "partyId": "wp",
+    "party": "Workers' Party",
+    "links": {
+      "partyProfile": "http://www.wp.sg/foo-seck-guan"
+    },
+    "meta": {
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203851/wpmp_profile2_kenneth.jpg", "http://www.channelnewsasia.com/gestatic/images/482.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Foo Seck Guan", "Kenneth Foo Seck Guan"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 38,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203851/wpmp_profile2_kenneth.jpg",
+    "education": ["Honours Degree in Bachelor of Health Sciences (Psychology), University of Adelaide, 2005", "Bachelor of Science in Psychology, University of Southern Queensland, 2004 (Distance study with Informatics)", "Diploma in Business Studies (Human Resource and Finance), Temasek Polytechnic, 1998"],
+    "maritalStatus": "Single",
+    "nameNative": "符策涫",
+    "occupation": ["Manager, Public Education, Singapore Cancer Society"],
+    "partyRoles": ["Secretary, Hougang Constituency Committee. 2006 to 2011", "Treasurer, Aljunied Constituency Committee 2011 to current"],
+    "id": "kenneth-foo-seck-guan"
   }, {
     "name": "Kevryn Lim",
     "division": "Sembawang GRC",
@@ -1522,10 +1741,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Kevryn Lim"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/474.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Kevryn Lim"],
+      "lock": {}
     },
+    "age": 27,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/474.jpg",
     "id": "kevryn-lim"
   }, {
     "name": "Khaw Boon Wan",
@@ -1539,12 +1761,13 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KhawBoonWan.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Minister_Khaw_Boon_Wan.JPG/220px-Minister_Khaw_Boon_Wan.JPG"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Khaw Boon Wan"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Khaw Boon Wan"],
+      "lock": {}
     },
     "nameNative": "许文远",
     "birthdate": "1952-12-07T16:00:00.000Z",
-    "age": 62,
+    "age": 63,
     "birthplace": "Penang, Federation of Malaya",
     "almaMater": ["University of Newcastle"],
     "religion": "Buddhism",
@@ -1560,33 +1783,15 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/khung_wai_yeen/50"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Gerous-816_x_122-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Khung Wai Yeen"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Gerous-816_x_122-.jpg", "http://www.channelnewsasia.com/gestatic/images/512.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Khung Wai Yeen"],
+      "lock": {}
     },
+    "age": 34,
     "imageUrl": "http://yoursdp.org/Candidates/Gerous-816_x_122-.jpg",
     "nameNative": "江伟贤",
     "id": "khung-wai-yeen"
-  }, {
-    "name": "Koh Choong Yong",
-    "division": "Sengkang West SMC",
-    "partyId": "wp",
-    "party": "Workers' Party",
-    "links": {
-      "partyProfile": "http://www.wp.sg/koh-choong-yong/"
-    },
-    "meta": {
-      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_choon.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Koh Choong Yong"]
-    },
-    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_choon.jpg",
-    "age": 42,
-    "education": ["Bachelor of Science (Information Systems & Computer Sciences), National University of Singapore"],
-    "occupation": ["Software Engineer – Ruckus Wireless Singapore"],
-    "maritalStatus": "Married with 2 boys.",
-    "nameNative": "许俊荣",
-    "id": "koh-choong-yong"
   }, {
     "name": "Koh Poh Koon",
     "division": "Ang Mo Kio GRC",
@@ -1595,19 +1800,21 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Koh_Poh_Koon",
       "partyProfile": "https://www.pap.org.sg/Koh_Poh_Koon/Article",
-      "facebook": "http://www.facebook.com/drkohpohkoon",
+      "facebook": "https://www.facebook.com/drkohpohkoon",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Koh%20Poh%20Koon_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KohPohKoon.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150815111803.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap", "papNew"],
-      "names": ["Koh Poh Koon"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KohPohKoon.jpg", "http://www.channelnewsasia.com/gestatic/images/494.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150815111803.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap", "papNew"],
+      "names": ["Koh Poh Koon"],
+      "lock": {}
     },
     "occupation": ["Colorectal surgeon"],
     "birthplace": "Singapore",
     "education": ["National University of Singapore (NUS)"],
-    "email": "Koh.Poh.Koon@pap.org.sg",
+    "age": 43,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/KohPohKoon.jpg",
+    "email": "Koh.Poh.Koon@pap.org.sg",
     "nameNative": "许宝琨",
     "id": "koh-poh-koon"
   }, {
@@ -1621,14 +1828,15 @@
     "meta": {
       "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174424/wpmp_profile2_luke.jpg"],
       "merges": ["wikiElection", "wp"],
-      "names": ["Koh Tiong Yee"]
+      "names": ["Koh Tiong Yee"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174424/wpmp_profile2_luke.jpg",
     "age": 41,
     "education": ["Bachelor of Business (Finance), Nanyang Technological University", "Temasek Junior College, Dunman High School, St Andrew’s Junior School"],
-    "occupation": ["Managing Partner of a private investment business"],
     "maritalStatus": "Married",
     "nameNative": "高忠义",
+    "occupation": ["Managing Partner of a private investment business"],
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174424/wpmp_profile2_luke.jpg",
     "id": "koh-tiong-yee"
   }, {
     "name": "Kumar Appavoo",
@@ -1637,13 +1845,16 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Kumar Appavoo"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/434.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Kumar Appavoo"],
+      "lock": {}
     },
+    "age": 47,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/434.jpg",
     "id": "kumar-appavoo"
   }, {
-    "name": "L Somasundaram",
+    "name": "L. Somasundaram",
     "division": "Jalan Besar GRC",
     "partyId": "wp",
     "party": "Workers' Party",
@@ -1651,16 +1862,19 @@
       "partyProfile": "http://www.wp.sg/l-somasundaram/"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190733/Soma-1.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["L Somasundaram"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190733/Soma-1.jpg", "http://www.channelnewsasia.com/gestatic/images/418.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["L Somasundaram", "L. Somasundaram"],
+      "lock": {
+        "name": true
+      }
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190733/Soma-1.jpg",
     "age": 52,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190733/Soma-1.jpg",
     "education": ["Master of Science (eCommerce), University of Manchester, UK", "Bachelor of Science (Electrical Engineering), University of Oklahoma, USA"],
-    "occupation": ["Polytechnic Lecturer"],
     "maritalStatus": "Married with 3 daughters",
     "nameNative": "சோமசுந்தரம்",
+    "occupation": ["Polytechnic Lecturer"],
     "partyRoles": ["Deputy Treasurer"],
     "id": "l-somasundaram"
   }, {
@@ -1674,15 +1888,16 @@
       "facebook": "http://www.facebook.com/LamPinMin"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LamPinMin.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lam Pin Min"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LamPinMin.jpg", "http://www.channelnewsasia.com/gestatic/images/259.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lam Pin Min"],
+      "lock": {}
     },
     "birthdate": "1969-08-31T16:00:00.000Z",
     "age": 46,
     "occupation": ["Politician"],
-    "email": "vpmlam@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LamPinMin.jpg",
+    "email": "vpmlam@gmail.com",
     "id": "lam-pin-min"
   }, {
     "name": "Law Kim Hwee",
@@ -1691,10 +1906,13 @@
     "party": "Singapore People's Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Law Kim Hwee"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/534.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Law Kim Hwee"],
+      "lock": {}
     },
+    "age": 55,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/534.jpg",
     "id": "law-kim-hwee"
   }, {
     "name": "Lawrence Wong",
@@ -1708,12 +1926,13 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LawrenceWong20150826123126.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/LawrenceWong.jpg/180px-LawrenceWong.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lawrence Wong"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lawrence Wong"],
+      "lock": {}
     },
     "nameNative": "黄循财",
     "birthdate": "1972-12-17T16:00:00.000Z",
-    "age": 42,
+    "age": 43,
     "birthplace": "Singapore",
     "almaMater": ["University of Wisconsin–Madison", "Harvard University"],
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LawrenceWong20150826123126.jpg",
@@ -1730,19 +1949,20 @@
       "facebook": "http://www.facebook.com/pages/Lee-Bee-Wah/147450805269412"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeBeeWah20150827123533.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lee Bee Wah"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeBeeWah20150827123533.jpg", "http://www.channelnewsasia.com/gestatic/images/244.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lee Bee Wah"],
+      "lock": {}
     },
     "nameNative": "李美花",
     "birthdate": "1960-10-05T16:00:00.000Z",
-    "age": 54,
+    "age": 55,
     "occupation": ["Engineer", "Politician"],
     "birthplace": "Johor, Malaysia",
     "almaMater": ["National University of Singapore", "Nanyang Technological University"],
     "religion": "Buddhism",
-    "email": "mp4nss@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeBeeWah20150827123533.jpg",
+    "email": "mp4nss@gmail.com",
     "id": "lee-bee-wah"
   }, {
     "name": "Lee Hong Chuang",
@@ -1751,16 +1971,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Lee_Hong_Chuang/Article",
-      "facebook": "http://bitly.com/leehongchuang",
+      "facebook": "https://www.facebook.com/pages/Lee-Hong-Chuang-%E6%9D%8E%E5%AE%8F%E5%A3%AE/877578222286929",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Lee%20Hong%20Chuang_CV_%20Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeHongChuang20150821080230.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150815111418.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Lee Hong Chuang"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeHongChuang20150821080230.jpg", "http://www.channelnewsasia.com/gestatic/images/490.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150815111418.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Lee Hong Chuang"],
+      "lock": {}
     },
-    "email": "Lee.Hong.Chuang@pap.org.sg",
+    "age": 45,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeHongChuang20150821080230.jpg",
+    "email": "Lee.Hong.Chuang@pap.org.sg",
     "nameNative": "李宏壮",
     "id": "lee-hong-chuang"
   }, {
@@ -1775,8 +1997,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeHsienLoong20150821061616.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Lee_Hsien-Loong_-_World_Economic_Forum_Annual_Meeting_2012_cropped.jpg/220px-Lee_Hsien-Loong_-_World_Economic_Forum_Annual_Meeting_2012_cropped.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lee Hsien Loong"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lee Hsien Loong"],
+      "lock": {}
     },
     "nameNative": "李显龙",
     "birthdate": "1952-02-09T16:00:00.000Z",
@@ -1798,13 +2021,14 @@
     },
     "meta": {
       "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_lilian.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Flag_of_Singapore.svg/23px-Flag_of_Singapore.svg.png"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Lee Li Lian"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Lee Li Lian"],
+      "lock": {}
     },
     "nameNative": "李丽连",
     "birthdate": "1978-07-18T16:00:00.000Z",
     "age": 37,
-    "occupation": ["Full time Member of Parliament"],
+    "occupation": ["Financial trainer", "Full time Member of Parliament"],
     "birthplace": "Singapore",
     "almaMater": ["Curtin University"],
     "education": ["Diploma in Business Studies, Ngee Ann Polytechnic", "Bachelor Commerce (Marketing), Curtin University of Technology, Australia"],
@@ -1819,10 +2043,13 @@
     "party": "People's Power Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Lee Tze Shih"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/552.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Lee Tze Shih"],
+      "lock": {}
     },
+    "age": 42,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/552.jpg",
     "id": "lee-tze-shih"
   }, {
     "name": "Lee Yi Shyan",
@@ -1835,14 +2062,15 @@
       "facebook": "http://www.facebook.com/LeeYiShyanPage"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeYiShyan20150827014126.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lee Yi Shyan"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeYiShyan20150827014126.jpg", "http://www.channelnewsasia.com/gestatic/images/245.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lee Yi Shyan"],
+      "lock": {}
     },
     "birthdate": "1962-03-08T16:00:00.000Z",
     "age": 53,
-    "email": "lee.yi.shyan@pap.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LeeYiShyan20150827014126.jpg",
+    "email": "lee.yi.shyan@pap.org.sg",
     "id": "lee-yi-shyan"
   }, {
     "name": "Leon Perera",
@@ -1854,16 +2082,17 @@
       "partyProfile": "http://www.wp.sg/leon-perera"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203726/wpmp_profile2_leon.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Leon Perera"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203726/wpmp_profile2_leon.jpg", "http://www.channelnewsasia.com/gestatic/images/499.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Leon Perera"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203726/wpmp_profile2_leon.jpg",
     "age": 44,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203726/wpmp_profile2_leon.jpg",
     "education": ["Anglo-Chinese School, Hwa Chong Junior College, Honours degree in Philosophy, Politics and Economics from Oxford University (Double First)"],
-    "occupation": ["CEO of an international business research and consulting agency"],
     "maritalStatus": "Married, with a daughter and son",
     "nameNative": "贝理安",
+    "occupation": ["CEO of an international business research and consulting agency"],
     "id": "leon-perera"
   }, {
     "name": "Liang Eng Hwa",
@@ -1876,15 +2105,16 @@
       "facebook": "http://www.facebook.com/zhenghua"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LiangEngHwa.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Liang Eng Hwa"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LiangEngHwa.jpg", "http://www.channelnewsasia.com/gestatic/images/258.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Liang Eng Hwa"],
+      "lock": {}
     },
     "nameNative": "连荣华",
     "birthdate": "1964-03-19T16:00:00.000Z",
     "age": 51,
-    "email": "liang_eng_hwa@singnet.com.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LiangEngHwa.jpg",
+    "email": "liang_eng_hwa@singnet.com.sg",
     "id": "liang-eng-hwa"
   }, {
     "name": "Lily Tirtasana Neo",
@@ -1897,15 +2127,18 @@
       "facebook": "http://www.facebook.com/DrLilyNeo"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LilyNeo20150821082015.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lily Neo", "Lily Tirtasana Neo"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LilyNeo20150821082015.jpg", "http://www.channelnewsasia.com/gestatic/images/103.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lily Neo", "Lily Tirtasana Neo"],
+      "lock": {
+        "name": true
+      }
     },
     "nameNative": "梁莉莉",
     "birthdate": "1953-08-11T16:00:00.000Z",
     "age": 62,
-    "email": "dr.lilyneo1@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LilyNeo20150821082015.jpg",
+    "email": "dr.lilyneo1@gmail.com",
     "id": "lily-tirtasana-neo"
   }, {
     "name": "Lim Biow Chuan",
@@ -1918,15 +2151,16 @@
       "facebook": "http://www.facebook.com/limbiowchuan"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimBiowChuan20150827125810.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lim Biow Chuan"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimBiowChuan20150827125810.jpg", "http://www.channelnewsasia.com/gestatic/images/266.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lim Biow Chuan"],
+      "lock": {}
     },
     "nameNative": "林谋泉",
     "birthdate": "1963-05-21T16:00:00.000Z",
     "age": 52,
-    "email": "lbclaw01@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimBiowChuan20150827125810.jpg",
+    "email": "lbclaw01@gmail.com",
     "id": "lim-biow-chuan"
   }, {
     "name": "Lim Hng Kiang",
@@ -1940,8 +2174,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimHngKiang20150826125101.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Minister_Lim_Hng_Kiang.jpg/220px-Minister_Lim_Hng_Kiang.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lim Hng Kiang"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lim Hng Kiang"],
+      "lock": {}
     },
     "nameNative": "林勋强",
     "birthdate": "1954-04-08T16:00:00.000Z",
@@ -1963,8 +2198,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimSweeSay20150827014029.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Lim_Swee_Say_at_the_PAP_Community_Foundation_25th_Anniversary_Carnival_-_20110402_%28cropped%29.jpg/220px-Lim_Swee_Say_at_the_PAP_Community_Foundation_25th_Anniversary_Carnival_-_20110402_%28cropped%29.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Lim Swee Say"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Lim Swee Say"],
+      "lock": {}
     },
     "birthdate": "1954-07-12T16:00:00.000Z",
     "age": 61,
@@ -1980,23 +2216,14 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Lim Tean"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/492.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Lim Tean"],
+      "lock": {}
     },
+    "age": 50,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/492.jpg",
     "id": "lim-tean"
-  }, {
-    "name": "Lim Tung Hee Arthero",
-    "division": "Pasir Ris-Punggol GRC",
-    "partyId": "sda",
-    "party": "Singapore Democratic Alliance",
-    "links": {},
-    "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Lim Tung Hee Arthero"]
-    },
-    "id": "lim-tung-hee-arthero"
   }, {
     "name": "Lim Wee Kiak",
     "division": "Sembawang GRC",
@@ -2007,12 +2234,14 @@
       "facebook": "http://www.facebook.com/drlimweekiak"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimWeeKiak.jpg"],
-      "merges": ["wikiElection", "pap"],
-      "names": ["Lim Wee Kiak"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimWeeKiak.jpg", "http://www.channelnewsasia.com/gestatic/images/239.jpg"],
+      "merges": ["wikiElection", "cna", "pap"],
+      "names": ["Lim Wee Kiak"],
+      "lock": {}
     },
-    "email": "limweekiak@gmail.com",
+    "age": 47,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LimWeeKiak.jpg",
+    "email": "limweekiak@gmail.com",
     "id": "lim-wee-kiak"
   }, {
     "name": "Lina Chiam",
@@ -2023,42 +2252,37 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Lina_Chiam"
     },
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Lina Chiam"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/324.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Lina Chiam"],
+      "lock": {}
     },
+    "age": 66,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/324.jpg",
     "id": "lina-chiam"
   }, {
-    "name": "Long Yaoguang, Don Bryan",
-    "division": "Bishan-Toa Payoh GRC",
-    "partyId": "spp",
-    "party": "Singapore People's Party",
-    "links": {},
-    "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Long Yaoguang, Don Bryan"]
-    },
-    "id": "long-yaoguang-don-bryan"
-  }, {
-    "name": "Louis Ng",
+    "name": "Louis Ng Kok Kwang",
     "division": "Nee Soon GRC",
     "partyId": "pap",
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Louis_Ng/Article",
-      "facebook": "http://www.facebook.com/LouisNgKokKwang",
+      "facebook": "https://www.facebook.com/LouisNgKokKwang",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/LOUIS%20NG%20KOK%20KWANG%20CV_Final.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LouisNg.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/LouisNg.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Ng Kok Kwang Louis", "Louis Ng", "Louis Ng Kok Kwang"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LouisNg.jpg", "http://www.channelnewsasia.com/gestatic/images/516.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/LouisNg.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Ng Kok Kwang Louis", "Louis Ng Kok Kwang"],
+      "lock": {
+        "name": true
+      }
     },
-    "email": "Ng.Louis@pap.org.sg",
+    "age": 37,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LouisNg.jpg",
+    "email": "Ng.Louis@pap.org.sg",
     "nameNative": "黄国光",
-    "id": "louis-ng"
+    "id": "louis-ng-kok-kwang"
   }, {
     "name": "Low Thia Khiang",
     "division": "Aljunied GRC",
@@ -2070,12 +2294,13 @@
     },
     "meta": {
       "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_ltk.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Low_Thia_Khiang_2011.JPG/180px-Low_Thia_Khiang_2011.JPG"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Low Thia Khiang"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Low Thia Khiang"],
+      "lock": {}
     },
     "birthdate": "1956-09-04T16:00:00.000Z",
     "age": 59,
-    "occupation": ["Member of Parliament and businessman", "Teacher"],
+    "occupation": ["Businessman", "Teacher", "Member of Parliament and businessman"],
     "birthplace": "Singapore",
     "almaMater": ["Nanyang University", "National University of Singapore"],
     "religion": "Buddhism",
@@ -2092,10 +2317,13 @@
     "party": "People's Power Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Low Wai Choo"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/553.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Low Wai Choo"],
+      "lock": {}
     },
+    "age": 55,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/553.jpg",
     "id": "low-wai-choo"
   }, {
     "name": "Low Yen Ling",
@@ -2108,17 +2336,64 @@
       "facebook": "http://www.facebook.com/yllow"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LowYenLing.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Low Yen Ling"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LowYenLing.jpg", "http://www.channelnewsasia.com/gestatic/images/390.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Low Yen Ling"],
+      "lock": {}
     },
     "nameNative": "刘燕玲",
     "birthdate": "1974",
     "age": 41,
     "birthplace": "Singapore",
-    "email": "yenling@bukitgombak.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/LowYenLing.jpg",
+    "email": "yenling@bukitgombak.org.sg",
     "id": "low-yen-ling"
+  }, {
+    "name": "Luke Koh Choong Yong",
+    "division": "Sengkang West SMC",
+    "partyId": "wp",
+    "party": "Workers' Party",
+    "links": {
+      "partyProfile": "http://www.wp.sg/koh-choong-yong/"
+    },
+    "meta": {
+      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_choon.jpg", "http://www.channelnewsasia.com/gestatic/images/314.jpg"],
+      "merges": ["wikiElection", "cna", "cna", "wp"],
+      "names": ["Koh Choong Yong", "Luke Koh Choong Yong"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 42,
+    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_choon.jpg",
+    "education": ["Bachelor of Science (Information Systems & Computer Sciences), National University of Singapore"],
+    "maritalStatus": "Married with 2 boys.",
+    "nameNative": "许俊荣",
+    "occupation": ["Software Engineer – Ruckus Wireless Singapore"],
+    "id": "luke-koh-choong-yong"
+  }, {
+    "name": "Lye Thiam Fatt Joseph Victor",
+    "division": "Aljunied GRC",
+    "partyId": "pap",
+    "party": "People's Action Party",
+    "links": {
+      "partyProfile": "https://www.pap.org.sg/Victor_Lye/article",
+      "facebook": "https://www.facebook.com/victorlye.singapore",
+      "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Victor%20Lye_CV_Statement.pdf"
+    },
+    "meta": {
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VictorLye.jpg", "http://www.channelnewsasia.com/gestatic/images/533.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150828120928.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Lye Thiam Fatt Joseph Victor", "Victor Lye Thiam Fatt"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 53,
+    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VictorLye.jpg",
+    "email": "victor_lye@pap-brp.org",
+    "nameNative": "赖添发",
+    "id": "lye-thiam-fatt-joseph-victor"
   }, {
     "name": "M Ravi",
     "division": "Ang Mo Kio GRC",
@@ -2126,10 +2401,13 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["M Ravi"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/514.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["M Ravi"],
+      "lock": {}
     },
+    "age": 46,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/514.jpg",
     "id": "m-ravi"
   }, {
     "name": "Masagos Zulkifli bin Masagos Mohamad",
@@ -2143,8 +2421,11 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Masagos.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Masagos_Zulkifli_at_The_Pentagon%2C_USA_-_20061017.jpg/220px-Masagos_Zulkifli_at_The_Pentagon%2C_USA_-_20061017.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Masagos Zulkifli bin Masagos Mohamad"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Masagos Zulkifli bin Masagos Mohamad"],
+      "lock": {
+        "name": true
+      }
     },
     "birthdate": "1963-04-15T16:00:00.000Z",
     "age": 52,
@@ -2162,10 +2443,12 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/mr_sidek_mallek/54"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Sidek-816_x_122-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Md Sidek bin Mallek"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Sidek-816_x_122-.jpg", "http://www.channelnewsasia.com/gestatic/images/510.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Md Sidek bin Mallek"],
+      "lock": {}
     },
+    "age": 55,
     "imageUrl": "http://yoursdp.org/Candidates/Sidek-816_x_122-.jpg",
     "nameNative": "西迪",
     "id": "md-sidek-bin-mallek"
@@ -2176,16 +2459,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Melvin_Yong/article",
-      "facebook": "http://www.facebook.com/melvinyong.sg",
+      "facebook": "https://www.facebook.com/melvinyong.sg",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Melvin%20Yong_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/MelvinYong.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150819112102.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Melvin Yong Yik Chye"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/MelvinYong.jpg", "http://www.channelnewsasia.com/gestatic/images/473.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150819112102.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Melvin Yong Yik Chye"],
+      "lock": {}
     },
-    "email": "Yong.Melvin@pap.org.sg",
+    "age": 43,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/MelvinYong.jpg",
+    "email": "Yong.Melvin@pap.org.sg",
     "nameNative": "杨益财",
     "id": "melvin-yong-yik-chye"
   }, {
@@ -2195,10 +2480,13 @@
     "party": "Singapore People's Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Mohamad Abdillah bin Zamzuri"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/535.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Mohamad Abdillah bin Zamzuri"],
+      "lock": {}
     },
+    "age": 31,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/535.jpg",
     "id": "mohamad-abdillah-bin-zamzuri"
   }, {
     "name": "Mohamad Fahmi bin Ahmad Rais",
@@ -2207,13 +2495,17 @@
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": ["https://singfirst99.files.wordpress.com/2014/11/fahmirais.jpg"],
-      "merges": ["wikiElection", "singfirst"],
-      "names": ["Mohamad Fahmi bin Ahmad Rais", "Fahmi Rais"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/524.jpg"],
+      "merges": ["wikiElection", "cna", "singfirst"],
+      "names": ["Mohamad Fahmi bin Ahmad Rais", "Fahmi Rais"],
+      "lock": {
+        "name": true
+      }
     },
+    "age": 48,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/524.jpg",
     "occupation": ["Communications Consultant", "Community leader"],
     "partyRoles": ["Committee Member"],
-    "imageUrl": "https://singfirst99.files.wordpress.com/2014/11/fahmirais.jpg",
     "id": "mohamad-fahmi-bin-ahmad-rais"
   }, {
     "name": "Mohamad Hamim bin Aliyas",
@@ -2224,15 +2516,17 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Mohamad_Hamim_Aliyas"
     },
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Mohamad Hamim bin Aliyas"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/276.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Mohamad Hamim bin Aliyas"],
+      "lock": {}
     },
     "birthdate": "1963",
     "age": 52,
     "occupation": ["Businessman", "Politician"],
     "religion": "Islam",
     "education": ["James Watt College with a Diploma in Interactive Media"],
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/276.jpg",
     "id": "mohamad-hamim-bin-aliyas"
   }, {
     "name": "Mohamad Maliki bin Osman",
@@ -2245,14 +2539,15 @@
       "facebook": "http://www.facebook.com/MalikiOsman"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Maliki.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Mohd Maliki bin Osman"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Maliki.jpg", "http://www.channelnewsasia.com/gestatic/images/108.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Mohd Maliki bin Osman"],
+      "lock": {}
     },
     "birthdate": "1965-07-18T16:00:00.000Z",
     "age": 50,
-    "email": "maliki_osman@mindef.gov.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Maliki.jpg",
+    "email": "maliki_osman@mindef.gov.sg",
     "id": "mohamad-maliki-bin-osman"
   }, {
     "name": "Mohamed Fairoz bin Shariff",
@@ -2263,15 +2558,16 @@
       "partyProfile": "http://www.wp.sg/mohamed-fairoz-bin-shariff"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203715/wpmp_profile2_fairoz.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Mohamed Fairoz bin Shariff"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203715/wpmp_profile2_fairoz.jpg", "http://www.channelnewsasia.com/gestatic/images/507.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Mohamed Fairoz bin Shariff"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203715/wpmp_profile2_fairoz.jpg",
     "age": 36,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203715/wpmp_profile2_fairoz.jpg",
     "education": ["Bachelor of Arts (Hons) in History, NUS", "Masters of Arts in Southeast Asian Studies, NUS"],
-    "occupation": ["Recently resigned from his position as Associate Librarian, Content & Services with the National Library Board to participate in the General Elections."],
     "maritalStatus": "Married with 3 children",
+    "occupation": ["Recently resigned from his position as Associate Librarian, Content & Services with the National Library Board to participate in the General Elections."],
     "partyRoles": ["Member, The Worker’s Party Youth Wing Executive Committee"],
     "id": "mohamed-fairoz-bin-shariff"
   }, {
@@ -2284,13 +2580,14 @@
       "partyProfile": "http://www.wp.sg/muhamad-faisal-bin-abdul-manap/"
     },
     "meta": {
-      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_faisal.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Muhamad Faisal bin Abdul Manap"]
+      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_faisal.jpg", "http://www.channelnewsasia.com/gestatic/images/310.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Muhamad Faisal bin Abdul Manap"],
+      "lock": {}
     },
     "birthdate": "1975-06-05T16:00:00.000Z",
     "age": 40,
-    "occupation": ["Member of Parliament and Freelance Counsellor"],
+    "occupation": ["Politician", "Member of Parliament and Freelance Counsellor"],
     "birthplace": "Singapore",
     "almaMater": ["Monash University"],
     "religion": "Islam",
@@ -2300,7 +2597,7 @@
     "partyRoles": ["Central Executive Council Member"],
     "id": "muhamad-faisal-bin-abdul-manap"
   }, {
-    "name": "Muhammad Faishal bin Ibrahim",
+    "name": "Muhammad Faishal Ibrahim",
     "division": "Nee Soon GRC",
     "partyId": "pap",
     "party": "People's Action Party",
@@ -2310,13 +2607,15 @@
       "facebook": "http://www.facebook.com/muhammad.faishal.ibrahim1"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/MuhdFaishal.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Muhammad Faishal Ibrahim"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/MuhdFaishal.jpg", "http://www.channelnewsasia.com/gestatic/images/267.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Muhammad Faishal Ibrahim"],
+      "lock": {}
     },
-    "email": "muhammad_faishal@moh.gov.sg",
+    "age": 47,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/MuhdFaishal.jpg",
-    "id": "muhammad-faishal-bin-ibrahim"
+    "email": "muhammad_faishal@moh.gov.sg",
+    "id": "muhammad-faishal-ibrahim"
   }, {
     "name": "Ng Chee Meng",
     "division": "Pasir Ris-Punggol GRC",
@@ -2330,11 +2629,13 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/NgCheeMeng.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/PACAF_Commander_at_Cope_Tiger.jpg/300px-PACAF_Commander_at_Cope_Tiger.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Ng%20Chee%20Meng.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap", "papNew"],
-      "names": ["Ng Chee Meng"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap", "papNew"],
+      "names": ["Ng Chee Meng"],
+      "lock": {}
     },
     "birthplace": "Singapore",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/NgCheeMeng.jpg",
+    "age": 47,
     "email": "Ng.Chee.Meng@pap.org.sg",
     "nameNative": "黄志明",
     "id": "ng-chee-meng"
@@ -2350,37 +2651,18 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/NgEngHen.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Ng_Eng_Hen_at_the_Pentagon_-_20120404.jpg/180px-Ng_Eng_Hen_at_the_Pentagon_-_20120404.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Ng Eng Hen"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Ng Eng Hen"],
+      "lock": {}
     },
     "nameNative": "黄永宏",
     "birthdate": "1958-12-09T16:00:00.000Z",
-    "age": 56,
+    "age": 57,
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore"],
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/NgEngHen.jpg",
     "email": "ng.enghen@yahoo.com.sg",
     "id": "ng-eng-hen"
-  }, {
-    "name": "Ng Foo Eng",
-    "division": "Marine Parade GRC",
-    "partyId": "wp",
-    "party": "Workers' Party",
-    "links": {
-      "partyProfile": "http://www.wp.sg/dylan-ng-foo-eng-2"
-    },
-    "meta": {
-      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_dylan.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Ng Foo Eng"]
-    },
-    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_dylan.jpg",
-    "age": 40,
-    "education": ["Bachelor of Economics, University of Western Australia (UWA)", "Advanced Diploma in Private Banking, Singapore Management University (SMU)"],
-    "occupation": ["Banker"],
-    "maritalStatus": "Married with 2 children (10 years old daughter and 6 years old son)",
-    "nameNative": "黄富荣",
-    "id": "ng-foo-eng"
   }, {
     "name": "Nor Lella",
     "division": "Tampines GRC",
@@ -2388,10 +2670,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Nor Lella"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/302.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Nor Lella"],
+      "lock": {}
     },
+    "age": 41,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/302.jpg",
     "id": "nor-lella"
   }, {
     "name": "Noraini Yunus",
@@ -2400,23 +2685,14 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Noraini Yunus"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/387.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Noraini Yunus"],
+      "lock": {}
     },
+    "age": 47,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/387.jpg",
     "id": "noraini-yunus"
-  }, {
-    "name": "Ong Beng Soon Elvin",
-    "division": "Pioneer SMC",
-    "partyId": "nsp",
-    "party": "National Solidarity Party",
-    "links": {},
-    "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Ong Beng Soon Elvin"]
-    },
-    "id": "ong-beng-soon-elvin"
   }, {
     "name": "Ong Teik Seng",
     "division": "Pasir Ris-Punggol GRC",
@@ -2424,10 +2700,13 @@
     "party": "Singapore Democratic Alliance",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Ong Teik Seng"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/546.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Ong Teik Seng"],
+      "lock": {}
     },
+    "age": 44,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/546.jpg",
     "id": "ong-teik-seng"
   }, {
     "name": "Ong Teng Koon",
@@ -2439,12 +2718,14 @@
       "facebook": "http://www.facebook.com/ongtengkoon"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/OngTengKoon20150826123144.jpg"],
-      "merges": ["wikiElection", "pap"],
-      "names": ["Ong Teng Koon"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/OngTengKoon20150826123144.jpg", "http://www.channelnewsasia.com/gestatic/images/379.jpg"],
+      "merges": ["wikiElection", "cna", "pap"],
+      "names": ["Ong Teng Koon"],
+      "lock": {}
     },
-    "email": "ong.teng.koon@gmail.com",
+    "age": 38,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/OngTengKoon20150826123144.jpg",
+    "email": "ong.teng.koon@gmail.com",
     "id": "ong-teng-koon"
   }, {
     "name": "Ong Ye Kung",
@@ -2457,15 +2738,16 @@
       "facebook": "http://www.facebook.com/ongyekung"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/OngYeKung.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Ong Ye Kung"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/OngYeKung.jpg", "http://www.channelnewsasia.com/gestatic/images/306.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Ong Ye Kung"],
+      "lock": {}
     },
     "nameNative": "王乙康",
     "birthdate": "1969-11-14T16:00:00.000Z",
-    "age": 45,
-    "email": "Ong.Ye.Kung@pap.org.sg",
+    "age": 46,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/OngYeKung.jpg",
+    "email": "Ong.Ye.Kung@pap.org.sg",
     "id": "ong-ye-kung"
   }, {
     "name": "Osman Sulaiman",
@@ -2474,10 +2756,13 @@
     "party": "Reform Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Osman Sulaiman"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/462.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Osman Sulaiman"],
+      "lock": {}
     },
+    "age": 40,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/462.jpg",
     "id": "osman-sulaiman"
   }, {
     "name": "Patrick Tay Teck Guan",
@@ -2490,15 +2775,16 @@
       "facebook": "http://www.facebook.com/PatrickTayTG"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/PatrickTay.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Patrick Tay Teck Guan"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/PatrickTay.jpg", "http://www.channelnewsasia.com/gestatic/images/376.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Patrick Tay Teck Guan"],
+      "lock": {}
     },
     "nameNative": "郑德源",
     "birthdate": "1971-11-30T16:00:00.000Z",
-    "age": 43,
-    "email": "patricktay@yahoo.com",
+    "age": 44,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/PatrickTay.jpg",
+    "email": "patricktay@yahoo.com",
     "id": "patrick-tay-teck-guan"
   }, {
     "name": "Paul Anantharajah Tambyah",
@@ -2509,10 +2795,14 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/dr_paul_ananth_tambyah/52"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Paul-816_x_122-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Paul Anantharajah Tambyah", "Paul Tambyah"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Paul-816_x_122-.jpg", "http://www.channelnewsasia.com/gestatic/images/509.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Paul Anantharajah Tambyah", "Paul Tambyah"],
+      "lock": {
+        "name": true
+      }
     },
+    "age": 50,
     "imageUrl": "http://yoursdp.org/Candidates/Paul-816_x_122-.jpg",
     "nameNative": "淡马亚医生",
     "id": "paul-anantharajah-tambyah"
@@ -2527,8 +2817,9 @@
     },
     "meta": {
       "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_png.jpg", "https://upload.wikimedia.org/wikipedia/commons/5/5b/Png_Eng_Huat_at_a_Workers%27_Party_general_election_rally%2C_Bedok_Stadium%2C_Singapore_-_20110430.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Png Eng Huat"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Png Eng Huat"],
+      "lock": {}
     },
     "nameNative": "方荣发",
     "birthdate": "1961-12-08T16:00:00.000Z",
@@ -2537,8 +2828,8 @@
     "almaMater": ["University of Texas at Austin"],
     "education": ["Bachelor of Science (Radio-TV-Film), University of Texas, USA"],
     "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_png.jpg",
-    "occupation": ["Member of Parliament"],
     "maritalStatus": "Married with a daughter and a son",
+    "occupation": ["Member of Parliament"],
     "partyRoles": ["Central Executive Council Member"],
     "id": "png-eng-huat"
   }, {
@@ -2552,12 +2843,13 @@
     },
     "meta": {
       "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_ps.jpg", "https://upload.wikimedia.org/wikipedia/commons/7/78/Pritam_Singh_at_the_Workers%27_Party_general_election_rally%2C_Serangoon_Stadium%2C_Singapore_-_20110505.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Pritam Singh"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Pritam Singh"],
+      "lock": {}
     },
     "birthdate": "1976-08-01T16:00:00.000Z",
     "age": 39,
-    "occupation": ["Member of Parliament", "Advocate & Solicitor (Locum), Donaldson & Burkinshaw LLP"],
+    "occupation": ["Lawyer", "Member of Parliament", "Advocate & Solicitor (Locum), Donaldson & Burkinshaw LLP"],
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore", "King's College London", "Singapore Management University"],
     "religion": "Sikhism",
@@ -2573,16 +2865,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Rahayu_Mahzam/article",
-      "facebook": "http://www.facebook.com/RahayuMahzamSG",
+      "facebook": "https://www.facebook.com/RahayuMahzamSG",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Rahayu%20Mahzam_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/RahayuMahzam.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150820104839_20150820111540.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Rahayu Binte Mahzam"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/RahayuMahzam.jpg", "http://www.channelnewsasia.com/gestatic/images/521.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150820104839_20150820111540.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Rahayu Binte Mahzam"],
+      "lock": {}
     },
-    "email": "Rahayu.Mahzam@pap.org.sg",
+    "age": 35,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/RahayuMahzam.jpg",
+    "email": "Rahayu.Mahzam@pap.org.sg",
     "nameNative": "拉哈尤  玛赞",
     "id": "rahayu-mahzam"
   }, {
@@ -2592,10 +2886,13 @@
     "party": "Singapore People's Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Ravi Philemon"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/495.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Ravi Philemon"],
+      "lock": {}
     },
+    "age": 46,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/495.jpg",
     "id": "ravi-philemon"
   }, {
     "name": "Redzwan Hafidz Abdul Razak",
@@ -2606,15 +2903,16 @@
       "partyProfile": "http://www.wp.sg/redzwan-hafidz-abdul-razak"
     },
     "meta": {
-      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/Redz.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Redzwan Hafidz Abdul Razak"]
+      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/Redz.jpg", "http://www.channelnewsasia.com/gestatic/images/508.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Redzwan Hafidz Abdul Razak"],
+      "lock": {}
     },
-    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/Redz.jpg",
     "age": 30,
+    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/Redz.jpg",
     "education": ["Bachelor of Engineering (Mechanical), University of Newcastle, Australia", "Master of Science in Engineering Business Management, University of Warwick, UK"],
-    "occupation": ["Engineer"],
     "maritalStatus": "Married",
+    "occupation": ["Engineer"],
     "id": "redzwan-hafidz-abdul-razak"
   }, {
     "name": "Ron Tan Jun Yen",
@@ -2625,16 +2923,17 @@
       "partyProfile": "http://www.wp.sg/ron-tan-jun-yen/"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190726/wpmp_profile2_ron.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Ron Tan Jun Yen"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190726/wpmp_profile2_ron.jpg", "http://www.channelnewsasia.com/gestatic/images/486.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Ron Tan Jun Yen"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190726/wpmp_profile2_ron.jpg",
     "age": 30,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26190726/wpmp_profile2_ron.jpg",
     "education": ["Bachelor of Law / Bachelor of Commerce, the University of Western Australia, Perth-Western Australia, 2008", "Guildford Grammar School, Perth-Western Australia", "Maris Stella High School (Primary), Singapore"],
-    "occupation": ["Real Estate Agent (Propnex) and director (Win Supreme Investment (S) Pte Ltd)"],
     "maritalStatus": "Engaged",
     "nameNative": "陈俊元",
+    "occupation": ["Real Estate Agent (Propnex) and director (Win Supreme Investment (S) Pte Ltd)"],
     "partyRoles": ["Executive Committee member, The Workers’ Party Youth Wing, member of the Workers’ Party Grassroots Committee (WPGC) and member of Hougang Constituency Committee (HGCC)"],
     "id": "ron-tan-jun-yen"
   }, {
@@ -2643,22 +2942,22 @@
     "partyId": "rp",
     "party": "Reform Party",
     "links": {
-      "wikipedia": "https://en.wikipedia.org/wiki/Roy_Ngerng",
-      "website": "http://thehearttruths.com"
+      "wikipedia": "https://en.wikipedia.org/wiki/Roy_Ngerng"
     },
     "meta": {
-      "imageUrls": ["https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Singaporean_Activist_Roy_Ngerng.jpg/220px-Singaporean_Activist_Roy_Ngerng.jpg"],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Roy Ngerng Yi Ling"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/515.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Singaporean_Activist_Roy_Ngerng.jpg/220px-Singaporean_Activist_Roy_Ngerng.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Roy Ngerng Yi Ling"],
+      "lock": {}
     },
     "nameNative": "鄞义林",
     "birthdate": "1981-05-08T16:00:00.000Z",
     "age": 34,
     "occupation": ["Carrot cake seller", "Sociopolitical blogger", "Social activist"],
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Singaporean_Activist_Roy_Ngerng.jpg/220px-Singaporean_Activist_Roy_Ngerng.jpg",
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/515.jpg",
     "id": "roy-ngerng-yi-ling"
   }, {
-    "name": "S. Iswaran",
+    "name": "S Iswaran",
     "division": "West Coast GRC",
     "partyId": "pap",
     "party": "People's Action Party",
@@ -2669,8 +2968,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SIswaran20150826125039.jpg", "https://upload.wikimedia.org/wikipedia/commons/e/e6/S_Iswaran_at_the_International_Summit_on_the_Teaching_Profession%2C_New_York_City%2C_New_York_-_20110316_%28cropped%29.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["S Iswaran"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["S Iswaran"],
+      "lock": {}
     },
     "birthdate": "1962",
     "age": 53,
@@ -2688,10 +2988,12 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/sadasivam_veriyah/57"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Sada-816_x_122-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Sadasivam Veriyah"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Sada-816_x_122-.jpg", "http://www.channelnewsasia.com/gestatic/images/454.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Sadasivam Veriyah"],
+      "lock": {}
     },
+    "age": 62,
     "imageUrl": "http://yoursdp.org/Candidates/Sada-816_x_122-.jpg",
     "nameNative": "桑达西迈",
     "id": "sadasivam-veriyah"
@@ -2702,16 +3004,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Saktiandi_Supaat/article",
-      "facebook": "http://www.facebook.com/AndiSupaat.Page",
+      "facebook": "https://www.facebook.com/AndiSupaat.Page",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Saktiandi%20Bin%20Supaat_CV_Statement.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/saktiandi.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Profile80_20150822014218.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Saktiandi Supaat"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/saktiandi.jpg", "http://www.channelnewsasia.com/gestatic/images/480.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Profile80_20150822014218.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Saktiandi Supaat"],
+      "lock": {}
     },
-    "email": "Saktiandi.Supaat@pap.org.sg",
+    "age": 42,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/saktiandi.jpg",
+    "email": "Saktiandi.Supaat@pap.org.sg",
     "nameNative": "安迪",
     "id": "saktiandi-supaat"
   }, {
@@ -2725,16 +3029,19 @@
       "facebook": "http://www.facebook.com/RadinMasPAP"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SamTan20150828023701.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Tan Chin Siong"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SamTan20150828023701.jpg", "http://www.channelnewsasia.com/gestatic/images/272.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Tan Chin Siong", "Sam Tan Chin Siong"],
+      "lock": {
+        "name": true
+      }
     },
     "nameNative": "陈振泉",
     "birthdate": "1958",
     "age": 57,
     "birthplace": "Singapore",
-    "email": "samtan@tptc.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SamTan20150828023701.jpg",
+    "email": "samtan@tptc.org.sg",
     "id": "sam-tan-chin-siong"
   }, {
     "name": "Samir Salim Neji",
@@ -2743,10 +3050,13 @@
     "party": "Independent",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Samir Salim Neji"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/555.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Samir Salim Neji"],
+      "lock": {}
     },
+    "age": 45,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/555.jpg",
     "id": "samir-salim-neji"
   }, {
     "name": "Seah Kian Peng",
@@ -2758,12 +3068,14 @@
       "facebook": "http://www.facebook.com/pages/Seah-Kian-Peng/119375544807415"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SeahKianPeng.jpg"],
-      "merges": ["wikiElection", "pap"],
-      "names": ["Seah Kian Peng"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SeahKianPeng.jpg", "http://www.channelnewsasia.com/gestatic/images/247.jpg"],
+      "merges": ["wikiElection", "cna", "pap"],
+      "names": ["Seah Kian Peng"],
+      "lock": {}
     },
-    "email": "papbraddellheights@gmail.com",
+    "age": 54,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SeahKianPeng.jpg",
+    "email": "papbraddellheights@gmail.com",
     "id": "seah-kian-peng"
   }, {
     "name": "Sebastian Teo Kway Huang",
@@ -2774,13 +3086,16 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Sebastian_Teo"
     },
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Teo Kway Huang Sebastian"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/95.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Teo Kway Huang Sebastian"],
+      "lock": {}
     },
     "nameNative": "张培源",
     "occupation": ["Executive director", "Politician"],
     "education": ["Nanyang University with a Bachelor of Arts (Hons)", "National University of Singapore with MBA and University of Southern Queensland with Master in Strategic Marketing Management"],
+    "age": 67,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/95.jpg",
     "id": "sebastian-teo-kway-huang"
   }, {
     "name": "Shamsul Kamar",
@@ -2789,16 +3104,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Shamsul_Kamar/article",
-      "facebook": "http://www.facebook.com/ShamsulKamar.SG",
+      "facebook": "https://www.facebook.com/ShamsulKamar.SG",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Shamsul%20Kamar_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Shamsul-Kamar.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150828121418.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Shamsul Kamar bin Mohamed Razali"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Shamsul-Kamar.jpg", "http://www.channelnewsasia.com/gestatic/images/477.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150828121418.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Shamsul Kamar bin Mohamed Razali"],
+      "lock": {}
     },
-    "email": "Shamsul.Kamar@pap.org.sg",
+    "age": 43,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Shamsul-Kamar.jpg",
+    "email": "Shamsul.Kamar@pap.org.sg",
     "nameNative": "山水·卡玛尔",
     "id": "shamsul-kamar"
   }, {
@@ -2812,16 +3129,17 @@
       "facebook": "http://www.facebook.com/SimAnn.SG"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SimAnn.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Sim Ann"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SimAnn.jpg", "http://www.channelnewsasia.com/gestatic/images/406.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Sim Ann"],
+      "lock": {}
     },
     "birthdate": "1975-03-11T16:00:00.000Z",
     "age": 40,
     "birthplace": "Singapore",
     "almaMater": ["Exeter College", "Oxford", "Stanford University"],
-    "email": "hbtsimann@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SimAnn.jpg",
+    "email": "hbtsimann@gmail.com",
     "id": "sim-ann"
   }, {
     "name": "Sitoh Yih Pin",
@@ -2834,16 +3152,17 @@
       "facebook": "http://www.facebook.com/pages/Sitoh-Yih-Pin/166835826687535"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SitohYinPih20150826100137.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Sitoh Yih Pin"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SitohYinPih20150826100137.jpg", "http://www.channelnewsasia.com/gestatic/images/16.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Sitoh Yih Pin"],
+      "lock": {}
     },
     "nameNative": "司徒宇斌",
     "birthdate": "1963-12-01T16:00:00.000Z",
-    "age": 51,
+    "age": 52,
     "almaMater": ["National University of Singapore"],
-    "email": "sitoh@nexiats.com.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/SitohYinPih20150826100137.jpg",
+    "email": "sitoh@nexiats.com.sg",
     "id": "sitoh-yih-pin"
   }, {
     "name": "Siva Chandran",
@@ -2854,12 +3173,14 @@
       "wikipedia": "https://en.wikipedia.org/wiki/Siva_Chandran"
     },
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection", "wikiProfiles"],
-      "names": ["Siva Chandran"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/528.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "names": ["Siva Chandran"],
+      "lock": {}
     },
     "birthdate": "1983-11-13T16:00:00.000Z",
-    "age": 31,
+    "age": 32,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/528.jpg",
     "id": "siva-chandran"
   }, {
     "name": "Spencer Ng Chung Hon",
@@ -2868,10 +3189,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Spencer Ng Chung Hon"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/423.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Spencer Ng Chung Hon"],
+      "lock": {}
     },
+    "age": 36,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/423.jpg",
     "id": "spencer-ng-chung-hon"
   }, {
     "name": "Sukdeu Singh",
@@ -2880,10 +3204,13 @@
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Sukdeu Singh"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/537.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Sukdeu Singh"],
+      "lock": {}
     },
+    "age": 64,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/537.jpg",
     "id": "sukdeu-singh"
   }, {
     "name": "Sun Xueling",
@@ -2896,14 +3223,33 @@
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Sun%20Xueling_CV_Statement_v.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Xueling.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Sun%20Xueling.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Sun Xueling"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Xueling.jpg", "http://www.channelnewsasia.com/gestatic/images/467.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/Sun%20Xueling.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Sun Xueling"],
+      "lock": {}
     },
-    "email": "Sun.Xueling@pap.org.sg",
+    "age": 36,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/Xueling.jpg",
+    "email": "Sun.Xueling@pap.org.sg",
     "nameNative": "孙雪玲",
     "id": "sun-xueling"
+  }, {
+    "name": "Sunny Wong Way Weng",
+    "division": "Pasir Ris-Punggol GRC",
+    "partyId": "sda",
+    "party": "Singapore Democratic Alliance",
+    "links": {},
+    "meta": {
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/547.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Wong Way Weng", "Sunny Wong Way Weng"],
+      "lock": {
+        "name": true
+      }
+    },
+    "age": 53,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/547.jpg",
+    "id": "sunny-wong-way-weng"
   }, {
     "name": "Syafarin bin Sarif",
     "division": "Chua Chu Kang GRC",
@@ -2911,10 +3257,13 @@
     "party": "People's Power Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Syafarin bin Sarif"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/303.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Syafarin bin Sarif"],
+      "lock": {}
     },
+    "age": 39,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/303.jpg",
     "id": "syafarin-bin-sarif"
   }, {
     "name": "Sylvia Lim Swee Lian",
@@ -2927,12 +3276,13 @@
     },
     "meta": {
       "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_sl.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sylvia_Lim_at_a_Workers%27_Party_general_election_rally%2C_Bedok_Stadium%2C_Singapore_-_20110430_%28cropped%29.jpg/220px-Sylvia_Lim_at_a_Workers%27_Party_general_election_rally%2C_Bedok_Stadium%2C_Singapore_-_20110430_%28cropped%29.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Sylvia Lim"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Sylvia Lim"],
+      "lock": {}
     },
     "birthdate": "1965-03-27T16:00:00.000Z",
     "age": 50,
-    "occupation": ["Member of Parliament", "Advocate & Solicitor, Peter Low LLC", "Politician"],
+    "occupation": ["Lawyer", "Law lecturer at Temasek Polytechnic", "Politician", "Member of Parliament", "Advocate & Solicitor, Peter Low LLC"],
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore", "University College London"],
     "religion": "Roman Catholic",
@@ -2953,17 +3303,18 @@
       "facebook": "http://www.facebook.com/TanChuanJin1"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TanChuanJin.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Tan Chuan Jin"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TanChuanJin.jpg", "http://www.channelnewsasia.com/gestatic/images/375.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Tan Chuan Jin"],
+      "lock": {}
     },
     "birthdate": "1969-01-09T16:00:00.000Z",
     "age": 46,
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore", "King's College London", "London School of Economics"],
     "religion": "Christianity",
-    "email": "tanchuanjin@mptc.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TanChuanJin.jpg",
+    "email": "tanchuanjin@mptc.org.sg",
     "id": "tan-chuanjin"
   }, {
     "name": "Tan Jee Say",
@@ -2971,18 +3322,18 @@
     "partyId": "singfirst",
     "party": "Singaporeans First",
     "links": {
-      "wikipedia": "https://en.wikipedia.org/wiki/Tan_Jee_Say",
-      "website": "http://www.tanjeesay.com"
+      "wikipedia": "https://en.wikipedia.org/wiki/Tan_Jee_Say"
     },
     "meta": {
-      "imageUrls": ["https://singfirst99.files.wordpress.com/2014/11/tanjeesay.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/TanJeeSay.jpg/245px-TanJeeSay.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "singfirst"],
-      "names": ["Tan Jee Say"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/455.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/TanJeeSay.jpg/245px-TanJeeSay.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "singfirst"],
+      "names": ["Tan Jee Say"],
+      "lock": {}
     },
     "nameNative": "陈如斯",
     "birthdate": "1954-02-11T16:00:00.000Z",
     "age": 61,
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/TanJeeSay.jpg/245px-TanJeeSay.jpg",
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/455.jpg",
     "occupation": ["Investment Banker", "Fund manager", "Senior civil servant"],
     "partyRoles": ["Secretary-General"],
     "id": "tan-jee-say"
@@ -2993,13 +3344,15 @@
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": ["https://singfirst99.files.wordpress.com/2014/11/tanpengann.jpg"],
-      "merges": ["wikiElection", "singfirst"],
-      "names": ["Tan Peng Ann"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/468.jpg"],
+      "merges": ["wikiElection", "cna", "singfirst"],
+      "names": ["Tan Peng Ann"],
+      "lock": {}
     },
+    "age": 67,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/468.jpg",
     "occupation": ["Community Leader", "Social entrepreneur", "Retired army colonel"],
     "partyRoles": ["Vice Chairman"],
-    "imageUrl": "https://singfirst99.files.wordpress.com/2014/11/tanpengann.jpg",
     "id": "tan-peng-ann"
   }, {
     "name": "Tan Wu Meng",
@@ -3009,18 +3362,19 @@
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Tan_Wu_Meng",
       "partyProfile": "https://www.pap.org.sg/Tan_Wu_Meng/article",
-      "facebook": "http://www.facebook.com/tanwumeng",
+      "facebook": "https://www.facebook.com/tanwumeng",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Tan%20Wu%20Meng_CV_Statement.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TanWuMeng.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150820105011.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap", "papNew"],
-      "names": ["Tan Wu Meng"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TanWuMeng.jpg", "http://www.channelnewsasia.com/gestatic/images/377.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150820105011.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap", "papNew"],
+      "names": ["Tan Wu Meng"],
+      "lock": {}
     },
     "birthdate": "1974-12-31T16:00:00.000Z",
-    "age": 40,
-    "email": "Dr.Tan.W.M@gmail.com",
+    "age": 39,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TanWuMeng.jpg",
+    "email": "Dr.Tan.W.M@gmail.com",
     "nameNative": "陈有明",
     "id": "tan-wu-meng"
   }, {
@@ -3035,12 +3389,13 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TeoCheeHean.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Teo_Chee_Hean.jpg/220px-Teo_Chee_Hean.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Teo Chee Hean"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Teo Chee Hean"],
+      "lock": {}
     },
     "nameNative": "张志贤",
     "birthdate": "1954-12-26T16:00:00.000Z",
-    "age": 60,
+    "age": 61,
     "birthplace": "Singapore",
     "almaMater": ["UMIST", "Imperial College London", "Harvard University"],
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TeoCheeHean.jpg",
@@ -3057,9 +3412,10 @@
       "facebook": "http://www.facebook.com/TeoHoPin"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TeoHoPin20150827014711.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Teo Ho Pin"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TeoHoPin20150827014711.jpg", "http://www.channelnewsasia.com/gestatic/images/92.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Teo Ho Pin"],
+      "lock": {}
     },
     "birthdate": "1960-01-18T16:00:00.000Z",
     "age": 55,
@@ -3067,8 +3423,8 @@
     "birthplace": "Singapore",
     "almaMater": ["Jurong Town Primary School", "New Town Secondary School", "National Junior College", "National University of Singapore", "Heriot-Watt University"],
     "religion": "Buddhism",
-    "email": "teo_ho_pin@pa.gov.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TeoHoPin20150827014711.jpg",
+    "email": "teo_ho_pin@pa.gov.sg",
     "id": "teo-ho-pin"
   }, {
     "name": "Teo Ser Luck",
@@ -3082,11 +3438,12 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TeoSerLuck.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Teo_Ser_Luck_giving_a_speech_at_Park_View_Primary_School%2C_Singapore_-_20080522.jpg/220px-Teo_Ser_Luck_giving_a_speech_at_Park_View_Primary_School%2C_Singapore_-_20080522.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Teo Ser Luck"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Teo Ser Luck"],
+      "lock": {}
     },
     "birthdate": "1968-06-07T16:00:00.000Z",
-    "age": 47,
+    "age": 46,
     "occupation": ["Politician"],
     "birthplace": "Singapore",
     "almaMater": ["Nanyang Technological University"],
@@ -3103,16 +3460,17 @@
       "partyProfile": "http://www.wp.sg/terence-tan-li-chern/"
     },
     "meta": {
-      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174410/wpmp_profile2_terence.jpg"],
-      "merges": ["wikiElection", "wp"],
-      "names": ["Terence Tan"]
+      "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174410/wpmp_profile2_terence.jpg", "http://www.channelnewsasia.com/gestatic/images/502.jpg"],
+      "merges": ["wikiElection", "cna", "wp"],
+      "names": ["Terence Tan"],
+      "lock": {}
     },
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174410/wpmp_profile2_terence.jpg",
     "age": 44,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174410/wpmp_profile2_terence.jpg",
     "education": ["Bachelor of Laws (Honours), University of Kent (1994)"],
-    "occupation": ["Lawyer"],
     "maritalStatus": "Single",
     "nameNative": "陈励正",
+    "occupation": ["Lawyer"],
     "id": "terence-tan"
   }, {
     "name": "Tharman Shanmugaratnam",
@@ -3126,8 +3484,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TharmanR.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tharman_Shanmugaratnam_at_the_official_opening_of_Yuan_Ching_Secondary_School%27s_new_building%2C_Singapore_-_20100716_%28cropped%29.jpg/220px-Tharman_Shanmugaratnam_at_the_official_opening_of_Yuan_Ching_Secondary_School%27s_new_building%2C_Singapore_-_20100716_%28cropped%29.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Tharman Shanmugaratnam"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Tharman Shanmugaratnam"],
+      "lock": {}
     },
     "nameNative": "தர்மன் சண்முகரத்தினம்",
     "birthdate": "1957-02-24T16:00:00.000Z",
@@ -3149,9 +3508,10 @@
       "facebook": "http://www.facebook.com/tinpeiling.official"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TinPeiling.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Tin Pei Ling"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TinPeiling.jpg", "http://www.channelnewsasia.com/gestatic/images/413.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Tin Pei Ling"],
+      "lock": {}
     },
     "birthdate": "1983-12-22T16:00:00.000Z",
     "age": 31,
@@ -3159,28 +3519,33 @@
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore"],
     "religion": "Buddhism",
-    "email": "tinpeiling@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/TinPeiling.jpg",
+    "email": "tinpeiling@gmail.com",
     "id": "tin-pei-ling"
   }, {
-    "name": "Victor Lye Thiam Fatt",
-    "division": "Aljunied GRC",
+    "name": "Tong Chun Fai Edwin Charles",
+    "division": "Marine Parade GRC",
     "partyId": "pap",
     "party": "People's Action Party",
     "links": {
-      "partyProfile": "https://www.pap.org.sg/Victor_Lye/article",
-      "facebook": "http://www.facebook.com/victorlye.singapore",
-      "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Victor%20Lye_CV_Statement.pdf"
+      "wikipedia": "https://en.wikipedia.org/wiki/Edwin_Tong",
+      "partyProfile": "https://www.pap.org.sg/Your-Candidates",
+      "facebook": "http://www.facebook.com/pages/Edwin-Tong/101815586571229"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VictorLye.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150828120928.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Lye Thiam Fatt Joseph Victor"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/EdwinTong20150827010053.jpg", "http://www.channelnewsasia.com/gestatic/images/365.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Tong Chun Fai Edwin Charles", "Edwin Tong"],
+      "lock": {
+        "name": true
+      }
     },
-    "email": "victor_lye@pap-brp.org",
-    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VictorLye.jpg",
-    "nameNative": "赖添发",
-    "id": "victor-lye-thiam-fatt"
+    "birthdate": "1969-12-31T16:00:00.000Z",
+    "age": 46,
+    "occupation": ["Politician"],
+    "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/EdwinTong20150827010053.jpg",
+    "email": "edwintongchunfai@gmail.com",
+    "id": "tong-chun-fai-edwin-charles"
   }, {
     "name": "Vikram Nair",
     "division": "Sembawang GRC",
@@ -3192,16 +3557,17 @@
       "facebook": "http://www.facebook.com/vikram.nair"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VikramNair20150826125947.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Vikram Nair"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VikramNair20150826125947.jpg", "http://www.channelnewsasia.com/gestatic/images/366.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Vikram Nair"],
+      "lock": {}
     },
     "birthdate": "1978-07-17T16:00:00.000Z",
     "age": 37,
     "occupation": ["Politician", "Lawyer"],
     "almaMater": ["Trinity College", "Cambridge"],
-    "email": "admiralty.sembawang@gmail.com",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VikramNair20150826125947.jpg",
+    "email": "admiralty.sembawang@gmail.com",
     "id": "vikram-nair"
   }, {
     "name": "Vivian Balakrishnan",
@@ -3215,8 +3581,9 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/VivianBalakrishnan20150826122000.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Vivian_Balakrishnan_-_2010.jpg/220px-Vivian_Balakrishnan_-_2010.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Vivian Balakrishnan"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Vivian Balakrishnan"],
+      "lock": {}
     },
     "nameNative": "விவியன் பாலகிருஷ்ணன்",
     "birthdate": "1961-01-24T16:00:00.000Z",
@@ -3227,28 +3594,19 @@
     "email": "v_bala@mewr.gov.sg",
     "id": "vivian-balakrishnan"
   }, {
-    "name": "Wong Chee Wai",
-    "division": "Jurong GRC",
-    "partyId": "singfirst",
-    "party": "Singaporeans First",
-    "links": {},
-    "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Wong Chee Wai"]
-    },
-    "id": "wong-chee-wai"
-  }, {
     "name": "Wong Soon Hong",
     "division": "Jurong GRC",
     "partyId": "singfirst",
     "party": "Singaporeans First",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Wong Soon Hong"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/538.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Wong Soon Hong"],
+      "lock": {}
     },
+    "age": 57,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/538.jpg",
     "id": "wong-soon-hong"
   }, {
     "name": "Wong Souk Yee",
@@ -3259,25 +3617,15 @@
       "partyProfile": "http://yoursdp.org/publ/candidates/ms_wong_souk_yee/60"
     },
     "meta": {
-      "imageUrls": ["http://yoursdp.org/Candidates/Souk_Yee-816_x_124-.jpg"],
-      "merges": ["wikiElection", "sdp"],
-      "names": ["Wong Souk Yee"]
+      "imageUrls": ["http://yoursdp.org/Candidates/Souk_Yee-816_x_124-.jpg", "http://www.channelnewsasia.com/gestatic/images/544.jpg"],
+      "merges": ["wikiElection", "cna", "sdp"],
+      "names": ["Wong Souk Yee"],
+      "lock": {}
     },
+    "age": 56,
     "imageUrl": "http://yoursdp.org/Candidates/Souk_Yee-816_x_124-.jpg",
     "nameNative": "黄淑仪",
     "id": "wong-souk-yee"
-  }, {
-    "name": "Wong Way Weng",
-    "division": "Pasir Ris-Punggol GRC",
-    "partyId": "sda",
-    "party": "Singapore Democratic Alliance",
-    "links": {},
-    "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Wong Way Weng"]
-    },
-    "id": "wong-way-weng"
   }, {
     "name": "Yaacob Ibrahim",
     "division": "Jalan Besar GRC",
@@ -3290,11 +3638,12 @@
     },
     "meta": {
       "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/YaacobIbrahim.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Yaacob_Ibrahim%2C_Singapore_-_20060722.jpg/180px-Yaacob_Ibrahim%2C_Singapore_-_20060722.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Yaacob Ibrahim"]
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Yaacob Ibrahim"],
+      "lock": {}
     },
     "birthdate": "1955-10-02T16:00:00.000Z",
-    "age": 59,
+    "age": 60,
     "occupation": ["Engineer", "Lecturer", "Professor"],
     "birthplace": "Singapore",
     "almaMater": ["University of Singapore", "Stanford University"],
@@ -3308,10 +3657,13 @@
     "party": "National Solidarity Party",
     "links": {},
     "meta": {
-      "imageUrls": [],
-      "merges": ["wikiElection"],
-      "names": ["Yadzeth bin Haris"]
+      "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/190.jpg"],
+      "merges": ["wikiElection", "cna"],
+      "names": ["Yadzeth bin Haris"],
+      "lock": {}
     },
+    "age": 53,
+    "imageUrl": "http://www.channelnewsasia.com/gestatic/images/190.jpg",
     "id": "yadzeth-bin-haris"
   }, {
     "name": "Yee Chia Hsing",
@@ -3320,16 +3672,18 @@
     "party": "People's Action Party",
     "links": {
       "partyProfile": "https://www.pap.org.sg/Yee_Chia_Hsing/Article",
-      "facebook": "http://www.facebook.com/YeeChiaHsing",
+      "facebook": "https://www.facebook.com/YeeChiaHsing",
       "cvUrl": "https://www.pap.org.sg/upload/item/2015Candidate/Yee%20Chia%20Hsing_CV.pdf"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/YeeChiaHsing20150821075325.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150816110742.jpg"],
-      "merges": ["wikiElection", "pap", "papNew"],
-      "names": ["Yee Chia Hsing"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/YeeChiaHsing20150821075325.jpg", "http://www.channelnewsasia.com/gestatic/images/496.jpg", "https://www.pap.org.sg/Upload/Free%20Form%20Gallery/1040/Thumbnail/profile80_20150816110742.jpg"],
+      "merges": ["wikiElection", "cna", "pap", "papNew"],
+      "names": ["Yee Chia Hsing"],
+      "lock": {}
     },
-    "email": "yeechiahsing@gmail.com",
+    "age": 44,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/YeeChiaHsing20150821075325.jpg",
+    "email": "yeechiahsing@gmail.com",
     "nameNative": "余家兴",
     "id": "yee-chia-hsing"
   }, {
@@ -3342,17 +3696,18 @@
       "partyProfile": "http://www.wp.sg/yee-jenn-jong/"
     },
     "meta": {
-      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_jj.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "wp"],
-      "names": ["Yee Jenn Jong"]
+      "imageUrls": ["http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_jj.jpg", "http://www.channelnewsasia.com/gestatic/images/416.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "wp"],
+      "names": ["Yee Jenn Jong"],
+      "lock": {}
     },
     "nameNative": "余振忠",
     "birthdate": "1965-03-23T16:00:00.000Z",
     "age": 50,
     "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_jj.jpg",
     "education": ["Bachelor of Science (Hons), National University of Singapore", "Master of Science, National University of Singapore", "Master of Business Administration, Nanyang Technology University"],
-    "occupation": ["Founder and CEO, The Learning Grid Pte Ltd and 360 Education Pte Ltd"],
     "maritalStatus": "Married with 3 children",
+    "occupation": ["Founder and CEO, The Learning Grid Pte Ltd and 360 Education Pte Ltd"],
     "partyRoles": ["Webmaster"],
     "id": "yee-jenn-jong"
   }, {
@@ -3362,22 +3717,22 @@
     "party": "People's Action Party",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Yeo_Guat_Kwang",
-      "website": "http://yeoguatkwang.org/",
       "partyProfile": "https://www.pap.org.sg/Your-Candidates",
       "facebook": "http://www.facebook.com/yeogk"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/YeoGuatKwang.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Yeo Guat Kwang"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/YeoGuatKwang.jpg", "http://www.channelnewsasia.com/gestatic/images/71.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Yeo Guat Kwang"],
+      "lock": {}
     },
     "birthdate": "1961-01-26T16:00:00.000Z",
     "age": 54,
     "birthplace": "Singapore",
     "almaMater": ["National University of Singapore", "National Institute of Education"],
     "education": ["National University of Singapore", "National Institute of Education"],
-    "email": "Yeo.Guat.Kwang@pap.org.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/YeoGuatKwang.jpg",
+    "email": "Yeo.Guat.Kwang@pap.org.sg",
     "id": "yeo-guat-kwang"
   }, {
     "name": "Zainal bin Sapari",
@@ -3390,14 +3745,15 @@
       "facebook": "http://www.facebook.com/S.Zainal"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ZainalBinSapari.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Zainal Sapari"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ZainalBinSapari.jpg", "http://www.channelnewsasia.com/gestatic/images/380.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Zainal Sapari"],
+      "lock": {}
     },
     "birthdate": "1965-11-29T16:00:00.000Z",
-    "age": 49,
-    "email": "zainal_sapari@prpg-grc.sg",
+    "age": 50,
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ZainalBinSapari.jpg",
+    "email": "zainal_sapari@prpg-grc.sg",
     "id": "zainal-bin-sapari"
   }, {
     "name": "Zaqy Mohamad",
@@ -3410,14 +3766,15 @@
       "facebook": "http://www.facebook.com/zaqym"
     },
     "meta": {
-      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ZaqyMohamad20150821074702.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "pap"],
-      "names": ["Zaqy Mohamad"]
+      "imageUrls": ["https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ZaqyMohamad20150821074702.jpg", "http://www.channelnewsasia.com/gestatic/images/238.jpg"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "pap"],
+      "names": ["Zaqy Mohamad"],
+      "lock": {}
     },
     "birthdate": "1974-09-14T16:00:00.000Z",
     "age": 40,
-    "email": "mp@keathong.sg",
     "imageUrl": "https://www.pap.org.sg/Upload/Reps/1039/Thumbnail/ZaqyMohamad20150821074702.jpg",
+    "email": "mp@keathong.sg",
     "id": "zaqy-mohamad"
   }]
 }
