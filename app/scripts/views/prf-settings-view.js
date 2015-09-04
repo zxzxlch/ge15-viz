@@ -12,8 +12,8 @@ module.exports = Backbone.View.extend({
 
   events: {
     'click .viz-settings-perspectives a': 'clickPerspective',
-    'click .viz-settings-sort button':    'sort',
-    'click .viz-settings-views button':   'clickView',
+    'click .viz-settings-sort a':         'sort',
+    'click .viz-settings-views a':        'clickView',
     'keyup .viz-settings-search input':   'search',
     'change .viz-settings-search input':  'search'
   },
@@ -39,6 +39,8 @@ module.exports = Backbone.View.extend({
   },
 
   sort: function (event) {
+    event.preventDefault();
+    
     let sortAttribute = $(event.currentTarget).data('value');
     router.setQuery({ sort: sortAttribute });
   },

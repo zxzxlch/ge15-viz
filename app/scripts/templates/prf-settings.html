@@ -1,30 +1,30 @@
 <div class="viz-settings-perspectives">
-  <div class="heading">Perspectives</div>
-  <ul class="nav nav-pills">
-    <li role="presentation" class="active"><a href="#faces">Faces</a></li>
-    <li role="presentation"><a href="#wards">Wards</a></li>
-  </ul>
+  <a class="btn btn-lg active" href="#faces">Faces</a>
+  <a class="btn btn-lg" href="#wards">Wards</a>
 </div>
 
-<div class="viz-settings-views">
-  <label>View</label>
-  <div class="btn-group" role="group" aria-label="...">
-    <button type="button" class="btn btn-default" data-value="default">Default</button>
-    <button type="button" class="btn btn-default" data-value="teams">Teams</button>
-    <button type="button" class="btn btn-default" data-value="ages">Ages</button>
-  </div>
-</div>
-
-<div class="viz-settings-filters">
-  <div class="viz-settings-sort">
-    <label>Sort by</label>
-    <div class="btn-group" role="group" aria-label="...">
-      <button type="button" class="btn btn-default" data-value="name">A to Z</button>
-      <button type="button" class="btn btn-default" data-value="party">Party</button>
-    </div>
-  </div>
+<div class="viz-settings-groups">
+  <!-- Search -->
   <div class="viz-settings-search">
     <label>Search</label>
     <input type="text" placeholder="Search">
+  </div>
+  <!-- Views -->
+  <div class="viz-settings-views">
+    <label>View</label>
+    <div class="settings-link-group" role="group" aria-label="View">
+      <a class="settings-link" href="#" data-value="default">Default</a>
+      <a class="settings-link" href="#" data-value="teams">Teams</a>
+    </div>
+  </div>
+  <!-- Filter -->
+  <div class="viz-settings-filters">
+    <div class="viz-settings-sort">
+      <label>Sort</label>
+      <div class="settings-link-group" role="group" aria-label="Sort">
+        <a class="settings-link" href="#" data-value="name">A to Z</a>
+        <a class="settings-link" href="#" data-value="party">Party</a>
+      </div>
+    </div>
   </div>
 </div>

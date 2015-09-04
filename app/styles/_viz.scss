@@ -1,27 +1,92 @@
 /* _viz.scss */
 
 .viz-settings {
-  margin-bottom: 40px;
-
   label {
     font-weight: normal;
   }
 }
 
 .viz-settings-perspectives {
-  .heading {
-    margin: 10px 0;
+  margin-bottom: 30px;
+
+  a.btn {
+    margin-right: 30px;
+    border-radius: 2px;
+    padding: 10px 24px;
     font-family: $font-family-alt;
-    font-size: 20px;
+    font-size: 24px;
+    background-color: lighten($brand-primary, 40%);
+    color: $brand-primary;
+
+    &.active {
+      background-color: $brand-primary;
+      color: white;
+      box-shadow: none;
+    }
   }
 }
 
-.viz-settings-filters {
-  @include display-flex;
-  @include justify-content(space-between);
+.viz-settings-groups {
+  @include clearfix;
+
+  > div {
+    margin-bottom: 10px;
+
+    label {
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #BBB;
+    }
+    a.settings-link-group {
+
+    }
+    a.settings-link {
+      margin-right: 1.5em;
+      padding-bottom: 5px;
+      line-height: 30px;
+      font-size: 20px;
+      font-weight: 500;
+      color: $brand-primary;
+      text-decoration: none;
+
+      &.active, &:hover {
+        border-bottom: 4px solid lighten($brand-primary, 10%);
+      }
+    }
+  }
 }
 
-.viz-settings-search input {
-  display: inline-block;
-  width: 200px;
+.viz-settings-views {
+  float: left;
+  margin-right: 30px;
+}
+
+.viz-settings-filters {
+  float: left;
+  margin-right: 30px;
+}
+
+.viz-settings-search {
+  float: right;
+
+  @media screen and (max-width: 540px) {
+    float: left;
+    margin-right: 30px;
+  }
+  input {
+    display: block;
+    width: 200px;
+    padding: 0;
+    border: none;
+    border-bottom: 4px solid #BBB;
+    line-height: 30px;
+    font-size: 20px;
+    outline: 0;
+
+    &:focus {
+      border-bottom-color: lighten($brand-primary, 10%);
+    }
+  }
 }

@@ -12,7 +12,6 @@ $faces-party-section-logo-size: 60px;
 // Global
 
 .viz-content {
-  border-top: 8px solid #F5F5F5;
   padding-top: 40px;
 }
 
@@ -109,6 +108,7 @@ $faces-party-section-logo-size: 60px;
 
 .viz-profiles-face {
   .tooltip {
+    pointer-events: none;
     margin-top: -10px;
   }
 }
