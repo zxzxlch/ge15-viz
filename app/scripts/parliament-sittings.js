@@ -2,6 +2,6 @@
 
 require("babelify/polyfill");
 let $ = require('jquery');
-let ParliamentSittingsChart = require('./views/parliament-sittings-chart');
+let AppView = require('./views/ps-app-view');
 
-new ParliamentSittingsChart();
+new AppView();

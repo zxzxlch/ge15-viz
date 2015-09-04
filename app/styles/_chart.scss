@@ -1,6 +1,13 @@
 /* _chart.scss */
 
+$chart-color: #6D70EF;
+$chart-color-dark: darken($chart-color, 20%);
 $chart-bar-height: 32px;
+$chart-border-radius: 2px;
+
+.viz-ps-color {
+  color: $gray-dark;
+}
 
 .chart.row {
   margin: 0 -40px;
@@ -10,35 +17,31 @@ $chart-bar-height: 32px;
 
 .chart-row {
   font-size: $chart-font-size;
-  padding: 20px 0 15px;
+  padding: 30px 0 15px;
 
-  // > div {
-  //   padding: 0;
-  // }
-  & + & {
-    border-top: 1px solid $gray-lighter;
-  }
   .caption {
     color: $gray-light;
-    font-size: 13px;
-    line-height: 15px;
-    margin: 5px 0;
+    font-size: 14px;
+    margin-bottom: 0.7em;
   }
   .chart-label-name {
-    display: block;
-    color: $brand-primary-dark;
-    font-size: 18px;
-    line-height: 1;
+    font-family: $font-family-alt;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 0.1em;
   }
-  .chart-label-party {
-    
-  }
-  .chart-label-grc {
+  .chart-label-party-group {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $gray-light;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
   }
 }
 
 .chart-col-1 {
-  margin-bottom: 4px;
+  margin-bottom: 0.35em;
   padding-right: $grid-gutter-width / 2;
 }
 
@@ -50,12 +53,16 @@ $chart-bar-height: 32px;
     width: 100%;
     height: $chart-bar-height;
     background: $gray-lighter;
-    border-radius: 2px;
+    border-radius: $chart-border-radius;
+  }
+  .bar-filled, .bar-icon-filled {
+    border-top-left-radius: $chart-border-radius;
+    border-bottom-left-radius: $chart-border-radius;
   }
   .bar-filled {
     position: absolute;
     height: 100%;
-    background-color: $brand-primary;
+    background-color: $chart-color;
   }
   .bar-icon-filled {
     position: absolute;
@@ -69,7 +76,7 @@ $chart-bar-height: 32px;
     height: 4px;
     top: 50%;
     background-color: white;
-    border: 1px solid rgba($brand-primary, 0.5);
+    border: 1px solid rgba($chart-color, 0.5);
     box-sizing: content-box;
     z-index: 100;
   }
@@ -79,32 +86,28 @@ $chart-bar-height: 32px;
   margin-top: 20px;
 
   & + & {
-    margin-top: 80px;
+    border-top: 3px solid #F7F7F7;
+    padding-top: 40px;
+    margin-top: 60px;
   }
   .chart-group-details {
-    padding-bottom: 17px;
-    border-bottom: 1px solid $gray-lighter;
+    margin-bottom: 10px;
   }
   .detail-title {
     margin-right: 0.3em;
-    font-size: 1.9em;
-    font-weight: 500;
-    color: $brand-primary;
+    font-family: $font-family-alt;
+    font-size: 2.2em;
+    color: $gray-dark;
   }
   .detail-subtitle {
+    font-family: $font-family-alt;
     font-size: 1.1em;
     color: #9C9C9C;
   }
   .detail-stats {
     color: $gray-light;
-    font-size: 0.9em;
+    font-size: 18px;
     line-height: 1.4;
-  }
-}
-
-.chart-settings {
-  .nav-pills > li {
-    float: right;
   }
 }
 
@@ -116,7 +119,7 @@ $chart-bar-height: 32px;
 
   .chart-guide-instructions {
     margin-bottom: 30px;
-    color: $brand-primary;
+    color: $chart-color;
     font-weight: bold;
     font-size: 13px;
     text-transform: uppercase;

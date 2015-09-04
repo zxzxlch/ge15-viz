@@ -1,7 +1,7 @@
 {
   "meta": {
     "count": 181,
-    "lastUpdated": "2015-09-04T12:16:03.530Z"
+    "lastUpdated": "2015-09-04T14:46:00.178Z"
   },
   "data": [{
     "name": "Abdul Rasheed S/O Y Abdul Kuthus",
@@ -271,7 +271,7 @@
     "meta": {
       "imageUrls": ["http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/27203703/wpmp_profile2_bernard.jpg", "http://www.channelnewsasia.com/gestatic/images/483.jpg"],
       "merges": ["wikiElection", "cna", "wp"],
-      "names": ["Chen Jiaxi", "Bernard Chen Jiaxi"],
+      "names": ["Chen Jiaxi Bernard", "Bernard Chen Jiaxi"],
       "lock": {
         "name": true
       }
@@ -1521,8 +1521,8 @@
   }, {
     "name": "Jeannette Chong-Aruldoss",
     "division": "Mountbatten SMC",
-    "partyId": "nsp",
-    "party": "National Solidarity Party",
+    "partyId": "spp",
+    "party": "Singapore People's Party",
     "links": {
       "wikipedia": "https://en.wikipedia.org/wiki/Jeannette_Chong-Aruldoss"
     },

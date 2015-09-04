@@ -1,4 +1,4 @@
-// views/parliament-sittings-chart.js
+// views/ps-app-view.js
 
 let $        = require('jquery');
 let _        = require('underscore');
@@ -21,7 +21,7 @@ module.exports = Backbone.View.extend({
     this.meanSpokenPercent = this.meanSpoken / maxAttendance * 100;
 
     // Add settings bar
-    this.settingsBar = new SettingsBar({ el: $('.chart-settings') });
+    this.settingsBar = new SettingsBar({ el: $('.viz-settings') });
     this.listenTo(this.settingsBar, 'settingsDidChange', this.renderRows);
 
     this.initChartGuide();
@@ -105,7 +105,7 @@ module.exports = Backbone.View.extend({
         }));
         return groupView.el
       });
-      $('.chart-content').html($groups);
+      $('.viz-content').html($groups);
 
     } else {
 
@@ -117,7 +117,7 @@ module.exports = Backbone.View.extend({
           meanSpokenPercent:     this.meanSpokenPercent });
         return row.el
       });
-      $('.chart-content').html($rows);
+      $('.viz-content').html($rows);
     }
   }
 

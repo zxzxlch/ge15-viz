@@ -1,21 +1,23 @@
 <div class="chart-row row">
   <div class="chart-col-1 col-lg-3">
-    <span class="chart-label-name"><%= data.name %></span>
-    <span class="chart-label-party"><%= data.party %></span>
-    <span class="chart-label-grc"><%= data.grc %></span>
+    <div class="chart-label-name"><%= data.name %></div>
+    <div class="chart-label-party-group">
+      <span class="chart-label-party"><%= data.party %></span>
+      <span class="chart-label-grc"><%= data.grc %></span>
+    </div>
   </div>
   <div class="chart-plotarea col-lg-9">
+    <div class="caption">
+      Spoke up for <strong class="no-break viz-ps-color"><%= data.spoken %></strong> out of <strong class="no-break viz-ps-color"><%= data.attendance %></strong> parliament sittings attended with a <strong class="no-break viz-ps-color"><%= attendanceRate %>%</strong> attendance rate
+      <% if (data.note) { %>
+        <br>Note: <%= data.note %>
+      <% } %>
+    </div>
     <div class="bar">
       <div class="bar-filled"></div>
       <div class="bar-icon-filled"></div>
       <div class="bar-marker marker-1"></div>
       <div class="bar-marker marker-2"></div>
-    </div>
-    <div class="caption">
-      Spoke up for <strong><%= data.spoken %></strong> out of <strong><%= data.attendance %></strong> parliament sittings attended with a <strong><%= attendanceRate %></strong>% attendance rate
-      <% if (data.note) { %>
-        <br>Note: <%= data.note %>
-      <% } %>
     </div>
   </div>
 </div>

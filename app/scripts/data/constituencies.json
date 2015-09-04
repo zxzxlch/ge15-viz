@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "count": 29,
+    "lastUpdated": "2015-09-03T03:56:48.991Z"
+  },
+  "data": [{
+    "division": "Bukit Batok SMC",
+    "seats": 1,
+    "voters": 27077,
+    "url": "https://en.wikipedia.org/wiki/Bukit_Batok_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Bukit Panjang SMC",
+    "seats": 1,
+    "voters": 34317,
+    "url": "https://en.wikipedia.org/wiki/Bukit_Panjang_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Fengshan SMC",
+    "seats": 1,
+    "voters": 23427,
+    "url": "https://en.wikipedia.org/wiki/Fengshan_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Hong Kah North SMC",
+    "seats": 1,
+    "voters": 28145,
+    "url": "https://en.wikipedia.org/wiki/Hong_Kah_North_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Hougang SMC",
+    "seats": 1,
+    "voters": 24097,
+    "url": "https://en.wikipedia.org/wiki/Hougang_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "MacPherson SMC",
+    "seats": 1,
+    "voters": 28511,
+    "url": "https://en.wikipedia.org/wiki/MacPherson_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Mountbatten SMC",
+    "seats": 1,
+    "voters": 24143,
+    "url": "https://en.wikipedia.org/wiki/Mountbatten_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Pioneer SMC",
+    "seats": 1,
+    "voters": 25458,
+    "url": "https://en.wikipedia.org/wiki/Pioneer_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Potong Pasir SMC",
+    "seats": 1,
+    "voters": 17407,
+    "url": "https://en.wikipedia.org/wiki/Potong_Pasir_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Punggol East SMC",
+    "seats": 1,
+    "voters": 34466,
+    "url": "https://en.wikipedia.org/wiki/Punggol_East_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Radin Mas SMC",
+    "seats": 1,
+    "voters": 28906,
+    "url": "https://en.wikipedia.org/wiki/Radin_Mas_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Sengkang West SMC",
+    "seats": 1,
+    "voters": 30119,
+    "url": "https://en.wikipedia.org/wiki/Sengkang_West_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Yuhua SMC",
+    "seats": 1,
+    "voters": 22617,
+    "url": "https://en.wikipedia.org/wiki/Yuhua_Single_Member_Constituency",
+    "type": "smc"
+  }, {
+    "division": "Chua Chu Kang GRC",
+    "seats": 4,
+    "voters": 119931,
+    "url": "https://en.wikipedia.org/wiki/Chua_Chu_Kang_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "East Coast GRC",
+    "seats": 4,
+    "voters": 99118,
+    "url": "https://en.wikipedia.org/wiki/East_Coast_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Holland-Bukit Timah GRC",
+    "seats": 4,
+    "voters": 104491,
+    "url": "https://en.wikipedia.org/wiki/Holland-Bukit_Timah_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Jalan Besar GRC",
+    "seats": 4,
+    "voters": 102540,
+    "url": "https://en.wikipedia.org/wiki/Jalan_Besar_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Marsiling-Yew Tee GRC",
+    "seats": 4,
+    "voters": 107599,
+    "url": "https://en.wikipedia.org/wiki/Marsiling-Yew_Tee_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "West Coast GRC",
+    "seats": 4,
+    "voters": 99300,
+    "url": "https://en.wikipedia.org/wiki/West_Coast_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Aljunied GRC",
+    "seats": 5,
+    "voters": 148142,
+    "url": "https://en.wikipedia.org/wiki/Aljunied_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Bishan-Toa Payoh GRC",
+    "seats": 5,
+    "voters": 129975,
+    "url": "https://en.wikipedia.org/wiki/Bishan-Toa_Payoh_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Jurong GRC",
+    "seats": 5,
+    "voters": 130498,
+    "url": "https://en.wikipedia.org/wiki/Jurong_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Marine Parade GRC",
+    "seats": 5,
+    "voters": 146244,
+    "url": "https://en.wikipedia.org/wiki/Marine_Parade_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Nee Soon GRC",
+    "seats": 5,
+    "voters": 132289,
+    "url": "https://en.wikipedia.org/wiki/Nee_Soon_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Sembawang GRC",
+    "seats": 5,
+    "voters": 144672,
+    "url": "https://en.wikipedia.org/wiki/Sembawang_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Tampines GRC",
+    "seats": 5,
+    "voters": 143518,
+    "url": "https://en.wikipedia.org/wiki/Tampines_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Tanjong Pagar GRC",
+    "seats": 5,
+    "voters": 130752,
+    "url": "https://en.wikipedia.org/wiki/Tanjong_Pagar_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Ang Mo Kio GRC",
+    "seats": 6,
+    "voters": 187771,
+    "url": "https://en.wikipedia.org/wiki/Ang_Mo_Kio_Group_Representation_Constituency",
+    "type": "grc"
+  }, {
+    "division": "Pasir Ris-Punggol GRC",
+    "seats": 6,
+    "voters": 187396,
+    "url": "https://en.wikipedia.org/wiki/Pasir_Ris-Punggol_Group_Representation_Constituency",
+    "type": "grc"
+  }]
+}

@@ -1,0 +1,40 @@
+---
+
+siteName: null
+
+title: GE2015 Visualizations
+
+description: >
+  A look at Singapore’s 2015 General Elections by the numbers
+
+visualizations:
+- 
+  title: GE2015 Candidates
+  description: Who’s contesting in this year’s general election?
+  path: profiles/index.html
+- 
+  title: Parliament Sittings
+  description: How Often Do Our Members of Parliament Attend Parliament Sittings?
+  path: parliament-sittings.html
+
+---
+
+<div class="hero">
+  <h1>GE2015<br>Visual<wbr>izations</h1>
+  <img class="banner" src="/images/banner-large.png">
+  <p>{{ description }}</p>
+</div>
+
+<div>
+  <a id="charts"></a>
+  {{#each visualizations~}}
+    <div class="panel panel-default">
+      <a href="{{ path }}">
+        <div class="panel-body">
+          <h3>{{ title }}</h3>
+          <p>{{ description }}</p>
+        </div>
+      </a>
+    </div>
+  {{~/each}}
+</div>
