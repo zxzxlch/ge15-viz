@@ -52,12 +52,8 @@ module.exports = Backbone.View.extend({
 
     // Render candidates
     let candidateViews = _.map(this.divisionGroups, group => {
-      if (group.candidates.length == 1) {
-        return group.candidates[0].view.render().el
-      } else {
-        // Stack candidates
-        return new DivisionView(group).render().el;
-      }
+      // Stack candidates
+      return new DivisionView(group).render().el;
     });
     this.$('.party-section-candidates').html(candidateViews);
 
