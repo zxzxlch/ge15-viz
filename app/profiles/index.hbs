@@ -1,5 +1,7 @@
 ---
 
+relativePath: '../'
+
 layout: viz-layout.hbs
 
 title: GE2015 Candidates
@@ -11,7 +13,9 @@ description: >
 
 data: <%= candidates.data %>
 
-ogImage: http://zxzxlch.github.io/ge15-viz/images/prf-og-image.png
+ogImage: images/prf-og-image.png
+
+ogUrl: http://zxzxlch.github.io/ge15-viz/profiles/#faces
 
 buildScripts:
   main:     'profiles-bundled'
@@ -115,6 +119,6 @@ buildScripts:
 
 <div class="hide js-image-ref">
   {{#each data~}}
-    <img data-candidate-id="{{ id }}" src="/images/candidates/thumbs/{{ id }}.png">
+    <img data-candidate-id="{{ id }}" src="{{ ../relativePath }}images/candidates/thumbs/{{ id }}.png">
   {{/each}}
 </div>

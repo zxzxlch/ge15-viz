@@ -6,41 +6,42 @@
     <meta name="description" content="{{ description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+    <link rel="shortcut icon" href="{{ relativePath }}favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{{ relativePath }}apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ relativePath }}apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ relativePath }}apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ relativePath }}apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ relativePath }}apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ relativePath }}apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ relativePath }}apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ relativePath }}apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ relativePath }}apple-touch-icon-180x180.png" />
 
-    <!-- build:css(.) /styles/vendor.css -->
+    <!-- build:css(.) {{ relativePath }}styles/vendor.css -->
     <!-- bower:css -->
     <!-- endbower -->
     <!-- endbuild -->
-    <!-- build:css(.tmp) /styles/main.css -->
-    <link rel="stylesheet" href="/styles/main.css">
+    <!-- build:css(.tmp) {{ relativePath }}styles/main.css -->
+    <link rel="stylesheet" href="{{ relativePath }}styles/main.css">
     <!-- endbuild -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-    <!-- build:js /scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- build:js {{ relativePath }}scripts/vendor/modernizr.js -->
+    <script src="{{ relativePath }}bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
     <!-- Facebook open graph tags -->
     <meta property="og:site_name" content="{{ siteName }}"/>
     <meta property="og:title" content="{{ title }}" />
     <meta property="og:description" content="{{ description }}" />
-    <meta property="og:image" content="{{ ogImage }}" />
+    {{#if ogImage}}<meta property="og:image" content="{{ relativePath }}{{ ogImage }}" />{{/if}}
+    {{#if ogUrl}}<meta property="og:url" content="{{ ogUrl }}" />{{/if}}
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="{{ siteName }}">
     <meta name="twitter:creator" content="@zxzxlch">
     <meta name="twitter:title" content="{{ title }}">
     <meta name="twitter:description" content="{{ description }}">
-    <meta name="twitter:image" content="{{ ogImage }}">
+    {{#if ogImage}}<meta name="twitter:image" content="{{ relativePath }}{{ ogImage }}">{{/if}}
 
   </head>
   <body>
@@ -60,33 +61,33 @@
       </div>
     </div>
 
-    <!-- build:js(.) /scripts/vendor.js -->
+    <!-- build:js(.) {{ relativePath }}scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="{{ relativePath }}bower_components/modernizr/modernizr.js"></script>
+    <script src="{{ relativePath }}bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     
-    <!-- build:js(.) /scripts/plugins.js -->
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
-    <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <!-- build:js(.) {{ relativePath }}scripts/plugins.js -->
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+    <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
     
     {{#with buildScripts~}}
-      <!-- build:js(.tmp) /scripts/{{ main }}.js -->
+      <!-- build:js(.tmp) {{ ../relativePath }}scripts/{{ main }}.js -->
       {{#each scripts~}}
-        <script src="/scripts/{{ this }}.js"></script>
+        <script src="{{ ../../relativePath }}scripts/{{ this }}.js"></script>
       {{/each~}}
       <!-- endbuild -->
     {{~/with}}
