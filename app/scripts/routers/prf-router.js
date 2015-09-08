@@ -12,13 +12,17 @@ let Router = Backbone.Router.extend({
 
   routes: {
     'faces(?*query)': 'faces',
-    'wards(?*query)': 'wards'
+    'parties(?*query)': 'parties'
   },
 
   execute: function () {
-    let perspective = this.getPerspective();
+    let perspective = this.getFragmentPerspective();
     if (perspective == '') 
       return this.navigate('faces', { trigger: true });
+
+    // Check for perspective change
+    let perspectiveChanged = (this.perspective != perspective);
+    this.perspective = perspective;
 
     // Parse query
     this.parseQuery();
@@ -36,14 +40,17 @@ let Router = Backbone.Router.extend({
           }).
           value();
       }
+    } else if (perspective == 'parties') {
+      this.query = {};
     }
 
-    this.updateFragmentQuery({ silent: true });
+    // Don't trigger 'didUpdateQuery' if perspective is changed
+    this.updateFragmentQuery({ silent: perspectiveChanged });
 
     Backbone.Router.prototype.execute.apply(this, arguments);
   },
 
-  getPerspective: function () {
+  getFragmentPerspective: function () {
     return Backbone.history.getFragment().split('?')[0];
   },
 
@@ -52,7 +59,7 @@ let Router = Backbone.Router.extend({
     if (this.query[key] == value) return;
     this.query[key] = value;
 
-    this.updateFragmentQuery({ silent: true });
+    this.updateFragmentQuery();
   },
 
   parseQuery: function () {
@@ -65,8 +72,8 @@ let Router = Backbone.Router.extend({
     if (!options) options = {};
 
     let queryString = Common.formatQueryString(this.query);
-    this.trigger('didUpdateQuery', this.query);
-    this.navigate(this.getPerspective() + queryString, { trigger: !options.silent });
+    if (!options.silent) this.trigger('didUpdateQuery', this.query);
+    this.navigate(this.perspective + queryString, { trigger: false });
   }
 
 });

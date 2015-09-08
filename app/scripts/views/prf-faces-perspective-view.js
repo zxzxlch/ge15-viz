@@ -21,9 +21,6 @@ module.exports = Backbone.View.extend({
       return view;
     });
 
-    // Router events
-    this.listenTo(router, 'didUpdateQuery', this.routerDidUpdateQuery);
-
     this.render();
   },
 

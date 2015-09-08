@@ -7,6 +7,7 @@ let $        = require('jquery'),
     router         = require('../routers/prf-router'),
     SettingsView   = require('../views/prf-settings-view'),
     FacesPerspectiveView = require('../views/prf-faces-perspective-view'),
+    PartiesPerspectiveView = require('../views/prf-parties-perspective-view'),
     Candidates     = require('../collections/prf-candidates'),
     Parties        = require('../collections/prf-parties'),
     Candidate      = require('../models/prf-candidate'),
@@ -68,8 +69,19 @@ module.exports = Backbone.View.extend({
     }));
 
     // Router
-    this.listenTo(router, 'route:faces', this.showFaces);
-    this.listenTo(router, 'route:wards', this.showWards);
+    this.listenTo(router, 'route:faces', () => {
+      this.loadPerspectiveView(new FacesPerspectiveView({
+        candidates: this.candidates,
+        parties:    this.parties
+      }));
+    });
+    this.listenTo(router, 'route:parties', () => {
+      this.loadPerspectiveView(new PartiesPerspectiveView({
+        candidates: this.candidates,
+        parties:    this.parties
+      }));
+    });
+    this.listenTo(router, 'didUpdateQuery', this.routerDidUpdateQuery);
 
     // Events
     this.listenTo(this.settingsView, 'search', this.search);
@@ -79,17 +91,18 @@ module.exports = Backbone.View.extend({
     return $('.viz-content');
   },
 
-  showFaces: function () {
-    this.perspectiveView = new FacesPerspectiveView({
-      candidates: this.candidates,
-      parties:    this.parties
-    });
+  loadPerspectiveView: function (view) {
+    if (this.perspectiveView) {
+      this.perspectiveView.stopListening();
+    }
+    this.perspectiveView = view;
     this.getVizContent().replaceWith(this.perspectiveView.el);
+    this.settingsView.updateSettings();
   },
 
-  showWards: function () {
-    // this.$viz.removeClass('viz-profiles-face').
-    //   addClass('viz-profiles-wards');
+  routerDidUpdateQuery: function () {
+    this.perspectiveView.routerDidUpdateQuery();
+    this.settingsView.updateSettings();
   },
 
   search: function (searchString) {

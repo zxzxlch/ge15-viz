@@ -27,19 +27,20 @@ module.exports = Backbone.View.extend({
     return this;
   },
 
-  updateSettings: function (query) {
-    // Perspective
-    let perspective = router.getPerspective();
-    if (perspective == 'faces') {
-      if (query.view == 'teams') {
-        this.toggleSortButtons(false);
+  updateSettings: function () {
+    // Faces
+    if (router.perspective == 'faces') {
+      this.setActive('perspective', 'faces');
+      if (router.query.view == 'teams') {
+        this.toggleGroupDisplay('sort', false);
         this.setActive('view', 'teams');
       } else {
-        this.toggleSortButtons(true);
+        this.toggleGroupDisplay('sort', true);
         this.setActive('view', 'default');
-        var sortValue = query.sort || 'name';
+        var sortValue = router.query.sort || 'name';
         this.setActive('sort', sortValue);
       }
+    } 
     }
   },
 
