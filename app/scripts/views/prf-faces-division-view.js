@@ -16,7 +16,19 @@ module.exports = Backbone.View.extend({
   },
 
   render: function () {
-    this.$('.candidates-group').html(_.map(this.candidates, (candidate) => candidate.view.render().el));
+    // Hide if all candidates are filtered
+    let hide = _.every(this.candidates, candidate => candidate.get('filtered'));
+    this.$el.toggleClass('hide', hide);
+
+    // Render candidate views
+    let candidateViews = _.map(this.candidates, candidate => {
+      let $view = candidate.view.render().$el;
+      // Dim candidate if filt$ered
+      $view.toggleClass('dim', candidate.get('filtered'));
+      return $view;
+    });
+
+    this.$('.candidates-group').html(candidateViews);
     return this;
   }
 

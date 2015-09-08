@@ -27,9 +27,14 @@ let _        = require('lodash'),
  * @property {string}   attributes.links.wikipedia
  * @property {string}   attributes.links.facebook
  * @property {string}   attributes.links.cv
+ * @property {boolean}  attributes.filtered
  * @method setFilter
  */
 module.exports = Backbone.Model.extend({
+
+  initialize: function (options) {
+    this.set('filtered', false, { silent: true });
+  },
 
   parse: function (data) {
     return _.pick(data,
@@ -51,8 +56,8 @@ module.exports = Backbone.Model.extend({
     );
   },
 
-  setFilter: function (query) {
-    let re = new RegExp(query, 'i');
+  setFilter: function (searchString) {
+    let re = new RegExp(searchString, 'i');
 
     // Filter name, nameNative, party, division
     let matched = _.chain(this.attributes).
@@ -66,7 +71,7 @@ module.exports = Backbone.Model.extend({
       }).
       value();
 
-    this.trigger('filter', !matched);
+    this.set('filtered', !matched);
   }
 
 });

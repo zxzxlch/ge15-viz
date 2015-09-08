@@ -55,15 +55,11 @@ module.exports = Backbone.View.extend({
 
   setView: function (event) {
     event.preventDefault();
-
-    // Set query
     router.setQueryValue('view', $(event.currentTarget).data('value'));
   },
 
   setSort: function (event) {
     event.preventDefault();
-    
-    // Set query
     router.setQueryValue('sort', $(event.currentTarget).data('value'));
   },
 

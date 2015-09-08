@@ -50,14 +50,22 @@ module.exports = Backbone.View.extend({
       numSMC:   this.stats.smc
     }));
 
-    // Render candidates
-    let candidateViews = _.map(this.divisionGroups, group => {
+    // Render divisions
+    let $divisions = _.map(this.divisionGroups, group => {
       // Stack candidates
       return new DivisionView(group).render().el;
     });
-    this.$('.party-section-candidates').html(candidateViews);
+    this.$('.party-section-divisions').html($divisions);
+
+    // Hide if all candidates are filtered
+    let hide = _.every($divisions, elem => $(elem).hasClass('hide'));
+    this.$el.toggleClass('hide', hide);
 
     return this;
+  },
+
+  isFiltered: function () {
+    return _.every(this.model.candidates.models, candidate => candidate.get('filtered'));
   }
 
 });

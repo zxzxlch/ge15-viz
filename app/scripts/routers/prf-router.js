@@ -11,10 +11,8 @@ let Router = Backbone.Router.extend({
   query: {},
 
   routes: {
-    '':               'root',
     'faces(?*query)': 'faces',
-    'wards(?*query)': 'wards',
-    '*unknown'      : 'root'
+    'wards(?*query)': 'wards'
   },
 
   execute: function () {
@@ -54,7 +52,7 @@ let Router = Backbone.Router.extend({
     if (this.query[key] == value) return;
     this.query[key] = value;
 
-    this.updateFragmentQuery();
+    this.updateFragmentQuery({ silent: true });
   },
 
   parseQuery: function () {

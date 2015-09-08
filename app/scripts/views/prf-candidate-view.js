@@ -17,8 +17,6 @@ module.exports = Backbone.View.extend({
 
     // Use jQuery loaded from page with Bootstrap
     jQuery(this.el).tooltip({ placement:  'bottom' });
-
-    this.listenTo(this.model, 'filter', this.filter);
   },
 
   render: function () {
@@ -26,10 +24,6 @@ module.exports = Backbone.View.extend({
       model: this.model
     }));
     return this;
-  },
-
-  filter: function (toggle) {
-    this.$el.toggleClass('dim', toggle);
   }
 
 });

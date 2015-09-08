@@ -4,14 +4,13 @@ let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
     Common   = require('../lib/common'),
-    CandidateView  = require('../views/prf-candidate-view'),
-    SettingsView   = require('../views/prf-settings-view'),
-    FacesPartySectionView = require('../views/prf-faces-party-section-view'),
-    Candidate      = require('../models/prf-candidate'),
-    Candidates     = require('../collections/prf-candidates'),
-    Party          = require('../models/prf-party'),
-    Parties        = require('../collections/prf-parties'),
     router         = require('../routers/prf-router'),
+    SettingsView   = require('../views/prf-settings-view'),
+    FacesPerspectiveView = require('../views/prf-faces-perspective-view'),
+    Candidates     = require('../collections/prf-candidates'),
+    Parties        = require('../collections/prf-parties'),
+    Candidate      = require('../models/prf-candidate'),
+    Party          = require('../models/prf-party'),
     candidatesData = JSON.parse(require('../data/candidates.json')).data;
 
 /**
@@ -31,10 +30,10 @@ module.exports = Backbone.View.extend({
       value();
 
     this.$viz = $('.viz');
-    this.$vizContent = $('<div>').
+    let $vizContent = $('<div>').
       attr('class', 'viz-content');
     this.settingsView = new SettingsView();
-    this.$viz.html([this.settingsView.el, this.$vizContent]);
+    this.$viz.html([this.settingsView.el, $vizContent]);
 
     // Create candidate and party models
     this.parties = new Parties();
@@ -68,66 +67,36 @@ module.exports = Backbone.View.extend({
       return candidate;
     }));
 
-    // Create candidate views
-    this.candidateViews = this.candidates.map((model) => {
-      let view = new CandidateView({ model: model });
-      model.view = view;
-      return view;
-    });
-
     // Router
-    this.listenTo(router, 'route:faces', (query) => this.showFaces(query));
-    this.listenTo(router, 'route:wards', (query) => this.showWards(query));
+    this.listenTo(router, 'route:faces', this.showFaces);
+    this.listenTo(router, 'route:wards', this.showWards);
 
     // Events
     this.listenTo(this.settingsView, 'search', this.search);
   },
 
-  showFaces: function (query) {
-    this.$viz.removeClass('viz-profiles-wards').
-      addClass('viz-profiles-face');
-
-    if (router.query.view == 'teams') {
-      // Teams view
-      let partySectionViews = this.parties.map(party => {
-        let view = new FacesPartySectionView({ model: party });
-        return view.render().el;
-      });
-
-      this.$vizContent.html(partySectionViews);
-    } 
-    else {
-      // Get candidate views from parties
-      let sortedCandidateViews;
-
-      if (router.query.sort == 'party') {
-        // Get candidates from parties collection
-        sortedCandidateViews = _.chain(this.parties.models).
-          pluck('candidates.models').
-          flatten();
-      } else {
-        // A-Z name sort
-        sortedCandidateViews = _.chain(this.candidates.models);
-      }
-
-      sortedCandidateViews = sortedCandidateViews.
-        pluck('view').
-        map(view => view.render().el);
-
-      let $faceGroup = $('<div>').attr('class', 'candidate-face-group');
-      $faceGroup.html(sortedCandidateViews.value());
-
-      this.$vizContent.html($faceGroup);
-    }
+  getVizContent: function () {
+    return $('.viz-content');
   },
 
-  showWards: function (query) {
-    this.$viz.removeClass('viz-profiles-face').
-      addClass('viz-profiles-wards');
+  showFaces: function () {
+    this.perspectiveView = new FacesPerspectiveView({
+      candidates: this.candidates,
+      parties:    this.parties
+    });
+    this.getVizContent().replaceWith(this.perspectiveView.el);
+  },
+
+  showWards: function () {
+    // this.$viz.removeClass('viz-profiles-face').
+    //   addClass('viz-profiles-wards');
   },
 
   search: function (searchString) {
+    // Update filter state for candidate models
     this.candidates.invoke('setFilter', searchString);
+
+    this.perspectiveView.search(searchString);
   }
 
 });
