@@ -165,8 +165,45 @@ $faces-party-section-logo-size: 60px;
 // Parties
 
 .viz-profiles-parties {
-  .party-section {
-    
+  .party-section-heading {
+    margin-bottom: 20px;
+  }
+  .party-section-description .hashtag-link {
+    color: $gray-light;
+  }
+  .party-section-tweets {
+    max-width: 520px;
+    margin-bottom: 8px;
+    padding: 5px;
+    border: 1px solid $gray-lighter;
+    border-radius: 10px;
+  }
+  .party-section-tweets-embed {
+    margin-right: 4px;
+  }
+  .party-section-tweets-links {
+    @include clearfix;
+    padding: 14px 14px 6px;
+
+    .twitter-link {
+      float: left;
+      position: relative;
+      padding-left: 27px;
+      color: $gray-light;
+
+      &:before {
+        content: ' ';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        top: 2px;
+        background: no-repeat center/100% url(../images/twitter-logo.png);
+      }
+    }
+    .detail-link {
+      float: right;
+    }
   }
 }
 

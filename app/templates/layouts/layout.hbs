@@ -83,6 +83,11 @@
     <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="{{ relativePath }}bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
     <!-- endbuild -->
+
+    {{#if includeScripts~}}
+      <!-- Included scripts -->
+      {{{includeScripts}}}
+    {{~/if}}
     
     {{#with buildScripts~}}
       <!-- build:js(.tmp) {{ ../relativePath }}scripts/{{ main }}.js -->

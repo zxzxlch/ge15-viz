@@ -31,6 +31,7 @@ module.exports = Backbone.View.extend({
     if (router.perspective == 'faces') {
       this.setActive('perspective', 'faces');
       this.toggleGroupDisplay('view', true);
+      this.toggleGroupDisplay('search', true);
       
       if (router.query.view == 'teams') {
         this.toggleGroupDisplay('sort', false);
@@ -47,6 +48,7 @@ module.exports = Backbone.View.extend({
       this.setActive('perspective', 'parties');
       this.toggleGroupDisplay('view', false);
       this.toggleGroupDisplay('sort', false);
+      this.toggleGroupDisplay('search', false);
     }
   },
 
