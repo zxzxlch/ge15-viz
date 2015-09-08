@@ -1,0 +1,8 @@
+Fielding <span class="no-break"><%= candidates %> candidates</span>, contesting 
+<% if (grc && smc) { %>
+  <span class="no-break"><%= wards %> <%= (wards == 1) ? 'ward' : 'wards' %></span> (<span class="no-break"><%= grc %> group</span> and <span class="no-break"><%= smc %> single</span>) 
+<% } else if (grc) { %>
+  <span class="no-break"><%= grc %> group <%= (grc == 1) ? 'ward' : 'wards' %></span>
+<% } else { %>
+  <span class="no-break"><%= smc %> single <%= (smc == 1) ? 'ward' : 'wards' %></span>
+<% } %>
