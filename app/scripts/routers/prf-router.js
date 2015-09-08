@@ -12,12 +12,13 @@ let Router = Backbone.Router.extend({
 
   routes: {
     'faces(?*query)': 'faces',
-    'parties(?*query)': 'parties'
+    'parties(?*query)': 'parties',
+    '*invalid': 'invalid'
   },
 
   execute: function () {
     let perspective = this.getFragmentPerspective();
-    if (perspective == '') 
+    if (_.indexOf(['faces', 'parties'], perspective) == -1) 
       return this.navigate('faces', { trigger: true });
 
     // Check for perspective change
