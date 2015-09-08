@@ -1,13 +1,13 @@
-// views/prf-faces-division-view.js
+// views/prf-teams-division-view.js
 
 let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
-    template = _.template(require('../templates/prf-faces-division.html'));
+    template = _.template(require('../templates/prf-teams-division.html'));
 
 module.exports = Backbone.View.extend({
 
-  className: 'faces-division',
+  className: 'party-division',
 
   initialize: function(options) {
     this.candidates = options.candidates;

@@ -11,7 +11,6 @@ module.exports = Backbone.View.extend({
   className: 'viz-settings',
 
   events: {
-    'click .viz-settings-perspective a': 'setPerspective',
     'click .viz-settings-sort a':         'setSort',
     'click .viz-settings-view a':         'setView',
     'keyup .viz-settings-search input':   'search',
@@ -27,33 +26,45 @@ module.exports = Backbone.View.extend({
   },
 
   updateSettings: function () {
+    // Perspective
+    this.setActive('perspective', router.perspective);
+      
     // Faces
     if (router.perspective == 'faces') {
       this.setActive('perspective', 'faces');
-      this.toggleGroupDisplay('view', true);
-      this.toggleGroupDisplay('search', true);
+      this.configureSettings({
+        view:   false,
+        search: true,
+        sort: [{
+          value: 'name',
+          label: 'A to Z'
+        }, {
+          label: 'Party'
+        }]
+      });
       
-      if (router.query.view == 'teams') {
-        this.toggleGroupDisplay('sort', false);
-        this.setActive('view', 'teams');
-      } else {
-        this.toggleGroupDisplay('sort', true);
-        this.setActive('view', 'default');
-        var sortValue = router.query.sort || 'name';
-        this.setActive('sort', sortValue);
-      }
+      this.setActive('view', 'default');
+      var sortValue = router.query.sort || 'name';
+      this.setActive('sort', sortValue);
     } 
     // Parties
     else if (router.perspective == 'parties') {
-      this.setActive('perspective', 'parties');
-      this.toggleGroupDisplay('view', false);
-      this.toggleGroupDisplay('sort', false);
-      this.toggleGroupDisplay('search', false);
-    }
-  },
+      this.configureSettings({
+        sort: false,
+        view: [{
+          label: 'Teams'
+        }, {
+          label: 'Tweets'
+        }]
+      });
 
-  setPerspective: function (event) {
-    // event.preventDefault();
+      if (router.query.view == 'tweets') {
+        this.configureSettings({ search: false });
+      } else {
+        this.configureSettings({ search: true });
+      }
+    }
+    this.setActive('view', router.query.view);
   },
 
   setActive: function (group, value) {
@@ -76,8 +87,26 @@ module.exports = Backbone.View.extend({
     this.trigger('search', $(event.currentTarget).val());
   },
 
-  toggleGroupDisplay: function (group, show) {
-    this.$('.viz-settings-' + group).toggle(show);
+  configureSettings: function (options) {
+    _.each(options, (value, key) => {
+      let $group = this.$('.viz-settings-' + key);
+      if (key == 'view' || key == 'sort') {
+        // Create setting links
+        let $settingLinks = _.map(value, linkOptions => {
+          // Generate value from label
+          if (!linkOptions.value)
+            linkOptions.value = linkOptions.label.toLowerCase();
+          return $('<a>').
+            attr('class', 'settings-link').
+            attr('href', '#').
+            data('value', linkOptions.value).
+            html(linkOptions.label);
+        });
+        $group.find('.settings-link-group').html($settingLinks);
+      }
+      // Show or hide settings group
+      $group.toggle(!!value);
+    });
   }
 
 });

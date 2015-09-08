@@ -30,19 +30,16 @@ let Router = Backbone.Router.extend({
     
     // Update query
     if (perspective == 'faces') {
-      if (this.query.view == 'teams') {
+      this.query = _.chain(this.query).
+        pick('sort').
+        defaults({ sort: 'name' }).
+        value();
+    } else if (perspective == 'parties') {
+      if (this.query.view == 'tweets') {
         this.query = _.pick(this.query, 'view');
       } else {
-        this.query = _.chain(this.query).
-          pick('view', 'sort').
-          defaults({
-            view: 'default',
-            sort: 'name'
-          }).
-          value();
+        this.query = { view: 'teams' };
       }
-    } else if (perspective == 'parties') {
-      this.query = {};
     }
 
     // Don't trigger 'didUpdateQuery' if perspective is changed

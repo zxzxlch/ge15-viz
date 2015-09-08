@@ -74,6 +74,13 @@ $faces-party-section-logo-size: 60px;
   background-size: 100% auto;
 }
 
+.candidate-face-group {
+  .tooltip {
+    pointer-events: none;
+    margin-top: -10px;
+  }
+}
+
 .party-section {
   + .party-section {
     border-top: 3px solid #F7F7F7;
@@ -129,14 +136,10 @@ $faces-party-section-logo-size: 60px;
   }
 }
 
-.viz-profiles-face {
-  .tooltip {
-    pointer-events: none;
-    margin-top: -10px;
-  }
-}
 
-.viz-profiles-face .party-section {
+// Parties
+
+.viz-profiles-parties .party-section {
   .candidate-face-group {
     margin-bottom: -$faces-candidate-gutter-v;
   }
@@ -145,7 +148,7 @@ $faces-party-section-logo-size: 60px;
   }
 }
 
-.viz-profiles-face .faces-division {
+.viz-profiles-parties .party-division {
   .heading {
     margin-bottom: 20px;
     margin-left: 5px;
@@ -161,8 +164,7 @@ $faces-party-section-logo-size: 60px;
   }
 }
 
-
-// Parties
+// Parties/Tweets
 
 .viz-profiles-parties {
   .party-section-heading {

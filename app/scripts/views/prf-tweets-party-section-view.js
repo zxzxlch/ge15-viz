@@ -1,10 +1,11 @@
-// views/prf-parties-party-section-view.js
+// views/prf-tweets-party-section-view.js
 
 let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
     Twitter  = require('../lib/twitter'),
-    template = _.template(require('../templates/prf-parties-party-section.html'));
+    template = _.template(require('../templates/prf-party-section.html')),
+    contentTemplate = _.template(require('../templates/prf-tweets-party-section-content.html'));
 
 let twitterData = {
   'pap': {
@@ -71,10 +72,24 @@ module.exports = Backbone.View.extend({
 
   render: function () {
     this.$el.html(template({
-      party: this.model,
-      hashtags: this.hashtags,
-      twitterSearchUrl: this.twitterSearchUrl
+      party: this.model
     }));
+
+    let $hashtags = _.map(this.hashtags, hashtag => {
+      return $('<a>').
+        attr('class', 'hashtag-link').
+        attr('target', '_blank').
+        attr('href', 'https://twitter.com/search/?q=%23' + hashtag).
+        html('#' + hashtag);
+    });
+    this.$('.party-section-description').
+      html($hashtags);
+
+    this.$('.party-section-content').
+      addClass('party-section-tweets').
+      html(contentTemplate({
+        twitterSearchUrl: this.twitterSearchUrl
+      }));
 
     // Render tweets
     this.loadTwitterTimeline();

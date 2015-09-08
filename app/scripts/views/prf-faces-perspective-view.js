@@ -4,8 +4,7 @@ let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
     router   = require('../routers/prf-router'),
-    CandidateView  = require('../views/prf-candidate-view'),
-    FacesPartySectionView = require('../views/prf-faces-party-section-view');
+    CandidateView  = require('../views/prf-candidate-view');
 
 module.exports = Backbone.View.extend({
 
@@ -25,15 +24,6 @@ module.exports = Backbone.View.extend({
   },
 
   render: function () {
-    if (router.query.view == 'teams') {
-      this.renderTeamsView();
-    }
-    else {
-      this.renderDefaultView();
-    }
-  },
-
-  renderDefaultView: function () {
     // Get candidate views from parties
     let sortedCandidateViews;
 
@@ -60,16 +50,6 @@ module.exports = Backbone.View.extend({
     $faceGroup.html(sortedCandidateViews.value());
 
     this.$el.html($faceGroup);
-  },
-
-  renderTeamsView: function () {
-    let partySectionViews = _.chain(this.parties.models).
-      map(party => new FacesPartySectionView({ model: party })).
-      filter(partyView => !partyView.isFiltered()).
-      map(partyView => partyView.render().el).
-      value();
-
-    this.$el.html(partySectionViews);
   },
 
   routerDidUpdateQuery: function () {
