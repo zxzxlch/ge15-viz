@@ -154,7 +154,6 @@ $faces-party-section-logo-size: 60px;
   padding: 0 5px;
 
   .heading {
-    margin-bottom: 0.3em;
     font-family: $font-family-alt;
     text-transform: uppercase;
     color: #757575;
@@ -162,7 +161,7 @@ $faces-party-section-logo-size: 60px;
   .description {
     margin-bottom: 20px;
     font-size: 13px;
-    color: #757575;
+    color: #909090;
   }
   .candidates-group {
     margin-bottom: 15px;
@@ -302,4 +301,18 @@ $faces-party-section-logo-size: 60px;
   display: block;
   color: $gray-light;
   font-size: 0.9em;
+}
+
+// Sources
+.ps-sources {
+  font-size: 13px;
+  margin-top: 30px;
+
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+  &, a {
+    color: #999;
+  }
 }

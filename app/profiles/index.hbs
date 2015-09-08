@@ -9,7 +9,7 @@ title: GE2015 Candidates
 subtitle: Who’s contesting in this year’s general election?
 
 description: >
-  List of candidates for Singapore's General Election 2015.
+  This visualization shows the candidates and parties contesting in this year's Singapore's 2015 General Election. Out of the 9 parties, the People's Association Party is the largest, fielding 89 candidates, followed by the Workers’ Party with 28 candidates.
 
 data: <%= candidates.data %>
 
@@ -20,6 +20,22 @@ ogUrl: http://zxzxlch.github.io/ge15-viz/profiles/#faces
 buildScripts:
   main:     'profiles-bundled'
   scripts:  ['profiles']
+
+footerIncludes: >
+  <div class="ps-sources">
+    Sources:
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Singaporean_general_election,_2015">https://en.wikipedia.org/wiki/Singaporean_general_election,_2015</a></li>
+      <li><a href="http://www.channelnewsasia.com/news/specialreports/sgvotes2015/parties/pap">http://www.channelnewsasia.com/news/specialreports/sgvotes2015/parties/pap</a></li>
+      <li><a href="https://www.pap.org.sg/Your-Candidates">https://www.pap.org.sg/Your-Candidates</a></li>
+      <li><a href="https://www.pap.org.sg/MORE/Our-New-Candidates/Content">https://www.pap.org.sg/MORE/Our-New-Candidates/Content</a></li>
+      <li><a href="http://www.wp.sg/candidates/">http://www.wp.sg/candidates/</a></li>
+      <li><a href="http://yoursdp.org/index/candidates/0-30">http://yoursdp.org/index/candidates/0-30</a></li>
+      <li><a href="http://singaporedemocraticalliance.sg/aboutus/team-members/">http://singaporedemocraticalliance.sg/aboutus/team-members/</a></li>
+      <li><a href="http://singfirst.org/our-cec-members/">http://singfirst.org/our-cec-members/</a></li>
+      <li><a href="http://www.dpp.sg/our-candidates/">http://www.dpp.sg/our-candidates/</a></li>
+    </ul>
+  </div>
 
 includeScripts: >
   <script>window.twttr = (function(d, s, id) {
@@ -44,7 +60,8 @@ includeScripts: >
 <div class="introduction">
   <h1 class="heading">{{ title }}</h1>
   <h2 class="heading-subtitle">{{ subtitle }}</h2>
-  <p>List of candidates for Singapore's General Election 2015.</p>
+  <p>This visualization shows the candidates and parties contesting in this year's Singapore's 2015 General Election. Out of the 9 parties, the People's Association Party is the largest, fielding 89 candidates, followed by the Workers’ Party with 28 candidates.</p>
+  <p>The data is mainly sourced from Wikipedia and various party websites. The full list of sources can be found at the bottom of the page.</p>
 </div>
 
 <!-- Chart -->

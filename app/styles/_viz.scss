@@ -14,12 +14,12 @@
   margin-bottom: 30px;
 
   a.settings-link {
-    margin-right: 30px;
-    border-radius: 2px;
-    padding: 10px 24px;
+    margin-right: 0.8em;
+    border-radius: 5px;
+    padding: 0.6em 1.4em;
     font-family: $font-family-alt;
     font-size: 24px;
-    background-color: white;
+    background-color: lighten($brand-primary, 32%);
     color: $brand-primary;
 
     &.active {
@@ -32,7 +32,7 @@
     }
     &:not(.active) {
       &:active, &:hover {
-        background-color: lighten($brand-primary, 32%);
+        background-color: lighten($brand-primary, 25%);
       }
     }
   }
