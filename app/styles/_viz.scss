@@ -10,16 +10,16 @@
   }
 }
 
-.viz-settings-perspectives {
+.viz-settings-perspective {
   margin-bottom: 30px;
 
-  a.btn {
+  a.settings-link {
     margin-right: 30px;
     border-radius: 2px;
     padding: 10px 24px;
     font-family: $font-family-alt;
     font-size: 24px;
-    background-color: lighten($brand-primary, 40%);
+    background-color: white;
     color: $brand-primary;
 
     &.active {
@@ -27,6 +27,31 @@
       color: white;
       box-shadow: none;
     }
+    &.active, &:hover {
+      border-bottom: none;
+    }
+    &:not(.active) {
+      &:active, &:hover {
+        background-color: lighten($brand-primary, 32%);
+      }
+    }
+  }
+}
+
+a.settings-link-group {
+}
+
+a.settings-link {
+  margin-right: 1.5em;
+  padding-bottom: 5px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: $brand-primary;
+  text-decoration: none;
+
+  &.active, &:hover {
+    border-bottom: 4px solid lighten($brand-primary, 10%);
   }
 }
 
@@ -35,30 +60,13 @@
 
   > div {
     margin-bottom: 30px;
-
-    label {
-      font-size: 14px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: #BBB;
-    }
-    a.settings-link-group {
-
-    }
-    a.settings-link {
-      margin-right: 1.5em;
-      padding-bottom: 5px;
-      line-height: 30px;
-      font-size: 20px;
-      font-weight: 500;
-      color: $brand-primary;
-      text-decoration: none;
-
-      &.active, &:hover {
-        border-bottom: 4px solid lighten($brand-primary, 10%);
-      }
-    }
+  }
+  label {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #BBB;
   }
 }
 

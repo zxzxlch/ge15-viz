@@ -11,7 +11,7 @@ module.exports = Backbone.View.extend({
   className: 'viz-settings',
 
   events: {
-    'click .viz-settings-perspectives a': 'setPerspective',
+    'click .viz-settings-perspective a': 'setPerspective',
     'click .viz-settings-sort a':         'setSort',
     'click .viz-settings-view a':         'setView',
     'keyup .viz-settings-search input':   'search',
@@ -20,7 +20,6 @@ module.exports = Backbone.View.extend({
 
   initialize: function(options) {
     this.$el.html(template());
-    this.listenTo(router, 'didUpdateQuery', this.updateSettings);
   },
 
   render: function () {
@@ -31,6 +30,8 @@ module.exports = Backbone.View.extend({
     // Faces
     if (router.perspective == 'faces') {
       this.setActive('perspective', 'faces');
+      this.toggleGroupDisplay('view', true);
+      
       if (router.query.view == 'teams') {
         this.toggleGroupDisplay('sort', false);
         this.setActive('view', 'teams');
@@ -41,11 +42,16 @@ module.exports = Backbone.View.extend({
         this.setActive('sort', sortValue);
       }
     } 
+    // Parties
+    else if (router.perspective == 'parties') {
+      this.setActive('perspective', 'parties');
+      this.toggleGroupDisplay('view', false);
+      this.toggleGroupDisplay('sort', false);
     }
   },
 
   setPerspective: function (event) {
-    event.preventDefault();
+    // event.preventDefault();
   },
 
   setActive: function (group, value) {
@@ -68,8 +74,8 @@ module.exports = Backbone.View.extend({
     this.trigger('search', $(event.currentTarget).val());
   },
 
-  toggleSortButtons: function (show) {
-    this.$('.viz-settings-sort').toggle(show);
+  toggleGroupDisplay: function (group, show) {
+    this.$('.viz-settings-' + group).toggle(show);
   }
 
 });

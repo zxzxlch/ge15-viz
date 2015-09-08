@@ -74,6 +74,33 @@ $faces-party-section-logo-size: 60px;
   background-size: 100% auto;
 }
 
+.party-section {
+  + .party-section {
+    border-top: 3px solid #F7F7F7;
+    padding-top: 40px;
+    margin-top: 60px;
+  }
+  .party-section-heading {
+    @include display-flex;
+    @include align-items(center);
+    margin-bottom: 40px;
+  }
+  .party-logo {
+    @include flex(0 0 $faces-party-section-logo-size);
+    width: $faces-party-section-logo-size;
+    height: $faces-party-section-logo-size;
+    margin-right: 12px;
+  }
+  .party-title {
+    font-family: $font-family-alt;
+    font-size: 25px;
+    line-height: 1.1;
+    margin-bottom: 0.1em;
+  }
+  .party-section-description {
+    font-size: 16px;
+  }
+}
 
 // Faces
 
@@ -110,31 +137,6 @@ $faces-party-section-logo-size: 60px;
 }
 
 .viz-profiles-face .party-section {
-  + .party-section {
-    border-top: 3px solid #F7F7F7;
-    padding-top: 40px;
-    margin-top: 60px;
-  }
-  .party-section-heading {
-    @include display-flex;
-    @include align-items(center);
-    margin-bottom: 40px;
-  }
-  .party-logo {
-    @include flex(0 0 $faces-party-section-logo-size);
-    width: $faces-party-section-logo-size;
-    height: $faces-party-section-logo-size;
-    margin-right: 12px;
-  }
-  .party-title {
-    font-family: $font-family-alt;
-    font-size: 25px;
-    line-height: 1.1;
-    margin-bottom: 0.1em;
-  }
-  .party-section-description {
-    font-size: 16px;
-  }
   .candidate-face-group {
     margin-bottom: -$faces-candidate-gutter-v;
   }
@@ -156,6 +158,15 @@ $faces-party-section-logo-size: 60px;
   }
   .candidate-face {
     margin-bottom: $faces-candidate-gutter-h;
+  }
+}
+
+
+// Parties
+
+.viz-profiles-parties {
+  .party-section {
+    
   }
 }
 
