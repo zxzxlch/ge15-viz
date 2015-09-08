@@ -11,38 +11,60 @@ module.exports = Backbone.View.extend({
   className: 'viz-settings',
 
   events: {
-    'click .viz-settings-perspectives a': 'clickPerspective',
-    'click .viz-settings-sort a':         'sort',
-    'click .viz-settings-views a':        'clickView',
+    'click .viz-settings-perspectives a': 'setPerspective',
+    'click .viz-settings-sort a':         'setSort',
+    'click .viz-settings-view a':         'setView',
     'keyup .viz-settings-search input':   'search',
     'change .viz-settings-search input':  'search'
   },
 
   initialize: function(options) {
     this.$el.html(template());
+    this.listenTo(router, 'didUpdateQuery', this.updateSettings);
   },
 
   render: function () {
     return this;
   },
 
-  clickPerspective: function (event) {
+  updateSettings: function (query) {
+    // Perspective
+    let perspective = router.getPerspective();
+    if (perspective == 'faces') {
+      if (query.view == 'teams') {
+        this.toggleSortButtons(false);
+        this.setActive('view', 'teams');
+      } else {
+        this.toggleSortButtons(true);
+        this.setActive('view', 'default');
+        var sortValue = query.sort || 'name';
+        this.setActive('sort', sortValue);
+      }
+    }
+  },
+
+  setPerspective: function (event) {
     event.preventDefault();
   },
 
-  clickView: function (event) {
+  setActive: function (group, value) {
+    _.each(this.$(`.viz-settings-${group} .settings-link`), elem => {
+      $(elem).toggleClass('active', $(elem).data('value') == value);
+    });
+  },
+
+  setView: function (event) {
     event.preventDefault();
 
     // Set query
-    let viewAttribute = $(event.currentTarget).data('value');
-    router.setQuery({ view: viewAttribute });
+    router.setQueryValue('view', $(event.currentTarget).data('value'));
   },
 
-  sort: function (event) {
+  setSort: function (event) {
     event.preventDefault();
     
-    let sortAttribute = $(event.currentTarget).data('value');
-    router.setQuery({ sort: sortAttribute });
+    // Set query
+    router.setQueryValue('sort', $(event.currentTarget).data('value'));
   },
 
   search: function (event) {

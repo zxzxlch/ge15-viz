@@ -76,10 +76,6 @@ module.exports = Backbone.View.extend({
     });
 
     // Router
-    this.listenTo(router, 'route:root', () => {
-      router.navigate('faces', { replace: true });
-      this.showFaces();
-    });
     this.listenTo(router, 'route:faces', (query) => this.showFaces(query));
     this.listenTo(router, 'route:wards', (query) => this.showWards(query));
 
@@ -88,16 +84,10 @@ module.exports = Backbone.View.extend({
   },
 
   showFaces: function (query) {
-    if (query) query = Common.parseQueryString(query);
-    else query = {};
-    
     this.$viz.removeClass('viz-profiles-wards').
       addClass('viz-profiles-face');
 
-    if (query.view == 'teams') {
-      // Hide sort filters
-      this.settingsView.toggleSortButtons(false);
-
+    if (router.query.view == 'teams') {
       // Teams view
       let partySectionViews = this.parties.map(party => {
         let view = new FacesPartySectionView({ model: party });
@@ -107,14 +97,10 @@ module.exports = Backbone.View.extend({
       this.$vizContent.html(partySectionViews);
     } 
     else {
-      // Hide sort filters
-      this.settingsView.toggleSortButtons(true);
-
-      // Default view
       // Get candidate views from parties
       let sortedCandidateViews;
 
-      if (query.sort == 'party') {
+      if (router.query.sort == 'party') {
         // Get candidates from parties collection
         sortedCandidateViews = _.chain(this.parties.models).
           pluck('candidates.models').
@@ -136,14 +122,12 @@ module.exports = Backbone.View.extend({
   },
 
   showWards: function (query) {
-    if (query) query = Common.parseQueryString(query);
-    
     this.$viz.removeClass('viz-profiles-face').
       addClass('viz-profiles-wards');
   },
 
-  search: function (query) {
-    this.candidates.invoke('setFilter', query);
+  search: function (searchString) {
+    this.candidates.invoke('setFilter', searchString);
   }
 
 });
