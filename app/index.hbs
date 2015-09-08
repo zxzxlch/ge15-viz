@@ -24,18 +24,16 @@ visualizations:
 <div class="hero">
   <h1>GE2015<br>Visual<wbr>izations</h1>
   <img class="banner" src="/images/banner-large.png">
-  <p>{{ description }}</p>
+  <div class="description">{{ description }}</div>
 </div>
 
 <div>
   <a id="charts"></a>
   {{#each visualizations~}}
-    <div class="panel panel-default">
-      <a href="{{ path }}">
-        <div class="panel-body">
-          <h3>{{ title }}</h3>
-          <p>{{ description }}</p>
-        </div>
+    <div class="viz-card-link">
+      <a class="no-underline" href="{{ path }}">
+        <h3 class="title">{{ title }}</h3>
+        <p>{{ description }}</p>
       </a>
     </div>
   {{~/each}}

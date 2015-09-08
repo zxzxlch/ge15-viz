@@ -3,6 +3,11 @@
 .no-break {
   white-space: nowrap;
 }
+.no-underline {
+  &, &:hover, &:active, &:visited, &:focus {
+    text-decoration: none;
+  }
+}
 
 /* Space out content a bit */
 body {
@@ -28,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 28px;
 
   h1 {
-    margin: 0 0 0.3em;
+    margin: 0 0 0.4em;
     font-size: 1.7em;
     line-height: 1.2;
     letter-spacing: 0.15em;
@@ -40,6 +45,9 @@ h1, h2, h3, h4, h5, h6 {
   .banner {
     height: 1.4em;
     margin-bottom: 1.3em;
+  }
+  .description {
+    color: $gray-light;
   }
 }
 
@@ -85,6 +93,19 @@ header {
     font-size: 1.5em;
     color: $heading-text-color;
     font-weight: normal;
+  }
+}
+
+.viz-card-link {
+  margin-bottom: 60px;
+  font-size: 20px;
+
+  a {
+    color: $gray-dark;
+  }
+  .title {
+    margin-bottom: 0.25em;
+    font-family: $font-family-alt;
   }
 }
 
