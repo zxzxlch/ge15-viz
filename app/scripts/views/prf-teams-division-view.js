@@ -12,7 +12,10 @@ module.exports = Backbone.View.extend({
   initialize: function(options) {
     this.candidates = options.candidates;
     this.division = options.division;
-    this.$el.html(template({ division: this.division }));
+    this.$el.html(template({
+      division: this.division,
+      description: _.pluck(this.candidates, 'attributes.name').join(' &bull; ')
+    }));
   },
 
   render: function () {

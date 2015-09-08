@@ -9,7 +9,7 @@ let $        = require('jquery'),
 
 module.exports = Backbone.View.extend({
 
-  className: 'party-section',
+  className: 'party-section party-section-teams',
 
   initialize: function(options) {
     this.stats = {};
@@ -68,7 +68,7 @@ module.exports = Backbone.View.extend({
       return new DivisionView(group).render().el;
     });
     this.$('.party-section-content').
-      addClass('party-section-divisions candidate-face-group').
+      addClass('candidate-face-group').
       html($divisions);
 
     // Hide if all candidates are filtered

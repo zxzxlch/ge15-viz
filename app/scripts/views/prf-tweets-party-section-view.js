@@ -62,7 +62,7 @@ let twitterData = {
 
 module.exports = Backbone.View.extend({
 
-  className: 'party-section',
+  className: 'party-section party-section-tweets',
 
   initialize: function(options) {
     _.assign(this, twitterData[this.model.id]);
@@ -86,7 +86,6 @@ module.exports = Backbone.View.extend({
       html($hashtags);
 
     this.$('.party-section-content').
-      addClass('party-section-tweets').
       html(contentTemplate({
         twitterSearchUrl: this.twitterSearchUrl
       }));

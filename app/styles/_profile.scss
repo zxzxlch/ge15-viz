@@ -137,9 +137,11 @@ $faces-party-section-logo-size: 60px;
 }
 
 
-// Parties
+// Parties/Teams
 
-.viz-profiles-parties .party-section {
+.party-section-teams {
+  margin-bottom: 40px;
+  
   .candidate-face-group {
     margin-bottom: -$faces-candidate-gutter-v;
   }
@@ -148,12 +150,18 @@ $faces-party-section-logo-size: 60px;
   }
 }
 
-.viz-profiles-parties .party-division {
+.party-division {
+  padding: 0 5px;
+
   .heading {
-    margin-bottom: 20px;
-    margin-left: 5px;
+    margin-bottom: 0.3em;
     font-family: $font-family-alt;
     text-transform: uppercase;
+    color: #757575;
+  }
+  .description {
+    margin-bottom: 20px;
+    font-size: 13px;
     color: #757575;
   }
   .candidates-group {
@@ -166,19 +174,19 @@ $faces-party-section-logo-size: 60px;
 
 // Parties/Tweets
 
-.viz-profiles-parties {
+.party-section-tweets {
   .party-section-heading {
     margin-bottom: 20px;
   }
-  .party-section-description .hashtag-link {
-    color: $gray-light;
-  }
-  .party-section-tweets {
+  .party-section-content {
     max-width: 520px;
     margin-bottom: 8px;
     padding: 5px;
     border: 1px solid $gray-lighter;
     border-radius: 10px;
+  }
+  .party-section-description .hashtag-link {
+    color: $gray-light;
   }
   .party-section-tweets-embed {
     margin-right: 4px;
@@ -294,10 +302,4 @@ $faces-party-section-logo-size: 60px;
   display: block;
   color: $gray-light;
   font-size: 0.9em;
-}
-
-.candidate-party {
-}
-
-.candidate-division {
 }
