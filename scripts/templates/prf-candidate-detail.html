@@ -1,0 +1,32 @@
+<div class="candidate-avatar group">
+  <div class="candidate-image-thumbnail" style="background-image: url(<%= candidate.get('imagePath') %>)"></div>
+  <div class="party-logo <%= candidate.get('partyId') %>"></div>
+</div>
+
+<div class="group">
+  <span class="name"><%= candidate.get('name') %></span>
+  <% if (candidate.get('nameNative')) { %><span class="nameNative"><%= candidate.get('nameNative') %></span><% } %>
+  <div class="party"><%= candidate.party.get('name') %></div>
+</div>
+
+<div class="group">
+  <% if (candidate.has('age')) { %><div class="age"><%= candidate.get('age') %> years old</div><% } %>
+  <div class="religion"><%= candidate.get('religion') %></div>
+</div>
+
+<div class="links group">
+  <ul>
+    <% if (candidate.has('email')) { %>
+      <li>
+        <span class="glyphicon glyphicon-envelope"></span>
+        <a class="email" title="email" href="mailto:<%= candidate.get('email') %>"><%= candidate.get('email') %></a>
+      </li>
+    <% } %>
+    <% _.each(links, function (url, label) { %>
+      <li>
+        <span class="glyphicon glyphicon-link"></span>
+        <a href="<%= url %>" target="_blank"><%= label %></a>
+      </li>
+    <% }); %>
+  </ul>
+</div>

@@ -1,4 +1,6 @@
 <div class="candidate-avatar">
-  <div class="candidate-image-thumbnail" style="background-image: url(<%= model.get('imagePath') %>)"></div>
-  <div class="party-logo <%= model.get('partyId') %>"></div>
+  <a href="#candidates/<%= candidate.id %>">
+    <div class="candidate-image-thumbnail" style="background-image: url(<%= candidate.get('imagePath') %>)"></div>
+    <div class="party-logo <%= candidate.get('partyId') %>"></div>
+  </a>
 </div>

@@ -1,0 +1,43 @@
+<div class="viz-settings-perspective">
+  <div class="settings-link-group" role="group" aria-label="Perspectives">
+    <a class="settings-link" href="#faces" data-value="faces">Faces</a>
+    <a class="settings-link" href="#parties" data-value="parties">Parties</a>
+    <!-- <a class="settings-link" href="#wards" data-value="wards">Wards</a> -->
+  </div>
+</div>
+
+<div class="viz-settings-groups">
+  <% if (search) { %>
+    <!-- Search -->
+    <div class="viz-settings-search">
+      <label>Search</label>
+      <input type="text" placeholder="Search">
+    </div>
+  <% } %>
+  <% if (view) { %>
+    <!-- Views -->
+    <div class="viz-settings-view">
+      <label>View</label>
+      <div class="settings-link-group" role="group" aria-label="View">
+        <% _.each(view, function (link) { %>
+          <a class="settings-link" href="#" data-value="<%= link.value || link.label.toLowerCase() %>">
+            <%= link.label %>
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  <% } %>
+  <% if (sort) { %>
+    <!-- Sort -->
+    <div class="viz-settings-sort">
+      <label>Sort</label>
+      <div class="settings-link-group" role="group" aria-label="Sort">
+        <% _.each(sort, function (link) { %>
+          <a class="settings-link" href="#" data-value="<%= link.value || link.label.toLowerCase() %>">
+            <%= link.label %>
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  <% } %>
+</div>
