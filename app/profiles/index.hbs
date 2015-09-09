@@ -9,7 +9,7 @@ title: GE2015 Candidates
 subtitle: Who’s contesting in this year’s general election?
 
 description: >
-  This visualization shows the candidates and parties contesting in this year's Singapore's 2015 General Election. Out of the 9 parties, the People's Association Party is the largest, fielding 89 candidates, followed by the Workers’ Party with 28 candidates.
+  This visualization shows the candidates and parties contesting in this year's Singapore's 2015 General Election. Out of the 9 parties, the People's Action Party is the largest, fielding 89 candidates, followed by the Workers’ Party with 28 candidates.
 
 data: <%= candidates.data %>
 
@@ -60,7 +60,7 @@ includeScripts: >
 <div class="introduction">
   <h1 class="heading">{{ title }}</h1>
   <h2 class="heading-subtitle">{{ subtitle }}</h2>
-  <p>This visualization shows the candidates and parties contesting in this year's Singapore's 2015 General Election. Out of the 9 parties, the People's Association Party is the largest, fielding 89 candidates, followed by the Workers’ Party with 28 candidates.</p>
+  <p>This visualization shows the candidates and parties contesting in this year's Singapore's 2015 General Election. Out of the 9 parties, the People's Action Party is the largest, fielding 89 candidates, followed by the Workers’ Party with 28 candidates.</p>
   <p>The data is mainly sourced from Wikipedia and various party websites. The full list of sources can be found at the bottom of the page.</p>
 </div>
 
@@ -74,7 +74,7 @@ includeScripts: >
         <div class="candidate candidate-card" data-id="{{ id }}">
           <div class="col-sm-6">
             <div class="candidate-avatar">
-              <div class="candidate-image-thumbnail"{{#if imageUrl}} style="background-image: url(/images/candidates/{{ id }}.png)"{{/if}}></div>
+              <div class="candidate-image-thumbnail"{{#if imageUrl}} style="background-image: url({{ relativePath }}images/candidates/{{ id }}.png)"{{/if}}></div>
               <div class="candidate-party-logo {{ partyId }}"></div>
             </div>
             <div class="candidate-details">

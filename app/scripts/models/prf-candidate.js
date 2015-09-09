@@ -57,6 +57,11 @@ module.exports = Backbone.Model.extend({
   },
 
   setFilter: function (searchString) {
+    if (!searchString) {
+      this.set('filtered', false);
+      return;
+    }
+
     let re = new RegExp(searchString, 'i');
 
     // Filter name, nameNative, party, division

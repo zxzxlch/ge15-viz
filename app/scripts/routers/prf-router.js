@@ -61,7 +61,9 @@ let Router = Backbone.Router.extend({
     if (this.query[key] == value) return;
     this.query[key] = value;
 
-    this.updateFragmentQuery();
+    let options = { changed: {} };
+    options.changed[key] = value;
+    this.updateFragmentQuery(options);
   },
 
   parseQuery: function () {
@@ -74,7 +76,7 @@ let Router = Backbone.Router.extend({
     if (!options) options = {};
 
     let queryString = Common.formatQueryString(this.query);
-    if (!options.silent) this.trigger('didUpdateQuery', this.query);
+    if (!options.silent) this.trigger('didUpdateQuery', options);
     this.navigate(this.getFragment() + queryString, { replace: true });
   }
 

@@ -90,13 +90,18 @@ module.exports = Backbone.View.extend({
     
     this.perspectiveView = view;
     $('.viz-content').replaceWith(this.perspectiveView.el);
+
+    // Reset search
+    this.search(null);
   },
 
-  routerDidUpdateQuery: function () {
+  routerDidUpdateQuery: function (options) {
     if (this.perspectiveView.routerDidUpdateQuery) {
       this.perspectiveView.routerDidUpdateQuery();
       this.settingsView.updateSettings();
     }
+    if (options.changed && options.changed.view)
+      this.search(null);
   },
 
   search: function (searchString) {
