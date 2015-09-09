@@ -1,0 +1,26 @@
+<div class="viz-settings-perspective">
+  <a class="settings-link detail-settings-back-link" href="<%= back.path %>">
+    <span class="glyphicon glyphicon-menu-left"></span>
+    Back to <span class="placeholder"><%= back.label %></span></a>
+</div>
+
+<div class="viz-settings-groups">
+  <!-- Left navigation -->
+  <% if (left) { %>
+    <div class="viz-settings-navigation nav-left pull-left">
+      <a class="settings-link" href="<%= left.path %>" data-value="default">
+        <span class="glyphicon glyphicon-triangle-left"></span>
+        <span class="nav-label"><%= left.label %></span>
+      </a>
+    </div>
+  <% } %>
+  <!-- Right navigation -->
+  <% if (right) { %>
+    <div class="viz-settings-navigation nav-right pull-right">
+      <a class="settings-link" href="<%= right.path %>" data-value="default">
+        <span class="nav-label"><%= right.label %></span>
+        <span class="glyphicon glyphicon-triangle-right"></span>
+      </a>
+    </div>
+  <% } %>
+</div>

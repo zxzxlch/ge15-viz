@@ -58,6 +58,12 @@ a.settings-link {
   }
 }
 
+.detail-settings-back-link {
+  .glyphicon {
+    top: 3px;
+  }
+}
+
 .viz-settings-groups {
   @include clearfix;
 

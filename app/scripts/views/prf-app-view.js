@@ -1,13 +1,15 @@
 // views/prf-app-view.js
 
-let $        = require('jquery'),
-    _        = require('lodash'),
-    Backbone = require('backbone'),
-    Common   = require('../lib/common'),
+let $              = require('jquery'),
+    _              = require('lodash'),
+    _s             = require('underscore.string'),
+    Backbone       = require('backbone'),
+    Common         = require('../lib/common'),
     router         = require('../routers/prf-router'),
     SettingsView   = require('../views/prf-settings-view'),
-    FacesPerspectiveView = require('../views/prf-faces-perspective-view'),
+    FacesPerspectiveView   = require('../views/prf-faces-perspective-view'),
     PartiesPerspectiveView = require('../views/prf-parties-perspective-view'),
+    CandidateDetailView    = require('../views/prf-candidate-detail-view'),
     Candidates     = require('../collections/prf-candidates'),
     Parties        = require('../collections/prf-parties'),
     Candidate      = require('../models/prf-candidate'),
@@ -21,7 +23,25 @@ let $        = require('jquery'),
  */
 module.exports = Backbone.View.extend({
 
+  history: [],
+
   initialize: function(options) {
+    this.initModels();
+
+    // Settings view
+    let $vizContent = $('<div>').attr('class', 'viz-content');
+    this.settingsView = new SettingsView();
+    $('.viz').html([this.settingsView.el, $vizContent]);
+    this.listenTo(this.settingsView, 'search', this.search);
+
+    // Router
+    this.listenTo(router, 'route:faces', this.showFaces);
+    this.listenTo(router, 'route:parties', this.showParties);
+    this.listenTo(router, 'route:candidates', this.showCandidates);
+    this.listenTo(router, 'didUpdateQuery', this.routerDidUpdateQuery);
+  },
+
+  initModels: function () {
     // Get image references
     var imageReferences = _.chain($('.js-image-ref img')).
       reduce((result, elem) => {
@@ -29,12 +49,6 @@ module.exports = Backbone.View.extend({
         return result;
       }, {}).
       value();
-
-    this.$viz = $('.viz');
-    let $vizContent = $('<div>').
-      attr('class', 'viz-content');
-    this.settingsView = new SettingsView();
-    this.$viz.html([this.settingsView.el, $vizContent]);
 
     // Create candidate and party models
     this.parties = new Parties();
@@ -67,42 +81,22 @@ module.exports = Backbone.View.extend({
 
       return candidate;
     }));
-
-    // Router
-    this.listenTo(router, 'route:faces', () => {
-      this.loadPerspectiveView(new FacesPerspectiveView({
-        candidates: this.candidates,
-        parties:    this.parties
-      }));
-    });
-    this.listenTo(router, 'route:parties', () => {
-      this.loadPerspectiveView(new PartiesPerspectiveView({
-        candidates: this.candidates,
-        parties:    this.parties
-      }));
-    });
-    this.listenTo(router, 'didUpdateQuery', this.routerDidUpdateQuery);
-
-    // Events
-    this.listenTo(this.settingsView, 'search', this.search);
-  },
-
-  getVizContent: function () {
-    return $('.viz-content');
   },
 
   loadPerspectiveView: function (view) {
-    if (this.perspectiveView) {
-      this.perspectiveView.stopListening();
-    }
+    // Remember previous perspectives for detail views
+    if (router.perspective != _.first(this.history)) 
+      this.history.unshift(router.perspective);
+    
     this.perspectiveView = view;
-    this.getVizContent().replaceWith(this.perspectiveView.el);
-    this.settingsView.updateSettings();
+    $('.viz-content').replaceWith(this.perspectiveView.el);
   },
 
   routerDidUpdateQuery: function () {
-    this.perspectiveView.routerDidUpdateQuery();
-    this.settingsView.updateSettings();
+    if (this.perspectiveView.routerDidUpdateQuery) {
+      this.perspectiveView.routerDidUpdateQuery();
+      this.settingsView.updateSettings();
+    }
   },
 
   search: function (searchString) {
@@ -110,6 +104,71 @@ module.exports = Backbone.View.extend({
     this.candidates.invoke('setFilter', searchString);
 
     this.perspectiveView.search(searchString);
+  },
+
+  showFaces: function () {
+    this.loadPerspectiveView(new FacesPerspectiveView({
+      candidates: this.candidates,
+      parties:    this.parties
+    }));
+    this.settingsView.updateSettings();
+  },
+
+  showParties: function () {
+    this.loadPerspectiveView(new PartiesPerspectiveView({
+      candidates: this.candidates,
+      parties:    this.parties
+    }));
+    this.settingsView.updateSettings();
+  },
+
+  showCandidates: function (id) {
+    let candidate = this.candidates.get(id);
+
+    this.loadPerspectiveView(new CandidateDetailView({
+      model: candidate
+    }));
+
+    // Get candidates before and after
+    let index = this.candidates.indexOf(candidate),
+        prev = this.candidates.at(index - 1),
+        next = this.candidates.at(index + 1);
+
+    let settingsOptions = {}
+
+    // Trace previous perspective that is not candidate
+    for (var perspective of this.history) {
+      if (perspective != 'candidates') {
+        settingsOptions.back = {
+          label: _s.capitalize(perspective),
+          path:  '#' + perspective
+        };
+        break;
+      }
+    }
+    // Default to faces view
+    if (!settingsOptions.back) {
+      settingsOptions.back = {
+        label: 'Faces',
+        path:  '#faces'
+      };
+    }
+
+    if (prev) {
+      settingsOptions.left = {
+        label: prev.get('name'),
+        path:  '#candidates/' + prev.id
+      }
+    }
+    if (next) {
+      settingsOptions.right = {
+        label: next.get('name'),
+        path:  '#candidates/' + next.id
+      }
+    }
+
+    // Update settings view
+    this.settingsView.updateSettings(settingsOptions);
   }
 
 });

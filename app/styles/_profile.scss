@@ -1,12 +1,14 @@
 // _profile.scss
 
+$candidate-detail-portrait-thumbnail-size: 100px;
 $candidate-face-portrait-thumbnail-size: 90px;
-$candidate-face-party-logo-size: 32px;
-$faces-candidate-gutter-h: 24px;
-$faces-candidate-gutter-v: 28px;
 $candidate-card-portrait-thumbnail-size: 70px;
+$candidate-detail-party-logo-size: 64px;
+$candidate-face-party-logo-size: 32px;
 $candidate-card-party-logo-size: 28px;
 $faces-party-section-logo-size: 60px;
+$faces-candidate-gutter-h: 24px;
+$faces-candidate-gutter-v: 28px;
 
 
 // Global
@@ -217,7 +219,62 @@ $faces-party-section-logo-size: 60px;
 }
 
 
-// Cards
+// Candidate detail
+
+.viz-profiles-candidate {
+  .candidate-avatar {
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    .candidate-image-thumbnail {
+      width: $candidate-detail-portrait-thumbnail-size;
+      height: $candidate-detail-portrait-thumbnail-size;
+      margin-right: 20px;
+    }
+    .party-logo {
+      align-self: center;
+      width: $candidate-detail-party-logo-size;
+      height: $candidate-detail-party-logo-size;
+    }
+  }
+  .group + .group {
+    margin-top: 20px;
+  }
+  .name {
+    display: inline-block;
+    margin-right: 0.5em;
+    font-family: $font-family-alt;
+    font-size: 32px;
+  }
+  .nameNative {
+    display: inline-block;
+    font-size: 27px;
+    color: $gray-light;
+  }
+  .party {
+    font-size: 21px;
+  }
+  .links {
+    margin-top: 40px;
+
+    a {
+      color: $gray-light;
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+    }
+    li + li {
+      margin-top: 0.3em;
+    }
+    .glyphicon, .icon {
+      margin-right: 6px;
+    }
+  }
+}
+
+
+// Static page
 
 .candidate-card {
   display: flex;
@@ -303,7 +360,9 @@ $faces-party-section-logo-size: 60px;
   font-size: 0.9em;
 }
 
+
 // Sources
+
 .ps-sources {
   overflow-x: hidden;
   font-size: 13px;

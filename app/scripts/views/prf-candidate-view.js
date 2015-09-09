@@ -21,7 +21,7 @@ module.exports = Backbone.View.extend({
 
   render: function () {
     this.$el.html(template({
-      model: this.model
+      candidate: this.model
     }));
     return this;
   }
