@@ -15,7 +15,8 @@ module.exports = function (grunt) {
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-      useminPrepare: 'grunt-usemin'
+      useminPrepare: 'grunt-usemin',
+      replace: 'grunt-text-replace'
   });
 
   // Configurable paths
@@ -430,7 +431,20 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    replace: {
+      metatags: {
+        src: ['<%= config.dist %>/{,*/}*.html', '!<%= config.dist %>/scripts/*.*'],
+        // dest: '<%= config.dist %>/replaced/',
+        overwrite: true,
+        replacements: [{
+          from: /(<meta[^<]+content="?).*?(images\/[\w\d.-]+)/g,
+          to: '$1http://zxzxlch.github.io/ge15-viz/profiles/$2'
+        }]
+      }
     }
+
   });
 
 
@@ -486,6 +500,7 @@ module.exports = function (grunt) {
     'modernizr',
     'filerev',
     'usemin',
+    'replace:metatags',
     'htmlmin'
   ]);
 
