@@ -1,7 +1,7 @@
 {
   "meta": {
     "count": 181,
-    "lastUpdated": "2015-09-04T14:46:00.178Z"
+    "lastUpdated": "2015-09-09T11:55:01.766Z"
   },
   "data": [{
     "name": "Abdul Rasheed S/O Y Abdul Kuthus",
@@ -923,13 +923,12 @@
     },
     "meta": {
       "imageUrls": ["http://singaporedemocraticalliance.sg/wp-content/uploads/2015/05/DESMOND.jpg", "http://www.channelnewsasia.com/gestatic/images/6.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "cna", "sda"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "sda", "corrections"],
       "names": ["Desmond Lim Bak Chuan"],
       "lock": {
         "name": true
       }
     },
-    "nameNative": "Desmond Lim Bak Chuan",
     "birthdate": "1967-12-31T16:00:00.000Z",
     "age": 48,
     "occupation": ["Politician", "Engineer"],
@@ -1166,10 +1165,12 @@
     "division": "Ang Mo Kio GRC",
     "partyId": "rp",
     "party": "Reform Party",
-    "links": {},
+    "links": {
+      "facebook": "https://www.facebook.com/goh.gilbert"
+    },
     "meta": {
       "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/357.jpg"],
-      "merges": ["wikiElection", "cna"],
+      "merges": ["wikiElection", "cna", "corrections"],
       "names": ["Gilbert Goh"],
       "lock": {}
     },
@@ -1206,11 +1207,13 @@
     "partyId": "ppp",
     "party": "People's Power Party",
     "links": {
+      "facebook": "https://www.facebook.com/gohmengseng.freedom",
+      "website": "http://singaporealternatives.blogspot.sg",
       "wikipedia": "https://en.wikipedia.org/wiki/Goh_Meng_Seng"
     },
     "meta": {
       "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/168.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Goh_Meng_Seng_2011.JPG/220px-Goh_Meng_Seng_2011.JPG"],
-      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "corrections"],
       "names": ["Goh Meng Seng"],
       "lock": {}
     },
@@ -1311,10 +1314,12 @@
     "division": "Radin Mas SMC",
     "partyId": "ind",
     "party": "Independent",
-    "links": {},
+    "links": {
+      "facebook": "https://www.facebook.com/HanHuiHui"
+    },
     "meta": {
       "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/522.jpg"],
-      "merges": ["wikiElection", "cna"],
+      "merges": ["wikiElection", "cna", "corrections"],
       "names": ["Han Hui Hui"],
       "lock": {}
     },
@@ -1524,11 +1529,14 @@
     "partyId": "spp",
     "party": "Singapore People's Party",
     "links": {
+      "facebook": "https://www.facebook.com/jeannette.aruldoss",
+      "linkedin": "https://www.linkedin.com/pub/jeannette-chong-aruldoss/0/532/74b",
+      "website": "http://jeannettechongaruldoss.blogspot.sg",
       "wikipedia": "https://en.wikipedia.org/wiki/Jeannette_Chong-Aruldoss"
     },
     "meta": {
       "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/336.jpg"],
-      "merges": ["wikiElection", "wikiProfiles", "cna"],
+      "merges": ["wikiElection", "wikiProfiles", "cna", "corrections"],
       "names": ["Jeannette Chong-Aruldoss"],
       "lock": {}
     },
@@ -2399,10 +2407,12 @@
     "division": "Ang Mo Kio GRC",
     "partyId": "rp",
     "party": "Reform Party",
-    "links": {},
+    "links": {
+      "facebook": "https://www.facebook.com/mravihrn"
+    },
     "meta": {
       "imageUrls": ["http://www.channelnewsasia.com/gestatic/images/514.jpg"],
-      "merges": ["wikiElection", "cna"],
+      "merges": ["wikiElection", "cna", "corrections"],
       "names": ["M Ravi"],
       "lock": {}
     },

@@ -59,9 +59,10 @@ $faces-candidate-gutter-v: 28px;
 }
 
 .candidate-avatar {
-  display: flex;
-  flex-direction: column;
-
+  a {
+    display: flex;
+    flex-direction: column;
+  }
   .party-logo {
     align-self: flex-end;
   }
@@ -158,11 +159,12 @@ $faces-candidate-gutter-v: 28px;
   .heading {
     font-family: $font-family-alt;
     text-transform: uppercase;
+    font-size: 18px;
     color: #757575;
   }
   .description {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: #909090;
   }
   .candidates-group {
@@ -223,6 +225,7 @@ $faces-candidate-gutter-v: 28px;
 
 .viz-profiles-candidate {
   .candidate-avatar {
+    display: flex;
     flex-direction: row;
     margin-bottom: 20px;
 
@@ -286,8 +289,11 @@ $faces-candidate-gutter-v: 28px;
   border-radius: 13px;
 
   .candidate-avatar {
-    flex: 0 0 $candidate-card-portrait-thumbnail-size;
     margin-right: 15px;
+      
+    a {
+      flex: 0 0 $candidate-card-portrait-thumbnail-size;
+    }
   }
 
   .candidate-image-thumbnail {

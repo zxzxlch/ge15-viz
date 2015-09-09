@@ -26,6 +26,8 @@ module.exports = Backbone.View.extend({
         switch (label) {
           case 'partyProfile':
             return url.replace(/^https?:\/+/, '');
+          case 'cvUrl':
+            return 'C.V.';
         }
         return _s.capitalize(label);
       }).
