@@ -108,7 +108,8 @@ module.exports = Backbone.View.extend({
     // Update filter state for candidate models
     this.candidates.invoke('setFilter', searchString);
 
-    this.perspectiveView.search(searchString);
+    if (this.perspectiveView.search)
+      this.perspectiveView.search(searchString);
   },
 
   showFaces: function () {
