@@ -1,0 +1,14 @@
+// _mixins.scss
+
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  -o-transform: $transforms;
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+@mixin background-repeating-linear-gradient($gradient) {
+  background-image: -webkit-repeating-linear-gradient($gradient);
+  background-image: repeating-linear-gradient($gradient);
+}

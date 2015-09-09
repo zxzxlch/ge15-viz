@@ -2,6 +2,7 @@
 
 .viz-content {
   padding-top: 40px;
+  overflow-x: hidden;
 }
 
 .viz-settings {
@@ -14,7 +15,9 @@
   margin-bottom: 30px;
 
   a.settings-link {
+    display: inline-block;
     margin-right: 0.8em;
+    margin-bottom: 0.8em;
     border-radius: 5px;
     padding: 0.6em 1.4em;
     font-family: $font-family-alt;
@@ -93,6 +96,7 @@ a.settings-link {
     padding: 0;
     border: none;
     border-bottom: 4px solid #BBB;
+    border-radius: 0;
     line-height: 30px;
     font-size: 20px;
     outline: 0;

@@ -57,11 +57,11 @@ $faces-party-section-logo-size: 60px;
 }
 
 .candidate-avatar {
-  @include display-flex;
-  @include flex-direction(column);
+  display: flex;
+  flex-direction: column;
 
   .party-logo {
-    @include align-self(flex-end);
+    align-self: flex-end;
   }
 }
 
@@ -88,12 +88,12 @@ $faces-party-section-logo-size: 60px;
     margin-top: 60px;
   }
   .party-section-heading {
-    @include display-flex;
-    @include align-items(center);
+    display: flex;
+    align-items: center;
     margin-bottom: 40px;
   }
   .party-logo {
-    @include flex(0 0 $faces-party-section-logo-size);
+    flex: 0 0 $faces-party-section-logo-size;
     width: $faces-party-section-logo-size;
     height: $faces-party-section-logo-size;
     margin-right: 12px;
@@ -220,7 +220,7 @@ $faces-party-section-logo-size: 60px;
 // Cards
 
 .candidate-card {
-  @include display-flex;
+  display: flex;
   max-width: 400px;
   height: 120px;
   margin-bottom: 22px;
@@ -229,7 +229,7 @@ $faces-party-section-logo-size: 60px;
   border-radius: 13px;
 
   .candidate-avatar {
-    @include flex(0 0 $candidate-card-portrait-thumbnail-size);
+    flex: 0 0 $candidate-card-portrait-thumbnail-size;
     margin-right: 15px;
   }
 
@@ -248,7 +248,7 @@ $faces-party-section-logo-size: 60px;
 
 
 .candidate-details {
-  @include flex(1 1);
+  flex: 1 1;
   overflow: auto;
 }
 
@@ -305,6 +305,7 @@ $faces-party-section-logo-size: 60px;
 
 // Sources
 .ps-sources {
+  overflow-x: hidden;
   font-size: 13px;
   margin-top: 30px;
 

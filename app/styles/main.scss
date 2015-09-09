@@ -1,28 +1,12 @@
 // main.scss
 
 @import "variables";
+@import "mixins";
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-@import "bower_components/compass-mixins/lib/compass/css3/flexbox.scss";
-
-
-
-@mixin transform($transforms) {
-  -webkit-transform: $transforms;
-  -moz-transform: $transforms;
-  -ms-transform: $transforms;
-  -o-transform: $transforms;
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-@mixin background-repeating-linear-gradient($gradient) {
-  background-image: -webkit-repeating-linear-gradient($gradient);
-  background-image: repeating-linear-gradient($gradient);
-}
-
 
 @import "base";
 @import "chart";
