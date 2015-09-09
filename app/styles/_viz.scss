@@ -86,10 +86,6 @@ a.settings-link {
 .viz-settings-search {
   float: right;
 
-  @media screen and (max-width: 540px) {
-    float: left;
-    margin-right: 30px;
-  }
   input {
     display: block;
     width: 200px;
@@ -103,6 +99,14 @@ a.settings-link {
 
     &:focus {
       border-bottom-color: lighten($brand-primary, 10%);
+    }
+  }
+  @media screen and (max-width: 540px) {
+    float: left;
+    margin-right: 30px;
+
+    input {
+      width: auto;
     }
   }
 }
