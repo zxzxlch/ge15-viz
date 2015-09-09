@@ -130,9 +130,12 @@ module.exports = Backbone.View.extend({
     }));
 
     // Get candidates before and after
+    // Wrap first and last
     let index = this.candidates.indexOf(candidate),
-        prev = this.candidates.at(index - 1),
-        next = this.candidates.at(index + 1);
+        prevIndex = (index - 1 >= 0) ? index - 1 : this.candidates.length - 1,
+        prev = this.candidates.at(prevIndex),
+        nextIndex = (index + 1 < this.candidates.length) ? index + 1 : 0,
+        next = this.candidates.at(nextIndex);
 
     let settingsOptions = {}
 
