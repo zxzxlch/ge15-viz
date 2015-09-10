@@ -1,7 +1,7 @@
 {
   "meta": {
     "count": 181,
-    "lastUpdated": "2015-09-10T06:20:55.580Z"
+    "lastUpdated": "2015-09-10T06:59:30.548Z"
   },
   "data": [{
     "name": "Abdul Rasheed S/O Y Abdul Kuthus",
@@ -1410,6 +1410,23 @@
     "minority": false,
     "id": "khung-wai-yeen"
   }, {
+    "name": "Koh Choong Yong",
+    "division": "Sengkang West SMC",
+    "partyId": "wp",
+    "party": "Workers' Party",
+    "links": {
+      "partyProfile": "http://www.wp.sg/koh-choong-yong/"
+    },
+    "age": 42,
+    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_choon.jpg",
+    "education": ["Bachelor of Science (Information Systems & Computer Sciences), National University of Singapore"],
+    "maritalStatus": "Married with 2 boys.",
+    "nameNative": "许俊荣",
+    "occupation": ["Software Engineer – Ruckus Wireless Singapore"],
+    "gender": "male",
+    "minority": false,
+    "id": "koh-choong-yong"
+  }, {
     "name": "Koh Poh Koon",
     "division": "Ang Mo Kio GRC",
     "partyId": "pap",
@@ -1843,23 +1860,6 @@
     "minority": false,
     "id": "low-yen-ling"
   }, {
-    "name": "Luke Koh Choong Yong",
-    "division": "Sengkang West SMC",
-    "partyId": "wp",
-    "party": "Workers' Party",
-    "links": {
-      "partyProfile": "http://www.wp.sg/koh-choong-yong/"
-    },
-    "age": 42,
-    "imageUrl": "http://www.wp.sg/wp-content/uploads/2015/08/wpmp_profile2_choon.jpg",
-    "education": ["Bachelor of Science (Information Systems & Computer Sciences), National University of Singapore"],
-    "maritalStatus": "Married with 2 boys.",
-    "nameNative": "许俊荣",
-    "occupation": ["Software Engineer – Ruckus Wireless Singapore"],
-    "gender": "male",
-    "minority": false,
-    "id": "luke-koh-choong-yong"
-  }, {
     "name": "Luke Koh Tiong Yee",
     "division": "Nee Soon GRC",
     "partyId": "wp",
@@ -1868,11 +1868,11 @@
       "partyProfile": "http://www.wp.sg/luke-koh-tiong-yee/"
     },
     "age": 41,
+    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174424/wpmp_profile2_luke.jpg",
     "education": ["Bachelor of Business (Finance), Nanyang Technological University", "Temasek Junior College, Dunman High School, St Andrew’s Junior School"],
     "maritalStatus": "Married",
     "nameNative": "高忠义",
     "occupation": ["Managing Partner of a private investment business"],
-    "imageUrl": "http://wpge2015.s3-ap-southeast-1.amazonaws.com/wp-content/uploads/2015/08/26174424/wpmp_profile2_luke.jpg",
     "gender": "male",
     "minority": false,
     "id": "luke-koh-tiong-yee"
