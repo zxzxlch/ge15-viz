@@ -6,7 +6,8 @@ let $        = require('jquery'),
     router   = require('../routers/prf-router'),
     CandidateView  = require('../views/prf-candidate-view'),
     TweetsPartySectionView  = require('../views/prf-tweets-party-section-view'),
-    TeamsPartySectionView = require('../views/prf-teams-party-section-view');
+    TeamsPartySectionView = require('../views/prf-teams-party-section-view'),
+    DiversityPartySectionView = require('../views/prf-diversity-party-section-view');
 
 module.exports = Backbone.View.extend({
 
@@ -28,6 +29,8 @@ module.exports = Backbone.View.extend({
   render: function () {
     if (router.query.view == 'tweets') {
       this.renderTweetsView();
+    } else if (router.query.view == 'diversity') {
+      this.renderDiversityView();
     } else {
       this.renderTeamsView();
     }
@@ -44,6 +47,15 @@ module.exports = Backbone.View.extend({
     let partySectionViews = _.chain(this.parties.models).
       map(party => new TeamsPartySectionView({ model: party })).
       filter(partyView => !partyView.isFiltered()).
+      map(partyView => partyView.render().el).
+      value();
+    this.$el.html(partySectionViews);
+  },
+
+  renderDiversityView: function () {
+    let partySectionViews = _.chain(this.parties.models).
+      map(party => new DiversityPartySectionView({ model: party, sort: router.query.sort })).
+      sortByOrder('diverseRatio', 'desc').
       map(partyView => partyView.render().el).
       value();
     this.$el.html(partySectionViews);

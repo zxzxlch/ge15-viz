@@ -29,22 +29,6 @@ let Router = Backbone.Router.extend({
 
     // Parse query
     this.parseQuery();
-    
-    // Update query
-    if (perspective == 'faces') {
-      this.query = _.chain(this.query).
-        pick('sort').
-        defaults({ sort: 'name' }).
-        value();
-    } else if (perspective == 'parties') {
-      if (this.query.view == 'tweets') {
-        this.query = _.pick(this.query, 'view');
-      } else {
-        this.query = { view: 'teams' };
-      }
-    } else {
-      this.query = {};
-    }
 
     // Don't trigger 'didUpdateQuery' if perspective is changed
     this.updateFragmentQuery({ silent: perspectiveChanged });
@@ -74,6 +58,31 @@ let Router = Backbone.Router.extend({
 
   updateFragmentQuery: function (options) {
     if (!options) options = {};
+    
+    // Parse query
+    // Faces
+    if (this.perspective == 'faces') {
+      this.query = _.chain(this.query).
+        pick('sort').
+        defaults({ sort: 'name' }).
+        value();
+    }
+    // Parties
+    else if (this.perspective == 'parties') {
+      if (this.query.view == 'tweets') {
+        this.query = _.pick(this.query, 'view');
+      }
+      else if (this.query.view == 'diversity') {
+        this.query = _.pick(this.query, 'view', 'sort');
+        _.defaults(this.query, { sort: 'gender' });
+      }
+      else {
+        this.query = { view: 'teams' };
+      }
+    }
+    else {
+      this.query = {};
+    }
 
     let queryString = Common.formatQueryString(this.query);
     if (!options.silent) this.trigger('didUpdateQuery', options);

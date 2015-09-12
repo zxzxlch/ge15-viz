@@ -5,13 +5,12 @@ let _        = require('lodash'),
 
 /**
  * @namespace
- * @property {string}   id
- * @property {Backbone.Model} party
- * @property {Backbone.View}  view
  * @property {string}   attributes.name
  * @property {string}   attributes.nameNative
  * @property {string}   attributes.division
  * @property {number}   attributes.age
+ * @property {string}   attributes.gender   - 'male' or 'female'
+ * @property {boolean}  attributes.minority
  * @property {string}   attributes.maritalStatus
  * @property {string}   attributes.religion
  * @property {Date}     attributes.birthdate
@@ -28,6 +27,11 @@ let _        = require('lodash'),
  * @property {string}   attributes.links.facebook
  * @property {string}   attributes.links.cv
  * @property {boolean}  attributes.filtered
+ * @property {Backbone.Model} party
+ * @property {Backbone.Model} constituency
+ * @property {Backbone.Model} team
+ * @property {Backbone.View}  view
+ * @method getPartyId
  * @method setFilter
  */
 module.exports = Backbone.Model.extend({
@@ -41,8 +45,9 @@ module.exports = Backbone.Model.extend({
       'id',
       'name',
       'nameNative',
-      'division',
       'age',
+      'gender',
+      'minority',
       'maritalStatus',
       'religion',
       'birthdate',
@@ -77,6 +82,10 @@ module.exports = Backbone.Model.extend({
       value();
 
     this.set('filtered', !matched);
+  },
+
+  getPartyId: function () {
+    return this.party.id;
   }
 
 });

@@ -4,7 +4,7 @@ let $        = require('jquery'),
     _        = require('lodash'),
     _s       = require('underscore.string'),
     Backbone = require('backbone'),
-    router   = require('../routers/prf-router'),
+    Common   = require('../lib/common'),
     template = _.template(require('../templates/prf-candidate-detail.html'));
 
 module.exports = Backbone.View.extend({
@@ -15,7 +15,7 @@ module.exports = Backbone.View.extend({
     this.render();
 
     // Scroll into view after switching perspective
-    if (router.prevPerspective != 'candidates')
+    if (Common.router.prevPerspective != 'candidates')
       $(document).scrollTop($('.viz').offset().top);
   },
 

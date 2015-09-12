@@ -26,6 +26,8 @@ module.exports = Backbone.View.extend({
   history: [],
 
   initialize: function(options) {
+    Common.router = router;
+    
     this.initModels();
 
     // Settings view

@@ -7,9 +7,9 @@ let $        = require('jquery'),
 
 module.exports = Backbone.View.extend({
 
-  initialize: function(options) {
-    this.$el.attr('class', 'candidate candidate-face');
+  className: 'candidate-face candidate-face-grid',
 
+  initialize: function(options) {
     // Tooltip
     this.$el.
       attr('data-toggle', 'tooltip').

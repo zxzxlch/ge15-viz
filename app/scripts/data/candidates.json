@@ -1,7 +1,7 @@
 {
   "meta": {
     "count": 181,
-    "lastUpdated": "2015-09-10T06:59:30.548Z"
+    "lastUpdated": "2015-09-11T04:01:41.719Z"
   },
   "data": [{
     "name": "Abdul Rasheed S/O Y Abdul Kuthus",
@@ -1366,14 +1366,16 @@
     "minority": false,
     "id": "kenneth-foo-seck-guan"
   }, {
-    "name": "Kevryn Lim",
+    "name": "Kevryn Lim Tong Zhen",
     "division": "Sembawang GRC",
     "partyId": "nsp",
     "party": "National Solidarity Party",
     "links": {},
     "age": 27,
     "imageUrl": "http://www.channelnewsasia.com/gestatic/images/474.jpg",
-    "id": "kevryn-lim"
+    "gender": "female",
+    "minority": false,
+    "id": "kevryn-lim-tong-zhen"
   }, {
     "name": "Khaw Boon Wan",
     "division": "Sembawang GRC",
@@ -1754,7 +1756,7 @@
     "links": {},
     "age": 50,
     "imageUrl": "http://www.channelnewsasia.com/gestatic/images/492.jpg",
-    "gender": "female",
+    "gender": "male",
     "minority": false,
     "id": "lim-tean"
   }, {
@@ -1904,7 +1906,7 @@
     "age": 46,
     "imageUrl": "http://www.channelnewsasia.com/gestatic/images/514.jpg",
     "gender": "male",
-    "minority": false,
+    "minority": true,
     "id": "m-ravi"
   }, {
     "name": "Masagos Zulkifli bin Masagos Mohamad",
@@ -2348,7 +2350,7 @@
     "occupation": ["Carrot cake seller", "Sociopolitical blogger", "Social activist"],
     "imageUrl": "http://www.channelnewsasia.com/gestatic/images/515.jpg",
     "gender": "male",
-    "minority": true,
+    "minority": false,
     "id": "roy-ngerng-yi-ling"
   }, {
     "name": "S Iswaran",

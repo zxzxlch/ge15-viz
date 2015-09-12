@@ -49,15 +49,35 @@ module.exports = Backbone.View.extend({
     } 
     // Parties
     else if (router.perspective == 'parties') {
-      this.$el.html(perspectiveTemplate({
+      let options = {
         search: router.query.view != 'tweets',
         sort: false,
         view: [{
           label: 'Teams'
         }, {
+          label: 'Diversity'
+        }, {
           label: 'Tweets'
         }]
-      }));
+      };
+
+      if (router.query.view == 'diversity') {
+        _.extend(options, {
+          search: false,
+          sort: [{
+            label: 'Gender'
+          },{
+            label: 'Minorities'
+          }]
+        });
+      };
+
+      this.$el.html(perspectiveTemplate(options));
+
+      if (router.query.view == 'diversity') {
+        var sortValue = router.query.sort || 'gender';
+        this.setActive('sort', sortValue);
+      }
 
       this.setActive('view', router.query.view);
     }
