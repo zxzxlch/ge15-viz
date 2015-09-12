@@ -1,0 +1,54 @@
+---
+
+relativePath: '../'
+
+layout: viz-layout.hbs
+
+title: GE2015 Results
+
+subtitle: Who’s voted into the new parliament?
+
+description: >
+  Here are the results of Singapore general election 2015.
+
+ogImage: images/rs-og-image.png
+
+ogUrl: http://zxzxlch.github.io/ge15-viz/results/
+
+buildScripts:
+  main:     'results-bundled'
+  scripts:  ['results']
+
+footerIncludes: >
+  <div class="ps-sources">
+    Sources:
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Singaporean_general_election,_2015">Singaporean general election, 2015 - Wikipedia</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Singaporean_general_election,_2011">Singaporean general election, 2011 - Wikipedia</a></li>
+    </ul>
+  </div>
+
+data: <%= candidates.data %>
+
+---
+<!-- Introduction -->
+<div class="introduction">
+  <h1 class="heading">{{ title }}</h1>
+  <h2 class="heading-subtitle">{{ subtitle }}</h2>
+  <p>Here are the results of Singapore general election 2015.</p>
+</div>
+
+<!-- Chart -->
+<div class="viz viz-profiles">
+  <noscript>
+    <div class="viz-settings"></div>
+    <div class="viz-content"></div>
+    </div>
+  </noscript>
+</div>
+
+<div class="hide js-image-ref">
+  {{#each data~}}
+    <img data-candidate-id="{{ id }}" src="{{ ../relativePath }}images/candidates/thumbs/{{ id }}.png">
+  {{/each}}
+</div>

@@ -116,3 +116,21 @@ a.settings-link {
     }
   }
 }
+
+.viz-section + .viz-section {
+  border-top: 3px solid #F7F7F7;
+  padding-top: 40px;
+  margin-top: 60px;
+}
+.viz-section-heading {
+  margin-bottom: 40px;
+}
+.viz-section-title {
+  font-family: $font-family-alt;
+  font-size: 25px;
+  line-height: 1.1;
+  margin-bottom: 0.1em;
+}
+.viz-section-description {
+  font-size: 16px;
+}

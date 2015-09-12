@@ -1,31 +1,42 @@
 // models/prf-party.js
 
-let _        = require('lodash'),
-    Backbone = require('backbone'),
-    Candidates = require('../collections/prf-candidates');
+let _         = require('lodash'),
+    Backbone  = require('backbone'),
+    Candidate = require('../models/prf-candidate'),
+    Team      = require('../models/team');
 
 /**
  * @namespace
  * @property {string} id  - pap/wp/nsp...
  * @property {string} attributes.name
  * @property {Backbone.collection} candidates
- * @method   {object} getCandidatesCount
- * @method   {object} getDivisions
+ * @property {Backbone.collection} teams
  */
 module.exports = Backbone.Model.extend({
 
-  initialize: function () {
-    this.candidates = new Candidates();
+  initialize: function (options) {
+    this.candidates = new Backbone.Collection([], { model: Candidate });
     this.listenTo(this.candidates, 'add', this.didAddCandidate);
     this.listenTo(this.candidates, 'remove', this.didRemoveCandidate);
+    this.teams = new Backbone.Collection([], { model: Team });
+    this.listenTo(this.teams, 'add', this.didAddTeam);
+    this.listenTo(this.teams, 'remove', this.didRemoveTeam);
   },
 
   didAddCandidate: function (candidate) {
-    candidate.set('party', this);
+    candidate.party = this;
   },
 
   didRemoveCandidate: function (candidate) {
-    candidate.unset('party', this);
+    delete candidate.party;
+  },
+
+  didAddTeam: function (team) {
+    team.party = this;
+  },
+
+  didRemoveTeam: function (team) {
+    delete team.party;
   }
 
 });
