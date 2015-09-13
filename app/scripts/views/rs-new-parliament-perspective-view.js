@@ -6,7 +6,7 @@ let $        = require('jquery'),
     Common         = require('../lib/common'),
     PerspectiveView = require('../views/perspective-view'),
     CandidateView  = require('../views/prf-candidate-view'),
-    template = _.template(require('../templates/rs-new-parliament.html'));
+    vizSectionTmpl = _.template(require('../templates/viz-section.html'));
 
 module.exports = PerspectiveView.extend({
 
@@ -33,13 +33,25 @@ module.exports = PerspectiveView.extend({
   },
 
   render: function () {
-    this.$el.html(template());
+    let $wonSection = $(vizSectionTmpl({
+      title: 'The new parliament',
+      description: 'These are the candidates who were voted into parliament.'
+    }));
 
-    let $wonCandidates = _.pluck(this.candidateGroups.won, 'view.el');
-    this.$('.section-won .candidates-group').html($wonCandidates);
+    $wonSection.find('.content').
+      addClass('candidates-group').
+      html(_.pluck(this.candidateGroups.won, 'view.el'));
 
-    let $lostCandidates = _.pluck(this.candidateGroups.lost, 'view.el');
-    this.$('.section-lost .candidates-group').html($lostCandidates);
+    let $lostSection = $(vizSectionTmpl({
+      title: 'Candidates who lost',
+      description: ''
+    }));
+
+    $lostSection.find('.content').
+      addClass('candidates-group').
+      html(_.pluck(this.candidateGroups.lost, 'view.el'));
+
+    this.$el.html([$wonSection, $lostSection]);
 
     return this;
   },

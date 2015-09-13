@@ -1,4 +1,4 @@
-// views/prf-candidate-detail-view.js
+// views/candidate-detail-view.js
 
 let $        = require('jquery'),
     _        = require('lodash'),
@@ -9,13 +9,15 @@ let $        = require('jquery'),
 
 module.exports = Backbone.View.extend({
 
-  className: 'viz-content viz-profiles-candidate',
+  className: 'viz-content viz-detail-candidate',
 
   initialize: function(options) {
+    _.assign(this, _.pick(options, 'candidates'));
+    
     this.render();
 
     // Scroll into view after switching perspective
-    if (Common.router.prevPerspective != 'candidates')
+    if (options.scrollToTop)
       $(document).scrollTop($('.viz').offset().top);
   },
 

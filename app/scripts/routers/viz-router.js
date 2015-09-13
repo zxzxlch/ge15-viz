@@ -1,4 +1,4 @@
-// routers/rs-router.js
+// routers/viz-router.js
 
 let $        = require('jquery'),
     _        = require('lodash'),

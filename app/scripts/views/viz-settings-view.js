@@ -1,4 +1,4 @@
-// views/prf-settings-view.js
+// views/viz-settings-view.js
 
 let $        = require('jquery'),
     _        = require('lodash'),
@@ -22,18 +22,6 @@ module.exports = Backbone.View.extend({
     _.assign(this, _.pick(options, 'perspectives'));
   },
 
-  updateSettings: function (options) {
-    switch (Common.router.perspective) {
-      case 'parliament':
-      case 'voteshare':
-        this.renderPerspectiveSettings();
-        break;
-      case 'candidates':
-        this.renderDetailSettings(options);
-        break;
-    }
-  },
-
   /**
    * Update view with new settings
    * @param {Object}  settings
@@ -47,7 +35,7 @@ module.exports = Backbone.View.extend({
    * @property {boolean} active
    * @property {boolean} label
    */
-  loadSettings: function (settings) {
+  loadPerspectiveSettings: function (settings) {
     let perspectives = _.clone(this.perspectives, true);
     _.findWhere(perspectives, { id: settings.perspective }).active = true;
 
@@ -57,26 +45,23 @@ module.exports = Backbone.View.extend({
     this.$el.html(perspectiveTemplate(settings));
   },
 
-  setActive: function (group, id) {
-    _.each(this.$(`.viz-settings-${group} .settings-link`), elem => {
-      $(elem).toggleClass('active', $(elem).data('id') == id);
-    });
-  },
-
   /**
-   * @param options.back.path
-   * @param options.back.label
-   * @param options.left.path
-   * @param options.left.label
-   * @param options.right.path
-   * @param options.right.label
+   * @param {Object} settings
+   * @param {string} settings.back.path
+   * @param {string} settings.back.label
+   * @param {Object} [settings.left]
+   * @param {string} settings.left.path
+   * @param {string} settings.left.label
+   * @param {Object} [settings.right]
+   * @param {string} settings.right.path
+   * @param {string} settings.right.label
    */
-  renderDetailSettings: function (options) {
-    _.defaults(options, {
+  loadDetailSettings: function (settings) {
+    _.defaults(settings, {
       left: false,
       right: false
     });
-    this.$el.html(detailTemplate(options));
+    this.$el.html(detailTemplate(settings));
   },
 
   setView: function (event) {
