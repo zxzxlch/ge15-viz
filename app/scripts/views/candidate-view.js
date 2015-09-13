@@ -1,4 +1,4 @@
-// views/prf-candidate-view.js
+// views/candidate-view.js
 
 let $        = require('jquery'),
     _        = require('lodash'),

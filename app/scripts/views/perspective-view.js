@@ -23,10 +23,16 @@ module.exports = Backbone.View.extend({
     this.query = query;
   },
 
+  /**
+   * @abstract
+   */
   loadQuery: function (query) {
     this.render();
   },
 
+  /**
+   * @abstract
+   */
   search: function (searchString) {
   }
 

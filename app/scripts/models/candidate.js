@@ -1,4 +1,4 @@
-// models/prf-candidate.js
+// models/candidate.js
 
 let _        = require('lodash'),
     Backbone = require('backbone');

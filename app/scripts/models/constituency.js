@@ -3,7 +3,7 @@
 let _        = require('lodash'),
     Backbone = require('backbone'),
     Team     = require('../models/team'),
-    Party     = require('../models/prf-party');
+    Party     = require('../models/party');
 
 /**
  * @namespace

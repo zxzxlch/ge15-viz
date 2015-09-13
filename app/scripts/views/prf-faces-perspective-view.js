@@ -3,61 +3,69 @@
 let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
-    router   = require('../routers/prf-router'),
-    CandidateView  = require('../views/prf-candidate-view');
+    PerspectiveView = require('../views/perspective-view'),
+    CandidateView  = require('../views/candidate-view');
 
-module.exports = Backbone.View.extend({
+    
+module.exports = PerspectiveView.extend({
 
   className: 'viz-content viz-profiles-face',
 
+  definition: {
+    id:        'faces',
+    label:     'Faces',
+    search:    true,
+    sorts: [
+      {
+        id:    'name',
+        label: 'A to Z',
+      }, {
+        id:    'party',
+        label: 'Party',
+      }
+    ]
+  },
+
   initialize: function (options) {
-    _.assign(this, _.pick(options, 'candidates', 'parties'));
+    PerspectiveView.prototype.initialize.apply(this, arguments);
 
     // Set view for each candidate model
     this.candidateViews = this.candidates.map((model) => {
-      let view = new CandidateView({ model: model });
+      let view = new CandidateView({ model: model, grid: true });
       model.view = view;
       return view;
     });
-
-    this.render();
   },
 
-  render: function () {
-    // Get candidate views from parties
-    let sortedCandidateViews;
-
-    if (router.query.sort == 'party') {
+  loadQuery: function (options) {
+    let sortedCandidates;
+    if (options.sort == 'name') {
+      sortedCandidates = this.candidates.models;
+    }
+    else if (options.sort == 'party') {
       // Get candidates from parties collection
-      sortedCandidateViews = _.chain(this.parties.models).
+      sortedCandidates = _.chain(this.parties.models).
         pluck('candidates.models').
-        flatten();
-    } else {
-      // A-Z name sort
-      sortedCandidateViews = _.chain(this.candidates.models);
+        flatten().
+        value();
     }
 
-    // Filter candidates
-    sortedCandidateViews = sortedCandidateViews.filter(candidate => !candidate.get('filtered'));
-
     // Get candidate views
-    sortedCandidateViews = sortedCandidateViews.
+    let $candidateViews = _.chain(sortedCandidates).
       pluck('view').
-      map(view => view.render().el);
-
+      map(view => view.render().el).
+      value();
 
     let $faceGroup = $('<div>').attr('class', 'candidate-face-group');
-    $faceGroup.html(sortedCandidateViews.value());
-
+    $faceGroup.html($candidateViews);
     this.$el.html($faceGroup);
   },
 
-  routerDidUpdateQuery: function () {
-    this.render();
-  },
-
   search: function (searchString) {
-    this.render();
+    this.candidates.each(candidate => {
+      let filtered = candidate.get('filtered');
+      candidate.view.$el.toggleClass('hide', filtered);
+    });
   }
 
 });

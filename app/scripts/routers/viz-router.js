@@ -19,10 +19,9 @@ let Router = Backbone.Router.extend({
     return Backbone.history.getFragment().split('?')[0];
   },
 
-  setFragmentQuery: function (query, options) {
-    options = options || {};
+  setFragmentQuery: function (query) {
     let queryString = Common.formatQueryString(query);
-    this.navigate(this.getFragment() + queryString, _.assign({ replace: true }, options));
+    this.navigate(this.getFragment() + queryString);
   },
 
   /**

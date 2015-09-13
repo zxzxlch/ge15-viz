@@ -3,7 +3,7 @@
 require("babelify/polyfill");
 let $ = require('jquery'),
     Backbone = require('backbone'),
-    router = require('./routers/prf-router'),
+    router = require('./routers/viz-router'),
     AppView = require('./views/prf-app-view');
 
 new AppView();

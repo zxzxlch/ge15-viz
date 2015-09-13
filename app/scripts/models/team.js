@@ -2,7 +2,7 @@
 
 let _         = require('lodash'),
     Backbone  = require('backbone'),
-    Candidate = require('../models/prf-candidate');
+    Candidate = require('../models/candidate');
 
 /**
  * @namespace

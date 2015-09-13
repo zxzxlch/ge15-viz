@@ -5,7 +5,7 @@ let $        = require('jquery'),
     Backbone = require('backbone'),
     Common         = require('../lib/common'),
     PerspectiveView = require('../views/perspective-view'),
-    CandidateView  = require('../views/prf-candidate-view'),
+    CandidateView  = require('../views/candidate-view'),
     vizSectionTmpl = _.template(require('../templates/viz-section.html'));
 
 module.exports = PerspectiveView.extend({

@@ -70,7 +70,6 @@ module.exports = Backbone.View.extend({
 
     // Set query from url
     this.validateQuery(router.parseQuery());
-    router.setFragmentQuery(this.query);
 
     // Update settings view
     this.updatePerspectiveSettings();
@@ -145,12 +144,14 @@ module.exports = Backbone.View.extend({
       perspective: definition.id,
       search: !!definition.search
     };
+    // Views
     let activeView;
     if (definition.views) {
       settings.views = _.map(definition.views, view => _.pick(view, 'id', 'label'));
       _.findWhere(settings.views, { id: query.view }).active = true;
       activeView = _.findWhere(definition.views, { id: query.view });
     }
+    // Sorts
     if (activeView) {
       settings.sorts = activeView.sorts;
     } else {
@@ -159,13 +160,19 @@ module.exports = Backbone.View.extend({
     if (settings.sorts) {
       _.findWhere(settings.sorts, { id: query.sort }).active = true;
     }
+    // Search
+    if (activeView && activeView.search != undefined) {
+      settings.search = activeView.search;
+    } else {
+      settings.search = definition.search;
+    }
+
 
     this.settingsView.loadPerspectiveSettings(settings);
   },
 
   changeQuery: function (options) {
     this.validateQuery(this.query);
-    router.setFragmentQuery(this.query, { replace: false });
 
     this.currentPerspectiveView.loadQuery(_.assign({}, this.query, options));
     this.updatePerspectiveSettings();

@@ -1,8 +1,8 @@
-// models/prf-party.js
+// models/party.js
 
 let _         = require('lodash'),
     Backbone  = require('backbone'),
-    Candidate = require('../models/prf-candidate'),
+    Candidate = require('../models/candidate'),
     Team      = require('../models/team');
 
 /**
