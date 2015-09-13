@@ -12,7 +12,8 @@ let Router = Backbone.Router.extend({
 
   routes: {
     ':detail/:id': 'detail',
-    ':perspective(?*query)': 'perspective'
+    ':perspective(?*query)': 'perspective',
+    '': 'perspective'
   },
 
   getFragment: function () {
