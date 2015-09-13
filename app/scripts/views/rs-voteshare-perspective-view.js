@@ -42,8 +42,8 @@ module.exports = PerspectiveView.extend({
             id:    'popvote',
             label: 'Popular vote',
           }, {
-            id:    'avgWard',
-            label: 'Avg. vote share by ward',
+            id:    'contestedVoteShare',
+            label: 'Contested vote share',
           }
         ]
       }
@@ -56,6 +56,10 @@ module.exports = PerspectiveView.extend({
 
   teamCaptionTmpl: _.template('<% if (won) { %>Won<% } else { %>Lost<% } %> with <%= votesWon.toLocaleString() %> votes'),
 
+  popvoteDescriptionTmpl: _.template('Took <%= totalVotesWon.toLocaleString() %> of <%= totalVotes.toLocaleString() %> total votes. Won <%= seatsWon %> of <%= seatsContested %> seats contested.'),
+
+  contestedVoteShareDescriptionTmpl: _.template('Achieved <%= contestedVotesWon.toLocaleString() %> of <%= contestedVotes.toLocaleString() %> contested votes. Won <%= seatsWon %> of <%= seatsContested %> seats contested.'),
+
 
   initialize: function (options) {
     PerspectiveView.prototype.initialize.apply(this, arguments);
@@ -63,14 +67,14 @@ module.exports = PerspectiveView.extend({
 
   loadQuery: function (options) {
     if (options.view == 'wards') {
+      // Sort teams
+      this.constituencies.each(con => {
+        con.teams.comparator = (a, b) => {
+          return (a.get('votesWon') > b.get('votesWon')) ? -1 : 1;
+        };
+        con.teams.sort();
+      });
       if (options.sort == 'numVoters') {
-        // Sort teams
-        this.constituencies.each(con => {
-          con.teams.comparator = (a, b) => {
-            return (a.get('votesWon') > b.get('votesWon')) ? -1 : 1;
-          };
-          con.teams.sort();
-        });
         // Sort constituencies
         this.constituencies.comparator = (a, b) => {
           return (a.get('voters') > b.get('voters')) ? -1 : 1;
@@ -78,13 +82,6 @@ module.exports = PerspectiveView.extend({
         this.constituencies.sort();
       }
       else if (options.sort == 'voteWard') {
-        // Sort teams
-        this.constituencies.each(con => {
-          con.teams.comparator = (a, b) => {
-            return (a.get('votesWon') > b.get('votesWon')) ? -1 : 1;
-          };
-          con.teams.sort();
-        });
         // Sort constituencies
         this.constituencies.comparator = (a, b) => {
           return (a.teams.at(0).get('votesWonRatio') > b.teams.at(0).get('votesWonRatio')) ? -1 : 1;
@@ -92,13 +89,6 @@ module.exports = PerspectiveView.extend({
         this.constituencies.sort();
       }
       else if (options.sort == 'closeFights') {
-        // Sort teams
-        this.constituencies.each(con => {
-          con.teams.comparator = (a, b) => {
-            return (a.get('votesWon') > b.get('votesWon')) ? -1 : 1;
-          };
-          con.teams.sort();
-        });
         // Sort constituencies
         this.constituencies.comparator = (a, b) => {
           return (a.teams.at(0).get('votesWonRatio') < b.teams.at(0).get('votesWonRatio')) ? -1 : 1;
@@ -106,6 +96,21 @@ module.exports = PerspectiveView.extend({
         this.constituencies.sort();
       }
       this.renderWards();
+    }
+    else if (options.view == 'parties') {
+      if (options.sort == 'popvote') {
+        this.contestingBodies.comparator = (a, b) => {
+          return (a.get('totalVotesWon') > b.get('totalVotesWon')) ? -1 : 1;
+        };
+        this.contestingBodies.sort();
+      }
+      else if (options.sort == 'contestedVoteShare') {
+        this.contestingBodies.comparator = (a, b) => {
+          return (a.get('contestedVotesWonRatio') > b.get('contestedVotesWonRatio')) ? -1 : 1;
+        };
+        this.contestingBodies.sort();
+      }
+      this.renderParties(options);
     }
   },
 
@@ -155,6 +160,61 @@ module.exports = PerspectiveView.extend({
     });
 
     this.$el.html($constituencies);
+  },
+
+  renderParties: function (options) {
+    let $sections = this.contestingBodies.map(contestingBody => {
+      let description;
+      if (options.sort == 'popvote') {
+        description = this.popvoteDescriptionTmpl({
+          totalVotesWon:  contestingBody.get('totalVotesWon'),
+          totalVotes:     this.stats.totalVotes,
+          seatsWon:       contestingBody.get('seatsWon'),
+          seatsContested: contestingBody.get('seatsContested')
+        });
+      } else if (options.sort == 'contestedVoteShare') {
+        description = this.contestedVoteShareDescriptionTmpl({
+          contestedVotesWon: contestingBody.get('contestedVotesWon'),
+          contestedVotes:    contestingBody.get('contestedVotes'),
+          seatsWon:          contestingBody.get('seatsWon'),
+          seatsContested:    contestingBody.get('seatsContested')
+        });
+      }
+
+      let $section = $(vizSectionTmpl({
+        headingIcon: true,
+        title: contestingBody.model.get('name'),
+        description: description
+      }));
+
+      // Insert party logo or candidate image
+      let $headingIcon;
+      if (contestingBody.get('type') == 'party') {
+        $headingIcon = $('<div>').attr('class', 'party-logo ' + contestingBody.model.id);
+      } else {
+        $headingIcon = new CandidateView({ model: contestingBody.model }).render().el;
+      }
+      $section.find('.heading-icon').html($headingIcon);
+
+      // Render content
+      let value = (options.sort == 'popvote') ? contestingBody.get('totalVotesWonRatio') : contestingBody.get('contestedVotesWonRatio');
+      let $bar = $(vizBarTmpl({
+        filled: value
+      }));
+      if (options.sort == 'contestedVoteShare') {
+        $bar.find('.wrapper').css('width', (contestingBody.get('contestedVotes') / this.stats.totalVotes * 100) + '%');
+      }
+      let $barFigure = $('<div>').
+        attr('class', 'stats').
+        html((value * 100).toFixed(1) + '%');
+      $section.find('.content').
+        addClass('content-split').
+        html([$barFigure, $bar]);
+
+      return $section;
+    });
+
+    this.$el.html($sections);
   }
 
 });

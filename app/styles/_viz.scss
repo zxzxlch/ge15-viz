@@ -144,6 +144,11 @@ $bar-border-radius: 2px;
   }
   .heading {
     margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+  }
+  .heading-icon {
+    flex: 0 0 auto;
   }
   .title {
     font-family: $font-family-alt;
@@ -161,12 +166,15 @@ $bar-border-radius: 2px;
 // Bar
 
 .viz-bar {
-  position: relative;
   width: 100%;
   height: $bar-height;
-  background: $gray-lighter;
-  border-radius: $bar-border-radius;
 
+  .wrapper {
+    position: relative;
+    height: 100%;
+    border-radius: $bar-border-radius;
+    background: $gray-lighter;
+  }
   .bar-filled, .bar-icon-filled {
     border-top-left-radius: $bar-border-radius;
     border-bottom-left-radius: $bar-border-radius;

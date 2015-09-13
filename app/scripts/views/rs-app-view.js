@@ -41,7 +41,8 @@ module.exports = Backbone.View.extend({
         'candidates',
         'parties',
         'constituencies',
-        'contestingBodies'));
+        'contestingBodies',
+        'stats'));
     });
 
     // Settings view
@@ -100,6 +101,7 @@ module.exports = Backbone.View.extend({
 
     // Contesting bodies
     let contestingBodies = _.chain(this.parties.models).
+      reject(party => party.id == 'ind').
       map(party => {
         let attributes = _.findWhere(constituenciesData.data.parties, { id: party.id });
         _.extend(attributes, {
@@ -140,6 +142,12 @@ module.exports = Backbone.View.extend({
       return new Constituency(attributes, { parse: true });
     });
     this.constituencies = new Backbone.Collection(constituencies, { model: Constituency });
+
+    // Stats
+    this.stats = {
+      totalVotes: _.sum(this.constituencies.models, 'attributes.voters'),
+      totalSeats: _.sum(this.constituencies.models, 'attributes.seats')
+    }
   },
 
   loadPerspective: function (perspective) {
@@ -302,7 +310,8 @@ module.exports = Backbone.View.extend({
   },
 
   changeQuery: function (options) {
-    router.setFragmentQuery(this.query);
+    this.validateQuery(this.query);
+    router.setFragmentQuery(this.query, { replace: false });
 
     this.currentPerspectiveView.loadQuery(_.assign({}, this.query, options));
     this.updateSettings();

@@ -12,7 +12,7 @@ module.exports = Backbone.View.extend({
   definition: {},
 
   initialize: function (options) {
-    _.assign(this, _.pick(options, 'parties', 'candidates', 'constituencies', 'contestingBodies'));
+    _.assign(this, _.pick(options, 'parties', 'candidates', 'constituencies', 'contestingBodies', 'stats'));
   },
 
   getDefinition: function () {
