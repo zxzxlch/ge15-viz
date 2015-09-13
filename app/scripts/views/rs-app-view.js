@@ -7,9 +7,9 @@ let $              = require('jquery'),
     Common         = require('../lib/common'),
     router         = require('../routers/rs-router'),
     SettingsView   = require('../views/rs-settings-view'),
-    NewParliamentPerspectiveView   = require('../views/rs-new-parliament-perspective-view'),
-    // PartiesPerspectiveView = require('../views/prf-parties-perspective-view'),
-    CandidateDetailView    = require('../views/prf-candidate-detail-view'),
+    NewParliamentPerspectiveView = require('../views/rs-new-parliament-perspective-view'),
+    VotesharePerspectiveView = require('../views/rs-voteshare-perspective-view'),
+    CandidateDetailView = require('../views/prf-candidate-detail-view'),
     Parties        = require('../collections/prf-parties'),
     Candidate      = require('../models/prf-candidate'),
     Party          = require('../models/prf-party'),
@@ -28,30 +28,35 @@ module.exports = Backbone.View.extend({
 
   history: [],
 
-  perspectives: [{
-    label: 'New parliament',
-    value: 'parliament'
-  }, {
-    label: 'Vote share',
-    value: 'voteshare'
-  }],
+  query: {},
 
   initialize: function(options) {
     Common.router = router;
 
     this.initModels();
 
+    // Perspective views
+    this.perspectiveViews = _.map([NewParliamentPerspectiveView, VotesharePerspectiveView], perspectiveClass => {
+      return new perspectiveClass(_.pick(this,
+        'candidates',
+        'parties',
+        'constituencies',
+        'contestingBodies'));
+    });
+
     // Settings view
     let $vizContent = $('<div>').attr('class', 'viz-content');
-    this.settingsView = new SettingsView({ perspectives: this.perspectives });
+    let perspectives = _.map(this.perspectiveViews, perspectiveView => {
+      return _.pick(perspectiveView.getDefinition(), 'id', 'label');
+    });
+    this.settingsView = new SettingsView({ perspectives: perspectives });
     $('.viz').html([this.settingsView.el, $vizContent]);
     this.listenTo(this.settingsView, 'search', this.search);
+    this.listenTo(this.settingsView, 'setQueryValue', this.setQueryValue);
 
     // Router
-    this.listenTo(router, 'route:parliament', this.showParliament);
-    this.listenTo(router, 'route:voteshare', this.showVoteshare);
-    this.listenTo(router, 'route:candidates', this.showCandidates);
-    this.listenTo(router, 'didUpdateQuery', this.routerDidUpdateQuery);
+    this.listenTo(router, 'route:perspective', this.loadPerspective);
+    this.listenTo(router, 'route:detail', this.loadDetail);
   },
 
   initModels: function () {
@@ -137,52 +142,114 @@ module.exports = Backbone.View.extend({
     this.constituencies = new Backbone.Collection(constituencies, { model: Constituency });
   },
 
-  loadPerspectiveView: function (view) {
+  loadPerspective: function (perspective) {
+    // Find setting for current perspective
+    let newPerspectiveView = _.findWhere(this.perspectiveViews, { definition: { id: perspective } });
+    if (!newPerspectiveView) {
+      // Navigate to default perspective
+      return router.navigate(this.perspectiveViews[0].getDefinition().id, { trigger: true });
+    }
+    this.currentPerspectiveView = newPerspectiveView;
+
     // Remember previous perspectives for detail views
-    if (router.perspective != _.first(this.history)) 
-      this.history.unshift(router.perspective);
-    
-    this.perspectiveView = view;
-    $('.viz-content').replaceWith(this.perspectiveView.el);
+    this.history.unshift(this.currentPerspectiveView.getDefinition().id);
+
+    // Set query from url
+    this.validateQuery(router.parseQuery());
+    router.setFragmentQuery(this.query);
+
+    // Update settings view
+    this.updateSettings();
 
     // Reset search
-    this.search(null);
+    this.clearSearch();
+
+    this.currentPerspectiveView.loadQuery(_.clone(this.query));
+
+    // Render perspective content
+    $('.viz-content').replaceWith(this.currentPerspectiveView.el);
   },
 
-  routerDidUpdateQuery: function (options) {
-    if (this.perspectiveView.routerDidUpdateQuery) {
-      this.perspectiveView.routerDidUpdateQuery();
-      this.settingsView.updateSettings();
+  /**
+   * Parse query to match perspective definition
+   */
+  validateQuery: function (query) {
+    query = (query) ? _.pick(query, 'view', 'sort') : {};
+    let definition = this.currentPerspectiveView.getDefinition();
+
+    // Set query attribute to match attribute in definition
+    let viewDefinition;
+    if (definition.views) {
+      // Default to first view definition
+      viewDefinition = _.findWhere(definition.views, { id: query.view }) || definition.views[0];
+      query.view = viewDefinition.id;
+    } else {
+      // Remove view attribute
+      delete query.view;
     }
-    if (options.changed && options.changed.view)
-      this.search(null);
+
+    // Look for sort definition in view attribute first before looking in root
+    let sort, sortDefinitions;
+    if (viewDefinition && viewDefinition.sorts) {
+      sortDefinitions = viewDefinition.sorts;
+    } else if (definition.sorts) {
+      sortDefinitions = definition.sorts;
+    }
+    if (sortDefinitions) {
+      let sortDefinition = _.findWhere(sortDefinitions, { id: query.sort }) || sortDefinitions[0];
+      query.sort = sortDefinition.id;
+    } else {
+      // Remove view attribute
+      delete query.sort;
+    }
+
+    // Update query
+    this.query = query;
+
+    // Update url
+    router.setFragmentQuery(this.query);
   },
 
-  search: function (searchString) {
-    // Update filter state for candidate models
-    this.candidates.invoke('setFilter', searchString);
+  setQueryValue: function (key, value) {
+    // Check for change in value
+    if (this.query[key] == value) return;
+    this.query[key] = value;
 
-    if (this.perspectiveView.search)
-      this.perspectiveView.search(searchString);
+    let options = { changed: {} };
+    options.changed[key] = value;
+
+    this.changeQuery(options);
   },
 
-  showParliament: function () {
-    this.loadPerspectiveView(new NewParliamentPerspectiveView({
-      parties: this.parties,
-      candidates: this.candidates
-    }));
-    this.settingsView.updateSettings();
+  updateSettings: function () {
+    // Parse query to match perspective settings
+    let definition = this.currentPerspectiveView.getDefinition(),
+        query = this.query;
+
+    // Update settings
+    let settings = {
+      perspective: definition.id,
+      search: !!definition.search
+    };
+    let activeView;
+    if (definition.views) {
+      settings.views = _.map(definition.views, view => _.pick(view, 'id', 'label'));
+      _.findWhere(settings.views, { id: query.view }).active = true;
+      activeView = _.findWhere(definition.views, { id: query.view });
+    }
+    if (activeView) {
+      settings.sorts = activeView.sorts;
+    } else {
+      settings.sorts = definition.sorts;
+    }
+    if (settings.sorts) {
+      _.findWhere(settings.sorts, { id: query.sort }).active = true;
+    }
+
+    this.settingsView.loadSettings(settings);
   },
 
-  showVoteshare: function () {
-    this.loadPerspectiveView(new PartiesPerspectiveView({
-      candidates: this.candidates,
-      parties:    this.parties
-    }));
-    this.settingsView.updateSettings();
-  },
-
-  showCandidates: function (id) {
+  loadDetail: function (id) {
     let candidate = this.candidates.get(id);
 
     this.loadPerspectiveView(new CandidateDetailView({
@@ -231,7 +298,29 @@ module.exports = Backbone.View.extend({
     }
 
     // Update settings view
-    this.settingsView.updateSettings(settingsOptions);
+    this.updateSettings();
+  },
+
+  changeQuery: function (options) {
+    router.setFragmentQuery(this.query);
+
+    this.currentPerspectiveView.loadQuery(_.assign({}, this.query, options));
+    this.updateSettings();
+
+    if (options.changed && options.changed.view)
+      this.clearSearch();
+  },
+
+  clearSearch: function () {
+    this.search(null);
+  },
+
+  search: function (searchString) {
+    // Update filter state for candidate models
+    this.candidates.invoke('setFilter', searchString);
+
+    if (this.currentPerspectiveView.search)
+      this.currentPerspectiveView.search(searchString);
   }
 
 });

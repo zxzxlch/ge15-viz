@@ -1,0 +1,57 @@
+// _rs-viz.scss
+
+
+// Results/Parliament
+
+.viz-rs .viz-team-subsection {
+  + .viz-team-subsection {
+    margin-top: 40px;
+  }
+  .heading {
+    display: flex;
+    margin-bottom: 4px;
+  }
+  .party-logo {
+    flex: 0 0 auto;
+    width: $candidate-face-xs-size;
+    height: $candidate-face-xs-size;
+    margin-right: 8px;
+  }
+  .team-candidates {
+    flex: 1 1;
+    white-space: nowrap;
+  }
+  .candidate-face {
+    margin-right: 8px;
+
+    @media screen and (max-width: 400px) {
+      width: $candidate-face-xs-size * 0.8;
+      margin-right: 0;
+    }
+    .candidate-face-image {
+      width: $candidate-face-xs-size;
+      height: $candidate-face-xs-size;
+    }
+    .party-logo {
+      display: none;
+    }
+  }
+  .content {
+    margin-bottom: 6px;
+  }
+  .description {
+    display: flex;
+  }
+  .caption {
+    flex: 1;
+    font-size: 15px;
+    color: #909090;
+  }
+  .stats {
+    flex: 0 1 auto;
+    margin-left: 10px;
+    font-weight: 500;
+    color: $brand-secondary;
+  }
+
+}

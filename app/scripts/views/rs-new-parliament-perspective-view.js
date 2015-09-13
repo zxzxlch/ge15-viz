@@ -4,21 +4,28 @@ let $        = require('jquery'),
     _        = require('lodash'),
     Backbone = require('backbone'),
     Common         = require('../lib/common'),
+    PerspectiveView = require('../views/perspective-view'),
     CandidateView  = require('../views/prf-candidate-view'),
     template = _.template(require('../templates/rs-new-parliament.html'));
 
-module.exports = Backbone.View.extend({
+module.exports = PerspectiveView.extend({
 
   className: 'viz-content viz-rs-parliament',
 
+  definition: {
+    id:        'parliament',
+    label:     'New parliament',
+    search:    true
+  },
+
   initialize: function (options) {
-    _.assign(this, _.pick(options, 'parties', 'candidates'));
+    PerspectiveView.prototype.initialize.apply(this, arguments);
 
     // Divide won and lost candidates
     this.candidateGroups = _.chain(this.parties.models).
       map(party => party.candidates.models).
       flatten().
-      each(candidate => candidate.view = new CandidateView({ model: candidate }).render()).
+      each(candidate => candidate.view = new CandidateView({ model: candidate, grid: true }).render()).
       groupBy(candidate => candidate.team.get('won') ? 'won' : 'lost').
       value();
 
@@ -35,10 +42,6 @@ module.exports = Backbone.View.extend({
     this.$('.section-lost .candidates-group').html($lostCandidates);
 
     return this;
-  },
-
-  routerDidUpdateQuery: function () {
-    this.render();
   },
 
   search: function (searchString) {

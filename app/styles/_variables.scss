@@ -16,6 +16,7 @@ $brand-danger:              #d9534f !default;
 // $brand-primary:             darken(#428bca, 6.5%) !default; // #337ab7
 $brand-primary-dark:        darken($brand-primary, 7%);
 $brand-secondary:           #6D70EF;
+$brand-secondary-dark:      darken($brand-secondary, 15%);
 
 $body-bg:                   $gray-lighter;
 $text-color:                #505050;

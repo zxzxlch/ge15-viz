@@ -15,6 +15,7 @@ let _        = require('lodash'),
  * @property {number}  attributes.votesInvalid
  * @property {string}  attributes.url
  * @property {Backbone.Collection} teams
+ * @method {Team} getWinningTeam
  */
 module.exports = Backbone.Model.extend({
 
@@ -37,6 +38,10 @@ module.exports = Backbone.Model.extend({
 
   parse: function (options) {
     return _.pick(options, 'name', 'type', 'seats', 'voters', 'votesValid', 'votesInvalid', 'url');
+  },
+
+  getWinningTeam: function () {
+    return this.teams.findWhere({ won: true });
   }
 
 });

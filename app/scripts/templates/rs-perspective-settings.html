@@ -1,8 +1,8 @@
 <div class="viz-settings-perspective">
   <div class="settings-link-group" role="group" aria-label="Perspectives">
     <% _.each(perspectives, function (link) { %>
-      <% var linkValue = link.value || link.label.toLowerCase(); %>
-      <a class="settings-link" href="#<%= linkValue %>" data-value="<%= linkValue %>">
+      <% var linkValue = link.id || link.label.toLowerCase(); %>
+      <a class="settings-link<% if (link.active) { %> active<% } %>" href="#<%= linkValue %>" data-id="<%= linkValue %>">
         <%= link.label %>
       </a>
     <% }); %>
@@ -17,26 +17,26 @@
       <input type="text" placeholder="Search">
     </div>
   <% } %>
-  <% if (view) { %>
+  <% if (views) { %>
     <!-- Views -->
     <div class="viz-settings-view">
       <label>View</label>
       <div class="settings-link-group" role="group" aria-label="View">
-        <% _.each(view, function (link) { %>
-          <a class="settings-link" href="#" data-value="<%= link.value || link.label.toLowerCase() %>">
+        <% _.each(views, function (link) { %>
+          <a class="settings-link<% if (link.active) { %> active<% } %>" href="#" data-id="<%= link.id || link.label.toLowerCase() %>">
             <%= link.label %>
           </a>
         <% }); %>
       </div>
     </div>
   <% } %>
-  <% if (sort) { %>
+  <% if (sorts) { %>
     <!-- Sort -->
     <div class="viz-settings-sort">
       <label>Sort</label>
       <div class="settings-link-group" role="group" aria-label="Sort">
-        <% _.each(sort, function (link) { %>
-          <a class="settings-link" href="#" data-value="<%= link.value || link.label.toLowerCase() %>">
+        <% _.each(sorts, function (link) { %>
+          <a class="settings-link<% if (link.active) { %> active<% } %>" href="#" data-id="<%= link.id || link.label.toLowerCase() %>">
             <%= link.label %>
           </a>
         <% }); %>

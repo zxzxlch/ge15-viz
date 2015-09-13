@@ -1,0 +1,14 @@
+<div class="viz-bar">
+  <div class="wrapper">
+    <div class="bar-filled" style="width: <%= filled * 100 %>%"></div>
+    <% if (typeof filledSecondary != 'undefined') { %>
+      <div class="bar-icon-filled" style="width: <%= filledSecondary * 100 %>%"></div>
+    <% } %>
+    <% if (typeof marker1 != 'undefined') { %>
+      <div class="bar-marker marker-1" style="left: <%= marker1 * 100 %>%"></div>
+    <% } %>
+    <% if (typeof marker2 != 'undefined') { %>
+      <div class="bar-marker marker-2" style="left: <%= marker2 * 100 %>%"></div>
+    <% } %>
+  </div>
+</div>

@@ -1,5 +1,21 @@
 /* _viz.scss */
 
+$party-logo-md2-size: 64px;
+$party-logo-md-size: 60px;
+$party-logo-sm-size: 32px;
+
+$candidate-face-lg-size: 100px;
+$candidate-face-md-size: 90px;
+$candidate-face-sm-size: 70px;
+$candidate-face-xs-size: 45px;
+$candidate-face-spacing-h: 24px;
+$candidate-face-spacing-v: 28px;
+
+$bar-color: $brand-secondary;
+$bar-color-dark: darken($bar-color, 20%);
+$bar-height: 32px;
+$bar-border-radius: 2px;
+
 .viz-content {
   padding-top: 40px;
   overflow-x: hidden;
@@ -11,11 +27,28 @@
   }
 }
 
+.viz-settings {
+  a.settings-link {
+    display: inline-block;
+    margin-right: 1.5em;
+    margin-bottom: 0.4em;
+    padding-bottom: 5px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    color: $brand-primary;
+    text-decoration: none;
+
+    &.active, &:hover {
+      border-bottom: 4px solid lighten($brand-primary, 10%);
+    }
+  }
+}
+
 .viz-settings-perspective {
   margin-bottom: 30px;
 
   a.settings-link {
-    display: inline-block;
     margin-right: 0.8em;
     margin-bottom: 0.8em;
     border-radius: 5px;
@@ -38,23 +71,6 @@
         background-color: lighten($brand-primary, 25%);
       }
     }
-  }
-}
-
-a.settings-link-group {
-}
-
-a.settings-link {
-  margin-right: 1.5em;
-  padding-bottom: 5px;
-  line-height: 30px;
-  font-size: 20px;
-  font-weight: 500;
-  color: $brand-primary;
-  text-decoration: none;
-
-  &.active, &:hover {
-    border-bottom: 4px solid lighten($brand-primary, 10%);
   }
 }
 
@@ -117,20 +133,245 @@ a.settings-link {
   }
 }
 
-.viz-section + .viz-section {
-  border-top: 3px solid #F7F7F7;
-  padding-top: 40px;
-  margin-top: 60px;
+
+// Section
+
+.viz-section {
+  + .viz-section {
+    border-top: 3px solid #F7F7F7;
+    padding-top: 40px;
+    margin-top: 60px;
+  }
+  .heading {
+    margin-bottom: 40px;
+  }
+  .title {
+    font-family: $font-family-alt;
+    font-size: 25px;
+    line-height: 1.1;
+    margin-bottom: 0.1em;
+  }
+  .description {
+    font-size: 16px;
+  }
+  .content {}
 }
-.viz-section-heading {
-  margin-bottom: 40px;
+
+
+// Bar
+
+.viz-bar {
+  position: relative;
+  width: 100%;
+  height: $bar-height;
+  background: $gray-lighter;
+  border-radius: $bar-border-radius;
+
+  .bar-filled, .bar-icon-filled {
+    border-top-left-radius: $bar-border-radius;
+    border-bottom-left-radius: $bar-border-radius;
+  }
+  .bar-filled {
+    position: absolute;
+    height: 100%;
+    background-color: $bar-color;
+  }
+  .bar-icon-filled {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  .bar-marker {
+    @include transform(translate(-2px, -2px) rotate(-45deg));
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    background-color: white;
+    border: 1px solid rgba($bar-color, 0.5);
+    box-sizing: content-box;
+    z-index: 100;
+  }
 }
-.viz-section-title {
+
+
+// Party logo
+
+.party-logo {
+  border-radius: 50%;
+  width: $party-logo-md-size;
+  height: $party-logo-md-size;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  border: 1px solid $gray-lighter;
+
+  &.pap {
+    background-image: url(../images/party-logos/pap-logo.png);
+  }
+  &.wp {
+    background-image: url(../images/party-logos/wp-logo.png);
+  }
+  &.nsp {
+    background-image: url(../images/party-logos/nsp-logo.png);
+  }
+  &.rp {
+    background-image: url(../images/party-logos/rp-logo.png);
+    background-size: 93% auto;
+  }
+  &.sdp {
+    background-color: #FD0000;
+    border-color: lighten(#FD0000, 10%);
+    background-image: url(../images/party-logos/sdp-logo.png);
+  }
+  &.singfirst {
+    background-image: url(../images/party-logos/singfirst-logo.png);
+  }
+  &.spp {
+    background-image: url(../images/party-logos/spp-logo.png);
+    background-size: 85% auto;
+  }
+  &.sda {
+    background-image: url(../images/party-logos/sda-logo.png);
+    background-size: 70% auto;
+  }
+  &.ppp {
+    background-image: url(../images/party-logos/ppp-logo.png);
+  }
+  &.ind {
+    border-width: 6px;
+  }
+}
+
+
+// Candidate photos
+
+.candidate-face {
+  display: inline-block;
+
+  &.dim {
+    opacity: 0.2;
+  }
+  .candidate-face-image {
+    width: $candidate-face-md-size;
+    height: $candidate-face-md-size;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: $gray-lighter;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+.candidate-face-grid {
+  margin: 0 $candidate-face-spacing-h $candidate-face-spacing-v 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .party-logo {
+    align-self: flex-end;
+    width: $party-logo-sm-size;
+    height: $party-logo-sm-size;
+    margin-top: -$party-logo-sm-size * 0.875;
+  }
+}
+
+.candidate-face-group {
+  .tooltip {
+    pointer-events: none;
+    margin-top: -10px;
+  }
+}
+
+
+// Static page
+
+.candidate-card {
+  display: flex;
+  max-width: 400px;
+  height: 120px;
+  margin-bottom: 22px;
+  padding: 16px 13px;
+  border: 2px solid #EFEFEF;
+  border-radius: 13px;
+
+  .candidate-face {
+    margin-right: 15px;
+      
+    a {
+      flex: 0 0 $candidate-face-sm-size;
+    }
+  }
+
+  .candidate-face-image {
+    width: $candidate-face-sm-size;
+    height: $candidate-face-sm-size;
+    margin-right: $candidate-face-sm-size * 0.6;
+  }
+
+  .party-logo {
+    margin-top: -$party-logo-sm-size * 0.6;
+  }
+}
+
+
+.candidate-details {
+  flex: 1 1;
+  overflow: auto;
+}
+
+.candidate-card-row {
+  margin: 0.3em 0;
+  font-size: 13px;
+  line-height: 1.3;
+  color: $gray-light;
+
+  > span {
+    display: inline-block;
+  }
+}
+
+.candidate-row-list-heading {
+  margin-right: 5px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ADADAD;
+}
+
+.candidate-row-list {
+  ul {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    display: inline;
+  }
+  li + li {
+    &:before {
+      content: "\2022";
+      margin: 0 5px 0 5px;
+      color: #ADADAD;
+    }
+  }
+}
+
+.candidate-name {
   font-family: $font-family-alt;
-  font-size: 25px;
-  line-height: 1.1;
   margin-bottom: 0.1em;
+  font-size: 17px;
+  line-height: 1.2;
 }
-.viz-section-description {
-  font-size: 16px;
+
+.candidate-name-native {
+  display: block;
+  color: $gray-light;
+  font-size: 0.9em;
 }
+

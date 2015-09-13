@@ -34,71 +34,32 @@ module.exports = Backbone.View.extend({
     }
   },
 
-  renderPerspectiveSettings: function () {
-    // Parliament
-    if (Common.router.perspective == 'parliament') {
-      this.$el.html(perspectiveTemplate({
-        perspectives: this.perspectives,
-        view: false,
-        sort: false,
-        search: true
-      }));
-    } 
-    // Voteshare
-    else if (Common.router.perspective == 'voteshare') {
-      let options = {
-        perspectives: this.perspectives,
-        view: [{
-          label: 'Wards'
-        }, {
-          label: 'Parties'
-        }],
-        search: false
-      };
+  /**
+   * Update view with new settings
+   * @param {Object}  settings
+   * @param {string}  settings.perspective - Perspective to set active
+   * @param {boolean} settings.search
+   * @param {LinkSetting[]} settings.views
+   * @param {LinkSetting[]} settings.sorts
+   *
+   * @typedef  {Object}  LinkSetting
+   * @property {boolean} id
+   * @property {boolean} active
+   * @property {boolean} label
+   */
+  loadSettings: function (settings) {
+    let perspectives = _.clone(this.perspectives, true);
+    _.findWhere(perspectives, { id: settings.perspective }).active = true;
 
-      if (Common.router.query.view == 'wards') {
-        _.extend(options, {
-          perspectives: this.perspectives,
-          sort: [{
-            label: 'Num of voters',
-            value: 'numVoters'
-          },{
-            label: 'Close fights',
-            value: 'closeFights'
-          }]
-        });
-      } else if (Common.router.query.view == 'parties') {
-        _.extend(options, {
-          perspectives: this.perspectives,
-          sort: [{
-            label: 'Total votes',
-            value: 'totalVotes'
-          },{
-            label: 'Avg vote share by ward',
-            value: 'avgWard'
-          }]
-        });
-      };
+    _.assign(settings, { perspectives: perspectives });
+    _.defaults(settings, { search: false, views: false, sorts: false });
 
-      this.$el.html(perspectiveTemplate(options));
-
-      if (Common.router.query.view == 'wards') {
-        var sortValue = Common.router.query.sort || 'numVoters';
-        this.setActive('sort', sortValue);
-      } else if (Common.router.query.view == 'parties') {
-        var sortValue = Common.router.query.sort || 'totalVotes';
-        this.setActive('sort', sortValue);
-      }
-
-      this.setActive('view', Common.router.query.view);
-    }
-
-    this.setActive('perspective', Common.router.perspective);
+    this.$el.html(perspectiveTemplate(settings));
   },
 
-  setActive: function (group, value) {
+  setActive: function (group, id) {
     _.each(this.$(`.viz-settings-${group} .settings-link`), elem => {
-      $(elem).toggleClass('active', $(elem).data('value') == value);
+      $(elem).toggleClass('active', $(elem).data('id') == id);
     });
   },
 
@@ -120,12 +81,12 @@ module.exports = Backbone.View.extend({
 
   setView: function (event) {
     event.preventDefault();
-    Common.router.setQueryValue('view', $(event.currentTarget).data('value'));
+    this.trigger('setQueryValue', 'view', $(event.currentTarget).data('id'));
   },
 
   setSort: function (event) {
     event.preventDefault();
-    Common.router.setQueryValue('sort', $(event.currentTarget).data('value'));
+    this.trigger('setQueryValue', 'sort', $(event.currentTarget).data('id'));
   },
 
   search: function (event) {
