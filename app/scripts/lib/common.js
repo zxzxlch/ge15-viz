@@ -13,6 +13,11 @@ module.exports = {
     let url = URL.parse('')
     url.query = queryObj;
     return url.format();
+  },
+
+  formatPercentage: function (num, decPlaces) {
+    decPlaces = (decPlaces != undefined) ? decPlaces : 1;
+    return (num * 100).toFixed(decPlaces);
   }
 
 };

@@ -8,6 +8,7 @@ let $              = require('jquery'),
     VizAppView     = require('../views/viz-app-view'),
     NewParliamentPerspectiveView = require('../views/rs-new-parliament-perspective-view'),
     VotesharePerspectiveView = require('../views/rs-voteshare-perspective-view'),
+    SwingsPerspectiveView = require('../views/rs-swings-perspective-view'),
     CandidateDetailView = require('../views/candidate-detail-view'),
     Candidate      = require('../models/candidate'),
     Party          = require('../models/party'),
@@ -29,7 +30,7 @@ let $              = require('jquery'),
 module.exports = VizAppView.extend({
 
   initPerspectiveViews: function () {
-    this.perspectiveViews = _.map([NewParliamentPerspectiveView, VotesharePerspectiveView], perspectiveClass => {
+    this.perspectiveViews = _.map([NewParliamentPerspectiveView, VotesharePerspectiveView, SwingsPerspectiveView], perspectiveClass => {
       return new perspectiveClass(_.pick(this,
         'candidates',
         'parties',
@@ -83,11 +84,10 @@ module.exports = VizAppView.extend({
       reject(party => party.id == 'ind').
       map(party => {
         let attributes = _.findWhere(constituenciesData.data.parties, { id: party.id });
-        _.extend(attributes, {
+        return new ContestingBody(_.extend(_.omit(attributes, 'id', 'name'), {
           model: party,
           type: 'party',
-        });
-        return new ContestingBody(attributes);
+        }));
       }).
       value();
 
@@ -110,7 +110,7 @@ module.exports = VizAppView.extend({
       let attributes = _.omit(con, 'teams');
 
       attributes.teams = _.map(con.teams, team => {
-        let attributes = _.pick(team, 'votesWon', 'votesWonRatio', 'won');
+        let attributes = _.pick(team, 'votesWon', 'votesWonRatio', 'won', 'previous', 'voteSwing');
         attributes.party = this.parties.findWhere({ id: team.partyId });
         attributes.candidates = _.map(team.candidates, candidate => {
           return this.candidates.findWhere({ id: candidate.id });

@@ -1,13 +1,15 @@
 // _rs-viz.scss
 
+$increase-color: #31DA27;
+$decrease-color: #D64242;
+
 
 // Results/Parliament
 
 .viz-rs .viz-team-subsection {
-  + .viz-team-subsection {
-    margin-top: 40px;
-  }
-  .heading {
+  margin-top: 30px;
+
+  > .heading {
     display: flex;
     margin-bottom: 4px;
     align-items: flex-start;
@@ -56,7 +58,7 @@
   }
 }
 
-.viz-rs-voteshare .viz-section {
+.viz-rs .viz-section {
   .heading-icon {
     margin-right: 12px;
 
@@ -68,7 +70,7 @@
       height: $party-logo-md-size;
     }
   }
-  .heading {
+  > .heading {
     margin-bottom: 15px;
   }
   .content-split {
@@ -87,5 +89,26 @@
     .viz-bar {
       flex: 1;
     }
+  }
+}
+
+.viz-rs-swings .viz-bar {
+  .bar-icon-filled {
+    background-color: $brand-secondary;
+  }
+  .bar-increase {
+    background-color: $increase-color;
+  }
+  .bar-decrease {
+    background-color: $decrease-color;
+  }
+}
+
+.viz-rs-swings {
+  .text-increase {
+    color: $increase-color;
+  }
+  .text-decrease {
+    color: $decrease-color;
   }
 }

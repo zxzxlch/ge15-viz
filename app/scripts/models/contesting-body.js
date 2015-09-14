@@ -14,6 +14,8 @@ let _        = require('lodash'),
  * @property {number} attributes.totalVotesWon
  * @property {number} attributes.totalVotesWonRatio
  * @property {number} attributes.seatsWonRatio
+ * @property {number} attributes.totalVoteSwing
+ * @property {number} attributes.contestedVoteSwing
  * @property {object} attributes.previous
  * @property {Backbone.Model} model
  */

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "2015-09-12T09:56:54.085Z"
+    "lastUpdated": "2015-09-14T01:26:52.484Z"
   },
   "data": {
     "independents": [{
@@ -44,7 +44,9 @@
         "totalVotesWon": 1212154,
         "totalVotesWonRatio": 0.6013763418241317,
         "seatsWonRatio": 0.9878048780487805
-      }
+      },
+      "totalVoteSwing": 0.09723501666265577,
+      "contestedVoteSwing": 0.09723501666265577
     }, {
       "id": "wp",
       "name": "Workers' Party",
@@ -65,7 +67,9 @@
         "totalVotesWon": 258510,
         "totalVotesWonRatio": 0.12825251422257922,
         "seatsWonRatio": 0.07317073170731707
-      }
+      },
+      "totalVoteSwing": -0.0034435842412675194,
+      "contestedVoteSwing": -0.06844450664216173
     }, {
       "id": "sdp",
       "name": "Singapore Democratic Party",
@@ -86,7 +90,9 @@
         "totalVotesWon": 97369,
         "totalVotesWonRatio": 0.04830690904544627,
         "seatsWonRatio": 0
-      }
+      },
+      "totalVoteSwing": -0.01074863545887704,
+      "contestedVoteSwing": -0.05536106475135816
     }, {
       "id": "nsp",
       "name": "National Solidarity Party",
@@ -107,7 +113,9 @@
         "totalVotesWon": 242679,
         "totalVotesWonRatio": 0.1203984058605907,
         "seatsWonRatio": 0
-      }
+      },
+      "totalVoteSwing": -0.0850510062293946,
+      "contestedVoteSwing": -0.13981528497852969
     }, {
       "id": "rp",
       "name": "Reform Party",
@@ -128,7 +136,9 @@
         "totalVotesWon": 86294,
         "totalVotesWonRatio": 0.04281235720986906,
         "seatsWonRatio": 0
-      }
+      },
+      "totalVoteSwing": -0.016480361034370863,
+      "contestedVoteSwing": -0.11179621386236205
     }, {
       "id": "singfirst",
       "name": "Singaporeans First",
@@ -160,7 +170,9 @@
         "totalVotesWon": 62639,
         "totalVotesWonRatio": 0.03107658983555042,
         "seatsWonRatio": 0
-      }
+      },
+      "totalVoteSwing": -0.009359959189735971,
+      "contestedVoteSwing": -0.14357268059260708
     }, {
       "id": "sda",
       "name": "Singapore Democratic Alliance",
@@ -181,7 +193,9 @@
         "totalVotesWon": 55988,
         "totalVotesWonRatio": 0.027776882001832676,
         "seatsWonRatio": 0
-      }
+      },
+      "totalVoteSwing": -0.007171005064659598,
+      "contestedVoteSwing": -0.02946565836172571
     }, {
       "id": "ppp",
       "name": "People's Power Party",
@@ -250,7 +264,14 @@
         "partyId": "sdp",
         "votesWon": 10143,
         "votesWonRatio": 0.31619801733275144,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Alec Tok"],
+          "votesWon": 10372,
+          "votesWonRatio": 0.33733372361531205,
+          "won": false
+        },
+        "voteSwing": -0.021135706282560618
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -260,7 +281,14 @@
         "partyId": "pap",
         "votesWon": 21935,
         "won": true,
-        "votesWonRatio": 0.6838019826672486
+        "votesWonRatio": 0.6838019826672486,
+        "previous": {
+          "candidates": ["Teo Ho Pin"],
+          "votesWon": 20375,
+          "votesWonRatio": 0.6626662763846879,
+          "won": true
+        },
+        "voteSwing": 0.021135706282560673
       }],
       "votesValid": 32078,
       "votesInvalid": 2239,
@@ -268,24 +296,10 @@
       "previous": {
         "seats": 1,
         "voters": 33053,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Teo Ho Pin"],
-          "partyId": "pap",
-          "votesWon": 20375,
-          "won": true,
-          "votesWonRatio": 0.6626662763846879
-        }, {
-          "party": "Singapore Democratic Party",
-          "candidates": ["Alec Tok"],
-          "partyId": "sdp",
-          "votesWon": 10372,
-          "votesWonRatio": 0.33733372361531205,
-          "won": false
-        }],
         "votesValid": 30747,
         "votesInvalid": 2306
-      }
+      },
+      "votersDiff": 1264
     }, {
       "name": "Fengshan SMC",
       "seats": 1,
@@ -329,7 +343,14 @@
         "partyId": "pap",
         "votesWon": 19612,
         "won": true,
-        "votesWonRatio": 0.7476079746883696
+        "votesWonRatio": 0.7476079746883696,
+        "previous": {
+          "candidates": ["Amy Khor Lean Suan"],
+          "votesWon": 18156,
+          "votesWonRatio": 0.7061294337274424,
+          "won": true
+        },
+        "voteSwing": 0.04147854096092718
       }, {
         "party": "Singapore People's Party",
         "candidates": [{
@@ -339,7 +360,14 @@
         "partyId": "spp",
         "votesWon": 6621,
         "votesWonRatio": 0.2523920253116304,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Sin Kek Tong"],
+          "votesWon": 7556,
+          "votesWonRatio": 0.2938705662725576,
+          "won": false
+        },
+        "voteSwing": -0.04147854096092718
       }],
       "votesValid": 26233,
       "votesInvalid": 1912,
@@ -347,24 +375,10 @@
       "previous": {
         "seats": 1,
         "voters": 27701,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Amy Khor Lean Suan"],
-          "partyId": "pap",
-          "votesWon": 18156,
-          "won": true,
-          "votesWonRatio": 0.7061294337274424
-        }, {
-          "party": "Singapore People's Party",
-          "candidates": ["Sin Kek Tong"],
-          "partyId": "spp",
-          "votesWon": 7556,
-          "votesWonRatio": 0.2938705662725576,
-          "won": false
-        }],
         "votesValid": 25712,
         "votesInvalid": 1989
-      }
+      },
+      "votersDiff": 444
     }, {
       "name": "Hougang SMC",
       "seats": 1,
@@ -379,7 +393,14 @@
         "partyId": "pap",
         "votesWon": 9543,
         "votesWonRatio": 0.4230990911106185,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Choo Pey Ching Desmond"],
+          "votesWon": 8065,
+          "votesWonRatio": 0.3519528692995854,
+          "won": false
+        },
+        "voteSwing": 0.07114622181103308
       }, {
         "party": "Workers' Party",
         "candidates": [{
@@ -389,7 +410,14 @@
         "partyId": "wp",
         "votesWon": 13012,
         "won": true,
-        "votesWonRatio": 0.5769009088893815
+        "votesWonRatio": 0.5769009088893815,
+        "previous": {
+          "candidates": ["Yaw Shin Leong"],
+          "votesWon": 14850,
+          "votesWonRatio": 0.6480471307004145,
+          "won": true
+        },
+        "voteSwing": -0.07114622181103303
       }],
       "votesValid": 22555,
       "votesInvalid": 1542,
@@ -397,24 +425,10 @@
       "previous": {
         "seats": 1,
         "voters": 24560,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Choo Pey Ching Desmond"],
-          "partyId": "pap",
-          "votesWon": 8065,
-          "votesWonRatio": 0.3519528692995854,
-          "won": false
-        }, {
-          "party": "Workers' Party",
-          "candidates": ["Yaw Shin Leong"],
-          "partyId": "wp",
-          "votesWon": 14850,
-          "won": true,
-          "votesWonRatio": 0.6480471307004145
-        }],
         "votesValid": 22915,
         "votesInvalid": 1645
-      }
+      },
+      "votersDiff": -463
     }, {
       "name": "MacPherson SMC",
       "seats": 1,
@@ -468,7 +482,14 @@
         "partyId": "spp",
         "votesWon": 5992,
         "votesWonRatio": 0.28155248566864016,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Jeannette Chong-Aruldoss"],
+          "votesWon": 8461,
+          "votesWonRatio": 0.4138217744302064,
+          "won": false
+        },
+        "voteSwing": -0.13226928876156624
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -478,7 +499,14 @@
         "partyId": "pap",
         "votesWon": 15290,
         "won": true,
-        "votesWonRatio": 0.7184475143313598
+        "votesWonRatio": 0.7184475143313598,
+        "previous": {
+          "candidates": ["Lim Biow Chuan"],
+          "votesWon": 11985,
+          "votesWonRatio": 0.5861782255697936,
+          "won": true
+        },
+        "voteSwing": 0.13226928876156618
       }],
       "votesValid": 21282,
       "votesInvalid": 2861,
@@ -486,24 +514,10 @@
       "previous": {
         "seats": 1,
         "voters": 23731,
-        "teams": [{
-          "party": "National Solidarity Party",
-          "candidates": ["Jeannette Chong-Aruldoss"],
-          "partyId": "nsp",
-          "votesWon": 8461,
-          "votesWonRatio": 0.4138217744302064,
-          "won": false
-        }, {
-          "party": "People's Action Party",
-          "candidates": ["Lim Biow Chuan"],
-          "partyId": "pap",
-          "votesWon": 11985,
-          "won": true,
-          "votesWonRatio": 0.5861782255697936
-        }],
         "votesValid": 20446,
         "votesInvalid": 3285
-      }
+      },
+      "votersDiff": 412
     }, {
       "name": "Pioneer SMC",
       "seats": 1,
@@ -518,7 +532,14 @@
         "partyId": "pap",
         "votesWon": 17994,
         "won": true,
-        "votesWonRatio": 0.7633633124045478
+        "votesWonRatio": 0.7633633124045478,
+        "previous": {
+          "candidates": ["Cedric Foo"],
+          "votesWon": 14593,
+          "votesWonRatio": 0.6072825634623388,
+          "won": true
+        },
+        "voteSwing": 0.15608074894220902
       }, {
         "party": "National Solidarity Party",
         "candidates": [{
@@ -528,7 +549,14 @@
         "partyId": "nsp",
         "votesWon": 5578,
         "votesWonRatio": 0.23663668759545223,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Steve Chia Kiah Hong"],
+          "votesWon": 9437,
+          "votesWonRatio": 0.3927174365376613,
+          "won": false
+        },
+        "voteSwing": -0.15608074894220905
       }],
       "votesValid": 23572,
       "votesInvalid": 1886,
@@ -536,24 +564,10 @@
       "previous": {
         "seats": 1,
         "voters": 25745,
-        "teams": [{
-          "party": "National Solidarity Party",
-          "candidates": ["Steve Chia Kiah Hong"],
-          "partyId": "nsp",
-          "votesWon": 9437,
-          "votesWonRatio": 0.3927174365376613,
-          "won": false
-        }, {
-          "party": "People's Action Party",
-          "candidates": ["Cedric Foo"],
-          "partyId": "pap",
-          "votesWon": 14593,
-          "won": true,
-          "votesWonRatio": 0.6072825634623388
-        }],
         "votesValid": 24030,
         "votesInvalid": 1715
-      }
+      },
+      "votersDiff": -287
     }, {
       "name": "Potong Pasir SMC",
       "seats": 1,
@@ -568,7 +582,14 @@
         "partyId": "spp",
         "votesWon": 5353,
         "votesWonRatio": 0.3359482866825656,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Lina Chiam"],
+          "votesWon": 7878,
+          "votesWonRatio": 0.49640831758034026,
+          "won": false
+        },
+        "voteSwing": -0.16046003089777466
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -578,7 +599,14 @@
         "partyId": "pap",
         "votesWon": 10581,
         "won": true,
-        "votesWonRatio": 0.6640517133174344
+        "votesWonRatio": 0.6640517133174344,
+        "previous": {
+          "candidates": ["Sitoh Yih Pin"],
+          "votesWon": 7992,
+          "votesWonRatio": 0.5035916824196597,
+          "won": true
+        },
+        "voteSwing": 0.16046003089777472
       }],
       "votesValid": 15934,
       "votesInvalid": 1473,
@@ -586,24 +614,10 @@
       "previous": {
         "seats": 1,
         "voters": 17327,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Sitoh Yih Pin"],
-          "partyId": "pap",
-          "votesWon": 7992,
-          "won": true,
-          "votesWonRatio": 0.5035916824196597
-        }, {
-          "party": "Singapore People's Party",
-          "candidates": ["Lina Chiam"],
-          "partyId": "spp",
-          "votesWon": 7878,
-          "votesWonRatio": 0.49640831758034026,
-          "won": false
-        }],
         "votesValid": 15870,
         "votesInvalid": 1457
-      }
+      },
+      "votersDiff": 80
     }, {
       "name": "Punggol East SMC",
       "seats": 1,
@@ -618,7 +632,14 @@
         "partyId": "pap",
         "votesWon": 16957,
         "won": true,
-        "votesWonRatio": 0.5176445448440076
+        "votesWonRatio": 0.5176445448440076,
+        "previous": {
+          "candidates": ["Michael Palmer"],
+          "votesWon": 16994,
+          "votesWonRatio": 0.5454136979266961,
+          "won": true
+        },
+        "voteSwing": -0.02776915308268857
       }, {
         "party": "Workers' Party",
         "candidates": [{
@@ -628,7 +649,14 @@
         "partyId": "wp",
         "votesWon": 15801,
         "votesWonRatio": 0.48235545515599243,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Lee Li Lian"],
+          "votesWon": 12777,
+          "votesWonRatio": 0.4100712497592914,
+          "won": false
+        },
+        "voteSwing": 0.07228420539670105
       }],
       "votesValid": 32758,
       "votesInvalid": 1708,
@@ -636,31 +664,18 @@
       "previous": {
         "seats": 1,
         "voters": 33281,
+        "votesValid": 31158,
+        "votesInvalid": 2123,
         "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Michael Palmer"],
-          "partyId": "pap",
-          "votesWon": 16994,
-          "won": true,
-          "votesWonRatio": 0.5454136979266961
-        }, {
           "party": "Singapore Democratic Alliance",
           "candidates": ["Desmond Lim"],
           "partyId": "sda",
           "votesWon": 1387,
           "votesWonRatio": 0.044515052314012454,
           "won": false
-        }, {
-          "party": "Workers' Party",
-          "candidates": ["Lee Li Lian"],
-          "partyId": "wp",
-          "votesWon": 12777,
-          "votesWonRatio": 0.4100712497592914,
-          "won": false
-        }],
-        "votesValid": 31158,
-        "votesInvalid": 2123
-      }
+        }]
+      },
+      "votersDiff": 1185
     }, {
       "name": "Radin Mas SMC",
       "seats": 1,
@@ -695,7 +710,14 @@
         "partyId": "pap",
         "votesWon": 20230,
         "won": true,
-        "votesWonRatio": 0.7724912173514586
+        "votesWonRatio": 0.7724912173514586,
+        "previous": {
+          "candidates": ["Sam Tan Chin Siong"],
+          "votesWon": 18609,
+          "votesWonRatio": 0.6710298572046733,
+          "won": true
+        },
+        "voteSwing": 0.1014613601467853
       }],
       "votesValid": 26188,
       "votesInvalid": 2718,
@@ -703,6 +725,8 @@
       "previous": {
         "seats": 1,
         "voters": 31014,
+        "votesValid": 27732,
+        "votesInvalid": 3282,
         "teams": [{
           "party": "National Solidarity Party",
           "candidates": ["Yip Yew Weng"],
@@ -710,17 +734,9 @@
           "votesWon": 9123,
           "votesWonRatio": 0.3289701427953267,
           "won": false
-        }, {
-          "party": "People's Action Party",
-          "candidates": ["Sam Tan Chin Siong"],
-          "partyId": "pap",
-          "votesWon": 18609,
-          "won": true,
-          "votesWonRatio": 0.6710298572046733
-        }],
-        "votesValid": 27732,
-        "votesInvalid": 3282
-      }
+        }]
+      },
+      "votersDiff": -2108
     }, {
       "name": "Sengkang West SMC",
       "seats": 1,
@@ -735,7 +751,14 @@
         "partyId": "wp",
         "votesWon": 10716,
         "votesWonRatio": 0.37892503536067895,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Koh Choong Yong"],
+          "votesWon": 10591,
+          "votesWonRatio": 0.41894778481012657,
+          "won": false
+        },
+        "voteSwing": -0.040022749449447614
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -745,7 +768,14 @@
         "partyId": "pap",
         "votesWon": 17564,
         "won": true,
-        "votesWonRatio": 0.6210749646393211
+        "votesWonRatio": 0.6210749646393211,
+        "previous": {
+          "candidates": ["Lam Pin Min"],
+          "votesWon": 14689,
+          "votesWonRatio": 0.5810522151898734,
+          "won": true
+        },
+        "voteSwing": 0.040022749449447725
       }],
       "votesValid": 28280,
       "votesInvalid": 1839,
@@ -753,24 +783,10 @@
       "previous": {
         "seats": 1,
         "voters": 26882,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Lam Pin Min"],
-          "partyId": "pap",
-          "votesWon": 14689,
-          "won": true,
-          "votesWonRatio": 0.5810522151898734
-        }, {
-          "party": "Workers' Party",
-          "candidates": ["Koh Choong Yong"],
-          "partyId": "wp",
-          "votesWon": 10591,
-          "votesWonRatio": 0.41894778481012657,
-          "won": false
-        }],
         "votesValid": 25280,
         "votesInvalid": 1602
-      }
+      },
+      "votersDiff": 3237
     }, {
       "name": "Yuhua SMC",
       "seats": 1,
@@ -785,7 +801,14 @@
         "partyId": "pap",
         "votesWon": 15298,
         "won": true,
-        "votesWonRatio": 0.7353747055713118
+        "votesWonRatio": 0.7353747055713118,
+        "previous": {
+          "candidates": ["Grace Fu"],
+          "votesWon": 14093,
+          "votesWonRatio": 0.6685801034204659,
+          "won": true
+        },
+        "voteSwing": 0.06679460215084587
       }, {
         "party": "Singapore Democratic Party",
         "candidates": [{
@@ -795,7 +818,14 @@
         "partyId": "sdp",
         "votesWon": 5505,
         "votesWonRatio": 0.26462529442868815,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Teo Soh Lung"],
+          "votesWon": 6986,
+          "votesWonRatio": 0.33141989657953413,
+          "won": false
+        },
+        "voteSwing": -0.06679460215084598
       }],
       "votesValid": 20803,
       "votesInvalid": 1814,
@@ -803,24 +833,10 @@
       "previous": {
         "seats": 1,
         "voters": 23195,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Grace Fu"],
-          "partyId": "pap",
-          "votesWon": 14093,
-          "won": true,
-          "votesWonRatio": 0.6685801034204659
-        }, {
-          "party": "Singapore Democratic Party",
-          "candidates": ["Teo Soh Lung"],
-          "partyId": "sdp",
-          "votesWon": 6986,
-          "votesWonRatio": 0.33141989657953413,
-          "won": false
-        }],
         "votesValid": 21079,
         "votesInvalid": 2116
-      }
+      },
+      "votersDiff": -578
     }, {
       "name": "Chua Chu Kang GRC",
       "seats": 4,
@@ -844,7 +860,14 @@
         "partyId": "pap",
         "votesWon": 84731,
         "won": true,
-        "votesWonRatio": 0.7689466471853418
+        "votesWonRatio": 0.7689466471853418,
+        "previous": {
+          "candidates": ["Gan Kim Yong", "Alvin Yeo", "Zaqy Mohamad", "Alex Yam", "Low Yen Ling"],
+          "votesWon": 89710,
+          "votesWonRatio": 0.6119581158975408,
+          "won": true
+        },
+        "voteSwing": 0.156988531287801
       }, {
         "party": "People's Power Party",
         "candidates": [{
@@ -871,6 +894,8 @@
       "previous": {
         "seats": 5,
         "voters": 158648,
+        "votesValid": 146595,
+        "votesInvalid": 12053,
         "teams": [{
           "party": "National Solidarity Party",
           "candidates": ["Teo Kway Huang Sebastian", "Tan Lay Thiam Tony", "Poa Koon Koon Hazel", "Nor Lella Mardiiiah Mohamed", "Jeisilan Sivalingam"],
@@ -878,17 +903,9 @@
           "votesWon": 56885,
           "votesWonRatio": 0.38804188410245916,
           "won": false
-        }, {
-          "party": "People's Action Party",
-          "candidates": ["Gan Kim Yong", "Alvin Yeo", "Zaqy Mohamad", "Alex Yam", "Low Yen Ling"],
-          "partyId": "pap",
-          "votesWon": 89710,
-          "won": true,
-          "votesWonRatio": 0.6119581158975408
-        }],
-        "votesValid": 146595,
-        "votesInvalid": 12053
-      }
+        }]
+      },
+      "votersDiff": -38717
     }, {
       "name": "East Coast GRC",
       "seats": 4,
@@ -912,7 +929,14 @@
         "partyId": "wp",
         "votesWon": 35547,
         "votesWonRatio": 0.39266304347826086,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Eric Tan Heng Chong", "Png Eng Huat", "Glenda Han", "Gerald Giam", "Mohamed Fazli Bin Talip"],
+          "votesWon": 49429,
+          "votesWonRatio": 0.4517323000155363,
+          "won": false
+        },
+        "voteSwing": -0.05906925653727546
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -931,7 +955,14 @@
         "partyId": "pap",
         "votesWon": 54981,
         "won": true,
-        "votesWonRatio": 0.6073369565217391
+        "votesWonRatio": 0.6073369565217391,
+        "previous": {
+          "candidates": ["Lim Swee Say", "Maliki Osman", "Lee Yi Shyan", "Jessica Tan", "Raymond Lim"],
+          "votesWon": 59992,
+          "votesWonRatio": 0.5482676999844637,
+          "won": true
+        },
+        "voteSwing": 0.05906925653727546
       }],
       "votesValid": 90528,
       "votesInvalid": 8590,
@@ -939,24 +970,10 @@
       "previous": {
         "seats": 5,
         "voters": 120324,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Lim Swee Say", "Maliki Osman", "Lee Yi Shyan", "Jessica Tan", "Raymond Lim"],
-          "partyId": "pap",
-          "votesWon": 59992,
-          "won": true,
-          "votesWonRatio": 0.5482676999844637
-        }, {
-          "party": "Workers' Party",
-          "candidates": ["Eric Tan Heng Chong", "Png Eng Huat", "Glenda Han", "Gerald Giam", "Mohamed Fazli Bin Talip"],
-          "partyId": "wp",
-          "votesWon": 49429,
-          "votesWonRatio": 0.4517323000155363,
-          "won": false
-        }],
         "votesValid": 109421,
         "votesInvalid": 10903
-      }
+      },
+      "votersDiff": -21206
     }, {
       "name": "Holland-Bukit Timah GRC",
       "seats": 4,
@@ -980,7 +997,14 @@
         "partyId": "sdp",
         "votesWon": 31380,
         "votesWonRatio": 0.3337942772045527,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Tan Jee Say", "Ang Yong Guan", "Vincent Wijeysingha", "Michelle Lee"],
+          "votesWon": 32406,
+          "votesWonRatio": 0.3991919092376107,
+          "won": false
+        },
+        "voteSwing": -0.06539763203305804
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -999,7 +1023,14 @@
         "partyId": "pap",
         "votesWon": 62630,
         "won": true,
-        "votesWonRatio": 0.6662057227954473
+        "votesWonRatio": 0.6662057227954473,
+        "previous": {
+          "candidates": ["Vivian Balakrishnan", "Christopher de Souza", "Liang Eng Hwa", "Sim Ann"],
+          "votesWon": 48773,
+          "votesWonRatio": 0.6008080907623893,
+          "won": true
+        },
+        "voteSwing": 0.06539763203305804
       }],
       "votesValid": 94010,
       "votesInvalid": 10481,
@@ -1007,24 +1038,10 @@
       "previous": {
         "seats": 4,
         "voters": 91607,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Vivian Balakrishnan", "Christopher de Souza", "Liang Eng Hwa", "Sim Ann"],
-          "partyId": "pap",
-          "votesWon": 48773,
-          "won": true,
-          "votesWonRatio": 0.6008080907623893
-        }, {
-          "party": "Singapore Democratic Party",
-          "candidates": ["Tan Jee Say", "Ang Yong Guan", "Vincent Wijeysingha", "Michelle Lee"],
-          "partyId": "sdp",
-          "votesWon": 32406,
-          "votesWonRatio": 0.3991919092376107,
-          "won": false
-        }],
         "votesValid": 81179,
         "votesInvalid": 10428
-      }
+      },
+      "votersDiff": 12884
     }, {
       "name": "Jalan Besar GRC",
       "seats": 4,
@@ -1142,7 +1159,14 @@
         "partyId": "pap",
         "votesWon": 71091,
         "won": true,
-        "votesWonRatio": 0.7856834985577401
+        "votesWonRatio": 0.7856834985577401,
+        "previous": {
+          "candidates": ["Lim Hng Kiang", "Fong Jen Arthur", "S Iswaran", "Foo Mee Har", "Lawrence Wong Shyun Tsai"],
+          "votesWon": 72563,
+          "votesWonRatio": 0.6656789534521036,
+          "won": true
+        },
+        "voteSwing": 0.12000454510563652
       }, {
         "party": "Reform Party",
         "candidates": [{
@@ -1161,7 +1185,14 @@
         "partyId": "rp",
         "votesWon": 19392,
         "votesWonRatio": 0.21431650144225986,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Kenneth Jeyaretnam", "Frankie Low", "Andy Zhu", "Kumar Appavoo", "Ho Soak Harn"],
+          "votesWon": 36443,
+          "votesWonRatio": 0.33432104654789646,
+          "won": false
+        },
+        "voteSwing": -0.1200045451056366
       }],
       "votesValid": 90483,
       "votesInvalid": 8817,
@@ -1169,24 +1200,10 @@
       "previous": {
         "seats": 5,
         "voters": 121045,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Lim Hng Kiang", "Fong Jen Arthur", "S Iswaran", "Foo Mee Har", "Lawrence Wong Shyun Tsai"],
-          "partyId": "pap",
-          "votesWon": 72563,
-          "won": true,
-          "votesWonRatio": 0.6656789534521036
-        }, {
-          "party": "Reform Party",
-          "candidates": ["Kenneth Jeyaretnam", "Frankie Low", "Andy Zhu", "Kumar Appavoo", "Ho Soak Harn"],
-          "partyId": "rp",
-          "votesWon": 36443,
-          "votesWonRatio": 0.33432104654789646,
-          "won": false
-        }],
         "votesValid": 109006,
         "votesInvalid": 12039
-      }
+      },
+      "votersDiff": -21745
     }, {
       "name": "Aljunied GRC",
       "seats": 5,
@@ -1213,7 +1230,14 @@
         "partyId": "wp",
         "votesWon": 69929,
         "won": true,
-        "votesWonRatio": 0.50951576002215
+        "votesWonRatio": 0.50951576002215,
+        "previous": {
+          "candidates": ["Low Thia Khiang", "Sylvia Lim", "Chen Show Mao", "Pritam Singh", "Muhamad Faisal bin Abdul Manap"],
+          "votesWon": 72289,
+          "votesWonRatio": 0.5471548161491999,
+          "won": true
+        },
+        "voteSwing": -0.037639056127049875
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -1235,7 +1259,14 @@
         "partyId": "pap",
         "votesWon": 67317,
         "votesWonRatio": 0.49048423997785,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["George Yeo", "Lim Hwee Hua", "Zainul Abidin bin Mohamed Rasheed", "Cynthia Phua", "Ong Ye Kung"],
+          "votesWon": 59829,
+          "votesWonRatio": 0.4528451838508,
+          "won": false
+        },
+        "voteSwing": 0.037639056127049986
       }],
       "votesValid": 137246,
       "votesInvalid": 10896,
@@ -1243,24 +1274,10 @@
       "previous": {
         "seats": 5,
         "voters": 143148,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["George Yeo", "Lim Hwee Hua", "Zainul Abidin bin Mohamed Rasheed", "Cynthia Phua", "Ong Ye Kung"],
-          "partyId": "pap",
-          "votesWon": 59829,
-          "votesWonRatio": 0.4528451838508,
-          "won": false
-        }, {
-          "party": "Workers' Party",
-          "candidates": ["Low Thia Khiang", "Sylvia Lim", "Chen Show Mao", "Pritam Singh", "Muhamad Faisal bin Abdul Manap"],
-          "partyId": "wp",
-          "votesWon": 72289,
-          "won": true,
-          "votesWonRatio": 0.5471548161491999
-        }],
         "votesValid": 132118,
         "votesInvalid": 11030
-      }
+      },
+      "votersDiff": 4994
     }, {
       "name": "Bishan-Toa Payoh GRC",
       "seats": 5,
@@ -1287,7 +1304,14 @@
         "partyId": "pap",
         "votesWon": 86514,
         "won": true,
-        "votesWonRatio": 0.7358947968323367
+        "votesWonRatio": 0.7358947968323367,
+        "previous": {
+          "candidates": ["Wong Kan Seng", "Ng Eng Hen", "Josephine Teo Li Min", "Hri Kumar", "Zainudin Nordin"],
+          "votesWon": 62385,
+          "votesWonRatio": 0.5692581439912401,
+          "won": true
+        },
+        "voteSwing": 0.16663665284109663
       }, {
         "party": "Singapore People's Party",
         "candidates": [{
@@ -1309,7 +1333,14 @@
         "partyId": "spp",
         "votesWon": 31049,
         "votesWonRatio": 0.2641052031676633,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Chiam See Tong", "Benjamin Pwee", "Wilfred Leung", "Jimmy Lee", "Mohamad Hamim Aliyas"],
+          "votesWon": 47205,
+          "votesWonRatio": 0.4307418560087599,
+          "won": false
+        },
+        "voteSwing": -0.16663665284109663
       }],
       "votesValid": 117563,
       "votesInvalid": 12412,
@@ -1317,24 +1348,10 @@
       "previous": {
         "seats": 5,
         "voters": 122492,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Wong Kan Seng", "Ng Eng Hen", "Josephine Teo Li Min", "Hri Kumar", "Zainudin Nordin"],
-          "partyId": "pap",
-          "votesWon": 62385,
-          "won": true,
-          "votesWonRatio": 0.5692581439912401
-        }, {
-          "party": "Singapore People's Party",
-          "candidates": ["Chiam See Tong", "Benjamin Pwee", "Wilfred Leung", "Jimmy Lee", "Mohamad Hamim Aliyas"],
-          "partyId": "spp",
-          "votesWon": 47205,
-          "votesWonRatio": 0.4307418560087599,
-          "won": false
-        }],
         "votesValid": 109590,
         "votesInvalid": 12902
-      }
+      },
+      "votersDiff": 7483
     }, {
       "name": "Jurong GRC",
       "seats": 5,
@@ -1361,7 +1378,14 @@
         "partyId": "pap",
         "votesWon": 95080,
         "won": true,
-        "votesWonRatio": 0.7928090187445801
+        "votesWonRatio": 0.7928090187445801,
+        "previous": {
+          "candidates": ["Tharman Shanmugaratnam", "Halimah Bte Yacob", "Ang Wei Neng", "Desmond Lee Ti-Seng (Li Zhisheng)", "David Ong"],
+          "votesWon": 76595,
+          "votesWonRatio": 0.6696479310374975,
+          "won": true
+        },
+        "voteSwing": 0.12316108770708256
       }, {
         "party": "Singaporeans First",
         "candidates": [{
@@ -1391,6 +1415,8 @@
       "previous": {
         "seats": 5,
         "voters": 125276,
+        "votesValid": 114381,
+        "votesInvalid": 10895,
         "teams": [{
           "party": "National Solidarity Party",
           "candidates": ["Neo Ting Wei Christopher", "Abdul Rasheed", "Ong Beng Soon Elvin", "Ong Hock Siong", "Noraini Yunus"],
@@ -1398,17 +1424,9 @@
           "votesWon": 37786,
           "votesWonRatio": 0.3303520689625025,
           "won": false
-        }, {
-          "party": "People's Action Party",
-          "candidates": ["Tharman Shanmugaratnam", "Halimah Bte Yacob", "Ang Wei Neng", "Desmond Lee Ti-Seng (Li Zhisheng)", "David Ong"],
-          "partyId": "pap",
-          "votesWon": 76595,
-          "won": true,
-          "votesWonRatio": 0.6696479310374975
-        }],
-        "votesValid": 114381,
-        "votesInvalid": 10895
-      }
+        }]
+      },
+      "votersDiff": 5222
     }, {
       "name": "Marine Parade GRC",
       "seats": 5,
@@ -1435,7 +1453,14 @@
         "partyId": "pap",
         "votesWon": 84939,
         "won": true,
-        "votesWonRatio": 0.6407202341439865
+        "votesWonRatio": 0.6407202341439865,
+        "previous": {
+          "candidates": ["Goh Chok Tong", "Tan Chuan Jin", "Fatimah Lateef", "Seah Kian Peng", "Tin Pei Ling"],
+          "votesWon": 78286,
+          "votesWonRatio": 0.5664197030648569,
+          "won": true
+        },
+        "voteSwing": 0.0743005310791296
       }, {
         "party": "Workers' Party",
         "candidates": [{
@@ -1465,6 +1490,8 @@
       "previous": {
         "seats": 5,
         "voters": 154451,
+        "votesValid": 138212,
+        "votesInvalid": 16239,
         "teams": [{
           "party": "National Solidarity Party",
           "candidates": ["Cheo Chai Chen", "Ivan Yeo Tiong Boon", "Abdul Salim Harun", "Spencer Ng Chung Hon", "Seah Xue Ling, Nicole Rebecca"],
@@ -1472,17 +1499,9 @@
           "votesWon": 59926,
           "votesWonRatio": 0.4335802969351431,
           "won": false
-        }, {
-          "party": "People's Action Party",
-          "candidates": ["Goh Chok Tong", "Tan Chuan Jin", "Fatimah Lateef", "Seah Kian Peng", "Tin Pei Ling"],
-          "partyId": "pap",
-          "votesWon": 78286,
-          "won": true,
-          "votesWonRatio": 0.5664197030648569
-        }],
-        "votesValid": 138212,
-        "votesInvalid": 16239
-      }
+        }]
+      },
+      "votersDiff": -8207
     }, {
       "name": "Nee Soon GRC",
       "seats": 5,
@@ -1509,7 +1528,14 @@
         "partyId": "wp",
         "votesWon": 40796,
         "votesWonRatio": 0.33169367362370217,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["John Yam Poh Nam", "Angela Faye Oon", "Sajeev K. R. Kamalasanan", "Chong Cham Weng, Winston", "Poh Lee Guan"],
+          "votesWon": 57523,
+          "votesWonRatio": 0.416040444659815,
+          "won": false
+        },
+        "voteSwing": -0.08434677103611282
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -1531,7 +1557,14 @@
         "partyId": "pap",
         "votesWon": 82197,
         "won": true,
-        "votesWonRatio": 0.6683063263762978
+        "votesWonRatio": 0.6683063263762978,
+        "previous": {
+          "candidates": ["K. Shanmugam", "Muhammad Faishal Ibrahim", "Lee Bee Wah", "Lim Wee Kiak", "Patrick Tay Teck Guan"],
+          "votesWon": 80740,
+          "votesWonRatio": 0.583959555340185,
+          "won": true
+        },
+        "voteSwing": 0.08434677103611288
       }],
       "votesValid": 122993,
       "votesInvalid": 9296,
@@ -1539,24 +1572,10 @@
       "previous": {
         "seats": 5,
         "voters": 148290,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["K. Shanmugam", "Muhammad Faishal Ibrahim", "Lee Bee Wah", "Lim Wee Kiak", "Patrick Tay Teck Guan"],
-          "partyId": "pap",
-          "votesWon": 80740,
-          "won": true,
-          "votesWonRatio": 0.583959555340185
-        }, {
-          "party": "Workers' Party",
-          "candidates": ["John Yam Poh Nam", "Angela Faye Oon", "Sajeev K. R. Kamalasanan", "Chong Cham Weng, Winston", "Poh Lee Guan"],
-          "partyId": "wp",
-          "votesWon": 57523,
-          "votesWonRatio": 0.416040444659815,
-          "won": false
-        }],
         "votesValid": 138263,
         "votesInvalid": 10027
-      }
+      },
+      "votersDiff": -16001
     }, {
       "name": "Sembawang GRC",
       "seats": 5,
@@ -1605,7 +1624,14 @@
         "partyId": "pap",
         "votesWon": 96639,
         "won": true,
-        "votesWonRatio": 0.7227723512781775
+        "votesWonRatio": 0.7227723512781775,
+        "previous": {
+          "candidates": ["Khaw Boon Wan", "Ellen Lee", "Hawazi Daipi", "Ong Teng Koon", "Vikram Nair"],
+          "votesWon": 84252,
+          "votesWonRatio": 0.6389649392902917,
+          "won": true
+        },
+        "voteSwing": 0.08380741198788577
       }],
       "votesValid": 133706,
       "votesInvalid": 10966,
@@ -1613,24 +1639,18 @@
       "previous": {
         "seats": 5,
         "voters": 142459,
+        "votesValid": 131857,
+        "votesInvalid": 10602,
         "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Khaw Boon Wan", "Ellen Lee", "Hawazi Daipi", "Ong Teng Koon", "Vikram Nair"],
-          "partyId": "pap",
-          "votesWon": 84252,
-          "won": true,
-          "votesWonRatio": 0.6389649392902917
-        }, {
           "party": "Singapore Democratic Party",
           "candidates": ["James Gomez", "John Tan", "Jarrod Luo Jie", "Mohd Isa Abdul Aziz", "Sadasivam Veriyah"],
           "partyId": "sdp",
           "votesWon": 47605,
           "votesWonRatio": 0.36103506070970826,
           "won": false
-        }],
-        "votesValid": 131857,
-        "votesInvalid": 10602
-      }
+        }]
+      },
+      "votersDiff": 2213
     }, {
       "name": "Tampines GRC",
       "seats": 5,
@@ -1657,7 +1677,14 @@
         "partyId": "pap",
         "votesWon": 95202,
         "won": true,
-        "votesWonRatio": 0.7205612994050953
+        "votesWonRatio": 0.7205612994050953,
+        "previous": {
+          "candidates": ["Mah Bow Tan", "Ng Phek Hoong Irene", "Masagos Zulkifli Bin Masagos Mohamad", "Baey Yam Keng", "Heng Swee Keat"],
+          "votesWon": 72728,
+          "votesWonRatio": 0.5721703419899457,
+          "won": true
+        },
+        "voteSwing": 0.14839095741514963
       }, {
         "party": "National Solidarity Party",
         "candidates": [{
@@ -1679,7 +1706,14 @@
         "partyId": "nsp",
         "votesWon": 36920,
         "votesWonRatio": 0.2794387005949047,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Goh Meng Seng", "Reno Fong Chin Leong", "Syafarin Sarif", "Raymond Lim Peng Ann", "Gilbert Goh Keow Wah"],
+          "votesWon": 54381,
+          "votesWonRatio": 0.42782965801005435,
+          "won": false
+        },
+        "voteSwing": -0.14839095741514963
       }],
       "votesValid": 132122,
       "votesInvalid": 11396,
@@ -1687,24 +1721,10 @@
       "previous": {
         "seats": 5,
         "voters": 137532,
-        "teams": [{
-          "party": "National Solidarity Party",
-          "candidates": ["Goh Meng Seng", "Reno Fong Chin Leong", "Syafarin Sarif", "Raymond Lim Peng Ann", "Gilbert Goh Keow Wah"],
-          "partyId": "nsp",
-          "votesWon": 54381,
-          "votesWonRatio": 0.42782965801005435,
-          "won": false
-        }, {
-          "party": "People's Action Party",
-          "candidates": ["Mah Bow Tan", "Ng Phek Hoong Irene", "Masagos Zulkifli Bin Masagos Mohamad", "Baey Yam Keng", "Heng Swee Keat"],
-          "partyId": "pap",
-          "votesWon": 72728,
-          "won": true,
-          "votesWonRatio": 0.5721703419899457
-        }],
         "votesValid": 127109,
         "votesInvalid": 10423
-      }
+      },
+      "votersDiff": 5986
     }, {
       "name": "Tanjong Pagar GRC",
       "seats": 5,
@@ -1787,7 +1807,14 @@
         "partyId": "pap",
         "votesWon": 135115,
         "won": true,
-        "votesWonRatio": 0.7863478169776402
+        "votesWonRatio": 0.7863478169776402,
+        "previous": {
+          "candidates": ["Lee Hsien Loong", "Yeo Guat Kwang", "Inderjit Singh", "Seng Han Thong", "Ang Hin Kee", "Intan Azura Mokhtar"],
+          "votesWon": 112677,
+          "votesWonRatio": 0.6932774660366214,
+          "won": true
+        },
+        "voteSwing": 0.09307035094101879
       }, {
         "party": "Reform Party",
         "candidates": [{
@@ -1812,7 +1839,14 @@
         "partyId": "rp",
         "votesWon": 36711,
         "votesWonRatio": 0.21365218302235983,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Alex Tan Zhixiang", "Arthero Lim Tung Hee", "Vignes Ramachandran", "Lim Zi Rui", "Mansor Rahman", "Osman Sulaiman"],
+          "votesWon": 49851,
+          "votesWonRatio": 0.3067225339633786,
+          "won": false
+        },
+        "voteSwing": -0.09307035094101879
       }],
       "votesValid": 171826,
       "votesInvalid": 15945,
@@ -1820,24 +1854,10 @@
       "previous": {
         "seats": 6,
         "voters": 179071,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Lee Hsien Loong", "Yeo Guat Kwang", "Inderjit Singh", "Seng Han Thong", "Ang Hin Kee", "Intan Azura Mokhtar"],
-          "partyId": "pap",
-          "votesWon": 112677,
-          "won": true,
-          "votesWonRatio": 0.6932774660366214
-        }, {
-          "party": "Reform Party",
-          "candidates": ["Alex Tan Zhixiang", "Arthero Lim Tung Hee", "Vignes Ramachandran", "Lim Zi Rui", "Mansor Rahman", "Osman Sulaiman"],
-          "partyId": "rp",
-          "votesWon": 49851,
-          "votesWonRatio": 0.3067225339633786,
-          "won": false
-        }],
         "votesValid": 162528,
         "votesInvalid": 16543
-      }
+      },
+      "votersDiff": 8700
     }, {
       "name": "Pasir Ris-Punggol GRC",
       "seats": 6,
@@ -1867,7 +1887,14 @@
         "partyId": "sda",
         "votesWon": 46508,
         "votesWonRatio": 0.271137825090801,
-        "won": false
+        "won": false,
+        "previous": {
+          "candidates": ["Harminder Pal Singh", "Sidney Soon", "Jeffrey Lim", "Noraine Anabi", "Tony Tan", "Mohammad Shafni Ahmad"],
+          "votesWon": 54601,
+          "votesWonRatio": 0.3520510142236321,
+          "won": false
+        },
+        "voteSwing": -0.08091318913283113
       }, {
         "party": "People's Action Party",
         "candidates": [{
@@ -1892,7 +1919,14 @@
         "partyId": "pap",
         "votesWon": 125021,
         "won": true,
-        "votesWonRatio": 0.728862174909199
+        "votesWonRatio": 0.728862174909199,
+        "previous": {
+          "candidates": ["Teo Chee Hean", "Teo Ser Luck", "Penny Low", "Janil Puthucheary", "Gan Thiam Poh", "Zainal Bin Sapari"],
+          "votesWon": 100493,
+          "votesWonRatio": 0.6479489857763678,
+          "won": true
+        },
+        "voteSwing": 0.08091318913283119
       }],
       "votesValid": 171529,
       "votesInvalid": 15867,
@@ -1900,24 +1934,10 @@
       "previous": {
         "seats": 6,
         "voters": 168971,
-        "teams": [{
-          "party": "People's Action Party",
-          "candidates": ["Teo Chee Hean", "Teo Ser Luck", "Penny Low", "Janil Puthucheary", "Gan Thiam Poh", "Zainal Bin Sapari"],
-          "partyId": "pap",
-          "votesWon": 100493,
-          "won": true,
-          "votesWonRatio": 0.6479489857763678
-        }, {
-          "party": "Singapore Democratic Alliance",
-          "candidates": ["Harminder Pal Singh", "Sidney Soon", "Jeffrey Lim", "Noraine Anabi", "Tony Tan", "Mohammad Shafni Ahmad"],
-          "partyId": "sda",
-          "votesWon": 54601,
-          "votesWonRatio": 0.3520510142236321,
-          "won": false
-        }],
         "votesValid": 155094,
         "votesInvalid": 13877
-      }
+      },
+      "votersDiff": 18425
     }]
   }
 }

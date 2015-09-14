@@ -13,7 +13,9 @@ let _        = require('lodash'),
  * @property {number}  attributes.voters
  * @property {number}  attributes.votesValid
  * @property {number}  attributes.votesInvalid
+ * @property {number}  attributes.votersDiff
  * @property {string}  attributes.url
+ * @property {object}  attributes.previous
  * @property {Backbone.Collection} teams
  * @method {Team} getWinningTeam
  */
@@ -37,7 +39,16 @@ module.exports = Backbone.Model.extend({
   },
 
   parse: function (options) {
-    return _.pick(options, 'name', 'type', 'seats', 'voters', 'votesValid', 'votesInvalid', 'url');
+    return _.pick(options,
+      'name',
+      'type',
+      'seats',
+      'voters',
+      'votesValid',
+      'votesInvalid',
+      'votersDiff',
+      'url',
+      'previous');
   },
 
   getWinningTeam: function () {
