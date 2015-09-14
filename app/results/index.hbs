@@ -6,14 +6,14 @@ layout: viz-layout.hbs
 
 title: GE2015 Results
 
-subtitle: Who did the votes go to?
+subtitle: Where did the votes go to?
 
 description: >
-  Here are the results of Singapore general election 2015.
+  Here are the results of the 2015 Singapore general election. 83 candidates from the People’s Action Party (PAP) and 6 candidates from the Workers’ Party (WP) were voted in to form the new parliament. The PAP was the best performing party, achieving a swing of 9.7% to take 69.9% of the popular vote.
 
 ogImage: images/rs-og-image.png
 
-ogUrl: http://zxzxlch.github.io/ge15-viz/results/
+ogUrl: http://localhost:9000/results/#parliament
 
 buildScripts:
   main:     'results-bundled'
@@ -35,7 +35,7 @@ data: <%= candidates.data %>
 <div class="introduction">
   <h1 class="heading">{{ title }}</h1>
   <h2 class="heading-subtitle">{{ subtitle }}</h2>
-  <p>Here are the results of Singapore general election 2015.</p>
+  <p>Here are the results of the 2015 Singapore general election. 83 candidates from the People’s Action Party (PAP) and 6 candidates from the Workers’ Party (WP) were voted in to form the new parliament. The PAP was the best performing party, achieving a swing of 9.7% to take 69.9% of the popular vote.</p>
 </div>
 
 <!-- Chart -->
