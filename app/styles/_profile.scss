@@ -213,6 +213,8 @@
 
 .ps-sources {
   overflow-x: hidden;
+  word-break: break-all;
+  word-wrap: break-word;
   font-size: 13px;
   margin-top: 30px;
 
