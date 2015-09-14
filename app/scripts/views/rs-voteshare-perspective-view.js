@@ -50,15 +50,15 @@ module.exports = PerspectiveView.extend({
     ]
   },
 
-  constituencyStatsTmpl: _.template('<% if (type == "grc") { %> <%= seats %>-seat group constituency<% } else { %>Single-member constituency<% } %> consisting of <%= voters.toLocaleString() %> voters won by <%= winningParty %>'),
+  constituencyStatsTmpl: _.template('<% if (type == "grc") { %> <%= seats %>-seat group constituency<% } else { %>Single-member constituency<% } %> consisting of <%= voters %> voters won by <%= winningParty %>'),
 
-  teamStatsTmpl: _.template('<%= votesWon.toLocaleString() %> / <%= (votesWonRatio * 100).toFixed(1) %>%'),
+  teamStatsTmpl: _.template('<%= votesWon %> / <%= (votesWonRatio * 100).toFixed(1) %>%'),
 
-  teamCaptionTmpl: _.template('<% if (won) { %>Won<% } else { %>Lost<% } %> with <%= votesWon.toLocaleString() %> votes'),
+  teamCaptionTmpl: _.template('<% if (won) { %>Won<% } else { %>Lost<% } %> with <%= votesWon %> votes'),
 
-  popvoteDescriptionTmpl: _.template('Took <%= totalVotesWon.toLocaleString() %> of <%= totalVotes.toLocaleString() %> total votes. Won <%= seatsWon %> of <%= seatsContested %> seats contested.'),
+  popvoteDescriptionTmpl: _.template('Took <%= totalVotesWon %> of <%= totalVotes %> total votes. Won <%= seatsWon %> of <%= seatsContested %> seats contested.'),
 
-  contestedVoteShareDescriptionTmpl: _.template('Achieved <%= contestedVotesWon.toLocaleString() %> of <%= contestedVotes.toLocaleString() %> contested votes. Won <%= seatsWon %> of <%= seatsContested %> seats contested.'),
+  contestedVoteShareDescriptionTmpl: _.template('Achieved <%= contestedVotesWon %> of <%= contestedVotes %> contested votes. Won <%= seatsWon %> of <%= seatsContested %> seats contested.'),
 
 
   initialize: function (options) {
@@ -121,7 +121,7 @@ module.exports = PerspectiveView.extend({
       let stats = this.constituencyStatsTmpl({
         type:         constituency.get('type'),
         seats:        constituency.get('seats'),
-        voters:       constituency.get('voters'),
+        voters:       Common.formatNumberCommas(constituency.get('voters')),
         winningParty: winningTeam.party.get('name')
       });
       let $constituency = $(vizSectionTmpl({
@@ -136,7 +136,7 @@ module.exports = PerspectiveView.extend({
           stats: (team.get('votesWonRatio') * 100).toFixed(1) + '%',
           caption: this.teamCaptionTmpl({
             won: team.get('won'),
-            votesWon: team.get('votesWon')
+            votesWon: Common.formatNumberCommas(team.get('votesWon'))
           })
         }));
 
@@ -167,15 +167,15 @@ module.exports = PerspectiveView.extend({
       let description;
       if (options.sort == 'popvote') {
         description = this.popvoteDescriptionTmpl({
-          totalVotesWon:  contestingBody.get('totalVotesWon'),
-          totalVotes:     this.stats.totalVotes,
+          totalVotesWon:  Common.formatNumberCommas(contestingBody.get('totalVotesWon')),
+          totalVotes:     Common.formatNumberCommas(this.stats.totalVotes),
           seatsWon:       contestingBody.get('seatsWon'),
           seatsContested: contestingBody.get('seatsContested')
         });
       } else if (options.sort == 'contestedVoteShare') {
         description = this.contestedVoteShareDescriptionTmpl({
-          contestedVotesWon: contestingBody.get('contestedVotesWon'),
-          contestedVotes:    contestingBody.get('contestedVotes'),
+          contestedVotesWon: Common.formatNumberCommas(contestingBody.get('contestedVotesWon')),
+          contestedVotes:    Common.formatNumberCommas(contestingBody.get('contestedVotes')),
           seatsWon:          contestingBody.get('seatsWon'),
           seatsContested:    contestingBody.get('seatsContested')
         });

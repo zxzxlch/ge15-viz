@@ -18,6 +18,10 @@ module.exports = {
   formatPercentage: function (num, decPlaces) {
     decPlaces = (decPlaces != undefined) ? decPlaces : 1;
     return (num * 100).toFixed(decPlaces);
+  },
+
+  formatNumberCommas: function (num) {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   }
 
 };

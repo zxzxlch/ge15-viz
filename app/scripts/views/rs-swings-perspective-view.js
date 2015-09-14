@@ -38,7 +38,7 @@ module.exports = PerspectiveView.extend({
     ]
   },
 
-  constituencyStatsTmpl: _.template('<% if (type == "grc") { %> <%= seats %>-seat group constituency<% } else { %>Single-member constituency<% } %> consisting of <%= voters.toLocaleString() %> voters won by <%= winningParty %>.'),
+  constituencyStatsTmpl: _.template('<% if (type == "grc") { %> <%= seats %>-seat group constituency<% } else { %>Single-member constituency<% } %> consisting of <%= voters %> voters won by <%= winningParty %>.'),
 
   voteSwingCaptionTmpl: _.template('<%= voteSwingPercent %>% <%= (voteSwingPercent > 0) ? "increase" : "decrease" %> in vote share from <%= prevVotesWonRatioPercent %>% in 2011 to <%= votesWonRatioPercent %>% in 2015.'),
 
@@ -101,7 +101,7 @@ module.exports = PerspectiveView.extend({
       let stats = this.constituencyStatsTmpl({
         type:         constituency.get('type'),
         seats:        constituency.get('seats'),
-        voters:       constituency.get('voters'),
+        voters:       Common.formatNumberCommas(constituency.get('voters')),
         winningParty: winningTeam.party.get('name')
       });
       let $constituency = $(vizSectionTmpl({
