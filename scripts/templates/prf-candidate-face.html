@@ -1,4 +1,4 @@
 <a class="wrapper" href="#candidates/<%= candidate.id %>">
   <div class="candidate-face-image" style="background-image: url(<%= candidate.get('imagePath') %>)"></div>
-  <div class="party-logo <%= candidate.get('partyId') %>"></div>
+  <div class="party-logo <%= candidate.getPartyId() %>"></div>
 </a>
