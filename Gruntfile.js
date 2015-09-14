@@ -172,7 +172,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app %>/scripts',
-          src: ['parliament-sittings.js', 'profiles.js'],
+          src: ['parliament-sittings.js', 'profiles.js', 'results.js'],
           dest: '.tmp/scripts'
         }],
         options: {
