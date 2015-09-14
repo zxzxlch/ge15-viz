@@ -86,6 +86,6 @@ module.exports = VizAppView.extend({
   search: function (searchString) {
     this.candidates.invoke('setFilter', searchString);
     VizAppView.prototype.search.apply(this, arguments);
-  },
+  }
 
 });

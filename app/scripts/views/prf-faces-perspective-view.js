@@ -26,18 +26,14 @@ module.exports = PerspectiveView.extend({
     ]
   },
 
-  initialize: function (options) {
-    PerspectiveView.prototype.initialize.apply(this, arguments);
-
+  loadQuery: function (options) {
     // Set view for each candidate model
     this.candidateViews = this.candidates.map((model) => {
       let view = new CandidateView({ model: model, grid: true });
       model.view = view;
       return view;
     });
-  },
 
-  loadQuery: function (options) {
     let sortedCandidates;
     if (options.sort == 'name') {
       sortedCandidates = this.candidates.models;

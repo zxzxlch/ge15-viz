@@ -137,6 +137,11 @@ module.exports = VizAppView.extend({
   getDetailViewClass: function (detail) {
     if (detail == 'candidates')
       return CandidateDetailView;
+  },
+
+  search: function (searchString) {
+    this.candidates.invoke('setFilter', searchString);
+    VizAppView.prototype.search.apply(this, arguments);
   }
 
 });

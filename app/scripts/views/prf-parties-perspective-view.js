@@ -89,7 +89,7 @@ module.exports = PerspectiveView.extend({
   },
 
   search: function (searchString) {
-    if (this.currentView == 'teams')
+    if (this.view == 'teams')
       this.renderTeamsView();
   }
 

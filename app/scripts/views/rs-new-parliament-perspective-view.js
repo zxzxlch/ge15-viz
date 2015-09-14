@@ -18,9 +18,7 @@ module.exports = PerspectiveView.extend({
     search:    true
   },
 
-  initialize: function (options) {
-    PerspectiveView.prototype.initialize.apply(this, arguments);
-
+  loadQuery: function (options) {
     // Divide won and lost candidates
     this.candidateGroups = _.chain(this.parties.models).
       map(party => party.candidates.models).
@@ -29,10 +27,6 @@ module.exports = PerspectiveView.extend({
       groupBy(candidate => candidate.team.get('won') ? 'won' : 'lost').
       value();
 
-    this.render();
-  },
-
-  render: function () {
     let $wonSection = $(vizSectionTmpl({
       title: 'The new parliament',
       description: 'These are the candidates who were voted into parliament.'

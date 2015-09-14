@@ -74,10 +74,10 @@ module.exports = Backbone.View.extend({
     // Update settings view
     this.updatePerspectiveSettings();
 
+    this.currentPerspectiveView.loadQuery(_.clone(this.query));
+
     // Reset search
     this.clearSearch();
-
-    this.currentPerspectiveView.loadQuery(_.clone(this.query));
 
     // Render perspective content
     $('.viz-content').replaceWith(this.currentPerspectiveView.el);
